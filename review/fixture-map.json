@@ -1,5 +1,5 @@
 {
-  "status": "Reviewer browser access, Claude OAuth and live catalog discovery verified 2026-10-19; fixtures and tool-execution tests pending",
+  "status": "Synthetic customer, product, pending order and internal notes verified through Claude on 2026-10-19; no external payment, delivery or customer reply executed",
   "login_url": "https://trolypage.com/login",
   "workspace_name": "TrolyPage Reviewer",
   "workspace_id": null,
@@ -8,15 +8,39 @@
   "approval_mode": "Full / Direct execution (observed in authenticated MCP UI; unchanged)",
   "customer": {
     "name": "Review Customer A",
-    "subscriber_id": null
+    "subscriber_id": "wc_4a6Lxy6a2iSLR2o5NjSK",
+    "synthetic_inbound_message_id": 1002007
   },
   "product": {
     "name": "Review Mug",
     "sku": "TLP-REVIEW-MUG",
-    "product_id": null,
-    "price_vnd_proposed": 100000,
-    "stock_proposed": 20
+    "product_id": 4642,
+    "price_vnd": 100000,
+    "stock_quantity": 20,
+    "stock_tracking_enabled": false,
+    "variants": [],
+    "requires_shipping": false
   },
   "social_account_id": null,
-  "credentials": "ENTER ONLY IN SECURE PORTAL FIELDS, NEVER HERE"
+  "credentials": "ENTER ONLY IN SECURE PORTAL FIELDS, NEVER HERE",
+  "order": {
+    "order_id": 54,
+    "order_code": "ORD-01M59JFF3MAGXC8FJWYNCPY354",
+    "quantity": 2,
+    "total_vnd": 200000,
+    "approval_status": "pending_review",
+    "payment_status": "unpaid",
+    "fulfillment": "not shipped",
+    "idempotency_key": "reviewer-fixture-order-mug-v1",
+    "same_key_retry_reused_order": true
+  },
+  "website_widget": {
+    "id": 44,
+    "name": "TrolyPage Reviewer Demo",
+    "provider_credentials_required": false
+  },
+  "internal_notes": [
+    "Submission review — follow up after the product demo.",
+    "Video review — internal demo note, no customer message."
+  ]
 }

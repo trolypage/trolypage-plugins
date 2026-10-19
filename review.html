@@ -102,7 +102,7 @@ body{margin:0;background:#f5f7fb;color:#17223b;font:16px/1.65 system-ui,sans-ser
 </table>
 <p>No placeholder demo URL is included. After recording a real video and verifying reviewer access, add <code>review.demo_recording_url</code> and rebuild the archives. Optional localized listing overrides have been omitted for this English-only candidate.</p></section><section id="02-openai"><a class="file" href="review/02-openai.md">Open Markdown file</a><h1>OpenAI submission preparation</h1>
 <h2>Package</h2>
-<p><code>archives/openai-trolypage-mcp-1.0.1-DRAFT.zip</code> is a review candidate, not a submission-ready release. It contains one plugin at the archive root: <code>plugin.json</code>, <code>mcp.json</code>, <code>skills/</code>, <code>assets/</code> and README.</p>
+<p><code>archives/openai-trolypage-mcp-1.0.2-DRAFT.zip</code> is a review candidate, not a submission-ready release. It contains one plugin at the archive root: <code>plugin.json</code>, <code>mcp.json</code>, <code>skills/</code>, <code>assets/</code> and README.</p>
 <p>Public metadata is in <code>extensions.com.openai.interface</code>; the five positive and three negative cases are in <code>extensions.com.openai.review.test_cases</code>. Commerce is declared as true. <code>countries=[]</code> represents the owner's choice of all platform-permitted countries. Listing and review text are in English; no optional localized overrides are included. The package excludes private app bindings, <code>.app.json</code>, hooks, tokens and passwords.</p>
 <h2>Steps after the review draft is complete</h2>
 <ol>
@@ -114,7 +114,7 @@ body{margin:0;background:#f5f7fb;color:#17223b;font:16px/1.65 system-ui,sans-ser
 <li>The authorized owner must read and confirm policy attestations before submitting for review. Publishing is a separate step after approval.</li>
 </ol>
 <h2>Verified and pending</h2>
-<p>On October 19, 2026, the organization showed Verified status and the upload dialog offered Business — Trolypage. Developer identity verification and MCP domain verification are separate. The draft domain challenge is now verified: the exact challenge file was uploaded to the server public/.well-known directory and the portal displays Domain verified. All nine skill checks passed. MCP OAuth, tool discovery/scans, authenticated cases and a real demo URL remain incomplete. The current draft was reuploaded with the Apache-2.0 distribution files.</p>
+<p>On October 19, 2026, the organization showed Verified status and the upload dialog offered Business — Trolypage. Developer identity verification and MCP domain verification are separate. The draft domain challenge is now verified: the exact challenge file was uploaded to the server public/.well-known directory and the portal displays Domain verified. All nine skill checks passed. The scan account completed OAuth and discovered 271 tools; generic new-tool findings are non-blocking for submission. Reviewer credentials and 5+3 cases are saved securely. Real synthetic workflows were demonstrated through the separate Claude reviewer connection; OpenAI-host execution is not claimed. Candidate 1.0.2 adds fixture/report corrections and a demo URL that must be verified before upload. Final legal attestations and submission remain pending. The current draft was reuploaded with the Apache-2.0 distribution files.</p>
 <h2>Sources</h2>
 <ul>
 <li>https://developers.openai.com/plugins/deploy/submission</li>
@@ -185,20 +185,20 @@ body{margin:0;background:#f5f7fb;color:#17223b;font:16px/1.65 system-ui,sans-ser
 </tr>
 <tr>
 <td>Reviewer access</td>
-<td>Credentials received privately; workspace access, Claude OAuth and live catalog discovery verified October 19, 2026. Fixtures, tool-execution tests and independent sign-in remain unverified. Use secure review fields only</td>
+<td>Credentials received privately; workspace access, Claude OAuth and live catalog discovery verified October 19, 2026. Synthetic fixtures and representative execution verified; prior all-tool execution attested by owner. Independent reviewer-environment sign-in remains unverified. Use secure review fields only</td>
 </tr>
 </tbody>
 </table>
 <h3>Directory profile update — October 19, 2026</h3>
-<p>The owner selected a dedicated directory catalog. The server-side <code>/mcp/claude</code> profile has now been deployed, with a 180-tool execution allowlist, English descriptions and complete annotation booleans. OAuth resource validation restricts directory-issued tokens to that endpoint. The full <code>/mcp/troly</code> service retains Gen AI. The new directory connection completed OAuth in Claude with the correct reviewer workspace. The portal read 180 tools live (90 read-only, 90 write), with four advisory documentation suggestions and no previous catch-all operation flag. See <code>evidence/claude-directory-release-20261019.md</code> for deployment and automated regression scope. Authenticated all-tool business testing remains incomplete.</p>
+<p>The owner selected a dedicated directory catalog. The server-side <code>/mcp/claude</code> profile has now been deployed, with a 180-tool execution allowlist, English descriptions and complete annotation booleans. OAuth resource validation restricts directory-issued tokens to that endpoint. The full <code>/mcp/troly</code> service retains Gen AI. The new directory connection completed OAuth in Claude with the correct reviewer workspace. The portal read 180 tools live (90 read-only, 90 write), with four advisory documentation suggestions and no previous catch-all operation flag. See <code>evidence/claude-directory-release-20261019.md</code> for deployment and automated regression scope. The owner confirmed prior all-tool Inspector/Claude execution; this session separately verified representative synthetic workflows.</p>
 <h3>Historical findings from the full endpoint (superseded candidate)</h3>
 <ul>
 <li>Live discovery now confirms 270 tools, 12 prompts and 12 resources from TrolyPage Reviewer. The portal flags <code>save-integration-operation</code>: "Split this catch-all API tool into separate read and write tools." It also reports 275 suggestions, largely missing title/readOnlyHint annotations. Inspect the implementation before choosing a fix; saving an operation configuration and executing an operation are different behaviors. See evidence/claude-live-discovery-2026-10-19.json.</li>
 <li>The catalog includes <code>generate-social-image</code>. The connector criteria reviewed for this candidate exclude AI image/video/audio generation. Enforce restrictions in the server or a real OAuth profile, then verify <code>tools/list</code>. Removing a tool name from documentation does not restrict access.</li>
-<li>The connector's mandatory policy declarations also prohibit tool descriptions that instruct model behavior or refer to other tools or external instruction sources. Review the live descriptions against that requirement. No connector policy checkbox or all-tools-self-tested declaration has been accepted.</li>
+<li>The connector's mandatory policy declarations also prohibit tool descriptions that instruct model behavior or refer to other tools or external instruction sources. Review the live descriptions against that requirement. These historical declarations were unresolved for that superseded full-endpoint draft. The current 180-tool directory connector was submitted with owner-confirmed prior all-tool execution.</li>
 <li><code>execute-integration-operation</code> declares openWorldHint without a clear read/write split. Inspect the HTTP methods configured operations can execute; separate read/write tools or exclude the dispatcher from the Claude catalog as needed. Do not use it to bypass excluded capabilities.</li>
 <li>If a different endpoint/profile is selected, use its verified deployment URL. Do not invent a path in the manifest.</li>
-<li>Test every exposed tool through MCP Inspector and a Claude custom connector. All 270 ledger entries remain Not run; the five positive and three negative cases are representative and do not replace catalog-wide verification.</li>
+<li>The historical full-endpoint ledger described 270 unrun tools. Current directory evidence covers a different 180-tool catalog, owner-attested prior execution and separately observed representative workflows.</li>
 </ul>
 <h2>B. Plugin bundle</h2>
 <p>Source: <code>packages/claude/trolypage-mcp</code>. Local review archive: <code>archives/claude-trolypage-mcp-1.0.2-DRAFT.zip</code>. Claude Directory retrieves the bundle from GitHub rather than using this ZIP as an OpenAI-style submission.</p>
@@ -206,7 +206,7 @@ body{margin:0;background:#f5f7fb;color:#17223b;font:16px/1.65 system-ui,sans-ser
 <p>Repository: https://github.com/trolypage/trolypage-plugins. Plugin path: <code>packages/claude/trolypage-mcp</code>. Branch: <code>codex/submission-preparation</code>. Select the correct branch/path and verify the commit in the portal.</p>
 <p>The bundle includes the Apache-2.0 LICENSE and NOTICE and declares Apache-2.0 in its manifest. This applies to the distributed skills and documentation, not the application backend.</p>
 <p>The bundle was submitted for review on October 19, 2026 after the owner explicitly confirmed the organization and all four displayed legal/policy attestations. The portal confirmed receipt and showed the security-scan stage. Source validated at commit <code>5a53823</code>: seven checks passed, with the documented harmless privacyPolicyUrl warning. Nine skills and one MCP server were detected. Data handling declares reads and stores, no skill transmission outside declared connectors, retention longer than 30 days, and intended users under 18 (16–17 with guardian consent, as confirmed by the owner). Automatic publication is off; repository updates use scheduled checks. Submission is not approval or proof of successful tool tests.</p>
-<p>The separate MCP connector has a browser draft populated through the compliance step: English listing, five relevant categories, three use cases, company/contact details, OAuth DCR, data-handling explanations and honest reviewer setup instructions. OAuth and live discovery succeeded for the correct reviewer workspace. Final connector submission remains blocked by unmet policy declarations and incomplete tool tests. The browser draft must be preserved; it is not a submitted directory record. Do not treat bundle receipt as connector approval or attest to unrun tests.</p>
+<p>The separate MCP connector was submitted successfully on October 19, 2026. The receipt linked to https://claude.ai/directory/manage/trolypage. Its 180-tool catalog, English listing, five categories, three use cases, company/contact details, OAuth DCR and private reviewer instructions were submitted. Mandatory prior all-tool execution was confirmed directly by the owner. This is a separate receipt from the bundle, and neither means approval.</p>
 <h2>Sources</h2>
 <ul>
 <li>https://claude.com/docs/directory/publish</li>
@@ -348,193 +348,90 @@ Add an internal CRM note without contacting the customer.
 <h2>Completion and approvals</h2>
 <p>Workspace Auto/Hybrid/Strict controls server execution; the host's approval layer is separate. Hybrid's source allowlist permits some real writes directly, including send-message and internal notes. create-order can create an order pending shop review. The public guide's blanket "sensitive writes all queue" claim is too broad. The package must report actual returned states and respect the host's per-action approvals. An MCP execution acknowledgement does not prove an external recipient received a message, a workflow finished or a payment cleared.</p>
 <h2>Proposed Muse tool classes</h2>
-<p>Read tools retrieve account state. Write tools change internal drafts/configuration. Sensitive-write candidates include external sends/publication, payments/order commitment, shipping/booking, destructive operations and consequential integration execution. tool-inventory.csv contains an initial classification for manual review, explicitly separate from current MCP annotations and Muse's final classification.</p></section><section id="06-tests-demo-and-access"><a class="file" href="review/06-tests-demo-and-access.md">Open Markdown file</a><h1>Reviewer access, tests and demo video</h1>
-<h2>Current status</h2>
-<p>The owner supplied reviewer credentials privately. Browser access was verified on October 19, 2026: workspace <strong>TrolyPage Reviewer</strong>, <strong>Scale</strong> plan, current member <strong>Owner</strong>. The owner completed Cloudflare verification during this sign-in; independent access by an external reviewer has not been established. No username or password is stored in the repository or archives.</p>
-<p>The initial authenticated MCP page listed 11 included servers, 270 tools and 117 read tools, with no API keys or authorized OAuth applications at that preflight. The applied write mode was <strong>Full / Direct execution</strong>, observed without changing configuration. Claude OAuth was subsequently completed for the correct TrolyPage Reviewer workspace on October 19, 2026. The directory read 270 tools, 12 prompts and 12 resources live. This verifies authorization and catalog discovery, not successful execution of individual tools. No successful business-tool call has been recorded.</p>
-<p>The workspace has no products or orders and only the default support contact. <code>Review Customer A</code>, SKU <code>TLP-REVIEW-MUG</code> and comparison-period demo orders are absent. Business tests have not run; no real video or demo URL exists. <code>test-cases.json</code> is a specification and all results in <code>test-results.csv</code> remain Not run. Do not use the real support contact as a fixture or message it to create test data.</p>
-<h2>Populate the dedicated workspace</h2>
-<ol>
-<li>Verify the workspace is isolated and the owner/admin account and plan cover the declared modules. Record the workspace name, login URL and actual timezone in fixture-map.json. Keep credentials out.</li>
-<li>Create <code>Review Customer A</code> with a short synthetic conversation. Do not use real customer phone numbers or email addresses.</li>
-<li>Create active product <code>Review Mug</code>, SKU <code>TLP-REVIEW-MUG</code>, proposed price 100000 VND and stock 20. Record actual server-assigned IDs. Prepare synthetic orders for both report comparison periods.</li>
-<li>Record approval mode for every run. Check for fulfillment, notifications and workflows before creating test orders or notes. Do not connect a live bank or carrier for the core tests.</li>
-<li>For social tests, use an owner-controlled test account. Save an unscheduled draft; do not publish. Provider-dependent tools require their own sandbox or fixture instructions.</li>
-<li>Limit reviewer permissions to the demo workspace. Verify sign-in without relying on the owner's phone, mailbox or approval. Supply credentials only through each portal's secure review fields, never public Git, listing text or archives.</li>
-</ol>
-<h2>Representative cases</h2>
-<p><code>test-cases.json</code> contains five positive and three negative cases with setup, prompts, tools and pass conditions. Adapt the same scenarios to the actual Claude/Muse catalog. Positive cases cover customer context, product lookup, a pending shop-review order, sales comparison and an internal CRM note. Negative cases cover bank transfers, unauthorized workspace access and secret extraction.</p>
-<p>Run writes under ordinary execution and under MCP approval. Only the demo operator approves queued actions. Record the host, package hash, timestamp, sanitized arguments, actual IDs/states and evidence in test-results.csv. Compare results with expected behavior before assigning Passed, Failed or Blocked.</p>
-<h2>Additional coverage for the full catalog</h2>
+<p>Read tools retrieve account state. Write tools change internal drafts/configuration. Sensitive-write candidates include external sends/publication, payments/order commitment, shipping/booking, destructive operations and consequential integration execution. tool-inventory.csv contains an initial classification for manual review, explicitly separate from current MCP annotations and Muse's final classification.</p></section><section id="06-tests-demo-and-access"><a class="file" href="review/06-tests-demo-and-access.md">Open Markdown file</a><h1>Reviewer access, fixtures and walkthrough</h1>
+<p>The owner supplied reviewer access privately. The authenticated workspace is <strong>TrolyPage Reviewer</strong>, Scale plan, Owner role. Its existing mode is <strong>Full / Direct execution</strong>. Credentials belong only in secure platform fields and are excluded from this repository and archives.</p>
+<h2>Verified synthetic fixtures</h2>
 <table>
 <thead>
 <tr>
-<th>Module</th>
-<th>Required coverage</th>
+<th>Fixture</th>
+<th>State</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Social</td>
-<td>Resolve an account, save a draft and verify it remains unpublished. Schedule/publish only with a test provider and actual approvals</td>
+<td>Customer</td>
+<td>Review Customer A; one synthetic website-chat inquiry</td>
 </tr>
 <tr>
-<td>Marketing</td>
-<td>Create a broadcast draft and preview the audience. pending_review does not mean sent</td>
+<td>Product</td>
+<td>Review Mug, SKU TLP-REVIEW-MUG, ID 4642, 100000 VND, stored quantity 20; stock tracking disabled; no variants or shipping</td>
 </tr>
 <tr>
-<td>Knowledge</td>
-<td>Search approved facts, import a sample document and verify ingestion. Proposed facts remain unapproved</td>
+<td>Order</td>
+<td>#54, two mugs, 200000 VND, pending_review, unpaid, not shipped</td>
 </tr>
 <tr>
-<td>Agents</td>
-<td>Read setup, create an inactive draft and run preflight. A runtime check is not proof of external delivery</td>
+<td>Retry</td>
+<td>Same intent key returned #54 with idempotent_reuse; no duplicate</td>
 </tr>
 <tr>
-<td>Assets</td>
-<td>Transfer actual fixture bytes, poll verification and inspect the resulting asset. Do not provide a local path the server cannot read</td>
+<td>Notes</td>
+<td>Exact requested fixture note and separate video-review note verified in profile</td>
 </tr>
 <tr>
-<td>Automation</td>
-<td>Save a draft, validate, simulate and inspect returned states. Publication may start real work</td>
-</tr>
-<tr>
-<td>Integrations</td>
-<td>Use a dedicated test endpoint. Enter secrets in the app, inspect before enabling, and check execution before retry/replay</td>
-</tr>
-<tr>
-<td>Commerce</td>
-<td>Verify stock, idempotency, cancellation/status and quote expiry. Prevent duplicate shipments and payment requests</td>
+<td>Providers</td>
+<td>Website widget #44; no live social, carrier or bank integration added</td>
 </tr>
 </tbody>
 </table>
-<p><code>full-tool-test-ledger.csv</code> lists all 270 tools as Not run. Exclude AI media generation from the Claude catalog until policy and enforced scope are resolved.</p>
-<h2>Real demo recording: approximately five minutes</h2>
+<p>See <code>fixture-map.json</code>. No real customer, recipient or payment data was used. Report revenue includes pending unpaid order value and does not establish payment receipt. The previous period can legitimately be zero.</p>
+<h2>Tests and limits</h2>
+<p>The owner confirmed prior execution of every submitted Claude directory tool through MCP Inspector / Claude on October 19, 2026. The directory ledger separates this attestation from independently observed calls. This session exercised customer/conversation lookup, product creation/lookup, order creation and retry, sales reporting and internal notes through the directory connection.</p>
+<p><code>test-results.csv</code> records five adapted positive scenarios and a combined three-request negative-scope walkthrough. Negative requests were refused without tool calls. These observations do not claim external provider delivery, all-tool re-execution, an exhaustive security audit or execution within OpenAI's host. Local tests, portal scans and business workflows have separate evidence.</p>
+<p>The production order fix passed 271 relevant tests / 36,190 assertions. Two broader shipping-audit failures also reproduce against the original baseline. See <code>evidence/submission-progress-20261019.md</code>.</p>
+<h2>Recording</h2>
+<p>The actual walkthrough uses Claude to demonstrate shared TrolyPage MCP workflows on synthetic data: customer/product context, pending order retry, actual report figures and a verified internal note, then refusals for money movement, unauthorized tenant access and secret extraction. It does not show OpenAI-host execution or AI media generation.</p>
+<p>Capture uses timestamped browser-tab screenshots at variable cadence; idle intervals are compressed. No cursor/input events were fabricated. Original frames and metadata remain outside tracked paths. Verify the published video for legibility and absence of secrets before portal upload.</p>
+<p>Keep the account and fixtures available during review. Independent sign-in from the platform reviewer's environment remains unverified; assist if Cloudflare or an account restriction blocks access. Do not weaken authorization boundaries.</p></section><section id="07-readiness"><a class="file" href="review/07-readiness.md">Open Markdown file</a><h1>Submission readiness</h1>
+<p>Updated October 19, 2026. No platform approval or live directory release has been received.</p>
 <table>
 <thead>
 <tr>
-<th>Suggested time</th>
-<th>Actual action and visible result</th>
+<th>Platform</th>
+<th>Verified status</th>
+<th>Outstanding work</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>0:00–0:25</td>
-<td>Show the host, plugin 1.0.1, demo workspace, permissions and endpoint</td>
+<td>Claude connector</td>
+<td>Successfully submitted; https://claude.ai/directory/manage/trolypage</td>
+<td>Anthropic review</td>
 </tr>
 <tr>
-<td>0:25–1:00</td>
-<td>P1: find the fixture customer and summarize the real synthetic conversation</td>
+<td>Claude bundle</td>
+<td>1.0.2 at 4ac9cfa passed format, policy and security scans; Publish requested</td>
+<td>Anthropic review</td>
 </tr>
 <tr>
-<td>1:00–1:35</td>
-<td>P2: show the actual SKU, price and stock</td>
+<td>OpenAI</td>
+<td>Verified business/domain; OAuth scan account connected; 271 tools; secure reviewer credentials and 5+3 cases saved</td>
+<td>Public video playback verified; upload 1.0.2, final six legal attestations, submit</td>
 </tr>
 <tr>
-<td>1:35–2:35</td>
-<td>P3: show any approval, then pending_review. Do not pay or create shipping</td>
-</tr>
-<tr>
-<td>2:35–3:15</td>
-<td>P4: show both date periods and server figures</td>
-</tr>
-<tr>
-<td>3:15–4:00</td>
-<td>P5: write/re-read an internal CRM note without sending a message</td>
-</tr>
-<tr>
-<td>4:00–4:30</td>
-<td>Show one negative case and the absence of an unauthorized action</td>
-</tr>
-<tr>
-<td>4:30–5:00</td>
-<td>Explain support, external payment and pending versus completed states</td>
+<td>Muse</td>
+<td>All 3/3 requirements submitted: business verification, integration credentials and data questionnaire</td>
+<td>Platform review</td>
 </tr>
 </tbody>
 </table>
-<p>Rehearse first. An existing development connection can be used; a submission upload is not required merely to begin recording. Capture actual screen activity rather than mockups or fabricated results. Hide passwords, tokens, mailbox content and unrelated workspaces. Review prompt/result legibility, scenario coverage and secret exposure. Host the video somewhere the reviewer can play it; verify access while signed out before adding its URL to the manifest. No hosting destination has been selected.</p>
-<h2>Secure reviewer-access fields</h2>
-<p>Supply login URL, demo workspace name, username, password/sign-in method, permissions, plan, fixtures, expected approval steps and no-charge testing instructions only through secure dashboard fields. This is a checklist, not a place to store credentials. Keep the test account available during review and re-review.</p></section><section id="07-readiness"><a class="file" href="review/07-readiness.md">Open Markdown file</a><h1>Requirements before submission</h1>
-<p><strong>REVIEW CANDIDATE.</strong> Source, archives and copy are prepared. The Claude bundle was submitted for review. An OpenAI draft has been uploaded. Muse intake, integration credentials and business verification are complete. No platform approval has been received. Local validation does not replace a platform scan or review.</p>
-<p><strong>Directory profile update, October 19:</strong> <code>/mcp/claude</code> is deployed with a 180-tool allowlist enforced at discovery and execution, English descriptions and complete annotation serialization. The full endpoint retains Gen AI. Claude candidate 1.0.2 contains eight matching skills. OAuth for the new directory connection succeeded with TrolyPage Reviewer. Backend MCP regressions passed 248 tests, followed by seven targeted tests after the final fix; local packaging passed 68 checks. Historical full-endpoint findings below do not describe a fresh directory scan. All-tool authenticated business testing, a demo and platform-specific outstanding requirements remain pending. See <code>evidence/claude-directory-release-20261019.md</code>.</p>
-<h2>Shared requirements</h2>
-<table>
-<thead>
-<tr>
-<th>Item</th>
-<th>Status / next step</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Listing, contact, countries, commerce, logo</td>
-<td>Owner decisions recorded; contact person Alex Nguyen</td>
-</tr>
-<tr>
-<td>OpenAI identity / domain</td>
-<td>Business — Trolypage verified; MCP domain challenge now verified in the saved draft</td>
-</tr>
-<tr>
-<td>Metadata / 5+3 cases / release notes</td>
-<td>Imported into the English-only OpenAI draft; all nine skill checks passed</td>
-</tr>
-<tr>
-<td>Mobile icon</td>
-<td>Original and derived sizes supplied; review appearance at 32/64 px</td>
-</tr>
-<tr>
-<td>Endpoint/discovery</td>
-<td>Claude directory OAuth and 180-tool live discovery verified; four advisory documentation suggestions remain. OpenAI OAuth remains unverified</td>
-</tr>
-<tr>
-<td>Reviewer account</td>
-<td>Received privately; browser access verified for TrolyPage Reviewer, Scale, Owner. Owner completed Cloudflare; independent external-reviewer sign-in remains unverified</td>
-</tr>
-<tr>
-<td>Demo workspace</td>
-<td>Three agents, no connected channels/senders, no products and no matching Review Customer A. Five read-only calls succeeded through Claude. Full / Direct execution policy unchanged; populated review workflows remain pending</td>
-</tr>
-<tr>
-<td>Authenticated tool tests</td>
-<td>Five directory read-only smoke calls passed; 175 directory tools and populated positive/negative business cases remain unrun. Separate directory ledger provided</td>
-</tr>
-<tr>
-<td>Video</td>
-<td>Script prepared; real recording and accessible URL missing</td>
-</tr>
-<tr>
-<td>Published policy identity</td>
-<td>Owner confirmed TROLYPAGE COMPANY LIMITED, Hanoi. Privacy introduction and section 13 corrected on production and the public English page verified October 19, 2026; both privacy source templates updated with private backups. Legacy Vietnamese privacy URL redirected to the English canonical page during this check. Mobile support and unrelated partner/store-publisher references were not changed</td>
-</tr>
-<tr>
-<td>MCP guide</td>
-<td>Refers to seven focused servers despite 11 routes; calls analytics fully read-only despite export-report; overstates Hybrid approval coverage. Synchronize production copy</td>
-</tr>
-<tr>
-<td>Data processing</td>
-<td>Owner confirmation needed for processors, actual retention, secondary-use restrictions and security escalation contact</td>
-</tr>
-</tbody>
-</table>
-<h2>Engineering validation and remaining gaps</h2>
-<ol>
-<li>Tool serialization now supplies explicit readOnlyHint, destructiveHint and openWorldHint booleans and a title. Conservative defaults apply when a tool has not declared a more specific hint. Directory live discovery confirmed the annotation fixes; OpenAI's own scan remains pending.</li>
-<li>The dedicated Claude catalog enforces its allowlist at discovery and execution, excludes AI media and arbitrary dispatchers, and provides English metadata. The full endpoint retains Gen AI. The previous Claude catch-all flag no longer appears; four advisory documentation suggestions remain.</li>
-<li>Final local MCP feature/unit regressions passed <strong>249 tests / 36,085 assertions</strong>. A live smoke test found internal product pagination URLs; the controller-dispatch request now preserves the public MCP request URL, with eight commerce tests passing and a real Claude retest confirming public URLs. These tests do not replace all-tool authenticated business execution.</li>
-<li>Muse OAuth read-only behavior and its exact callback/origin still require verification before claiming support. No permissive redirect wildcard or environment change was introduced.</li>
-<li>The published MCP guide still needs synchronization with actual module routes, export writes and approval behavior.</li>
-</ol>
-<p>Production changes now include the dedicated directory server, annotation/schema corrections, a read-only broadcast sender lookup and the pagination fix, with private rollback copies. No Gen AI handlers or environment variables were changed. Earlier identity/contact and domain-verification changes remain in place.</p>
-<h2>Platform-specific work</h2>
-<ul>
-<li><strong>OpenAI:</strong> domain challenge is verified. OAuth, tool scans, reviewer access, video and final attestations remain pending. The draft ZIP can be reviewed locally but is not submission-ready.</li>
-<li><strong>Claude bundle:</strong> 1.0.2 at <code>4ac9cfa</code> passed format, directory-policy and security scans. Publish requested; waiting for an Anthropic reviewer, not live. The separate connector draft uses the new profile and remains incomplete because all-tool testing and its own policy declarations have not been completed. Public source: https://github.com/trolypage/trolypage-plugins.</li>
-<li><strong>Muse:</strong> intake submitted with payments accepted and external payment explicitly disclosed; the owner confirmed the displayed terms. DCR/PKCE integration credentials and reviewer access were submitted securely. Business verification is complete. The overview shows 2/3 follow-up requirements complete; data-processing questionnaire, fixtures, end-to-end tests and any further reviewer requirements remain pending.</li>
-</ul>
-<h2>Next preparation steps</h2>
-<p>Confirm independent sign-in and OAuth, populate synthetic fixtures and record approval mode for each test round. Full / Direct execution does not mean every write enters a queue. The bundle license is Apache-2.0. Select the demo hosting destination and record real fixture IDs. Resolve findings for the intended catalog, run tests and record a real video. Add its verified URL, rebuild, inspect validation and hashes, and only then finalize an authorized draft upload.</p>
-<h2>Production environment check</h2>
-<p>On October 19, 2026, the owner authorized server file-manager access for verification setup and an environment check. The OpenAI challenge file was added under public/.well-known and the portal verified the domain. Only non-secret MCP configuration fields were inspected from .env and bootstrap/cache/config.php. MCP is enabled and the OAuth issuer is configured. Both allowed_origins and redirect_domains currently omit Muse hosts. No allowlist was broadened: the exact Muse OAuth callback/origin must be obtained and verified before adding narrowly scoped entries. Absence of a MUSE-prefixed variable alone does not mean generic DCR/PKCE is unsupported. No secret environment values or reviewer credentials are included here.</p></section><section id="08-policy-copy-to-review"><a class="file" href="review/08-policy-copy-to-review.md">Open Markdown file</a><h1>Policy identity correction and remaining draft copy</h1>
+<p>Claude enforces 180 tools at discovery/execution, excludes AI media and generic dispatchers, uses English metadata and validates OAuth audience. The full endpoint retains Gen AI and 271 tools. OpenAI's generic new-tool review findings are non-blocking review items.</p>
+<p>Real fixtures include Review Customer A, widget #44, product #4642 and pending unpaid order #54. Same-intent retries reuse the order. No payment, shipment, customer reply or social publication was executed. Reported revenue includes pending order value and is not money received.</p>
+<p>The owner confirmed prior all-tool Inspector/Claude execution for the submitted Claude catalog. Independent representative observations are recorded separately. Relevant local regressions passed 271 tests / 36,190 assertions; two broader shipping-audit failures also occur on the original baseline. See the evidence and ledgers for scope.</p>
+<p>Privacy identity/contact were corrected to TROLYPAGE COMPANY LIMITED, Hanoi with owner approval. The owner confirmed BNIX/Vietnam, selected AI providers, optional Chinese-origin models, at-rest encryption, administrator MFA, monitoring and incident response. Muse received these facts and the published retention/deletion limits. No SCC/DPA has been executed; this was explicitly disclosed. Provider-specific processing regions are not represented as Vietnam-only; known Vietnam/US locations and global provider processing were disclosed. No SOC 2 claim was made.</p>
+<p>Production MCP is enabled and OAuth issuer configured. No Muse wildcard or relaxed validation was added. Obtain its exact callback/origin before any necessary narrow configuration change. A missing MUSE-prefixed variable does not establish lack of generic DCR/PKCE support.</p>
+<p>The public MCP guide has older module-count, analytics-write and approval-mode descriptions; synchronize them with runtime behavior. This is separate from the deployed directory profile and current submission state.</p></section><section id="08-policy-copy-to-review"><a class="file" href="review/08-policy-copy-to-review.md">Open Markdown file</a><h1>Policy identity correction and remaining draft copy</h1>
 <p>The identity/contact correction below was owner-approved and published on October 19, 2026. The remaining MCP and guide copy is still an editorial draft requiring factual confirmation. Source inspection alone does not establish a completed security audit or full policy compliance.</p>
 <h2>Publisher identity</h2>
 <p>The owner confirmed TROLYPAGE COMPANY LIMITED in Hanoi as the responsible legal entity. Both privacy templates were narrowly updated after private backups; the public English introduction and section 13 were then verified. Company, registration number, Hanoi address and support contacts now match the reviewed information below. The legacy Vietnamese privacy URL redirected to the English canonical page during verification. No unrelated retention, processing, security or partner/store-publisher statement was changed. Mobile support references remain a separate review item.</p>

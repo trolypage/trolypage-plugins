@@ -11,7 +11,7 @@
   "public_support_email": "support@trolypage.com",
   "contact_person_name": "Alex Nguyen",
   "reviewer_account": "Received privately; authenticated browser access verified 2026-10-19. Credentials excluded from this repository.",
-  "demo_recording_url": null,
+  "demo_recording_url": "https://trolypage.com/demos/connector-review.html",
   "claude_repository": "https://github.com/trolypage/trolypage-plugins",
   "claude_license": "Apache-2.0",
   "claude_submission_kinds": [
@@ -26,5 +26,32 @@
   "data_responsible_entity_confirmed": "TROLYPAGE COMPANY LIMITED, Hanoi, Vietnam",
   "privacy_identity_update": "Owner-approved; published public English introduction and section 13 verified 2026-10-19",
   "audience_confirmed": "Adults and users aged 16–17 with guardian consent; not directed at children under 16",
-  "claude_bundle_attestations": "Owner confirmed the current organization and all four displayed attestations before submission on 2026-10-19"
+  "claude_bundle_attestations": "Owner confirmed the current organization and all four displayed attestations before submission on 2026-10-19",
+  "claude_all_tool_test_attestation": {
+    "date": "2026-10-19",
+    "source": "Direct human answer to the portal prerequisite question",
+    "scope": "All tools in the submitted Claude directory catalog previously exercised through MCP Inspector / Claude",
+    "independent_reexecution": false
+  },
+  "demo_status": "Rendered actual walkthrough; public playback verified at https://trolypage.com/demos/connector-review.html",
+  "muse_operations_confirmed": {
+    "date": "2026-10-19",
+    "source": "Direct owner answers",
+    "hosting": "BNIX https://bnix.vn/; Vietnam",
+    "ai_providers": [
+      "OpenAI",
+      "Anthropic Claude",
+      "Google",
+      "OpenRouter",
+      "Cloudflare"
+    ],
+    "optional_chinese_origin_models": "Owner confirmed DeepSeek/Qwen or other Chinese-origin models can be selected",
+    "safeguards_attested": [
+      "at-rest encryption",
+      "mandatory administrator MFA",
+      "monitoring",
+      "incident response"
+    ],
+    "scc_dpa_executed": false
+  }
 }

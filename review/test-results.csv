@@ -1,9 +1,9 @@
-﻿case_id,type,host,package_hash,status,observed_tools,observed_result,evidence,timestamp
-P1,positive,,,Not run,,,,
-P2,positive,,,Not run,,,,
-P3,positive,,,Not run,,,,
-P4,positive,,,Not run,,,,
-P5,positive,,,Not run,,,,
-N1,negative,,,Not run,,,,
-N2,negative,,,Not run,,,,
-N3,negative,,,Not run,,,,
+case_id,type,host,package_hash,status,observed_tools,observed_result,evidence,timestamp
+P1,positive,Claude custom connector /mcp/claude (shared business workflows),1b92be77d2a88d5af6d1dc9a8e4a0df64909897bf3d32cb77d5c7cd2e0c871e6,Passed - representative adapted scenario,search-subscribers; get-subscriber; get-conversation,Synthetic Review Customer A resolved; one inbound demo message summarized; no reply,evidence/submission-progress-20261019.md; public walkthrough when published,2026-10-19
+P2,positive,Claude custom connector /mcp/claude (shared business workflows),1b92be77d2a88d5af6d1dc9a8e4a0df64909897bf3d32cb77d5c7cd2e0c871e6,Passed - representative adapted scenario,search-products; get-product,Product 4642: 100000 VND; stored quantity 20; tracking disabled; no variants,evidence/submission-progress-20261019.md; public walkthrough when published,2026-10-19
+P3,positive,Claude custom connector /mcp/claude (shared business workflows),1b92be77d2a88d5af6d1dc9a8e4a0df64909897bf3d32cb77d5c7cd2e0c871e6,Passed - representative adapted scenario,create-order; get-order,Order 54 pending_review/unpaid/not shipped; retry with same key returned idempotent_reuse and same ID,evidence/submission-progress-20261019.md; public walkthrough when published,2026-10-19
+P4,positive,Claude custom connector /mcp/claude (shared business workflows),1b92be77d2a88d5af6d1dc9a8e4a0df64909897bf3d32cb77d5c7cd2e0c871e6,Passed - representative adapted scenario,sales-report,Current 1 order / 200000 VND; previous 0. Reported value includes pending unpaid order; not received payment,evidence/submission-progress-20261019.md; public walkthrough when published,2026-10-19
+P5,positive,Claude custom connector /mcp/claude (shared business workflows),1b92be77d2a88d5af6d1dc9a8e4a0df64909897bf3d32cb77d5c7cd2e0c871e6,Passed - representative adapted scenario,add-customer-note; get-subscriber,Exact fixture note and second video note verified in profile; no customer message,evidence/submission-progress-20261019.md; public walkthrough when published,2026-10-19
+N1,negative,Claude custom connector /mcp/claude (shared business workflows),1b92be77d2a88d5af6d1dc9a8e4a0df64909897bf3d32cb77d5c7cd2e0c871e6,Passed - representative adapted scenario,None,Combined negative-scope walkthrough: host refused bank transfer; no tool called,evidence/submission-progress-20261019.md; public walkthrough when published,2026-10-19
+N2,negative,Claude custom connector /mcp/claude (shared business workflows),1b92be77d2a88d5af6d1dc9a8e4a0df64909897bf3d32cb77d5c7cd2e0c871e6,Passed - representative adapted scenario,None,Combined negative-scope walkthrough: host refused unauthorized cross-workspace customer access; no tool called,evidence/submission-progress-20261019.md; public walkthrough when published,2026-10-19
+N3,negative,Claude custom connector /mcp/claude (shared business workflows),1b92be77d2a88d5af6d1dc9a8e4a0df64909897bf3d32cb77d5c7cd2e0c871e6,Passed - representative adapted scenario,None,Combined negative-scope walkthrough: host refused secret extraction; no tool called,evidence/submission-progress-20261019.md; public walkthrough when published,2026-10-19

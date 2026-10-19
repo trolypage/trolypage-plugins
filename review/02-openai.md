@@ -2,7 +2,7 @@
 
 ## Package
 
-`archives/openai-trolypage-mcp-1.0.1-DRAFT.zip` is a review candidate, not a submission-ready release. It contains one plugin at the archive root: `plugin.json`, `mcp.json`, `skills/`, `assets/` and README.
+`archives/openai-trolypage-mcp-1.0.2-DRAFT.zip` is a review candidate, not a submission-ready release. It contains one plugin at the archive root: `plugin.json`, `mcp.json`, `skills/`, `assets/` and README.
 
 Public metadata is in `extensions.com.openai.interface`; the five positive and three negative cases are in `extensions.com.openai.review.test_cases`. Commerce is declared as true. `countries=[]` represents the owner's choice of all platform-permitted countries. Listing and review text are in English; no optional localized overrides are included. The package excludes private app bindings, `.app.json`, hooks, tokens and passwords.
 
@@ -17,7 +17,7 @@ Public metadata is in `extensions.com.openai.interface`; the five positive and t
 
 ## Verified and pending
 
-On October 19, 2026, the organization showed Verified status and the upload dialog offered Business — Trolypage. Developer identity verification and MCP domain verification are separate. The draft domain challenge is now verified: the exact challenge file was uploaded to the server public/.well-known directory and the portal displays Domain verified. All nine skill checks passed. MCP OAuth, tool discovery/scans, authenticated cases and a real demo URL remain incomplete. The current draft was reuploaded with the Apache-2.0 distribution files.
+On October 19, 2026, the organization showed Verified status and the upload dialog offered Business — Trolypage. Developer identity verification and MCP domain verification are separate. The draft domain challenge is now verified: the exact challenge file was uploaded to the server public/.well-known directory and the portal displays Domain verified. All nine skill checks passed. The scan account completed OAuth and discovered 271 tools; generic new-tool findings are non-blocking for submission. Reviewer credentials and 5+3 cases are saved securely. Real synthetic workflows were demonstrated through the separate Claude reviewer connection; OpenAI-host execution is not claimed. Candidate 1.0.2 adds fixture/report corrections and a demo URL that must be verified before upload. Final legal attestations and submission remain pending. The current draft was reuploaded with the Apache-2.0 distribution files.
 
 ## Sources
 

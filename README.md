@@ -4,17 +4,17 @@ TrolyPage provides AI customer support, CRM, social media scheduling and order m
 
 [Product features](https://trolypage.com/features) · [MCP setup](https://trolypage.com/mcp) · [Support](https://trolypage.com/mcp#errors)
 
-**Status: Claude bundle submitted for review; OpenAI draft uploaded; Muse intake, credentials and business verification submitted. No approved directory release.** Updated on October 19, 2026. The repository, review materials and plugin packages are written in English.
+**Status: Claude connector and bundle submitted for review; OpenAI draft uploaded; Muse submitted with all 3/3 follow-up requirements complete. No approved directory release.** Updated on October 19, 2026. The repository, review materials and plugin packages are written in English.
 
 ## Packages
 
 | Platform | Source | Review archive |
 | --- | --- | --- |
-| OpenAI | [Portable plugin](packages/openai/trolypage-mcp) | [OpenAI ZIP](archives/openai-trolypage-mcp-1.0.1-DRAFT.zip) |
+| OpenAI | [Portable plugin](packages/openai/trolypage-mcp) | [OpenAI ZIP](archives/openai-trolypage-mcp-1.0.2-DRAFT.zip) |
 | Claude | [Skills and MCP bundle](packages/claude/trolypage-mcp) | [Claude ZIP](archives/claude-trolypage-mcp-1.0.2-DRAFT.zip) |
 | Muse | [Submission form draft](review/04-muse.md) | Uses the shared technical and review materials |
 
-Both candidates retain the `trolypage-mcp` identity and original mobile app icon. OpenAI remains at 1.0.1 with nine skills and the full MCP endpoint. Claude candidate 1.0.2 has eight skills and uses the dedicated `https://trolypage.com/mcp/claude` directory catalog; the unsupported Automation skill is excluded. OpenAI includes listing metadata, five positive and three negative review cases, commerce disclosure and availability in all platform-permitted countries. Claude Directory uses the public GitHub source; its bundle license is Apache-2.0. This repository contains distribution materials, not the application backend.
+Both candidates retain the `trolypage-mcp` identity and original mobile app icon. OpenAI candidate 1.0.2 with nine skills and the full MCP endpoint. Claude candidate 1.0.2 has eight skills and uses the dedicated `https://trolypage.com/mcp/claude` directory catalog; the unsupported Automation skill is excluded. OpenAI includes listing metadata, five positive and three negative review cases, commerce disclosure and availability in all platform-permitted countries. Claude Directory uses the public GitHub source; its bundle license is Apache-2.0. This repository contains distribution materials, not the application backend.
 
 ## Review the materials
 
@@ -23,16 +23,16 @@ Open [review.html](review.html) for the complete preview, or read these document
 1. [Listing and copy](review/01-listing-and-copy.md): product definition, publisher, contact, URLs and commerce.
 2. [Readiness](review/07-readiness.md): unresolved requirements before submission.
 3. Platform guides: [OpenAI](review/02-openai.md), [Claude](review/03-claude.md), [Muse](review/04-muse.md).
-4. [Reviewer access, tests and demo](review/06-tests-demo-and-access.md): verified account access, missing fixtures and recording plan.
+4. [Reviewer access, tests and demo](review/06-tests-demo-and-access.md): verified account access, real synthetic fixtures and walkthrough evidence.
 5. [Technical and data processing](review/05-technical-and-data.md), [proposed policy corrections](review/08-policy-copy-to-review.md) and [SEO and discovery](review/09-seo-and-discovery.md).
 
 Submission contact: **Alex Nguyen**, **support.mcp@trolypage.com**. Public support: **support@trolypage.com**. Verified OpenAI business publisher: **Trolypage**.
 
 ## Current verification
 
-The reviewer workspace has an Owner role and Scale plan. The dedicated Claude directory connection completed OAuth and live discovery of 180 tools (90 read, 90 write). Five read-only calls succeeded through Claude: channels, products, customer search, agents and broadcast senders. The workspace has three agents but no connected channels/senders, products or matching review customer. Populated business workflows, remaining tool tests, a real demo and OpenAI OAuth remain pending. The observed write mode is Full / Direct execution. Credentials are excluded from this repository and all archives.
+The reviewer workspace has an Owner role and Scale plan. Claude directory OAuth and 180-tool discovery succeeded. The owner attested prior execution of all tools through Inspector/Claude; this is recorded separately from independent representative calls. Real customer/product/order fixtures and an unpaid idempotent order retry were verified. OpenAI's scan account connected and discovered 271 full-endpoint tools; secure reviewer credentials are saved. See [current evidence](evidence/submission-progress-20261019.md).
 
-Local packaging checks pass, including the Agent Plugins core schemas. These checks do not establish live behavior, security compliance or directory approval. The published Privacy Policy now identifies TROLYPAGE COMPANY LIMITED in Hanoi. A dedicated Claude directory profile and complete tool annotation serialization were deployed on October 19; see [release evidence](evidence/claude-directory-release-20261019.md). Authenticated all-tool tests and platform scan results remain separate requirements. Muse's data-processing questionnaire remains incomplete.
+Claude connector submission succeeded and bundle 1.0.2 is awaiting review. Local package validation, portal scans and business execution remain distinct. Muse's data questionnaire and secure integration requirements are submitted; the portal shows 3/3 complete. No platform approval or live release is claimed. Credentials and backend source are excluded from this distribution.
 
 | Location | Contents |
 | --- | --- |

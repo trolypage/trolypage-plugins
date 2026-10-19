@@ -1,58 +1,32 @@
-# Reviewer access, tests and demo video
+# Reviewer access, fixtures and walkthrough
 
-## Current status
+The owner supplied reviewer access privately. The authenticated workspace is **TrolyPage Reviewer**, Scale plan, Owner role. Its existing mode is **Full / Direct execution**. Credentials belong only in secure platform fields and are excluded from this repository and archives.
 
-The owner supplied reviewer credentials privately. Browser access was verified on October 19, 2026: workspace **TrolyPage Reviewer**, **Scale** plan, current member **Owner**. The owner completed Cloudflare verification during this sign-in; independent access by an external reviewer has not been established. No username or password is stored in the repository or archives.
+## Verified synthetic fixtures
 
-The initial authenticated MCP page listed 11 included servers, 270 tools and 117 read tools, with no API keys or authorized OAuth applications at that preflight. The applied write mode was **Full / Direct execution**, observed without changing configuration. Claude OAuth was subsequently completed for the correct TrolyPage Reviewer workspace on October 19, 2026. The directory read 270 tools, 12 prompts and 12 resources live. This verifies authorization and catalog discovery, not successful execution of individual tools. No successful business-tool call has been recorded.
-
-The workspace has no products or orders and only the default support contact. `Review Customer A`, SKU `TLP-REVIEW-MUG` and comparison-period demo orders are absent. Business tests have not run; no real video or demo URL exists. `test-cases.json` is a specification and all results in `test-results.csv` remain Not run. Do not use the real support contact as a fixture or message it to create test data.
-
-## Populate the dedicated workspace
-
-1. Verify the workspace is isolated and the owner/admin account and plan cover the declared modules. Record the workspace name, login URL and actual timezone in fixture-map.json. Keep credentials out.
-2. Create `Review Customer A` with a short synthetic conversation. Do not use real customer phone numbers or email addresses.
-3. Create active product `Review Mug`, SKU `TLP-REVIEW-MUG`, proposed price 100000 VND and stock 20. Record actual server-assigned IDs. Prepare synthetic orders for both report comparison periods.
-4. Record approval mode for every run. Check for fulfillment, notifications and workflows before creating test orders or notes. Do not connect a live bank or carrier for the core tests.
-5. For social tests, use an owner-controlled test account. Save an unscheduled draft; do not publish. Provider-dependent tools require their own sandbox or fixture instructions.
-6. Limit reviewer permissions to the demo workspace. Verify sign-in without relying on the owner's phone, mailbox or approval. Supply credentials only through each portal's secure review fields, never public Git, listing text or archives.
-
-## Representative cases
-
-`test-cases.json` contains five positive and three negative cases with setup, prompts, tools and pass conditions. Adapt the same scenarios to the actual Claude/Muse catalog. Positive cases cover customer context, product lookup, a pending shop-review order, sales comparison and an internal CRM note. Negative cases cover bank transfers, unauthorized workspace access and secret extraction.
-
-Run writes under ordinary execution and under MCP approval. Only the demo operator approves queued actions. Record the host, package hash, timestamp, sanitized arguments, actual IDs/states and evidence in test-results.csv. Compare results with expected behavior before assigning Passed, Failed or Blocked.
-
-## Additional coverage for the full catalog
-
-| Module | Required coverage |
+| Fixture | State |
 | --- | --- |
-| Social | Resolve an account, save a draft and verify it remains unpublished. Schedule/publish only with a test provider and actual approvals |
-| Marketing | Create a broadcast draft and preview the audience. pending_review does not mean sent |
-| Knowledge | Search approved facts, import a sample document and verify ingestion. Proposed facts remain unapproved |
-| Agents | Read setup, create an inactive draft and run preflight. A runtime check is not proof of external delivery |
-| Assets | Transfer actual fixture bytes, poll verification and inspect the resulting asset. Do not provide a local path the server cannot read |
-| Automation | Save a draft, validate, simulate and inspect returned states. Publication may start real work |
-| Integrations | Use a dedicated test endpoint. Enter secrets in the app, inspect before enabling, and check execution before retry/replay |
-| Commerce | Verify stock, idempotency, cancellation/status and quote expiry. Prevent duplicate shipments and payment requests |
+| Customer | Review Customer A; one synthetic website-chat inquiry |
+| Product | Review Mug, SKU TLP-REVIEW-MUG, ID 4642, 100000 VND, stored quantity 20; stock tracking disabled; no variants or shipping |
+| Order | #54, two mugs, 200000 VND, pending_review, unpaid, not shipped |
+| Retry | Same intent key returned #54 with idempotent_reuse; no duplicate |
+| Notes | Exact requested fixture note and separate video-review note verified in profile |
+| Providers | Website widget #44; no live social, carrier or bank integration added |
 
-`full-tool-test-ledger.csv` lists all 270 tools as Not run. Exclude AI media generation from the Claude catalog until policy and enforced scope are resolved.
+See `fixture-map.json`. No real customer, recipient or payment data was used. Report revenue includes pending unpaid order value and does not establish payment receipt. The previous period can legitimately be zero.
 
-## Real demo recording: approximately five minutes
+## Tests and limits
 
-| Suggested time | Actual action and visible result |
-| --- | --- |
-| 0:00–0:25 | Show the host, plugin 1.0.1, demo workspace, permissions and endpoint |
-| 0:25–1:00 | P1: find the fixture customer and summarize the real synthetic conversation |
-| 1:00–1:35 | P2: show the actual SKU, price and stock |
-| 1:35–2:35 | P3: show any approval, then pending_review. Do not pay or create shipping |
-| 2:35–3:15 | P4: show both date periods and server figures |
-| 3:15–4:00 | P5: write/re-read an internal CRM note without sending a message |
-| 4:00–4:30 | Show one negative case and the absence of an unauthorized action |
-| 4:30–5:00 | Explain support, external payment and pending versus completed states |
+The owner confirmed prior execution of every submitted Claude directory tool through MCP Inspector / Claude on October 19, 2026. The directory ledger separates this attestation from independently observed calls. This session exercised customer/conversation lookup, product creation/lookup, order creation and retry, sales reporting and internal notes through the directory connection.
 
-Rehearse first. An existing development connection can be used; a submission upload is not required merely to begin recording. Capture actual screen activity rather than mockups or fabricated results. Hide passwords, tokens, mailbox content and unrelated workspaces. Review prompt/result legibility, scenario coverage and secret exposure. Host the video somewhere the reviewer can play it; verify access while signed out before adding its URL to the manifest. No hosting destination has been selected.
+`test-results.csv` records five adapted positive scenarios and a combined three-request negative-scope walkthrough. Negative requests were refused without tool calls. These observations do not claim external provider delivery, all-tool re-execution, an exhaustive security audit or execution within OpenAI's host. Local tests, portal scans and business workflows have separate evidence.
 
-## Secure reviewer-access fields
+The production order fix passed 271 relevant tests / 36,190 assertions. Two broader shipping-audit failures also reproduce against the original baseline. See `evidence/submission-progress-20261019.md`.
 
-Supply login URL, demo workspace name, username, password/sign-in method, permissions, plan, fixtures, expected approval steps and no-charge testing instructions only through secure dashboard fields. This is a checklist, not a place to store credentials. Keep the test account available during review and re-review.
+## Recording
+
+The actual walkthrough uses Claude to demonstrate shared TrolyPage MCP workflows on synthetic data: customer/product context, pending order retry, actual report figures and a verified internal note, then refusals for money movement, unauthorized tenant access and secret extraction. It does not show OpenAI-host execution or AI media generation.
+
+Capture uses timestamped browser-tab screenshots at variable cadence; idle intervals are compressed. No cursor/input events were fabricated. Original frames and metadata remain outside tracked paths. Verify the published video for legibility and absence of secrets before portal upload.
+
+Keep the account and fixtures available during review. Independent sign-in from the platform reviewer's environment remains unverified; assist if Cloudflare or an account restriction blocks access. Do not weaken authorization boundaries.

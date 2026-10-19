@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "trolypage-mcp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "AI customer support, CRM, social media scheduling and order management through your authorized TrolyPage workspace.",
   "author": {
     "name": "Trolypage",
@@ -43,7 +43,7 @@
               "expected_behavior": "search-subscribers(query=\"Review Customer A\") finds the fixture. Subsequent calls use its real subscriber_id. The summary matches the synthetic conversation, includes no invented facts and sends no message."
             },
             {
-              "description": "P2 — Product lookup. Setup: active demo product Review Mug, SKU TLP-REVIEW-MUG, price 100000 VND, stock 20. Re-check these fixture values immediately before the run; authoritative returned values override stale preparation notes.",
+              "description": "P2 — Product lookup. Setup: active Review Mug, SKU TLP-REVIEW-MUG, current price 100000 VND and stored quantity 20; stock tracking is disabled and there are no variants. Re-check authoritative server values before each run.",
               "prompt": "Find product TLP-REVIEW-MUG and show its current price, stock and available variants. Do not create an order.",
               "tools_triggered": "search-products, get-product",
               "expected_behavior": "search-products(query=\"TLP-REVIEW-MUG\") resolves a real product_id; get-product uses it. Price, stock, variants and sellability match the server. No order, payment or shipment is created."
@@ -55,13 +55,13 @@
               "expected_behavior": "Resolve real IDs. create-order uses subscriber_id, items=[{product_id: returned ID, quantity: 2}], currency=\"VND\" and a unique idempotency_key reused on retries. If an MCP approval is pending, report/poll its action_id and do not resubmit. Once executed, get-order verifies approval_status=pending_review and server total (200000 VND only if the fixture is still 100000 with no other charges). No confirm/payment/shipping tool runs. Never call a pending approval a created/confirmed order."
             },
             {
-              "description": "P4 — Sales comparison. Setup: synthetic completed demo orders in the previous and current 30-day windows. Use one timezone, Asia/Ho_Chi_Minh. Keep the report output as evidence; do not invent a revenue figure.",
+              "description": "P4 — Sales comparison. Setup: the synthetic workspace contains pending, unpaid order #54 in the current period; the previous period may be empty. Use Asia/Ho_Chi_Minh. Report actual ranges, zero values and the distinction between reported order value and received payment. Do not create backdated or completed sales to populate a chart.",
               "prompt": "Show sales for the last 30 days and compare with the previous period. Use Vietnam time and explain the dates being compared.",
               "tools_triggered": "sales-report; report-options only if filter discovery is needed",
-              "expected_behavior": "sales-report(range=\"last_30\", compare=true, compare_mode=\"previous\", timezone=\"Asia/Ho_Chi_Minh\"). State both returned periods, currency, totals and comparison. Treat zero/missing previous-period data honestly. Do not create an export or change data."
+              "expected_behavior": "sales-report(range=\"last_30\", compare=true, compare_mode=\"previous\", timezone=\"Asia/Ho_Chi_Minh\"). State returned periods, currency, totals and comparison. The observed report includes pending order value: 1 order / 200000 VND current, 0 previous on 2026-10-19. Explain that order #54 remains unconfirmed and unpaid; reported revenue is not proof of money received. Do not export or change data."
             },
             {
-              "description": "P5 — Internal CRM note. Setup: Review Customer A; ensure the exact test note is absent before the first run. Record the run identifier in external test evidence, keeping the requested note unchanged. The operator can approve this internal write if Strict mode queues it.",
+              "description": "P5 — Internal CRM note. Setup: Review Customer A already contains the exact fixture note from an earlier successful test. Inspect existing notes before reruns and avoid redundant writes unless the reviewer explicitly requests a new note. Record the actual note content and execution/approval state.",
               "prompt": "Add an internal CRM note to Review Customer A: \"Submission review — follow up after the product demo.\" Keep this internal; do not message the customer.",
               "tools_triggered": "search-subscribers, get-subscriber, add-customer-note, get-mcp-action when queued, get-subscriber after execution",
               "expected_behavior": "Resolve the correct subscriber_id, add-customer-note with the exact requested content and type=\"note\" (or omitted default). Report a queued action accurately; after execution, get-subscriber includes the new note. No send-message, forward-message or notification to the customer."
@@ -83,11 +83,12 @@
           ]
         },
         "commerce": true,
-        "commerce_description": "TrolyPage supports merchant product lookup, order preparation and management, payment QR generation/status checks, shipping and bookings. Customers complete payment outside the assistant using the merchant's supported payment method. This integration does not directly debit bank accounts or transfer financial assets. A generated QR, unpaid order or pending approval is not a completed payment. Merchant/provider/region restrictions apply."
+        "commerce_description": "TrolyPage supports merchant product lookup, order preparation and management, payment QR generation/status checks, shipping and bookings. Customers complete payment outside the assistant using the merchant's supported payment method. This integration does not directly debit bank accounts or transfer financial assets. A generated QR, unpaid order or pending approval is not a completed payment. Merchant/provider/region restrictions apply.",
+        "demo_recording_url": "https://trolypage.com/demos/connector-review.html"
       },
       "publication": {
         "countries": [],
-        "release_notes": "Review candidate 1.0.1: retain the existing trolypage-mcp identity; use portable OpenAI packaging, OAuth discovery, the mobile app icon, updated tool references, English listing text, commerce disclosure and review cases. Clarify customer support, CRM, social scheduling and order-management use cases for people unfamiliar with TrolyPage. Authenticated testing and demo recording are pending. Use English throughout the distribution and review materials; omit optional localized listing overrides. No runtime capabilities changed."
+        "release_notes": "Review candidate 1.0.2: retain trolypage-mcp identity and full MCP endpoint with nine skills. Add a real synthetic-workspace MCP walkthrough, populated reviewer fixtures and accurate sales comparison setup. The walkthrough uses the dedicated Claude reviewer connection to demonstrate shared business workflows; it does not represent an OpenAI-host execution or an all-tool test. The owner separately attested prior execution of all 180 tools in the Claude directory catalog. English listing, commerce disclosures and all platform-permitted countries retained."
       }
     }
   },

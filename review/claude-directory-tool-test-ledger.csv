@@ -1,181 +1,181 @@
-profile,tool,status,record_count,scope
-/mcp/claude,search-subscribers,Passed - read-only smoke,0,"Claude custom connector, TrolyPage Reviewer; empty result is not a populated business workflow"
-/mcp/claude,get-subscriber,Not run,,Authenticated business execution pending
-/mcp/claude,get-conversation,Not run,,Authenticated business execution pending
-/mcp/claude,list-conversations,Not run,,Authenticated business execution pending
-/mcp/claude,send-message,Not run,,Authenticated business execution pending
-/mcp/claude,forward-message,Not run,,Authenticated business execution pending
-/mcp/claude,close-conversation,Not run,,Authenticated business execution pending
-/mcp/claude,reopen-conversation,Not run,,Authenticated business execution pending
-/mcp/claude,archive-conversation,Not run,,Authenticated business execution pending
-/mcp/claude,add-subscriber-tag,Not run,,Authenticated business execution pending
-/mcp/claude,remove-subscriber-tag,Not run,,Authenticated business execution pending
-/mcp/claude,add-customer-note,Not run,,Authenticated business execution pending
-/mcp/claude,set-lead-stage,Not run,,Authenticated business execution pending
-/mcp/claude,update-subscriber-status,Not run,,Authenticated business execution pending
-/mcp/claude,create-customer-report,Not run,,Authenticated business execution pending
-/mcp/claude,support-lookups,Not run,,Authenticated business execution pending
-/mcp/claude,list-orders,Not run,,Authenticated business execution pending
-/mcp/claude,get-order,Not run,,Authenticated business execution pending
-/mcp/claude,create-order,Not run,,Authenticated business execution pending
-/mcp/claude,cancel-order,Not run,,Authenticated business execution pending
-/mcp/claude,order-payment-qr,Not run,,Authenticated business execution pending
-/mcp/claude,check-payment,Not run,,Authenticated business execution pending
-/mcp/claude,search-products,Not run,,Authenticated business execution pending
-/mcp/claude,get-product,Not run,,Authenticated business execution pending
-/mcp/claude,quote-shipping,Not run,,Authenticated business execution pending
-/mcp/claude,quote-ondemand-shipping,Not run,,Authenticated business execution pending
-/mcp/claude,create-shipment,Not run,,Authenticated business execution pending
-/mcp/claude,create-ondemand-shipment,Not run,,Authenticated business execution pending
-/mcp/claude,track-shipment,Not run,,Authenticated business execution pending
-/mcp/claude,list-bookings,Not run,,Authenticated business execution pending
-/mcp/claude,create-booking,Not run,,Authenticated business execution pending
-/mcp/claude,booking-resources,Not run,,Authenticated business execution pending
-/mcp/claude,cancel-booking,Not run,,Authenticated business execution pending
-/mcp/claude,create-product,Not run,,Authenticated business execution pending
-/mcp/claude,delete-product,Not run,,Authenticated business execution pending
-/mcp/claude,duplicate-product,Not run,,Authenticated business execution pending
-/mcp/claude,restore-product,Not run,,Authenticated business execution pending
-/mcp/claude,update-booking,Not run,,Authenticated business execution pending
-/mcp/claude,update-order,Not run,,Authenticated business execution pending
-/mcp/claude,update-product,Not run,,Authenticated business execution pending
-/mcp/claude,get-booking,Not run,,Authenticated business execution pending
-/mcp/claude,list-products,Passed - read-only smoke,0,"Claude custom connector, TrolyPage Reviewer; empty result is not a populated business workflow"
-/mcp/claude,get-product-import,Not run,,Authenticated business execution pending
-/mcp/claude,update-product-import,Not run,,Authenticated business execution pending
-/mcp/claude,upload-product-import,Not run,,Authenticated business execution pending
-/mcp/claude,update-customer-profile,Not run,,Authenticated business execution pending
-/mcp/claude,create-customer-address,Not run,,Authenticated business execution pending
-/mcp/claude,update-customer-address,Not run,,Authenticated business execution pending
-/mcp/claude,set-default-customer-address,Not run,,Authenticated business execution pending
-/mcp/claude,get-customer-addresses,Not run,,Authenticated business execution pending
-/mcp/claude,shipping-locations,Not run,,Authenticated business execution pending
-/mcp/claude,check-booking-availability,Not run,,Authenticated business execution pending
-/mcp/claude,cancel-shipment,Not run,,Authenticated business execution pending
-/mcp/claude,list-shipments,Not run,,Authenticated business execution pending
-/mcp/claude,send-booking-confirmation,Not run,,Authenticated business execution pending
-/mcp/claude,report-options,Not run,,Authenticated business execution pending
-/mcp/claude,overview-report,Not run,,Authenticated business execution pending
-/mcp/claude,sales-report,Not run,,Authenticated business execution pending
-/mcp/claude,channel-report,Not run,,Authenticated business execution pending
-/mcp/claude,activity-report,Not run,,Authenticated business execution pending
-/mcp/claude,response-report,Not run,,Authenticated business execution pending
-/mcp/claude,ai-report,Not run,,Authenticated business execution pending
-/mcp/claude,employee-report,Not run,,Authenticated business execution pending
-/mcp/claude,followup-report,Not run,,Authenticated business execution pending
-/mcp/claude,social-report,Not run,,Authenticated business execution pending
-/mcp/claude,sources-report,Not run,,Authenticated business execution pending
-/mcp/claude,forecast-report,Not run,,Authenticated business execution pending
-/mcp/claude,export-report,Not run,,Authenticated business execution pending
-/mcp/claude,list-report-exports,Not run,,Authenticated business execution pending
-/mcp/claude,get-report-export,Not run,,Authenticated business execution pending
-/mcp/claude,list-social-accounts,Not run,,Authenticated business execution pending
-/mcp/claude,list-social-posts,Not run,,Authenticated business execution pending
-/mcp/claude,get-social-post,Not run,,Authenticated business execution pending
-/mcp/claude,create-social-post,Not run,,Authenticated business execution pending
-/mcp/claude,update-social-post,Not run,,Authenticated business execution pending
-/mcp/claude,cancel-social-post,Not run,,Authenticated business execution pending
-/mcp/claude,publish-social-post,Not run,,Authenticated business execution pending
-/mcp/claude,approve-social-post,Not run,,Authenticated business execution pending
-/mcp/claude,retry-failed-post,Not run,,Authenticated business execution pending
-/mcp/claude,social-post-analytics,Not run,,Authenticated business execution pending
-/mcp/claude,generate-caption,Not run,,Authenticated business execution pending
-/mcp/claude,generate-hashtags,Not run,,Authenticated business execution pending
-/mcp/claude,suggest-best-time,Not run,,Authenticated business execution pending
-/mcp/claude,duplicate-social-post,Not run,,Authenticated business execution pending
-/mcp/claude,list-social-post-logs,Not run,,Authenticated business execution pending
-/mcp/claude,social-capabilities,Not run,,Authenticated business execution pending
-/mcp/claude,validate-social-content,Not run,,Authenticated business execution pending
-/mcp/claude,get-social-target-editor,Not run,,Authenticated business execution pending
-/mcp/claude,social-target-action,Not run,,Authenticated business execution pending
-/mcp/claude,list-social-comment-accounts,Not run,,Authenticated business execution pending
-/mcp/claude,get-social-comment,Not run,,Authenticated business execution pending
-/mcp/claude,social-comment-action,Not run,,Authenticated business execution pending
-/mcp/claude,list-social-comments,Not run,,Authenticated business execution pending
-/mcp/claude,list-social-comment-posts,Not run,,Authenticated business execution pending
-/mcp/claude,save-brand-kit,Not run,,Authenticated business execution pending
-/mcp/claude,update-brand-style,Not run,,Authenticated business execution pending
-/mcp/claude,generate-content-calendar,Not run,,Authenticated business execution pending
-/mcp/claude,generate-social-draft,Not run,,Authenticated business execution pending
-/mcp/claude,get-brand-kit,Not run,,Authenticated business execution pending
-/mcp/claude,list-brand-kit-revisions,Not run,,Authenticated business execution pending
-/mcp/claude,get-brand-kit-revision,Not run,,Authenticated business execution pending
-/mcp/claude,restore-brand-kit-revision,Not run,,Authenticated business execution pending
-/mcp/claude,read-brand-asset,Not run,,Authenticated business execution pending
-/mcp/claude,import-brand-asset,Not run,,Authenticated business execution pending
-/mcp/claude,set-primary-brand-logo,Not run,,Authenticated business execution pending
-/mcp/claude,update-brand-asset-policy,Not run,,Authenticated business execution pending
-/mcp/claude,list-strategies,Not run,,Authenticated business execution pending
-/mcp/claude,get-strategy,Not run,,Authenticated business execution pending
-/mcp/claude,create-strategy,Not run,,Authenticated business execution pending
-/mcp/claude,list-campaigns,Not run,,Authenticated business execution pending
-/mcp/claude,create-campaign,Not run,,Authenticated business execution pending
-/mcp/claude,list-broadcasts,Not run,,Authenticated business execution pending
-/mcp/claude,create-broadcast,Not run,,Authenticated business execution pending
-/mcp/claude,submit-broadcast,Not run,,Authenticated business execution pending
-/mcp/claude,broadcast-stats,Not run,,Authenticated business execution pending
-/mcp/claude,list-nurture-sequences,Not run,,Authenticated business execution pending
-/mcp/claude,create-nurture-sequence,Not run,,Authenticated business execution pending
-/mcp/claude,list-followups,Not run,,Authenticated business execution pending
-/mcp/claude,create-followup-suggestion,Not run,,Authenticated business execution pending
-/mcp/claude,cancel-broadcast,Not run,,Authenticated business execution pending
-/mcp/claude,delete-broadcast,Not run,,Authenticated business execution pending
-/mcp/claude,delete-campaign,Not run,,Authenticated business execution pending
-/mcp/claude,delete-nurture,Not run,,Authenticated business execution pending
-/mcp/claude,delete-strategy,Not run,,Authenticated business execution pending
-/mcp/claude,get-broadcast,Not run,,Authenticated business execution pending
-/mcp/claude,get-campaign-goals,Not run,,Authenticated business execution pending
-/mcp/claude,get-campaign,Not run,,Authenticated business execution pending
-/mcp/claude,get-followup,Not run,,Authenticated business execution pending
-/mcp/claude,get-nurture,Not run,,Authenticated business execution pending
-/mcp/claude,list-audience-tags,Not run,,Authenticated business execution pending
-/mcp/claude,pause-followup,Not run,,Authenticated business execution pending
-/mcp/claude,pause-nurture,Not run,,Authenticated business execution pending
-/mcp/claude,preview-broadcast-audience,Not run,,Authenticated business execution pending
-/mcp/claude,resume-followup,Not run,,Authenticated business execution pending
-/mcp/claude,resume-nurture,Not run,,Authenticated business execution pending
-/mcp/claude,retry-followup,Not run,,Authenticated business execution pending
-/mcp/claude,skip-next-followup,Not run,,Authenticated business execution pending
-/mcp/claude,update-broadcast,Not run,,Authenticated business execution pending
-/mcp/claude,update-campaign,Not run,,Authenticated business execution pending
-/mcp/claude,update-followup,Not run,,Authenticated business execution pending
-/mcp/claude,update-nurture,Not run,,Authenticated business execution pending
-/mcp/claude,update-strategy,Not run,,Authenticated business execution pending
-/mcp/claude,search-knowledge,Not run,,Authenticated business execution pending
-/mcp/claude,list-knowledge-nodes,Not run,,Authenticated business execution pending
-/mcp/claude,list-facts,Not run,,Authenticated business execution pending
-/mcp/claude,search-facts,Not run,,Authenticated business execution pending
-/mcp/claude,propose-fact,Not run,,Authenticated business execution pending
-/mcp/claude,search-documents,Not run,,Authenticated business execution pending
-/mcp/claude,get-knowledge,Not run,,Authenticated business execution pending
-/mcp/claude,create-knowledge-text,Not run,,Authenticated business execution pending
-/mcp/claude,delete-knowledge,Not run,,Authenticated business execution pending
-/mcp/claude,import-knowledge-url,Not run,,Authenticated business execution pending
-/mcp/claude,list-knowledge-facts,Not run,,Authenticated business execution pending
-/mcp/claude,update-knowledge,Not run,,Authenticated business execution pending
-/mcp/claude,upload-knowledge-file,Not run,,Authenticated business execution pending
-/mcp/claude,list-channels,Passed - read-only smoke,0,"Claude custom connector, TrolyPage Reviewer; empty result is not a populated business workflow"
-/mcp/claude,channel-status,Not run,,Authenticated business execution pending
-/mcp/claude,list-agents,Passed - read-only smoke,3,"Claude custom connector, TrolyPage Reviewer; empty result is not a populated business workflow"
-/mcp/claude,agent-status,Not run,,Authenticated business execution pending
-/mcp/claude,list-notifications,Not run,,Authenticated business execution pending
-/mcp/claude,ack-notification,Not run,,Authenticated business execution pending
-/mcp/claude,resolve-notification,Not run,,Authenticated business execution pending
-/mcp/claude,list-support-tickets,Not run,,Authenticated business execution pending
-/mcp/claude,create-support-ticket,Not run,,Authenticated business execution pending
-/mcp/claude,reply-support-ticket,Not run,,Authenticated business execution pending
-/mcp/claude,get-support-ticket,Not run,,Authenticated business execution pending
-/mcp/claude,list-mcp-actions,Not run,,Authenticated business execution pending
-/mcp/claude,import-asset,Not run,,Authenticated business execution pending
-/mcp/claude,search-assets,Not run,,Authenticated business execution pending
-/mcp/claude,detect-asset-c2pa,Not run,,Authenticated business execution pending
-/mcp/claude,asset-upload-part-urls,Not run,,Authenticated business execution pending
-/mcp/claude,asset-upload-policies,Not run,,Authenticated business execution pending
-/mcp/claude,cancel-asset-upload,Not run,,Authenticated business execution pending
-/mcp/claude,complete-asset-upload,Not run,,Authenticated business execution pending
-/mcp/claude,get-asset-upload,Not run,,Authenticated business execution pending
-/mcp/claude,lease-asset-upload,Not run,,Authenticated business execution pending
-/mcp/claude,prepare-asset-upload,Not run,,Authenticated business execution pending
-/mcp/claude,upload-asset,Not run,,Authenticated business execution pending
-/mcp/claude,get-mcp-action,Not run,,Authenticated business execution pending
-/mcp/claude,list-broadcast-senders,Passed - read-only smoke,0,"Claude custom connector, TrolyPage Reviewer; empty result is not a populated business workflow"
+profile,tool,status,record_count,scope,owner_prior_execution_attested
+/mcp/claude,search-subscribers,Passed - synthetic workflow observed,0,"Independent Claude custom connector execution, TrolyPage Reviewer; fixture IDs and limits in fixture-map.json",Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,get-subscriber,Passed - synthetic workflow observed,,"Independent Claude custom connector execution, TrolyPage Reviewer; fixture IDs and limits in fixture-map.json",Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,get-conversation,Passed - synthetic workflow observed,,"Independent Claude custom connector execution, TrolyPage Reviewer; fixture IDs and limits in fixture-map.json",Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,list-conversations,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,send-message,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,forward-message,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,close-conversation,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,reopen-conversation,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,archive-conversation,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,add-subscriber-tag,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,remove-subscriber-tag,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,add-customer-note,Passed - synthetic workflow observed,,"Independent Claude custom connector execution, TrolyPage Reviewer; fixture IDs and limits in fixture-map.json",Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,set-lead-stage,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,update-subscriber-status,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,create-customer-report,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,support-lookups,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,list-orders,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,get-order,Passed - synthetic workflow observed,,"Independent Claude custom connector execution, TrolyPage Reviewer; fixture IDs and limits in fixture-map.json",Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,create-order,Passed - synthetic workflow observed,,"Independent Claude custom connector execution, TrolyPage Reviewer; fixture IDs and limits in fixture-map.json",Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,cancel-order,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,order-payment-qr,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,check-payment,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,search-products,Passed - synthetic workflow observed,,"Independent Claude custom connector execution, TrolyPage Reviewer; fixture IDs and limits in fixture-map.json",Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,get-product,Passed - synthetic workflow observed,,"Independent Claude custom connector execution, TrolyPage Reviewer; fixture IDs and limits in fixture-map.json",Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,quote-shipping,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,quote-ondemand-shipping,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,create-shipment,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,create-ondemand-shipment,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,track-shipment,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,list-bookings,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,create-booking,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,booking-resources,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,cancel-booking,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,create-product,Passed - synthetic workflow observed,,"Independent Claude custom connector execution, TrolyPage Reviewer; fixture IDs and limits in fixture-map.json",Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,delete-product,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,duplicate-product,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,restore-product,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,update-booking,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,update-order,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,update-product,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,get-booking,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,list-products,Passed - read-only smoke,0,"Claude custom connector, TrolyPage Reviewer; empty result is not a populated business workflow",Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,get-product-import,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,update-product-import,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,upload-product-import,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,update-customer-profile,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,create-customer-address,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,update-customer-address,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,set-default-customer-address,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,get-customer-addresses,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,shipping-locations,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,check-booking-availability,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,cancel-shipment,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,list-shipments,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,send-booking-confirmation,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,report-options,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,overview-report,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,sales-report,Passed - synthetic workflow observed,,"Independent Claude custom connector execution, TrolyPage Reviewer; fixture IDs and limits in fixture-map.json",Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,channel-report,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,activity-report,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,response-report,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,ai-report,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,employee-report,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,followup-report,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,social-report,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,sources-report,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,forecast-report,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,export-report,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,list-report-exports,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,get-report-export,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,list-social-accounts,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,list-social-posts,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,get-social-post,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,create-social-post,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,update-social-post,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,cancel-social-post,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,publish-social-post,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,approve-social-post,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,retry-failed-post,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,social-post-analytics,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,generate-caption,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,generate-hashtags,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,suggest-best-time,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,duplicate-social-post,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,list-social-post-logs,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,social-capabilities,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,validate-social-content,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,get-social-target-editor,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,social-target-action,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,list-social-comment-accounts,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,get-social-comment,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,social-comment-action,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,list-social-comments,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,list-social-comment-posts,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,save-brand-kit,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,update-brand-style,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,generate-content-calendar,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,generate-social-draft,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,get-brand-kit,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,list-brand-kit-revisions,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,get-brand-kit-revision,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,restore-brand-kit-revision,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,read-brand-asset,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,import-brand-asset,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,set-primary-brand-logo,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,update-brand-asset-policy,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,list-strategies,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,get-strategy,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,create-strategy,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,list-campaigns,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,create-campaign,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,list-broadcasts,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,create-broadcast,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,submit-broadcast,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,broadcast-stats,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,list-nurture-sequences,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,create-nurture-sequence,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,list-followups,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,create-followup-suggestion,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,cancel-broadcast,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,delete-broadcast,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,delete-campaign,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,delete-nurture,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,delete-strategy,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,get-broadcast,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,get-campaign-goals,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,get-campaign,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,get-followup,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,get-nurture,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,list-audience-tags,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,pause-followup,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,pause-nurture,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,preview-broadcast-audience,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,resume-followup,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,resume-nurture,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,retry-followup,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,skip-next-followup,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,update-broadcast,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,update-campaign,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,update-followup,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,update-nurture,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,update-strategy,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,search-knowledge,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,list-knowledge-nodes,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,list-facts,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,search-facts,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,propose-fact,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,search-documents,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,get-knowledge,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,create-knowledge-text,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,delete-knowledge,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,import-knowledge-url,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,list-knowledge-facts,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,update-knowledge,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,upload-knowledge-file,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,list-channels,Passed - read-only smoke,0,"Claude custom connector, TrolyPage Reviewer; empty result is not a populated business workflow",Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,channel-status,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,list-agents,Passed - read-only smoke,3,"Claude custom connector, TrolyPage Reviewer; empty result is not a populated business workflow",Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,agent-status,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,list-notifications,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,ack-notification,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,resolve-notification,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,list-support-tickets,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,create-support-ticket,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,reply-support-ticket,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,get-support-ticket,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,list-mcp-actions,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,import-asset,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,search-assets,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,detect-asset-c2pa,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,asset-upload-part-urls,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,asset-upload-policies,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,cancel-asset-upload,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,complete-asset-upload,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,get-asset-upload,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,lease-asset-upload,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,prepare-asset-upload,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,upload-asset,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,get-mcp-action,Owner-attested prior execution; not independently rerun,,Prior all-tool execution attested by owner; no new independent execution claimed,Yes — direct owner confirmation 2026-10-19; Inspector/Claude
+/mcp/claude,list-broadcast-senders,Passed - read-only smoke,0,"Claude custom connector, TrolyPage Reviewer; empty result is not a populated business workflow",Yes — direct owner confirmation 2026-10-19; Inspector/Claude
