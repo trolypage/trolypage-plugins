@@ -1,0 +1,19 @@
+{
+  "name": "trolypage-mcp",
+  "version": "1.0.1",
+  "description": "AI customer support, CRM, social media scheduling and order management in your authorized TrolyPage workspace.",
+  "author": {
+    "name": "Trolypage",
+    "email": "support.mcp@trolypage.com",
+    "url": "https://trolypage.com"
+  },
+  "homepage": "https://trolypage.com/mcp",
+  "keywords": [
+    "trolypage",
+    "customer-support",
+    "crm",
+    "social-media-scheduling",
+    "order-management"
+  ],
+  "repository": "https://github.com/trolypage/trolypage-plugins"
+}

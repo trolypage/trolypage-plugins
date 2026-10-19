@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "trolypage": {
+      "type": "http",
+      "url": "https://trolypage.com/mcp/troly"
+    }
+  }
+}

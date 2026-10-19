@@ -1,0 +1,13 @@
+interface:
+  display_name: "TrolyPage Marketing"
+  short_description: "Build campaigns, broadcasts, nurture, and follow-up."
+  default_prompt: "Use $troly-marketing for this TrolyPage marketing task."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "trolypage"
+      description: "Unified TrolyPage business operations server"
+      transport: "streamable_http"
+      url: "https://trolypage.com/mcp/troly"
+policy:
+  allow_implicit_invocation: true

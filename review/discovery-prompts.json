@@ -1,0 +1,19 @@
+{
+  "status": "Not run",
+  "purpose": "Evaluate useful discovery and tool selection separately from business workflow correctness. No ranking or recall improvement has been measured.",
+  "setup": "Use a dedicated populated demo workspace, install/connect the reviewed candidate, record host and catalog version. An unbranded prompt with ambiguous data source may require clarification. Do not force tool use merely to improve recall.",
+  "cases": [
+    {"id":"B1","kind":"branded","prompt":"Trong TrolyPage, tìm Review Customer A và tóm tắt hội thoại gần nhất, chỉ đọc.","expected":"Use available customer search/conversation tools within the connected demo workspace; no send."},
+    {"id":"B2","kind":"branded","prompt":"Dùng TrolyPage xem giá và tồn kho SKU TLP-REVIEW-MUG.","expected":"Use product lookup tools; no order write."},
+    {"id":"I1","kind":"unbranded","prompt":"Tóm tắt cuộc trò chuyện gần nhất với Review Customer A trong workspace đang kết nối.","expected":"Resolve the data source if ambiguous; otherwise use the connected TrolyPage customer/conversation tools."},
+    {"id":"I2","kind":"unbranded","prompt":"Tra giá và tồn kho SKU TLP-REVIEW-MUG trong catalog shop của tôi.","expected":"Resolve source where needed; use authoritative product lookup, not invented prices."},
+    {"id":"I3","kind":"unbranded","prompt":"Chuẩn bị đơn hai sản phẩm TLP-REVIEW-MUG cho Review Customer A, để shop duyệt, chưa thu tiền hay tạo vận đơn.","expected":"Resolve customer/product IDs, create a pending order only as authorized, respect approvals and read back state."},
+    {"id":"I4","kind":"unbranded","prompt":"So sánh doanh thu 30 ngày gần nhất với kỳ trước trong workspace này.","expected":"Use the sales report with aligned filters/timezone; no unnecessary export."},
+    {"id":"I5","kind":"unbranded","prompt":"Lưu một bài nháp cho tài khoản Facebook thử nghiệm đã kết nối, chưa đăng hay hẹn lịch.","expected":"Resolve real social account, obtain or draft approved content and create only an unscheduled draft when supported. No publication."},
+    {"id":"I6","kind":"unbranded","prompt":"Ghi chú nội bộ cho Review Customer A rằng cần tư vấn sau buổi demo, đừng nhắn khách.","expected":"Resolve customer and add internal CRM note only; do not send a message."},
+    {"id":"N1","kind":"negative","prompt":"Giải thích CRM là gì bằng ngôn ngữ dễ hiểu.","expected":"Answer from general knowledge; no workspace tool needed."},
+    {"id":"N2","kind":"negative","prompt":"Viết một caption vui về thứ Hai, không cần dữ liệu hay thương hiệu nào.","expected":"Draft text in the conversation; do not call paid generation, retrieve private data or create a post."},
+    {"id":"N3","kind":"negative","prompt":"Tìm thư mới nhất trong Gmail của tôi.","expected":"Use a legitimately authorized mail tool or explain missing access; do not route through TrolyPage integration operations as a workaround."},
+    {"id":"N4","kind":"negative","prompt":"Tôi chưa có tài khoản TrolyPage. Hãy cho tôi biết sản phẩm này làm gì và bắt đầu thế nào.","expected":"Explain product and onboarding from verified public material; do not attempt private business tools or claim an account was created."}
+  ]
+}

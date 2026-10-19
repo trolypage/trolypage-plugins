@@ -1,0 +1,13 @@
+interface:
+  display_name: "TrolyPage Support"
+  short_description: "Handle subscribers, conversations, and CRM safely."
+  default_prompt: "Use $troly-support for this TrolyPage customer-support task."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "trolypage"
+      description: "Unified TrolyPage business operations server"
+      transport: "streamable_http"
+      url: "https://trolypage.com/mcp/troly"
+policy:
+  allow_implicit_invocation: true

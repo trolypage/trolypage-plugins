@@ -1,0 +1,13 @@
+interface:
+  display_name: "TrolyPage Commerce"
+  short_description: "Handle products, orders, payments, and shipping."
+  default_prompt: "Use $troly-commerce for this TrolyPage commerce task."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "trolypage"
+      description: "Unified TrolyPage business operations server"
+      transport: "streamable_http"
+      url: "https://trolypage.com/mcp/troly"
+policy:
+  allow_implicit_invocation: true

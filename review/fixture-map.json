@@ -1,0 +1,22 @@
+{
+  "status": "Not created; owner will provide demo workspace",
+  "login_url": "https://trolypage.com/login",
+  "workspace_name": null,
+  "workspace_id": null,
+  "reviewer_username": null,
+  "timezone": "Asia/Ho_Chi_Minh",
+  "approval_mode": null,
+  "customer": {
+    "name": "Review Customer A",
+    "subscriber_id": null
+  },
+  "product": {
+    "name": "Review Mug",
+    "sku": "TLP-REVIEW-MUG",
+    "product_id": null,
+    "price_vnd_proposed": 100000,
+    "stock_proposed": 20
+  },
+  "social_account_id": null,
+  "credentials": "ENTER ONLY IN SECURE PORTAL FIELDS, NEVER HERE"
+}

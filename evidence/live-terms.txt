@@ -1,0 +1,285 @@
+Skip to document content
+TrolyPage
+
+An autonomous Marketing & Sales operating system for businesses that want AI-powered omni-channel growth.
+
+CONTACT INFO
++84 964 842 168
+support@trolypage.com
+No. 72, Alley 318 De La Thanh, O Cho Dua Ward, Hanoi, Vietnam
+FOLLOW US
+EN
+Product
+Integrations
+Explore
+Features
+Download
+Pricing
+Go to Dashboard
+Legal documents
+
+Policies and terms that govern how TrolyPage works.
+
+Terms of Service
+Privacy Policy
+Cancellation and Refunds
+Shipping and Delivery Policy
+Data Deletion
+Transaction Policy
+Pricing and Payment Methods
+Rights and Obligations
+Complaint Resolution
+Mobile App Support
+LAST UPDATED
+2026-09-25
+DOCUMENT
+1 / 10
+Terms of Service
+
+Terms of Service for TrolyPage - AI Agent Platform for Facebook Fanpages
+
+1. Introduction and Scope
+
+Service plans purchased directly at trolypage.com are supplied by TROLYPAGE COMPANY LIMITED. The company is responsible for the transaction, plan provision, support and resolving customer entitlements.
+
+CÔNG TY TNHH TROLYPAGE
+TROLYPAGE COMPANY LIMITED
+
+Enterprise registration number: 0111551901
+First registered: 29/06/2026
+Issuing authority: Phòng Đăng ký kinh doanh và Tài chính doanh nghiệp — Sở Tài chính thành phố Hà Nội
+
+Registered office: Số 72, Ngõ 318 Đê La Thành, Phường Ô Chợ Dừa, Thành phố Hà Nội, Việt Nam
+Legal representative: Nguyễn Duy Hùng, Director
+
+0964 842 168 · support@trolypage.com
+
+SkyNet Solution is TrolyPage's development partner. Third-party integrations and data processing are described in the Privacy Policy. Customer entitlements relating to directly purchased plans are handled by TROLYPAGE COMPANY LIMITED.
+
+2. Definitions
+"Service": All features, tools, and the platform provided by TrolyPage, including: AI Chatbot automation, customer relationship management (CRM), order processing, appointment scheduling, automatic posting, follow-up messaging, conversation analytics, and related features.
+"You" / "User": The individual or organization that registers and uses the Service.
+"Account": The account created on the TrolyPage platform to access and use the Service.
+"User Content": Data, messages, AI scripts, training documents, product information, and any other information you provide or create through the Service.
+"End Customer": A person who interacts with your Facebook Page, Instagram, or other channel through the AI Agent operated by TrolyPage.
+"AI Agent": An intelligent chatbot system using artificial intelligence to automatically respond to messages.
+3. Account Registration
+You must provide accurate, complete, and up-to-date information when registering.
+You must be at least 18 years old, or at least 16 years old with the consent of a legal guardian.
+You are fully responsible for maintaining the security of your login credentials (email, password) and all activities that occur through your account.
+Each account is intended for a single individual or organization. Accounts may not be shared, rented, or transferred to third parties without prior written consent from TrolyPage.
+You must notify us immediately if you suspect unauthorized access to your account.
+4. User Rights and Obligations
+
+See also Rights and Obligations of the Parties for purchases and use of TrolyPage services.
+
+4.1. Your Rights
+Use all features included in your subscribed service plan.
+Access, manage, and export your customer data (CRM) on the platform.
+Connect and disconnect Facebook Pages, Instagram, and other channels at any time.
+Configure AI Agent (scripts, tone, knowledge) according to your business needs.
+Request technical support according to the support policy for your plan.
+Request deletion of all your data and account at any time.
+4.2. Your Obligations
+Legal compliance: Do not use the Service for illegal purposes or in violation of Vietnamese or international law.
+Platform policy compliance: Fully comply with the policies of all platforms you connect through TrolyPage, including:
+Messenger Platform Policy (Meta)
+Facebook Community Standards
+Instagram Community Guidelines
+TikTok Terms of Service
+TikTok API Developer Terms
+Pinterest Terms of Service
+X (Twitter) Terms of Service
+LinkedIn User Agreement
+YouTube Terms of Service (Google)
+Reddit User Agreement
+Threads Supplemental Terms (Meta)
+Tumblr Terms of Service
+No spam: Do not use the AI Agent to send unsolicited bulk messages (spam), fraudulent content, harassment, or content that violates community standards of any platform.
+No abuse: Do not interfere with, damage, reverse-engineer, or attempt unauthorized access to the systems, source code, or internal APIs of TrolyPage.
+Responsibility for AI content: You are responsible for the content that the AI Agent sends on behalf of your Page/channel. You should review and adjust AI scripts and training documents to ensure accurate and appropriate responses.
+Customer data protection: You are responsible for complying with personal data protection regulations regarding end customer data collected through the Service.
+4.3 YouTube integration
+
+TrolyPage uses YouTube API Services when you connect a YouTube channel. By using TrolyPage's YouTube features, you agree to be bound by the YouTube Terms of Service. You must have authority to connect and manage the channel.
+
+You can authorize TrolyPage to identify your channel, upload videos that you select or schedule, synchronize comments on your videos, and publish replies or apply moderation actions that you initiate through the Service. The connected channel and available actions are shown in your workspace.
+You are responsible for the videos, titles, descriptions, comments and replies you publish, including rights to the content, other people's copyright and privacy rights, YouTube's Community Guidelines, and the correct audience designation for videos made for children.
+You can disconnect the channel in TrolyPage and separately revoke TrolyPage's access in your Google Account security settings. Disconnecting stops future access through that connection; it does not automatically remove videos or comments already published on YouTube. To request deletion of data held by TrolyPage, follow our data deletion instructions.
+Synchronization and publishing depend on YouTube's availability, permissions, quotas, and each video's settings. For example, comments cannot be synchronized or managed when comments are disabled for a video.
+Provider obligations
+
+TrolyPage provides features according to the purchased plan and agreement, discloses prices, limits and conditions, protects data, handles support requests, remedies incidents within its responsibility, and resolves customer entitlements when services are not supplied as agreed.
+
+5. Service Plans and Payments
+
+Review Pricing, Additional Costs and Payment Methods before purchasing a plan or add-on.
+
+5.1 Service Plans and Billing Cycles
+TrolyPage offers multiple service plans (free and paid) with different pricing, limits, and features, clearly displayed on the website.
+Service prices may change with at least 30 days prior notice. New prices take effect from the next billing cycle.
+Payments are billed monthly or annually depending on the plan you choose. The Service automatically renews unless you cancel before the renewal date.
+A separate refund policy is available at Refund Policy.
+Invoices and payment methods comply with applicable Vietnamese law.
+5.2 Direct Web Platform Payments
+
+Service plans and prepaid account balances purchased on the TrolyPage website are paid via bank transfer (VietQR) or online payment gateways integrated on the platform. Tax invoicing (VAT), plan activation, cancellation, and refund assessments for web transactions are handled directly by TrolyPage under the Transaction Policy and Refund Policy.
+
+5.3 In-App Purchases and Subscriptions in Mobile Applications
+
+For service plans or recurring subscriptions purchased directly within the TrolyPage mobile application on iOS or Android:
+
+Store Billing Platforms: In-app purchases are processed and managed directly through the official app store billing platform: Apple In-App Purchase (IAP) on iOS and Google Play Billing on Android. Charges are billed directly to your Apple ID or Google Account upon confirmation of purchase.
+Automatic Renewal: Subscriptions purchased through the mobile app renew automatically at the end of each billing cycle (monthly or annually) at the price disclosed at purchase, unless you cancel auto-renewal at least 24 hours before the end of the current billing cycle.
+Management and Cancellation: You can manage, modify, or cancel your subscription at any time in your operating system account settings: on iOS via Settings > Apple ID > Subscriptions; on Android via Google Play > Profile > Payments & Subscriptions. Cancelling auto-renewal preserves your full access to the subscribed features until the end of the paid period, with no subsequent charges.
+In-App Purchase Refund Policy: All refund requests for purchases billed through Apple In-App Purchase or Google Play Billing must be submitted directly to Apple (via reportaproblem.apple.com) or Google Play Support in accordance with Apple's or Google's applicable refund policies. TrolyPage does not directly bill payment cards for store purchases and does not possess technical authority to issue direct refunds for transactions processed by Apple or Google.
+
+Listed prices are the final plan prices, including any applicable VAT. Setup fees, optional extras and usage charges, if any, are shown separately before you confirm a purchase.
+
+Transaction Policy
+
+Mobile Application Terms and End User License Agreement (Mobile EULA)
+
+This section sets forth the End User License Agreement (EULA) and supplemental terms governing your download, installation, and use of the TrolyPage mobile application distributed via the Apple App Store and Google Play:
+
+Acknowledgment: This agreement is concluded between you (the End-User) and TrolyPage (operated by SkyNet Solution) only, and not with Apple Inc. or Google LLC. TrolyPage is solely responsible for the TrolyPage mobile application and the content thereof.
+Scope of License: TrolyPage grants you a limited, non-exclusive, non-transferable, non-sublicensable license to install and use the mobile application on any Apple-branded or Android-powered devices that you own or control, subject to the Usage Rules set forth in the Apple Media Services Terms and Conditions (including Family Sharing) and the Google Play Terms of Service.
+Maintenance and Support: TrolyPage is solely responsible for providing any maintenance, updates, and technical support services for the mobile application. You and TrolyPage acknowledge that Apple and Google have no obligation whatsoever to furnish any maintenance or support services with respect to the application.
+Warranty and Store Remedies: In the event of any failure of the mobile application to conform to any applicable warranty, you may notify Apple or Google, and Apple/Google will refund the purchase price for the application (if any) in accordance with store policy. To the maximum extent permitted by applicable law, Apple and Google will have no other warranty obligation whatsoever with respect to the application.
+Product Claims: TrolyPage, not Apple or Google, is responsible for addressing any claims by you or any third party relating to the mobile application or your possession and use of the application, including: (i) product liability claims; (ii) any claim that the application fails to conform to any applicable legal or regulatory requirement; and (iii) claims arising under consumer protection, personal data privacy, or similar legislation.
+Third-Party Intellectual Property Claims: In the event of any third-party claim that the mobile application or your possession and use of the application infringes that third party's intellectual property rights, TrolyPage (not Apple or Google) will be solely responsible for the investigation, defense, settlement, and discharge of any such intellectual property infringement claim.
+Legal Compliance and Export Control: You represent and warrant that: (i) you are not located in a country or region that is subject to a U.S. Government embargo, or that has been designated by the U.S. Government as a "terrorist supporting" country; and (ii) you are not listed on any U.S. Government list of prohibited or restricted parties.
+Third-Party Agreements: You must comply with all applicable third-party terms of agreement when using the mobile application (e.g., your wireless data service agreement with your telecommunications carrier).
+Third-Party Beneficiary: You and TrolyPage acknowledge and agree that Apple, and Apple's subsidiaries, are third-party beneficiaries of this license agreement, and that upon your acceptance of these Terms, Apple will have the right (and will be deemed to have accepted the right) to enforce this agreement against you as a third-party beneficiary thereof.
+Offline Queue and Data Synchronization: The mobile application utilizes a local SQLite database and an offline outbox queue to allow you to continue working during network interruptions. Actions taken offline only take official effect across the system and with other team members upon successful network reconnection and completed synchronization with TrolyPage servers. TrolyPage is not liable for delays or data divergence resulting from extended offline periods or clearing application cache prior to sync.
+Device Integrity and Rooted/Jailbroken Devices: The mobile application encrypts and stores session credentials using hardware-backed security (SecureStore). Installing or operating the application on jailbroken iOS or rooted Android devices is strictly prohibited to prevent customer data compromise; TrolyPage disclaims all liability for security incidents or malfunctions arising from modified operating system environments.
+Human Oversight of AI Outputs: AI-generated responses and suggestions within the mobile application are assistive tools. You retain ultimate control, responsibility, and discretion to review and approve all content before sending messages or completing customer-facing actions.
+6. Intellectual Property
+
+TrolyPage, its development partner and licensors retain the intellectual property rights each owns or is licensed to use in the software, documentation and components. Customers receive usage rights within their purchased plan and may not copy or exploit materials beyond those rights. Customers retain their lawful rights in the data and content they provide and are responsible for having the necessary rights to that content.
+
+7. AI output and service responsibility
+
+AI output may contain errors. Customers should review important information and configure an appropriate scope of automation. TrolyPage receives, investigates and remedies incidents within its responsibility. AI risks or third-party integrations do not by themselves exclude responsibility for TrolyPage's own faults.
+
+8. Remedies and customer entitlements
+
+Where service is not supplied as agreed due to TrolyPage's fault, the parties determine an appropriate remedy, fee adjustment, termination or refund based on the circumstances and applicable law. These terms do not exclude compensation duties or rights that cannot lawfully be excluded.
+
+Cancellation and Refunds
+
+9. Suspension and Termination
+
+TrolyPage may suspend the necessary part of the service for violations, fraud, security threats or a competent authority’s request. We communicate the reason, scope and support contact. In emergencies or where advance notice is prohibited, notice is provided when possible. Suspension does not automatically remove all customer rights to have charges reviewed.
+
+You can cancel renewal in Billing for the relevant workspace. For an active plan, cancellation takes effect at the end of the paid period. Immediate termination and refund requests are handled separately; check the end date and confirmation in your account.
+
+Cancellation and Refunds
+
+Cancelling a plan does not automatically delete your account or data. Deletion requests follow the Data Deletion page and Privacy Policy. Records subject to legal retention are restricted in use and kept for the applicable period.
+
+Data Deletion
+
+10. Privacy and Security
+
+The Privacy Policy explains the data processed, purposes, parties involved and your rights. Agreement to commercial terms does not replace separate consent to data processing where required by law.
+
+Privacy Policy
+
+11. Force Majeure
+
+Force majeure is assessed and handled under applicable law. The affected party must provide required notices and take appropriate mitigation measures. A third-party outage is not automatically force majeure in every case.
+
+12. Changes to Terms
+
+TrolyPage reserves the right to update these Terms from time to time. When significant changes are made:
+
+Notification via email at least 15 days in advance.
+A notice displayed on the platform when you log in.
+The effective date at the top of this page will be updated.
+
+Changes do not apply retroactively to reduce agreed rights. Where renewed acceptance is required, we provide notice and obtain acceptance under applicable law.
+
+13. Applicable law and dispute resolution
+
+Transactions covered by these terms are governed by Vietnamese law and valid agreements. The parties seek good-faith resolution. Internal procedures do not limit the right to contact competent authorities or bring proceedings before a court with jurisdiction under applicable law.
+
+Complaint Resolution
+
+14. General Provisions
+Severability: If any provision is declared invalid, the remaining provisions shall remain in full force and effect.
+Entire agreement: These Terms, together with the Privacy Policy and Refund Policy, constitute the entire agreement between you and TrolyPage.
+No waiver: Failure to enforce any right shall not constitute a waiver of that right.
+15. Contact
+
+CÔNG TY TNHH TROLYPAGE
+TROLYPAGE COMPANY LIMITED
+
+Enterprise registration number: 0111551901
+First registered: 29/06/2026
+Issuing authority: Phòng Đăng ký kinh doanh và Tài chính doanh nghiệp — Sở Tài chính thành phố Hà Nội
+
+Registered office: Số 72, Ngõ 318 Đê La Thành, Phường Ô Chợ Dừa, Thành phố Hà Nội, Việt Nam
+Legal representative: Nguyễn Duy Hùng, Director
+
+0964 842 168 · support@trolypage.com
+
+Staff provide support during business hours in Vietnam (UTC+7). Requests received outside those hours are handled during the next working period. Automated AI availability does not mean staff are available 24/7.
+
+TrolyPage – AI Agent platform automating the entire Marketing, Sales, and Operation process. From customer acquisition, 24/7 order closing, auto-payments to shipping and COD reconciliation, all managed on a single platform.
+
+Links
+Home
+About TrolyPage
+Features
+Download
+Pricing
+Education
+Nonprofits
+Affiliate
+Growth
+Blog
+Docs
+System Status
+Capabilities
+Features
+AI cho Messenger
+Inbox đa kênh
+Lên lịch đăng bài
+AI cho Zalo OA
+Chatbot website
+Chăm sóc lại khách
+MCP
+Install Website Chat
+Company
+
+CÔNG TY TNHH TROLYPAGE
+TROLYPAGE COMPANY LIMITED
+
+Enterprise registration number: 0111551901
+First registered: 29/06/2026
+Issuing authority: Phòng Đăng ký kinh doanh và Tài chính doanh nghiệp — Sở Tài chính thành phố Hà Nội
+
+Registered office: Số 72, Ngõ 318 Đê La Thành, Phường Ô Chợ Dừa, Thành phố Hà Nội, Việt Nam
+Legal representative: Nguyễn Duy Hùng, Director
+
+Contact
+support@trolypage.com
++84 964 842 168
+GO TO DASHBOARD
+GO TO DASHBOARD
+ 
+Terms of Service
+Rights and Obligations
+Privacy Policy
+Cancellation and Refunds
+Shipping and Delivery Policy
+Transaction Policy
+Pricing and Payment Methods
+Payment
+Service Provision
+Complaint Resolution
+Data Deletion
+TrolyPage mobile support
+
+© 2026 TrolyPage. All rights reserved.

@@ -1,0 +1,13 @@
+interface:
+  display_name: "TrolyPage Automation"
+  short_description: "Build, check, publish, and monitor TrolyPage workflows."
+  default_prompt: "Use $troly-automation to create a workflow draft from a template, check and simulate it before publication."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "trolypage"
+      description: "Unified TrolyPage business operations server"
+      transport: "streamable_http"
+      url: "https://trolypage.com/mcp/troly"
+policy:
+  allow_implicit_invocation: true

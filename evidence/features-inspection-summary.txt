@@ -1,0 +1,602 @@
+{
+  "requested_url": "https://trolypage.com/features",
+  "final_url": "https://trolypage.com/features",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "x_robots_tag": null,
+  "title": "Scheduled Posts & Multichannel Inbox | TrolyPage",
+  "language": "en",
+  "meta": [
+    {
+      "charset": "utf-8"
+    },
+    {
+      "name": "viewport",
+      "content": "width=device-width, initial-scale=1"
+    },
+    {
+      "name": "description",
+      "content": "Schedule posts across connected channels and manage Messenger and Zalo OA messages in one inbox. Explore TrolyPage AI chatbot, Website Chat, orders and shipping."
+    },
+    {
+      "name": "theme-color",
+      "content": "#f6f6f9"
+    },
+    {
+      "property": "og:type",
+      "content": "website"
+    },
+    {
+      "property": "fb:app_id",
+      "content": "1285854566215029"
+    },
+    {
+      "property": "og:site_name",
+      "content": "TrolyPage"
+    },
+    {
+      "property": "og:title",
+      "content": "Scheduled Posts & Multichannel Inbox | TrolyPage"
+    },
+    {
+      "property": "og:description",
+      "content": "Schedule posts across connected channels and manage Messenger and Zalo OA messages in one inbox. Explore TrolyPage AI chatbot, Website Chat, orders and shipping."
+    },
+    {
+      "property": "og:url",
+      "content": "https://trolypage.com/features"
+    },
+    {
+      "property": "og:image",
+      "content": "https://trolypage.com/assets/og/features-en.png"
+    },
+    {
+      "property": "og:image:type",
+      "content": "image/png"
+    },
+    {
+      "property": "og:image:alt",
+      "content": "TrolyPage: From chat to order"
+    },
+    {
+      "property": "og:locale",
+      "content": "en_US"
+    },
+    {
+      "property": "og:locale:alternate",
+      "content": "vi_VN"
+    },
+    {
+      "name": "twitter:card",
+      "content": "summary_large_image"
+    },
+    {
+      "name": "twitter:title",
+      "content": "Scheduled Posts & Multichannel Inbox | TrolyPage"
+    },
+    {
+      "name": "twitter:description",
+      "content": "Schedule posts across connected channels and manage Messenger and Zalo OA messages in one inbox. Explore TrolyPage AI chatbot, Website Chat, orders and shipping."
+    },
+    {
+      "name": "twitter:image",
+      "content": "https://trolypage.com/assets/og/features-en.png"
+    },
+    {
+      "name": "twitter:image:alt",
+      "content": "TrolyPage: From chat to order"
+    }
+  ],
+  "links": [
+    {
+      "rel": "canonical",
+      "href": "https://trolypage.com/features"
+    },
+    {
+      "rel": "alternate",
+      "hreflang": "vi",
+      "href": "https://trolypage.com/vi/tinh-nang"
+    },
+    {
+      "rel": "alternate",
+      "hreflang": "en",
+      "href": "https://trolypage.com/features"
+    },
+    {
+      "rel": "alternate",
+      "hreflang": "x-default",
+      "href": "https://trolypage.com/features"
+    }
+  ],
+  "headings": [
+    {
+      "tag": "h3",
+      "text": "TrolyPage"
+    },
+    {
+      "tag": "h3",
+      "text": "Contact Info"
+    },
+    {
+      "tag": "h3",
+      "text": "Follow Us"
+    },
+    {
+      "tag": "h3",
+      "text": "Troly ecosystem"
+    },
+    {
+      "tag": "h2",
+      "text": "From signal to growth"
+    },
+    {
+      "tag": "h2",
+      "text": "Connect TrolyPage"
+    },
+    {
+      "tag": "h2",
+      "text": "Explore with TrolyPage"
+    },
+    {
+      "tag": "h3",
+      "text": "Programs"
+    },
+    {
+      "tag": "h3",
+      "text": "Resources"
+    },
+    {
+      "tag": "h2",
+      "text": "Choose language"
+    },
+    {
+      "tag": "h1",
+      "text": "Schedule posts, manage messages and create orders in one flow."
+    },
+    {
+      "tag": "h2",
+      "text": "Featured capabilities"
+    },
+    {
+      "tag": "h2",
+      "text": "Schedule and publish posts across channels"
+    },
+    {
+      "tag": "h3",
+      "text": "Highlights"
+    },
+    {
+      "tag": "h2",
+      "text": "Manage comments on every post"
+    },
+    {
+      "tag": "h3",
+      "text": "Highlights"
+    },
+    {
+      "tag": "h2",
+      "text": "Manage Messenger and Zalo OA messages in one inbox"
+    },
+    {
+      "tag": "h3",
+      "text": "Highlights"
+    },
+    {
+      "tag": "h2",
+      "text": "Answer routine messages with an AI chatbot"
+    },
+    {
+      "tag": "h3",
+      "text": "Highlights"
+    },
+    {
+      "tag": "h2",
+      "text": "Add LiveChat to your website"
+    },
+    {
+      "tag": "h3",
+      "text": "Highlights"
+    },
+    {
+      "tag": "h2",
+      "text": "Create an order in the conversation"
+    },
+    {
+      "tag": "h3",
+      "text": "Highlights"
+    },
+    {
+      "tag": "h2",
+      "text": "Check rates, create shipments and track delivery"
+    },
+    {
+      "tag": "h3",
+      "text": "Highlights"
+    },
+    {
+      "tag": "h2",
+      "text": "Message customers when they are free"
+    },
+    {
+      "tag": "h3",
+      "text": "Highlights"
+    },
+    {
+      "tag": "h2",
+      "text": "See reports for messages, orders and posts"
+    },
+    {
+      "tag": "h3",
+      "text": "Highlights"
+    },
+    {
+      "tag": "h2",
+      "text": "Channels and delivery carriers"
+    },
+    {
+      "tag": "h3",
+      "text": "Scheduled posting"
+    },
+    {
+      "tag": "h3",
+      "text": "Comment management"
+    },
+    {
+      "tag": "h3",
+      "text": "Message inbox"
+    },
+    {
+      "tag": "h3",
+      "text": "Website LiveChat"
+    },
+    {
+      "tag": "h3",
+      "text": "Delivery across Vietnam"
+    },
+    {
+      "tag": "h2",
+      "text": "Frequently asked questions"
+    },
+    {
+      "tag": "h2",
+      "text": "Try TrolyPage"
+    },
+    {
+      "tag": "h3",
+      "text": "Links"
+    },
+    {
+      "tag": "h3",
+      "text": "Capabilities"
+    },
+    {
+      "tag": "h3",
+      "text": "Company"
+    },
+    {
+      "tag": "h3",
+      "text": "Contact"
+    },
+    {
+      "tag": "h2",
+      "text": "What can TrolyPage help with?"
+    }
+  ],
+  "image_count": 43,
+  "images_missing_alt": 0,
+  "images_empty_alt": 24,
+  "schema_types": []
+}
+{
+  "requested_url": "https://trolypage.com/vi/tinh-nang",
+  "final_url": "https://trolypage.com/vi/tinh-nang",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "x_robots_tag": null,
+  "title": "Đăng bài tự động, quản lý tin nhắn đa kênh | TrolyPage",
+  "language": "vi",
+  "meta": [
+    {
+      "charset": "utf-8"
+    },
+    {
+      "name": "viewport",
+      "content": "width=device-width, initial-scale=1"
+    },
+    {
+      "name": "description",
+      "content": "Hẹn giờ đăng bài trên nhiều kênh, quản lý tin nhắn Messenger và Zalo OA trong một hộp thư. Xem AI chatbot, Website Chat, tạo đơn và giao vận của TrolyPage."
+    },
+    {
+      "name": "theme-color",
+      "content": "#f6f6f9"
+    },
+    {
+      "property": "og:type",
+      "content": "website"
+    },
+    {
+      "property": "fb:app_id",
+      "content": "1285854566215029"
+    },
+    {
+      "property": "og:site_name",
+      "content": "TrolyPage"
+    },
+    {
+      "property": "og:title",
+      "content": "Đăng bài tự động, quản lý tin nhắn đa kênh | TrolyPage"
+    },
+    {
+      "property": "og:description",
+      "content": "Hẹn giờ đăng bài trên nhiều kênh, quản lý tin nhắn Messenger và Zalo OA trong một hộp thư. Xem AI chatbot, Website Chat, tạo đơn và giao vận của TrolyPage."
+    },
+    {
+      "property": "og:url",
+      "content": "https://trolypage.com/vi/tinh-nang"
+    },
+    {
+      "property": "og:image",
+      "content": "https://trolypage.com/assets/og/features-vi.png"
+    },
+    {
+      "property": "og:image:type",
+      "content": "image/png"
+    },
+    {
+      "property": "og:image:alt",
+      "content": "TrolyPage: Từ tin nhắn đến đơn hàng"
+    },
+    {
+      "property": "og:locale",
+      "content": "vi_VN"
+    },
+    {
+      "property": "og:locale:alternate",
+      "content": "en_US"
+    },
+    {
+      "name": "twitter:card",
+      "content": "summary_large_image"
+    },
+    {
+      "name": "twitter:title",
+      "content": "Đăng bài tự động, quản lý tin nhắn đa kênh | TrolyPage"
+    },
+    {
+      "name": "twitter:description",
+      "content": "Hẹn giờ đăng bài trên nhiều kênh, quản lý tin nhắn Messenger và Zalo OA trong một hộp thư. Xem AI chatbot, Website Chat, tạo đơn và giao vận của TrolyPage."
+    },
+    {
+      "name": "twitter:image",
+      "content": "https://trolypage.com/assets/og/features-vi.png"
+    },
+    {
+      "name": "twitter:image:alt",
+      "content": "TrolyPage: Từ tin nhắn đến đơn hàng"
+    }
+  ],
+  "links": [
+    {
+      "rel": "canonical",
+      "href": "https://trolypage.com/vi/tinh-nang"
+    },
+    {
+      "rel": "alternate",
+      "hreflang": "vi",
+      "href": "https://trolypage.com/vi/tinh-nang"
+    },
+    {
+      "rel": "alternate",
+      "hreflang": "en",
+      "href": "https://trolypage.com/features"
+    },
+    {
+      "rel": "alternate",
+      "hreflang": "x-default",
+      "href": "https://trolypage.com/features"
+    }
+  ],
+  "headings": [
+    {
+      "tag": "h3",
+      "text": "TrolyPage"
+    },
+    {
+      "tag": "h3",
+      "text": "Thông tin liên hệ"
+    },
+    {
+      "tag": "h3",
+      "text": "Theo dõi chúng tôi"
+    },
+    {
+      "tag": "h3",
+      "text": "Hệ sinh thái Troly"
+    },
+    {
+      "tag": "h2",
+      "text": "Từ tín hiệu đến tăng trưởng"
+    },
+    {
+      "tag": "h2",
+      "text": "Kết nối TrolyPage"
+    },
+    {
+      "tag": "h2",
+      "text": "Khám phá cùng TrolyPage"
+    },
+    {
+      "tag": "h3",
+      "text": "Chương trình"
+    },
+    {
+      "tag": "h3",
+      "text": "Tài nguyên"
+    },
+    {
+      "tag": "h2",
+      "text": "Chọn ngôn ngữ"
+    },
+    {
+      "tag": "h1",
+      "text": "Đăng bài tự động, quản lý tin nhắn và chốt đơn trong một luồng."
+    },
+    {
+      "tag": "h2",
+      "text": "Các tính năng nổi bật"
+    },
+    {
+      "tag": "h2",
+      "text": "Đăng bài tự động theo lịch trên nhiều kênh"
+    },
+    {
+      "tag": "h3",
+      "text": "Điểm nổi bật"
+    },
+    {
+      "tag": "h2",
+      "text": "Quản lý bình luận mọi bài đăng"
+    },
+    {
+      "tag": "h3",
+      "text": "Điểm nổi bật"
+    },
+    {
+      "tag": "h2",
+      "text": "Quản lý tin nhắn Messenger và Zalo OA trong một hộp thư"
+    },
+    {
+      "tag": "h3",
+      "text": "Điểm nổi bật"
+    },
+    {
+      "tag": "h2",
+      "text": "Trả lời tin nhắn tự động bằng AI Chatbot"
+    },
+    {
+      "tag": "h3",
+      "text": "Điểm nổi bật"
+    },
+    {
+      "tag": "h2",
+      "text": "Gắn chat trực tuyến lên website"
+    },
+    {
+      "tag": "h3",
+      "text": "Điểm nổi bật"
+    },
+    {
+      "tag": "h2",
+      "text": "Tạo đơn ngay trong cuộc trò chuyện"
+    },
+    {
+      "tag": "h3",
+      "text": "Điểm nổi bật"
+    },
+    {
+      "tag": "h2",
+      "text": "Xem phí, tạo vận đơn và theo dõi giao hàng"
+    },
+    {
+      "tag": "h3",
+      "text": "Điểm nổi bật"
+    },
+    {
+      "tag": "h2",
+      "text": "Nhắn lại khi khách rảnh"
+    },
+    {
+      "tag": "h3",
+      "text": "Điểm nổi bật"
+    },
+    {
+      "tag": "h2",
+      "text": "Xem báo cáo tin nhắn, đơn hàng và bài đăng"
+    },
+    {
+      "tag": "h3",
+      "text": "Điểm nổi bật"
+    },
+    {
+      "tag": "h2",
+      "text": "Kênh và đơn vị giao hàng"
+    },
+    {
+      "tag": "h3",
+      "text": "Đăng bài tự động"
+    },
+    {
+      "tag": "h3",
+      "text": "Quản lý bình luận"
+    },
+    {
+      "tag": "h3",
+      "text": "Quản lý tin nhắn"
+    },
+    {
+      "tag": "h3",
+      "text": "LiveChat trên website"
+    },
+    {
+      "tag": "h3",
+      "text": "Giao hàng trên toàn quốc"
+    },
+    {
+      "tag": "h2",
+      "text": "Câu hỏi thường gặp"
+    },
+    {
+      "tag": "h2",
+      "text": "Dùng thử TrolyPage"
+    },
+    {
+      "tag": "h3",
+      "text": "Liên kết"
+    },
+    {
+      "tag": "h3",
+      "text": "Năng lực"
+    },
+    {
+      "tag": "h3",
+      "text": "Doanh nghiệp"
+    },
+    {
+      "tag": "h3",
+      "text": "Liên hệ"
+    },
+    {
+      "tag": "h2",
+      "text": "Bạn muốn TrolyPage giúp gì?"
+    }
+  ],
+  "image_count": 43,
+  "images_missing_alt": 0,
+  "images_empty_alt": 24,
+  "schema_types": []
+}
+{
+  "requested_url": "https://trolypage.com/robots.txt",
+  "final_url": "https://trolypage.com/robots.txt",
+  "status": 200,
+  "content_type": "text/plain",
+  "x_robots_tag": null,
+  "text_preview": "# Trợ Lý Page - robots.txt\nUser-agent: *\nAllow: /\nAllow: /blog\nAllow: /blog/*\nAllow: /terms-of-service\nAllow: /privacy-policy\nAllow: /refund-policy\nAllow: /data-deletion\nAllow: /vi/dieu-khoan-dich-vu\nAllow: /vi/chinh-sach-bao-mat\nAllow: /vi/chinh-sach-hoan-tien\nAllow: /vi/xoa-du-lieu\n\n# Block admin/app areas\nDisallow: /app/\nDisallow: /api/\nDisallow: /webhook/\nDisallow: /webchat/\n\n# Sitemap\nSitemap: https://trolypage.com/sitemap.xml\n\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\n"
+}
+{
+  "requested_url": "https://trolypage.com/sitemap.xml",
+  "final_url": "https://trolypage.com/sitemap.xml",
+  "status": 200,
+  "content_type": "text/xml",
+  "x_robots_tag": null,
+  "text_preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<sitemapindex xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n    <sitemap>\n        <loc>https://trolypage.com/sitemap-pages.xml</loc>\n    </sitemap>\n        <sitemap>\n        <loc>https://trolypage.com/blog-sitemap.xml</loc>\n    </sitemap>\n    </sitemapindex>\n"
+}
+{
+  "requested_url": "https://trolypage.com/sitemap-pages.xml",
+  "final_url": "https://trolypage.com/sitemap-pages.xml",
+  "status": 200,
+  "content_type": "text/xml",
+  "x_robots_tag": null,
+  "text_preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"\n        xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">\n\n    \n    <url>\n        <loc>https://trolypage.com/vi</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com\" />\n        <changefreq>weekly</changefreq>\n        <priority>1.0</priority>\n    </url>\n    <url>\n        <loc>https://trolypage.com</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com\" />\n        <changefreq>weekly</changefreq>\n        <priority>0.9</priority>\n    </url>\n\n    \n    <url><loc>https://trolypage.com/vi/ai-theo-nganh</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/thoi-trang</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/my-pham</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/trang-suc</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/dien-thoai-phu-kien</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/noi-that</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/dien-gia-dung</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/thu-cung</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/sach-van-phong-pham</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/quan-ca-phe</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/tiem-banh</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/nha-hang</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/thuc-pham</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/spa</loc><changefreq>monthly</changefreq></u"
+}

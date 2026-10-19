@@ -1,0 +1,695 @@
+{
+  "checked_on": "2026-10-19",
+  "method": "Unauthenticated public HTTP read; browser navigation failed",
+  "pages": [
+    {
+      "requested_url": "https://trolypage.com/features",
+      "final_url": "https://trolypage.com/features",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "x_robots_tag": null,
+      "title": "Scheduled Posts & Multichannel Inbox | TrolyPage",
+      "language": "en",
+      "meta": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "description",
+          "content": "Schedule posts across connected channels and manage Messenger and Zalo OA messages in one inbox. Explore TrolyPage AI chatbot, Website Chat, orders and shipping."
+        },
+        {
+          "name": "theme-color",
+          "content": "#f6f6f9"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "property": "fb:app_id",
+          "content": "1285854566215029"
+        },
+        {
+          "property": "og:site_name",
+          "content": "TrolyPage"
+        },
+        {
+          "property": "og:title",
+          "content": "Scheduled Posts & Multichannel Inbox | TrolyPage"
+        },
+        {
+          "property": "og:description",
+          "content": "Schedule posts across connected channels and manage Messenger and Zalo OA messages in one inbox. Explore TrolyPage AI chatbot, Website Chat, orders and shipping."
+        },
+        {
+          "property": "og:url",
+          "content": "https://trolypage.com/features"
+        },
+        {
+          "property": "og:image",
+          "content": "https://trolypage.com/assets/og/features-en.png"
+        },
+        {
+          "property": "og:image:type",
+          "content": "image/png"
+        },
+        {
+          "property": "og:image:alt",
+          "content": "TrolyPage: From chat to order"
+        },
+        {
+          "property": "og:locale",
+          "content": "en_US"
+        },
+        {
+          "property": "og:locale:alternate",
+          "content": "vi_VN"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Scheduled Posts & Multichannel Inbox | TrolyPage"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Schedule posts across connected channels and manage Messenger and Zalo OA messages in one inbox. Explore TrolyPage AI chatbot, Website Chat, orders and shipping."
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://trolypage.com/assets/og/features-en.png"
+        },
+        {
+          "name": "twitter:image:alt",
+          "content": "TrolyPage: From chat to order"
+        }
+      ],
+      "links": [
+        {
+          "rel": "canonical",
+          "href": "https://trolypage.com/features"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "vi",
+          "href": "https://trolypage.com/vi/tinh-nang"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "en",
+          "href": "https://trolypage.com/features"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://trolypage.com/features"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "TrolyPage"
+        },
+        {
+          "tag": "h3",
+          "text": "Contact Info"
+        },
+        {
+          "tag": "h3",
+          "text": "Follow Us"
+        },
+        {
+          "tag": "h3",
+          "text": "Troly ecosystem"
+        },
+        {
+          "tag": "h2",
+          "text": "From signal to growth"
+        },
+        {
+          "tag": "h2",
+          "text": "Connect TrolyPage"
+        },
+        {
+          "tag": "h2",
+          "text": "Explore with TrolyPage"
+        },
+        {
+          "tag": "h3",
+          "text": "Programs"
+        },
+        {
+          "tag": "h3",
+          "text": "Resources"
+        },
+        {
+          "tag": "h2",
+          "text": "Choose language"
+        },
+        {
+          "tag": "h1",
+          "text": "Schedule posts, manage messages and create orders in one flow."
+        },
+        {
+          "tag": "h2",
+          "text": "Featured capabilities"
+        },
+        {
+          "tag": "h2",
+          "text": "Schedule and publish posts across channels"
+        },
+        {
+          "tag": "h3",
+          "text": "Highlights"
+        },
+        {
+          "tag": "h2",
+          "text": "Manage comments on every post"
+        },
+        {
+          "tag": "h3",
+          "text": "Highlights"
+        },
+        {
+          "tag": "h2",
+          "text": "Manage Messenger and Zalo OA messages in one inbox"
+        },
+        {
+          "tag": "h3",
+          "text": "Highlights"
+        },
+        {
+          "tag": "h2",
+          "text": "Answer routine messages with an AI chatbot"
+        },
+        {
+          "tag": "h3",
+          "text": "Highlights"
+        },
+        {
+          "tag": "h2",
+          "text": "Add LiveChat to your website"
+        },
+        {
+          "tag": "h3",
+          "text": "Highlights"
+        },
+        {
+          "tag": "h2",
+          "text": "Create an order in the conversation"
+        },
+        {
+          "tag": "h3",
+          "text": "Highlights"
+        },
+        {
+          "tag": "h2",
+          "text": "Check rates, create shipments and track delivery"
+        },
+        {
+          "tag": "h3",
+          "text": "Highlights"
+        },
+        {
+          "tag": "h2",
+          "text": "Message customers when they are free"
+        },
+        {
+          "tag": "h3",
+          "text": "Highlights"
+        },
+        {
+          "tag": "h2",
+          "text": "See reports for messages, orders and posts"
+        },
+        {
+          "tag": "h3",
+          "text": "Highlights"
+        },
+        {
+          "tag": "h2",
+          "text": "Channels and delivery carriers"
+        },
+        {
+          "tag": "h3",
+          "text": "Scheduled posting"
+        },
+        {
+          "tag": "h3",
+          "text": "Comment management"
+        },
+        {
+          "tag": "h3",
+          "text": "Message inbox"
+        },
+        {
+          "tag": "h3",
+          "text": "Website LiveChat"
+        },
+        {
+          "tag": "h3",
+          "text": "Delivery across Vietnam"
+        },
+        {
+          "tag": "h2",
+          "text": "Frequently asked questions"
+        },
+        {
+          "tag": "h2",
+          "text": "Try TrolyPage"
+        },
+        {
+          "tag": "h3",
+          "text": "Links"
+        },
+        {
+          "tag": "h3",
+          "text": "Capabilities"
+        },
+        {
+          "tag": "h3",
+          "text": "Company"
+        },
+        {
+          "tag": "h3",
+          "text": "Contact"
+        },
+        {
+          "tag": "h2",
+          "text": "What can TrolyPage help with?"
+        }
+      ],
+      "structured_data": [],
+      "image_count": 43,
+      "images_missing_alt": 0,
+      "images_empty_alt": 24,
+      "internal_link_destinations": [
+        "/cdn-cgi/l/email-protection#81f2f4f1f1eef3f5c1f5f3eeedf8f1e0e6e4afe2eeec",
+        "/cdn-cgi/l/email-protection#8bf8fefbfbe4f9ffcbfff9e4e7f2fbeaeceea5e8e4e6",
+        "https://trolypage.com",
+        "https://trolypage.com#process",
+        "https://trolypage.com/about",
+        "https://trolypage.com/affiliate",
+        "https://trolypage.com/blog",
+        "https://trolypage.com/complaint-resolution",
+        "https://trolypage.com/data-deletion",
+        "https://trolypage.com/download",
+        "https://trolypage.com/features",
+        "https://trolypage.com/for-education",
+        "https://trolypage.com/growth-partner",
+        "https://trolypage.com/install-website-chat",
+        "https://trolypage.com/integrations",
+        "https://trolypage.com/livechat/48h0lSCCm8QuUniZgo7WRSg9lMUIm2BhEiDHsTpwfleGLYPmxXd0MgZLK1V1mM0U",
+        "https://trolypage.com/login",
+        "https://trolypage.com/mcp",
+        "https://trolypage.com/mobile/support",
+        "https://trolypage.com/nonprofits",
+        "https://trolypage.com/pricing",
+        "https://trolypage.com/pricing#lien-he",
+        "https://trolypage.com/pricing-additional-costs-and-payment-methods",
+        "https://trolypage.com/privacy-policy",
+        "https://trolypage.com/refund-policy",
+        "https://trolypage.com/register",
+        "https://trolypage.com/rights-and-obligations",
+        "https://trolypage.com/shipping-and-delivery-policy",
+        "https://trolypage.com/terms-of-service",
+        "https://trolypage.com/thanh-tuu",
+        "https://trolypage.com/transaction-policy",
+        "https://trolypage.com/transaction-policy#payment",
+        "https://trolypage.com/transaction-policy#provision",
+        "https://trolypage.com/vi/chatbot-ai-facebook",
+        "https://trolypage.com/vi/chatbot-website",
+        "https://trolypage.com/vi/chatbot-zalo-oa",
+        "https://trolypage.com/vi/dang-bai-tu-dong",
+        "https://trolypage.com/vi/follow-up-khach-hang",
+        "https://trolypage.com/vi/quan-ly-tin-nhan-da-kenh",
+        "https://trolypage.com/vi/so-sanh",
+        "https://trolypage.com/vi/tinh-nang"
+      ]
+    },
+    {
+      "requested_url": "https://trolypage.com/vi/tinh-nang",
+      "final_url": "https://trolypage.com/vi/tinh-nang",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "x_robots_tag": null,
+      "title": "Đăng bài tự động, quản lý tin nhắn đa kênh | TrolyPage",
+      "language": "vi",
+      "meta": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "description",
+          "content": "Hẹn giờ đăng bài trên nhiều kênh, quản lý tin nhắn Messenger và Zalo OA trong một hộp thư. Xem AI chatbot, Website Chat, tạo đơn và giao vận của TrolyPage."
+        },
+        {
+          "name": "theme-color",
+          "content": "#f6f6f9"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "property": "fb:app_id",
+          "content": "1285854566215029"
+        },
+        {
+          "property": "og:site_name",
+          "content": "TrolyPage"
+        },
+        {
+          "property": "og:title",
+          "content": "Đăng bài tự động, quản lý tin nhắn đa kênh | TrolyPage"
+        },
+        {
+          "property": "og:description",
+          "content": "Hẹn giờ đăng bài trên nhiều kênh, quản lý tin nhắn Messenger và Zalo OA trong một hộp thư. Xem AI chatbot, Website Chat, tạo đơn và giao vận của TrolyPage."
+        },
+        {
+          "property": "og:url",
+          "content": "https://trolypage.com/vi/tinh-nang"
+        },
+        {
+          "property": "og:image",
+          "content": "https://trolypage.com/assets/og/features-vi.png"
+        },
+        {
+          "property": "og:image:type",
+          "content": "image/png"
+        },
+        {
+          "property": "og:image:alt",
+          "content": "TrolyPage: Từ tin nhắn đến đơn hàng"
+        },
+        {
+          "property": "og:locale",
+          "content": "vi_VN"
+        },
+        {
+          "property": "og:locale:alternate",
+          "content": "en_US"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Đăng bài tự động, quản lý tin nhắn đa kênh | TrolyPage"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Hẹn giờ đăng bài trên nhiều kênh, quản lý tin nhắn Messenger và Zalo OA trong một hộp thư. Xem AI chatbot, Website Chat, tạo đơn và giao vận của TrolyPage."
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://trolypage.com/assets/og/features-vi.png"
+        },
+        {
+          "name": "twitter:image:alt",
+          "content": "TrolyPage: Từ tin nhắn đến đơn hàng"
+        }
+      ],
+      "links": [
+        {
+          "rel": "canonical",
+          "href": "https://trolypage.com/vi/tinh-nang"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "vi",
+          "href": "https://trolypage.com/vi/tinh-nang"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "en",
+          "href": "https://trolypage.com/features"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://trolypage.com/features"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "TrolyPage"
+        },
+        {
+          "tag": "h3",
+          "text": "Thông tin liên hệ"
+        },
+        {
+          "tag": "h3",
+          "text": "Theo dõi chúng tôi"
+        },
+        {
+          "tag": "h3",
+          "text": "Hệ sinh thái Troly"
+        },
+        {
+          "tag": "h2",
+          "text": "Từ tín hiệu đến tăng trưởng"
+        },
+        {
+          "tag": "h2",
+          "text": "Kết nối TrolyPage"
+        },
+        {
+          "tag": "h2",
+          "text": "Khám phá cùng TrolyPage"
+        },
+        {
+          "tag": "h3",
+          "text": "Chương trình"
+        },
+        {
+          "tag": "h3",
+          "text": "Tài nguyên"
+        },
+        {
+          "tag": "h2",
+          "text": "Chọn ngôn ngữ"
+        },
+        {
+          "tag": "h1",
+          "text": "Đăng bài tự động, quản lý tin nhắn và chốt đơn trong một luồng."
+        },
+        {
+          "tag": "h2",
+          "text": "Các tính năng nổi bật"
+        },
+        {
+          "tag": "h2",
+          "text": "Đăng bài tự động theo lịch trên nhiều kênh"
+        },
+        {
+          "tag": "h3",
+          "text": "Điểm nổi bật"
+        },
+        {
+          "tag": "h2",
+          "text": "Quản lý bình luận mọi bài đăng"
+        },
+        {
+          "tag": "h3",
+          "text": "Điểm nổi bật"
+        },
+        {
+          "tag": "h2",
+          "text": "Quản lý tin nhắn Messenger và Zalo OA trong một hộp thư"
+        },
+        {
+          "tag": "h3",
+          "text": "Điểm nổi bật"
+        },
+        {
+          "tag": "h2",
+          "text": "Trả lời tin nhắn tự động bằng AI Chatbot"
+        },
+        {
+          "tag": "h3",
+          "text": "Điểm nổi bật"
+        },
+        {
+          "tag": "h2",
+          "text": "Gắn chat trực tuyến lên website"
+        },
+        {
+          "tag": "h3",
+          "text": "Điểm nổi bật"
+        },
+        {
+          "tag": "h2",
+          "text": "Tạo đơn ngay trong cuộc trò chuyện"
+        },
+        {
+          "tag": "h3",
+          "text": "Điểm nổi bật"
+        },
+        {
+          "tag": "h2",
+          "text": "Xem phí, tạo vận đơn và theo dõi giao hàng"
+        },
+        {
+          "tag": "h3",
+          "text": "Điểm nổi bật"
+        },
+        {
+          "tag": "h2",
+          "text": "Nhắn lại khi khách rảnh"
+        },
+        {
+          "tag": "h3",
+          "text": "Điểm nổi bật"
+        },
+        {
+          "tag": "h2",
+          "text": "Xem báo cáo tin nhắn, đơn hàng và bài đăng"
+        },
+        {
+          "tag": "h3",
+          "text": "Điểm nổi bật"
+        },
+        {
+          "tag": "h2",
+          "text": "Kênh và đơn vị giao hàng"
+        },
+        {
+          "tag": "h3",
+          "text": "Đăng bài tự động"
+        },
+        {
+          "tag": "h3",
+          "text": "Quản lý bình luận"
+        },
+        {
+          "tag": "h3",
+          "text": "Quản lý tin nhắn"
+        },
+        {
+          "tag": "h3",
+          "text": "LiveChat trên website"
+        },
+        {
+          "tag": "h3",
+          "text": "Giao hàng trên toàn quốc"
+        },
+        {
+          "tag": "h2",
+          "text": "Câu hỏi thường gặp"
+        },
+        {
+          "tag": "h2",
+          "text": "Dùng thử TrolyPage"
+        },
+        {
+          "tag": "h3",
+          "text": "Liên kết"
+        },
+        {
+          "tag": "h3",
+          "text": "Năng lực"
+        },
+        {
+          "tag": "h3",
+          "text": "Doanh nghiệp"
+        },
+        {
+          "tag": "h3",
+          "text": "Liên hệ"
+        },
+        {
+          "tag": "h2",
+          "text": "Bạn muốn TrolyPage giúp gì?"
+        }
+      ],
+      "structured_data": [],
+      "image_count": 43,
+      "images_missing_alt": 0,
+      "images_empty_alt": 24,
+      "internal_link_destinations": [
+        "/cdn-cgi/l/email-protection#4635333636293432063234292a3f362721236825292b",
+        "/cdn-cgi/l/email-protection#98ebede8e8f7eaecd8eceaf7f4e1e8f9fffdb6fbf7f5",
+        "https://trolypage.com",
+        "https://trolypage.com/blog",
+        "https://trolypage.com/features",
+        "https://trolypage.com/livechat/48h0lSCCm8QuUniZgo7WRSg9lMUIm2BhEiDHsTpwfleGLYPmxXd0MgZLK1V1mM0U",
+        "https://trolypage.com/login",
+        "https://trolypage.com/register",
+        "https://trolypage.com/thanh-tuu",
+        "https://trolypage.com/vi",
+        "https://trolypage.com/vi#process",
+        "https://trolypage.com/vi/affiliate",
+        "https://trolypage.com/vi/bang-gia",
+        "https://trolypage.com/vi/bang-gia#lien-he",
+        "https://trolypage.com/vi/cai-dat-website-chat",
+        "https://trolypage.com/vi/chatbot-ai-facebook",
+        "https://trolypage.com/vi/chatbot-website",
+        "https://trolypage.com/vi/chatbot-zalo-oa",
+        "https://trolypage.com/vi/chinh-sach-bao-mat",
+        "https://trolypage.com/vi/chinh-sach-giao-dich",
+        "https://trolypage.com/vi/chinh-sach-giao-dich#payment",
+        "https://trolypage.com/vi/chinh-sach-giao-dich#provision",
+        "https://trolypage.com/vi/chinh-sach-hoan-tien",
+        "https://trolypage.com/vi/chinh-sach-van-chuyen-va-giao-nhan-hang-hoa",
+        "https://trolypage.com/vi/dang-bai-tu-dong",
+        "https://trolypage.com/vi/dieu-khoan-dich-vu",
+        "https://trolypage.com/vi/follow-up-khach-hang",
+        "https://trolypage.com/vi/giai-quyet-khieu-nai",
+        "https://trolypage.com/vi/growth-partner",
+        "https://trolypage.com/vi/ho-tro-mobile",
+        "https://trolypage.com/vi/integrations",
+        "https://trolypage.com/vi/mcp",
+        "https://trolypage.com/vi/phi-loi-nhuan",
+        "https://trolypage.com/vi/quan-ly-tin-nhan-da-kenh",
+        "https://trolypage.com/vi/quyen-va-nghia-vu-cac-ben",
+        "https://trolypage.com/vi/sinh-vien",
+        "https://trolypage.com/vi/so-sanh",
+        "https://trolypage.com/vi/tai-ung-dung",
+        "https://trolypage.com/vi/thong-tin-gia-ban-chi-phi-phat-sinh-va-phuong-thuc-thanh-toan",
+        "https://trolypage.com/vi/tinh-nang",
+        "https://trolypage.com/vi/ve-trolypage",
+        "https://trolypage.com/vi/xoa-du-lieu"
+      ]
+    },
+    {
+      "requested_url": "https://trolypage.com/robots.txt",
+      "final_url": "https://trolypage.com/robots.txt",
+      "status": 200,
+      "content_type": "text/plain",
+      "x_robots_tag": null,
+      "text": "# Trợ Lý Page - robots.txt\nUser-agent: *\nAllow: /\nAllow: /blog\nAllow: /blog/*\nAllow: /terms-of-service\nAllow: /privacy-policy\nAllow: /refund-policy\nAllow: /data-deletion\nAllow: /vi/dieu-khoan-dich-vu\nAllow: /vi/chinh-sach-bao-mat\nAllow: /vi/chinh-sach-hoan-tien\nAllow: /vi/xoa-du-lieu\n\n# Block admin/app areas\nDisallow: /app/\nDisallow: /api/\nDisallow: /webhook/\nDisallow: /webchat/\n\n# Sitemap\nSitemap: https://trolypage.com/sitemap.xml\n\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\n"
+    },
+    {
+      "requested_url": "https://trolypage.com/sitemap.xml",
+      "final_url": "https://trolypage.com/sitemap.xml",
+      "status": 200,
+      "content_type": "text/xml",
+      "x_robots_tag": null,
+      "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<sitemapindex xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n    <sitemap>\n        <loc>https://trolypage.com/sitemap-pages.xml</loc>\n    </sitemap>\n        <sitemap>\n        <loc>https://trolypage.com/blog-sitemap.xml</loc>\n    </sitemap>\n    </sitemapindex>\n"
+    },
+    {
+      "requested_url": "https://trolypage.com/sitemap-pages.xml",
+      "final_url": "https://trolypage.com/sitemap-pages.xml",
+      "status": 200,
+      "content_type": "text/xml",
+      "x_robots_tag": null,
+      "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"\n        xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">\n\n    \n    <url>\n        <loc>https://trolypage.com/vi</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com\" />\n        <changefreq>weekly</changefreq>\n        <priority>1.0</priority>\n    </url>\n    <url>\n        <loc>https://trolypage.com</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com\" />\n        <changefreq>weekly</changefreq>\n        <priority>0.9</priority>\n    </url>\n\n    \n    <url><loc>https://trolypage.com/vi/ai-theo-nganh</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/thoi-trang</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/my-pham</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/trang-suc</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/dien-thoai-phu-kien</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/noi-that</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/dien-gia-dung</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/thu-cung</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/sach-van-phong-pham</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/quan-ca-phe</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/tiem-banh</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/nha-hang</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/thuc-pham</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/spa</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/salon-toc</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/gym-yoga</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/trung-tam-ngoai-ngu</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/nha-khoa</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/khach-san</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/du-lich-tour</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/gara-o-to</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/ai-theo-nganh/bat-dong-san</loc><changefreq>monthly</changefreq></url>\n    \n    \n    <url><loc>https://trolypage.com/vi/so-sanh</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-fchat</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-ahachat</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-botcake</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-pancake</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-harasocial</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-sapo</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-vpage</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-subiz</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-doopage</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-fpt-ai-chat</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-vnpt-smartbot</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-manychat</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-chatfuel</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-respond-io</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-kommo</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-wati</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-sleekflow</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-intercom</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-zendesk</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-tidio</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-freshchat</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-chatbase</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-botpress</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-voiceflow</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-landbot</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-livechat</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-crisp</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-gorgias</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-hubspot</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-zoho-desk</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-zoho-salesiq</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-buffer</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-hootsuite</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-metricool</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-publer</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-socialbee</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-sendible</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-later</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-loomly</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/so-sanh/trolypage-vs-sprout-social</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq></url>\n    \n    \n        <url>\n        <loc>https://trolypage.com/integrations</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/integrations/shopify</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/shopify\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/shopify\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/shopify\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/integrations/kiotviet</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/kiotviet\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/kiotviet\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/kiotviet\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/integrations/hubspot</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/hubspot\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/hubspot\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/hubspot\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/integrations/brevo</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/brevo\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/brevo\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/brevo\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/integrations/mailchimp</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/mailchimp\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/mailchimp\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/mailchimp\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/integrations/trolymail</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/trolymail\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/trolymail\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/trolymail\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/integrations/trolywork</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/trolywork\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/trolywork\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/trolywork\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/integrations/calendly</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/calendly\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/calendly\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/calendly\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/integrations/google-calendar</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/google-calendar\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/google-calendar\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/google-calendar\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/integrations/outlook-calendar</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/outlook-calendar\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/outlook-calendar\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/outlook-calendar\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/integrations/zoom</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/zoom\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/zoom\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/zoom\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/integrations/google-sheets</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/google-sheets\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/google-sheets\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/google-sheets\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/integrations/excel-365</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/excel-365\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/excel-365\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/excel-365\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/integrations/airtable</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/airtable\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/airtable\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/airtable\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/integrations/lark-base</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/lark-base\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/lark-base\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/lark-base\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/integrations/slack</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/slack\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/slack\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/slack\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/integrations/lark-bot</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/lark-bot\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/lark-bot\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/lark-bot\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/integrations/discord</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/discord\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/discord\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/discord\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/integrations/microsoft-teams</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/microsoft-teams\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/microsoft-teams\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/microsoft-teams\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/integrations/zapier</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/zapier\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/zapier\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/zapier\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/integrations/make</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/make\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/make\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/make\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/integrations/n8n</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/n8n\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/n8n\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/n8n\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/integrations/google-drive</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/google-drive\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/google-drive\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/google-drive\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/integrations/notion</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/notion\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/notion\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/notion\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/integrations/onedrive</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/onedrive\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/onedrive\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/onedrive\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/integrations/gitbook</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/gitbook\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/gitbook\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/gitbook\" />\n        <changefreq>monthly</changefreq>\n    </url>\n            <url>\n        <loc>https://trolypage.com/vi/integrations</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/vi/integrations/shopify</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/shopify\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/shopify\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/shopify\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/vi/integrations/kiotviet</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/kiotviet\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/kiotviet\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/kiotviet\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/vi/integrations/hubspot</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/hubspot\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/hubspot\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/hubspot\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/vi/integrations/brevo</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/brevo\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/brevo\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/brevo\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/vi/integrations/mailchimp</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/mailchimp\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/mailchimp\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/mailchimp\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/vi/integrations/trolymail</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/trolymail\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/trolymail\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/trolymail\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/vi/integrations/trolywork</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/trolywork\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/trolywork\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/trolywork\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/vi/integrations/calendly</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/calendly\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/calendly\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/calendly\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/vi/integrations/google-calendar</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/google-calendar\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/google-calendar\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/google-calendar\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/vi/integrations/outlook-calendar</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/outlook-calendar\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/outlook-calendar\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/outlook-calendar\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/vi/integrations/zoom</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/zoom\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/zoom\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/zoom\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/vi/integrations/google-sheets</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/google-sheets\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/google-sheets\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/google-sheets\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/vi/integrations/excel-365</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/excel-365\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/excel-365\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/excel-365\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/vi/integrations/airtable</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/airtable\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/airtable\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/airtable\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/vi/integrations/lark-base</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/lark-base\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/lark-base\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/lark-base\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/vi/integrations/slack</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/slack\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/slack\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/slack\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/vi/integrations/lark-bot</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/lark-bot\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/lark-bot\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/lark-bot\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/vi/integrations/discord</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/discord\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/discord\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/discord\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/vi/integrations/microsoft-teams</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/microsoft-teams\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/microsoft-teams\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/microsoft-teams\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/vi/integrations/zapier</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/zapier\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/zapier\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/zapier\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/vi/integrations/make</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/make\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/make\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/make\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/vi/integrations/n8n</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/n8n\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/n8n\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/n8n\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/vi/integrations/google-drive</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/google-drive\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/google-drive\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/google-drive\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/vi/integrations/notion</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/notion\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/notion\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/notion\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/vi/integrations/onedrive</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/onedrive\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/onedrive\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/onedrive\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        <url>\n        <loc>https://trolypage.com/vi/integrations/gitbook</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/integrations/gitbook\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/integrations/gitbook\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/integrations/gitbook\" />\n        <changefreq>monthly</changefreq>\n    </url>\n        \n    \n        <url><loc>https://trolypage.com/vi/chatbot-ai-facebook</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/quan-ly-tin-nhan-da-kenh</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/dang-bai-tu-dong</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/chatbot-zalo-oa</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/chatbot-website</loc><changefreq>monthly</changefreq></url>\n        <url><loc>https://trolypage.com/vi/follow-up-khach-hang</loc><changefreq>monthly</changefreq></url>\n            <url>\n        <loc>https://trolypage.com/vi/tinh-nang</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/tinh-nang\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/features\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/features\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.9</priority>\n    </url>\n        <url>\n        <loc>https://trolypage.com/features</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/tinh-nang\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/features\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/features\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.9</priority>\n    </url>\n    \n    \n        <url>\n        <loc>https://trolypage.com/vi/tai-ung-dung</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/tai-ung-dung\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/download\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/download\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.8</priority>\n    </url>\n        <url>\n        <loc>https://trolypage.com/download</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/tai-ung-dung\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/download\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/download\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.8</priority>\n    </url>\n    \n    \n        <url>\n        <loc>https://trolypage.com/vi/ve-trolypage</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/ve-trolypage\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/about\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/about\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.7</priority>\n    </url>\n        <url>\n        <loc>https://trolypage.com/about</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/ve-trolypage\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/about\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/about\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.7</priority>\n    </url>\n    \n    \n    <url>\n        <loc>https://trolypage.com/vi/bang-gia</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/bang-gia\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/pricing\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/pricing\" />\n        <changefreq>weekly</changefreq>\n        <priority>0.8</priority>\n    </url>\n    <url>\n        <loc>https://trolypage.com/pricing</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/bang-gia\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/pricing\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/pricing\" />\n        <changefreq>weekly</changefreq>\n        <priority>0.8</priority>\n    </url>\n\n    \n        <url>\n        <loc>https://trolypage.com/vi/cai-dat-website-chat</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/cai-dat-website-chat\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/install-website-chat\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/install-website-chat\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.7</priority>\n    </url>\n        <url>\n        <loc>https://trolypage.com/install-website-chat</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/cai-dat-website-chat\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/install-website-chat\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/install-website-chat\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.7</priority>\n    </url>\n    \n    \n                <url>\n        <loc>https://trolypage.com/vi/cai-dat-website-chat/wordpress</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/cai-dat-website-chat/wordpress\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/install-website-chat/wordpress\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/install-website-chat/wordpress\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.6</priority>\n    </url>\n            <url>\n        <loc>https://trolypage.com/install-website-chat/wordpress</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/cai-dat-website-chat/wordpress\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/install-website-chat/wordpress\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/install-website-chat/wordpress\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.6</priority>\n    </url>\n                        <url>\n        <loc>https://trolypage.com/vi/cai-dat-website-chat/woocommerce</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/cai-dat-website-chat/woocommerce\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/install-website-chat/woocommerce\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/install-website-chat/woocommerce\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.6</priority>\n    </url>\n            <url>\n        <loc>https://trolypage.com/install-website-chat/woocommerce</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/cai-dat-website-chat/woocommerce\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/install-website-chat/woocommerce\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/install-website-chat/woocommerce\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.6</priority>\n    </url>\n                        <url>\n        <loc>https://trolypage.com/vi/cai-dat-website-chat/shopify</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/cai-dat-website-chat/shopify\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/install-website-chat/shopify\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/install-website-chat/shopify\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.6</priority>\n    </url>\n            <url>\n        <loc>https://trolypage.com/install-website-chat/shopify</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/cai-dat-website-chat/shopify\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/install-website-chat/shopify\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/install-website-chat/shopify\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.6</priority>\n    </url>\n                        <url>\n        <loc>https://trolypage.com/vi/cai-dat-website-chat/wix</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/cai-dat-website-chat/wix\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/install-website-chat/wix\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/install-website-chat/wix\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.6</priority>\n    </url>\n            <url>\n        <loc>https://trolypage.com/install-website-chat/wix</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/cai-dat-website-chat/wix\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/install-website-chat/wix\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/install-website-chat/wix\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.6</priority>\n    </url>\n                        <url>\n        <loc>https://trolypage.com/vi/cai-dat-website-chat/webflow</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/cai-dat-website-chat/webflow\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/install-website-chat/webflow\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/install-website-chat/webflow\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.6</priority>\n    </url>\n            <url>\n        <loc>https://trolypage.com/install-website-chat/webflow</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/cai-dat-website-chat/webflow\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/install-website-chat/webflow\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/install-website-chat/webflow\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.6</priority>\n    </url>\n                        <url>\n        <loc>https://trolypage.com/vi/cai-dat-website-chat/squarespace</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/cai-dat-website-chat/squarespace\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/install-website-chat/squarespace\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/install-website-chat/squarespace\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.6</priority>\n    </url>\n            <url>\n        <loc>https://trolypage.com/install-website-chat/squarespace</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/cai-dat-website-chat/squarespace\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/install-website-chat/squarespace\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/install-website-chat/squarespace\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.6</priority>\n    </url>\n                        <url>\n        <loc>https://trolypage.com/vi/cai-dat-website-chat/bigcommerce</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/cai-dat-website-chat/bigcommerce\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/install-website-chat/bigcommerce\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/install-website-chat/bigcommerce\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.6</priority>\n    </url>\n            <url>\n        <loc>https://trolypage.com/install-website-chat/bigcommerce</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/cai-dat-website-chat/bigcommerce\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/install-website-chat/bigcommerce\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/install-website-chat/bigcommerce\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.6</priority>\n    </url>\n                        <url>\n        <loc>https://trolypage.com/vi/cai-dat-website-chat/nextjs</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/cai-dat-website-chat/nextjs\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/install-website-chat/nextjs\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/install-website-chat/nextjs\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.6</priority>\n    </url>\n            <url>\n        <loc>https://trolypage.com/install-website-chat/nextjs</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/cai-dat-website-chat/nextjs\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/install-website-chat/nextjs\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/install-website-chat/nextjs\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.6</priority>\n    </url>\n            \n    \n    <url>\n        <loc>https://trolypage.com/vi/sinh-vien</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/sinh-vien\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/for-education\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/for-education\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.8</priority>\n    </url>\n    <url>\n        <loc>https://trolypage.com/for-education</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/sinh-vien\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/for-education\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/for-education\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.8</priority>\n    </url>\n\n    \n    <url>\n        <loc>https://trolypage.com/vi/phi-loi-nhuan</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/phi-loi-nhuan\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/nonprofits\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/nonprofits\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.8</priority>\n    </url>\n    <url>\n        <loc>https://trolypage.com/nonprofits</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/phi-loi-nhuan\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/nonprofits\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/nonprofits\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.8</priority>\n    </url>\n\n    \n    <url>\n        <loc>https://trolypage.com/vi/growth-partner</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/growth-partner\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/growth-partner\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/growth-partner\" />\n        <changefreq>weekly</changefreq>\n        <priority>0.8</priority>\n    </url>\n    <url>\n        <loc>https://trolypage.com/growth-partner</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/growth-partner\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/growth-partner\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/growth-partner\" />\n        <changefreq>weekly</changefreq>\n        <priority>0.8</priority>\n    </url>\n\n    \n                        <url>\n        <loc>https://trolypage.com/vi/affiliate</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/affiliate\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/affiliate\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/affiliate\" />\n    </url>\n            <url>\n        <loc>https://trolypage.com/affiliate</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/affiliate\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/affiliate\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/affiliate\" />\n    </url>\n                                <url>\n        <loc>https://trolypage.com/vi/redeem</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/redeem\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/redeem\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/redeem\" />\n    </url>\n            <url>\n        <loc>https://trolypage.com/redeem</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/redeem\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/redeem\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/redeem\" />\n    </url>\n                                <url>\n        <loc>https://trolypage.com/vi/mcp</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/mcp\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/mcp\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/mcp\" />\n    </url>\n            <url>\n        <loc>https://trolypage.com/mcp</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/mcp\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/mcp\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/mcp\" />\n    </url>\n            \n    \n    <url>\n        <loc>https://trolypage.com/vi/dieu-khoan-dich-vu</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/dieu-khoan-dich-vu\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/terms-of-service\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.3</priority>\n    </url>\n    <url>\n        <loc>https://trolypage.com/vi/chinh-sach-bao-mat</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/chinh-sach-bao-mat\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/privacy-policy\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.3</priority>\n    </url>\n    <url>\n        <loc>https://trolypage.com/vi/chinh-sach-hoan-tien</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/chinh-sach-hoan-tien\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/refund-policy\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.3</priority>\n    </url>\n    <url>\n        <loc>https://trolypage.com/vi/chinh-sach-van-chuyen-va-giao-nhan-hang-hoa</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/chinh-sach-van-chuyen-va-giao-nhan-hang-hoa\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/shipping-and-delivery-policy\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.3</priority>\n    </url>\n    <url>\n        <loc>https://trolypage.com/vi/thong-tin-gia-ban-chi-phi-phat-sinh-va-phuong-thuc-thanh-toan</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/thong-tin-gia-ban-chi-phi-phat-sinh-va-phuong-thuc-thanh-toan\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/pricing-additional-costs-and-payment-methods\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.3</priority>\n    </url>\n    <url>\n        <loc>https://trolypage.com/vi/xoa-du-lieu</loc>\n        <changefreq>monthly</changefreq>\n        <priority>0.2</priority>\n    </url>\n\n    \n    <url>\n        <loc>https://trolypage.com/terms-of-service</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/terms-of-service\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/dieu-khoan-dich-vu\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.3</priority>\n    </url>\n    <url>\n        <loc>https://trolypage.com/privacy-policy</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/privacy-policy\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/chinh-sach-bao-mat\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.3</priority>\n    </url>\n    <url>\n        <loc>https://trolypage.com/refund-policy</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/refund-policy\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/chinh-sach-hoan-tien\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.3</priority>\n    </url>\n    <url>\n        <loc>https://trolypage.com/shipping-and-delivery-policy</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/shipping-and-delivery-policy\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/chinh-sach-van-chuyen-va-giao-nhan-hang-hoa\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.3</priority>\n    </url>\n    <url>\n        <loc>https://trolypage.com/pricing-additional-costs-and-payment-methods</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/pricing-additional-costs-and-payment-methods\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/thong-tin-gia-ban-chi-phi-phat-sinh-va-phuong-thuc-thanh-toan\" />\n        <changefreq>monthly</changefreq>\n        <priority>0.3</priority>\n    </url>\n    <url>\n        <loc>https://trolypage.com/data-deletion</loc>\n        <changefreq>monthly</changefreq>\n        <priority>0.2</priority>\n    </url>\n    \n                <url>\n        <loc>https://trolypage.com/vi/chinh-sach-giao-dich</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/chinh-sach-giao-dich\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/transaction-policy\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/transaction-policy\" />\n    </url>\n            <url>\n        <loc>https://trolypage.com/transaction-policy</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/chinh-sach-giao-dich\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/transaction-policy\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/transaction-policy\" />\n    </url>\n                        <url>\n        <loc>https://trolypage.com/vi/giai-quyet-khieu-nai</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/giai-quyet-khieu-nai\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/complaint-resolution\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/complaint-resolution\" />\n    </url>\n            <url>\n        <loc>https://trolypage.com/complaint-resolution</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/giai-quyet-khieu-nai\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/complaint-resolution\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/complaint-resolution\" />\n    </url>\n                        <url>\n        <loc>https://trolypage.com/vi/quyen-va-nghia-vu-cac-ben</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/quyen-va-nghia-vu-cac-ben\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/rights-and-obligations\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/rights-and-obligations\" />\n    </url>\n            <url>\n        <loc>https://trolypage.com/rights-and-obligations</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/quyen-va-nghia-vu-cac-ben\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/rights-and-obligations\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/rights-and-obligations\" />\n    </url>\n                        <url>\n        <loc>https://trolypage.com/vi/ho-tro-mobile</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/ho-tro-mobile\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/mobile/support\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/mobile/support\" />\n    </url>\n            <url>\n        <loc>https://trolypage.com/mobile/support</loc>\n        <xhtml:link rel=\"alternate\" hreflang=\"vi\" href=\"https://trolypage.com/vi/ho-tro-mobile\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://trolypage.com/mobile/support\" />\n        <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://trolypage.com/mobile/support\" />\n    </url>\n            \n    \n                        </urlset>\n"
+    }
+  ]
+}

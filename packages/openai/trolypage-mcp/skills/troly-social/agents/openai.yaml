@@ -1,0 +1,13 @@
+interface:
+  display_name: "TrolyPage Social"
+  short_description: "Draft, schedule, publish, and analyze social posts."
+  default_prompt: "Use $troly-social for this TrolyPage social-media task."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "trolypage"
+      description: "Unified TrolyPage business operations server"
+      transport: "streamable_http"
+      url: "https://trolypage.com/mcp/troly"
+policy:
+  allow_implicit_invocation: true

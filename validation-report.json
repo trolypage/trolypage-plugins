@@ -1,0 +1,380 @@
+{
+  "date": "2026-10-19",
+  "status": "REVIEW DRAFT; NOT READY FOR PUBLIC SUBMISSION",
+  "local_checks": [
+    {
+      "check": "openai semantic version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "openai name preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "openai skills present",
+      "passed": true,
+      "detail": "9"
+    },
+    {
+      "check": "openai skill troly",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "openai contained reference troly/references/help.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "openai contained reference troly/references/routing.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "openai skill troly-analytics",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "openai contained reference troly-analytics/references/tool-catalog.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "openai skill troly-automation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "openai contained reference troly-automation/references/tool-catalog.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "openai skill troly-commerce",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "openai contained reference troly-commerce/references/tool-catalog.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "openai skill troly-knowledge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "openai contained reference troly-knowledge/references/tool-catalog.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "openai skill troly-marketing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "openai contained reference troly-marketing/references/tool-catalog.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "openai skill troly-social",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "openai contained reference troly-social/references/tool-catalog.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "openai skill troly-support",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "openai contained reference troly-support/references/tool-catalog.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "openai skill troly-workspace",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "openai contained reference troly-workspace/references/tool-catalog.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Portable root excludes legacy fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "OpenAI contains no apps declaration",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Listing title/subtitle/name limits",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Long description limit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Starter prompt limits",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "URL shape websiteURL",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "URL shape supportURL",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "URL shape privacyPolicyURL",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "URL shape termsOfServiceURL",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Contained logo",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PNG asset logo",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Contained composerIcon",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PNG asset composerIcon",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "5 positive / 3 negative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Commerce declared",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Countries all allowed by platform",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Agent Plugins 1.0 schema: plugin.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Agent Plugins 1.0 schema: mcp.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "openai ZIP integrity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "openai no private bindings/hooks/system files",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "openai secret pattern scan",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "openai no files over 5MiB",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "claude semantic version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "claude name preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "claude skills present",
+      "passed": true,
+      "detail": "9"
+    },
+    {
+      "check": "claude skill troly",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "claude contained reference troly/references/help.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "claude contained reference troly/references/routing.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "claude skill troly-analytics",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "claude contained reference troly-analytics/references/tool-catalog.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "claude skill troly-automation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "claude contained reference troly-automation/references/tool-catalog.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "claude skill troly-commerce",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "claude contained reference troly-commerce/references/tool-catalog.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "claude skill troly-knowledge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "claude contained reference troly-knowledge/references/tool-catalog.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "claude skill troly-marketing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "claude contained reference troly-marketing/references/tool-catalog.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "claude skill troly-social",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "claude contained reference troly-social/references/tool-catalog.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "claude skill troly-support",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "claude contained reference troly-support/references/tool-catalog.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "claude skill troly-workspace",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "claude contained reference troly-workspace/references/tool-catalog.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "claude ZIP integrity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "claude no private bindings/hooks/system files",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "claude secret pattern scan",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "claude no files over 5MiB",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "local_checks_passed": true,
+  "tools": 270,
+  "serialized_input_schemas": 267,
+  "schema_inspection_errors": [
+    {
+      "tool": "preview-broadcast-audience",
+      "error": "Call to a member function connection() on null"
+    },
+    {
+      "tool": "update-broadcast",
+      "error": "Call to a member function connection() on null"
+    },
+    {
+      "tool": "create-agent-memory",
+      "error": "Target [Illuminate\\Contracts\\Auth\\Factory] is not instantiable."
+    }
+  ],
+  "tools_with_incomplete_explicit_annotation_booleans": 270,
+  "official_platform_scan": "Not run",
+  "authenticated_tests": "Not run",
+  "demo_recording": "Not created",
+  "pending": "See review/07-readiness.md. Local checks are custom structural checks, not full official platform schema validation or approval.",
+  "agent_plugins_1_schema_validation": "Passed",
+  "validation_scope": "Local format, references, asset, ZIP and secret-pattern checks; Agent Plugins core schemas when installed. OpenAI extension rules are partly custom-checked. Platform portal scans, Claude official validation and live behavior tests remain pending."
+}

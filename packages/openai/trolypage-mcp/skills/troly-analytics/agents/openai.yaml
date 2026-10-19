@@ -1,0 +1,13 @@
+interface:
+  display_name: "TrolyPage Analytics"
+  short_description: "Produce read-only TrolyPage reports and forecasts."
+  default_prompt: "Use $troly-analytics for this TrolyPage reporting task."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "trolypage"
+      description: "Unified TrolyPage business operations server"
+      transport: "streamable_http"
+      url: "https://trolypage.com/mcp/troly"
+policy:
+  allow_implicit_invocation: true

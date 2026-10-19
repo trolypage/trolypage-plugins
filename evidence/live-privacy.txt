@@ -1,0 +1,326 @@
+Skip to document content
+TrolyPage
+
+An autonomous Marketing & Sales operating system for businesses that want AI-powered omni-channel growth.
+
+CONTACT INFO
++84 964 842 168
+support@trolypage.com
+No. 72, Alley 318 De La Thanh, O Cho Dua Ward, Hanoi, Vietnam
+FOLLOW US
+EN
+Product
+Integrations
+Explore
+Features
+Download
+Pricing
+Go to Dashboard
+Legal documents
+
+Policies and terms that govern how TrolyPage works.
+
+Terms of Service
+Privacy Policy
+Cancellation and Refunds
+Shipping and Delivery Policy
+Data Deletion
+Transaction Policy
+Pricing and Payment Methods
+Rights and Obligations
+Complaint Resolution
+Mobile App Support
+LAST UPDATED
+2026-10-06
+DOCUMENT
+2 / 10
+Privacy Policy
+
+Privacy Policy for TrolyPage - How we collect, use, and protect your data
+
+1. Introduction
+
+TrolyPage (trolypage.com), a product of SkyNet Solution (skynetsolution.click), operated by SkyNet Solution ("we", "our", "us"), is committed to protecting your privacy and personal data. This Privacy Policy clearly explains how we collect, use, store, share, and protect personal information when you use the TrolyPage platform and related services.
+
+This policy complies with:
+
+Vietnam Cybersecurity Law (Law No. 24/2018/QH14).
+Personal Data Protection Law No. 91/2025/QH15 and Decree No. 356/2025/ND-CP, applicable from 1 January 2026.
+Meta Platform Terms.
+Meta Developer Policies.
+
+The Privacy Policy explains the data processed, purposes, parties involved and your rights. Agreement to commercial terms does not replace separate consent to data processing where required by law.
+
+2. Data We Collect
+2.1. Information You Provide Directly
+Account registration information: Full name, email address, phone number, password (stored as a one-way hash — never stored in plain text).
+Payment information: Transaction history and invoice information. We do not directly store credit/debit card numbers; payments are processed through certified third-party payment gateways.
+Content you create: AI Agent scripts, automated response templates, AI training documents (knowledge base), product information, appointments, and platform configurations.
+2.2. Data from Facebook/Meta When You Connect a Fanpage
+
+When you connect a Facebook Page (Fanpage) or business Instagram account to TrolyPage, we request the following permissions from Meta and collect the corresponding data:
+
+AI data sharing in the TrolyPage mobile app
+
+The mobile app uses OpenAI, Google (Gemini), OpenRouter and Cloudflare (Workers AI) for AI and content, ElevenLabs for speech, and Runway and Kling AI for video, depending on the feature and configuration. OpenRouter forwards requests to the provider serving that model. Processing may take place outside Vietnam.
+
+We collect this data through your questions and AI actions, files you choose to upload, and relevant work context available under your workspace permissions. Data sent for processing may include questions, messages, conversation history, images, documents, recordings, assistant instructions and knowledge, and relevant customer and order information. This content may contain names, email addresses, phone numbers or other personal data. It is used to generate replies, suggestions and summaries, analyze documents and create embeddings for search, research and compare models, create content, images, video or audio, transcribe speech and read answers aloud.
+
+The app explains the data and recipients and asks for your permission before sending the first AI request. Accepting registration terms does not replace AI sharing permission. You can decline and continue using features that do not need AI, or revoke permission in Settings → AI data sharing. Your choice is stored separately for each user and workspace on the device. A changed disclosure requires renewed permission. Revocation blocks new AI requests from the mobile app; it does not delete previously shared data or automatically stop automations already enabled on the server.
+
+We require AI processors to protect shared data to standards equivalent to this policy under the applicable data-processing terms. Retention and use depend on the provider, model and service configuration; we do not assume all models have the same policy. See the privacy policies of OpenAI, Google, OpenRouter and Cloudflare. Requests concerning previously shared data can be sent to support@trolypage.com.
+
+Permission	Purpose	Data Collected
+pages_show_list	Display a list of your Facebook Pages so you can choose which to connect	Page ID, Page name
+pages_read_engagement	Read Page engagement information so the AI Agent can respond accurately in context	Public Page information, engagement metrics
+pages_messaging	Receive and send Messenger messages on behalf of your Page — core Service functionality	Message content (sent/received), attachments, sender ID (PSID), display name, profile picture
+pages_manage_metadata	Subscribe webhooks for the Page to receive Messenger messages in real-time	Page webhook subscription status
+pages_manage_posts	Create and edit Page posts (Auto-Post feature — only when you activate it)	Post data you or AI compose through the platform
+instagram_basic	Read business Instagram account information linked to the Page	Instagram account ID, username, display name
+instagram_manage_messages	Receive and reply to Instagram Direct messages on behalf of the business account	Instagram DM message content, attachments, sender ID
+instagram_business_basic	Identify the Instagram Business or Creator account connected directly	Instagram account ID, username, and professional account type
+instagram_business_manage_messages	Receive and reply to Instagram Direct Messages on behalf of your account	Instagram DM content, attachments, and sender ID
+instagram_content_publish	Publish content to Instagram (Auto-Post feature — only when you activate it)	Post content you or AI compose through the platform
+2.3. Data from Customers Interacting Through Your Fanpage
+
+When customers message your Facebook Page or business Instagram account, we collect and process:
+
+Identification information: Page-Scoped User ID (PSID), display name, profile picture, language, gender, timezone — provided by the Meta API.
+Message content: All text, images, videos, and attachments sent by customers to your Page via Messenger or Instagram DM.
+Contact information (if voluntarily provided by the customer in conversation): Phone number, email, address — automatically recognized from message content to support customer relationship management (CRM).
+Interaction data: Message timestamps, interaction frequency, complete conversation history, button responses (postback).
+2.4. Data from Social Auto-Post Platforms
+
+When you connect social media accounts for the auto-posting feature, we collect and store:
+
+TikTok: Open ID, display name, avatar, access token and refresh token (encrypted). We use TikTok Content Posting API v2 to publish videos and photos. Compliant with TikTok API Terms.
+Pinterest: User ID, name, access token (encrypted). Uses Pinterest API v5 to create Pins and Boards. Compliant with Pinterest Developer Guidelines.
+X (Twitter): User ID, username, access token and refresh token (encrypted). Uses Twitter API v2 to post tweets. Compliant with X Developer Agreement.
+LinkedIn: Member URN, name, access token (encrypted). Uses LinkedIn Marketing API to publish posts. Compliant with LinkedIn API Terms of Use.
+YouTube: When you connect a channel, TrolyPage uses YouTube API Services to access the channel ID and name, encrypted OAuth access and refresh tokens, video identifiers and metadata, and comments on the channel's videos. Synchronized comment data can include comment and thread IDs, the author's channel ID, display name and avatar, comment text, timestamps, moderation status, replies, and a record of actions taken in TrolyPage. We use these data to show the connected channel, upload videos you select or schedule, display and synchronize comments, and carry out your reply or moderation actions. See the YouTube API Services Terms of Service and Google Privacy Policy.
+Reddit: Username, access token and refresh token (encrypted). Uses Reddit API to post to subreddits. Compliant with Reddit API Terms.
+Threads: User ID, username, access token (encrypted). Uses Threads API (Meta) to publish posts. Compliant with Meta Platform policies.
+Tumblr: Blog name, access token (encrypted). Uses Tumblr API v2 to publish posts.
+Blogger: Blog ID, blog name, access token (encrypted). Uses Blogger API v3 (Google) to publish articles.
+WordPress: Site URL, username, Application Password (encrypted). Uses WordPress REST API to publish posts.
+Google Business Profile: Location ID, business name, access token (encrypted). Uses Google Business Profile API to publish posts.
+
+Important: Access Tokens and Refresh Tokens for all platforms are encrypted at rest in the database. We only use tokens to perform the actions you request (publishing, scheduling) and never share tokens with third parties.
+
+2.5. Data from Other Messaging Channels (Optional — Only When You Connect)
+Zalo Official Account: Zalo user ID, display name, messages.
+Telegram Bot: Telegram user ID, name, messages.
+Web Chat (widget): Conversation content from the chat widget on your website.
+SePay (payments): Bank transaction information (when you connect a SePay account).
+2.6. Automatically Collected Data
+Access logs: IP address, browser type, operating system, access time, pages viewed on the platform.
+Session cookies: To maintain login sessions and CSRF security (see the Cookie section below).
+2.7 Data from the TrolyPage mobile application
+Account and session data: User and workspace identifiers, authentication session information, and the minimum account profile needed to provide the Service.
+Device and notification data: App installation identifier, device platform, app version, notification preferences, and Expo, FCM, or APNs push tokens.
+User-selected media: Photos or camera captures are accessed only when you choose to attach or save them and grant the relevant system permission.
+Voice messages and microphone: Microphone access is requested only when you actively choose to record voice messages in conversation to review and send to customers. The application never records in the background or captures audio without your explicit action.
+Operational data: Synchronization cursors, pending offline actions, request identifiers, and limited diagnostics used to restore work and investigate errors.
+
+The mobile application does not request precise location or contacts access. Camera, photo-library/media storage, microphone for voice messages, and push notification permissions remain optional (requested only when you actively trigger the corresponding feature) and can be granted or revoked at any time in system settings.
+
+3. How We Use Your Data
+
+We use collected data only for the following purposes:
+
+AI Chatbot operation: Process incoming customer messages, send them to the AI model to generate appropriate responses, and send reply messages via Messenger/Instagram DM/connected channels.
+Customer relationship management (CRM): Organize and store customer records, conversation history, and contact information so you can manage customer care effectively.
+Conversation summary and analysis: AI automatically summarizes conversations, extracts topics, outcomes, and satisfaction ratings.
+Automatic order processing: Process order information from conversations when customers place product orders.
+Auto-posting: Use access permissions to publish content you or AI compose to Facebook, Instagram, TikTok, Pinterest, X/Twitter, LinkedIn, YouTube, Reddit, Threads, Tumblr, Blogger, WordPress, and Google Business Profile.
+Follow-up messaging: Send follow-up messages to customers on schedules you configure, complying with Meta's 24-hour messaging window rules.
+Appointment scheduling: Manage appointments booked by customers through the chatbot.
+Technical support: Handle support requests, diagnose and resolve issues.
+Security: Detect unauthorized access, prevent fraud, and protect the system.
+Service improvement: Analyze aggregated (anonymized) usage data to improve AI quality and user experience.
+Legal compliance: Respond to requests from competent government authorities when legally required.
+
+We are committed to NOT using Facebook/Meta data for:
+
+Advertising, marketing for third parties, or ad targeting.
+Selling, renting, exchanging, or licensing data to third parties for commercial purposes.
+Building user profiles (profiling) for surveillance or tracking purposes outside the scope of the Service.
+Training general-purpose AI models outside our system.
+Any purpose that violates Meta Developer Policies.
+4. Data Sharing with Third Parties
+
+We do not sell, rent, or exchange your personal data or your customers' personal data with any third party. Data is only shared to the minimum extent necessary to provide the Service:
+
+Data Recipient	Data Shared	Purpose
+OpenAI (api.openai.com)	Message content, conversation context, system prompt	Generate AI chatbot responses, conversation summaries
+Google Gemini	Message content, conversation context, system prompt	Alternative AI provider (if you select it in settings)
+Anthropic Claude	Message content, conversation context, system prompt	Alternative AI provider (if you select it in settings)
+OpenRouter	Message content, conversation context, system prompt	Multi-provider AI router (if you select it in settings)
+Meta Platform (graph.facebook.com)	Reply messages, post content	Send messages via Messenger/Instagram DM, publish posts to Pages
+TikTok (open.tiktokapis.com)	Post content (video, photos, description)	Publish videos/photos to TikTok via Content Posting API
+Pinterest (api.pinterest.com)	Pin content (images, description, link)	Create Pins and Boards on Pinterest
+X/Twitter (api.x.com)	Tweet content (text, images)	Publish tweets on X/Twitter
+LinkedIn (api.linkedin.com)	Post content (text, images)	Publish posts on LinkedIn
+YouTube (googleapis.com)	Videos, titles, descriptions, replies and comment-moderation requests that you submit through TrolyPage	Upload videos to your selected channel and perform your requested comment actions
+Reddit (oauth.reddit.com)	Post content (title, text, images)	Publish posts to subreddits
+Hosting/infrastructure provider	All data on the server (encrypted at rest)	Storage and technical infrastructure operations
+Expo Push Service, Google Firebase Cloud Messaging, and Apple Push Notification service	Push token, device platform, and notification payload required for delivery	Deliver account, conversation, assignment, and approval notifications requested by the user
+Apple Inc. (App Store) & Google LLC (Google Play)	Apple ID / Google Play account identifiers and in-app purchase transaction tokens when subscribing on mobile	Process payments, activations, and recurring billing for mobile in-app subscriptions on iOS and Android
+
+About AI providers: Message content is sent to AI providers over encrypted HTTPS/TLS connections. Leading AI providers (OpenAI, Google, Anthropic) are committed to not using API data to train their AI models. You have full control to choose your AI provider in the AI Agent configuration settings.
+
+Beyond the cases above, data is only shared when:
+
+There is a valid request from a competent government authority following proper legal procedures.
+Necessary to protect the rights, property, or safety of TrolyPage, users, or the public.
+You provide explicit written consent.
+5. Platform Policy Compliance
+
+TrolyPage strictly complies with the requirements of all connected platforms, including:
+
+Data minimization principle: We only request and use permissions necessary for the features you activate. No excessive permissions are requested.
+Messenger Platform Policy compliance: The AI Agent complies with the Messenger Platform Policy, including the 24-hour Standard Messaging window rules and no promotional messages outside the window.
+No data abuse: Data received from the Meta API is never used for targeted advertising, sold to third parties, or used for any purpose outside the scope of the Service described in this policy.
+Data deletion on disconnect: When you remove the TrolyPage app from Facebook, TikTok, Pinterest, or any other platform, or disconnect an account, we immediately delete/invalidate Access Tokens and stop collecting data from that account. Historical data will be deleted upon request (see Data Deletion Instructions).
+YouTube access and deletion: You can disconnect your YouTube channel in TrolyPage or revoke access from your Google Account security settings. Disconnecting deletes the stored connection and its synchronized comments from TrolyPage and stops further synchronization. Videos and comments already published on YouTube remain there until you remove them on YouTube. If you revoke access in Google without disconnecting in TrolyPage, contact us or use the data deletion instructions to request removal of locally stored data.
+Data Deletion Callback: We support the data deletion mechanism required by Meta for Facebook users (see the Data Deletion page).
+Transparency: This Privacy Policy is publicly available and always accessible from the trolypage.com homepage.
+6. Data Protection
+
+We implement technical and organizational security measures that meet industry standards:
+
+Transport encryption: All data transmitted between browsers/applications and our servers is encrypted using TLS 1.2+.
+Storage encryption: Access Tokens (Facebook, Instagram, Zalo…), API Keys, and passwords are encrypted at rest in the database using strong algorithms.
+Data isolation (Multi-tenant Isolation): Each account can only access its own data. Data between accounts is fully isolated at the application level.
+Webhook authentication: All webhooks from Meta are verified using digital signatures (X-Hub-Signature) to ensure authenticity and prevent tampering.
+Regular backups: Data is backed up daily with secure backup retention policies.
+Audit logging: All access activities, configuration changes, and important system operations are logged.
+Access controls: Multi-level permission system (account owner, team members, restricted permissions).
+7. Data Storage
+Location: Data is stored on servers in Vietnam and/or Asia-Pacific region data centers.
+Retention periods:
+Account data: Throughout the duration of Service use + 7 days after account deletion is scheduled.
+Conversation history: According to your configuration; stored throughout the duration of use by default.
+Access Tokens: Until you disconnect the channel, revoke permissions, or the token expires.
+Payment transactions: Minimum 5 years (Vietnamese accounting law requirements).
+System logs: Maximum 12 months, then automatically deleted.
+8. Your Data Rights
+
+To exercise personal data rights, email support@trolypage.com with the information needed to verify your request. Valid requests receive a response within two working days. Completion deadlines depend on the request and processing role under Article 5 of Decree 356/2025/ND-CP:
+
+Right to be informed: Know exactly what information is being collected, used, stored, and shared.
+Right to consent: Consent to or refuse processing of your personal data.
+Right of access: Request to view all personal data we currently store.
+Right to correction: Request to update or correct inaccurate information.
+Right to deletion: Request deletion of all or part of your personal data (see Data Deletion Instructions).
+Right to restrict processing: Request restriction of data processing in certain specific circumstances.
+Right to data portability: Request to receive a copy of your data in a common format (JSON, CSV).
+Right to object: Object to data processing for specific purposes.
+Right to withdraw consent: Revoke Fanpage and social channel access at any time from Facebook settings or the TrolyPage platform.
+Right to complain: File a complaint with the relevant competent authority if you believe your rights have been violated.
+
+Valid data rights requests receive a response within two working days; completion deadlines depend on the type of request as described in the Data Rights section. support@trolypage.com
+
+Access, correction or provision of data: ordinarily 10 days, or 15 days when coordination with processors or third parties is required. One extension of up to 10 days may apply under the statutory conditions.
+Withdrawal of consent, restriction or objection: ordinarily 15 days, or 20 days when coordination with processors or third parties is required. One extension of up to 15 days may apply under the statutory conditions.
+Deletion: ordinarily 20 days, or 30 days when coordination with processors or third parties is required. One extension of up to 20 days may apply under the statutory conditions.
+Requests for data protection measures: ordinarily 15 days, with one extension of up to 15 days under the statutory conditions.
+
+Completion periods above are calendar days; the response period is in working days. We explain any extension or inability to fulfil a request as required by law. Records subject to mandatory retention are kept for limited purposes and periods; not every record and backup is erased immediately when an account-deletion waiting period ends.
+
+9. Children's Data Protection
+
+Our Service is not directed at children under 16 years of age and we do not intentionally collect personal data from children. If we discover that we have inadvertently collected data from a child under 16, we will delete that data immediately. If you believe we have data belonging to a child, please contact: support@trolypage.com.
+
+10. Cookies
+Essential cookies (required): Maintain login sessions, CSRF security, and remember your preferences. These cannot be disabled as they are necessary for the Service to function.
+Analytics cookies (optional): Help us understand how you use the platform to improve the service. These can be disabled through your browser settings.
+
+We do not use advertising cookies, behavioral tracking cookies, or third-party advertising pixels.
+
+11. International Data Transfer
+
+When using third-party AI providers (OpenAI with servers in the United States, Google with global servers, Anthropic with servers in the United States), message content may be processed on servers outside Vietnam. This transfer:
+
+Is protected by TLS encryption throughout the entire transmission process.
+Complies with each provider's API data usage policy (not used for model training).
+Only sends the minimum data necessary for AI language processing functionality.
+Complies with Vietnamese regulations on cross-border data transfer.
+12. Changes to the Privacy Policy
+
+We may update this Privacy Policy from time to time. When significant changes are made:
+
+Notification via email to your registered address at least 15 days in advance.
+A prominent notice displayed on the platform when you log in.
+The "Last updated" date at the top of this page will be updated.
+
+If you disagree with the changes, you have the right to discontinue using the Service and request deletion of all your data.
+
+13. Data Privacy Contact
+
+For any questions, requests, or complaints related to this Privacy Policy and personal data protection:
+
+Company: SkyNet Solution
+Email: support@trolypage.com
+Website: trolypage.com | skynetsolution.click
+Address: 9243 Quail Creek Ln, Boulder, CO 80301, US
+
+Valid data rights requests receive a response within two working days; completion deadlines depend on the type of request as described in the Data Rights section.
+
+TrolyPage – AI Agent platform automating the entire Marketing, Sales, and Operation process. From customer acquisition, 24/7 order closing, auto-payments to shipping and COD reconciliation, all managed on a single platform.
+
+Links
+Home
+About TrolyPage
+Features
+Download
+Pricing
+Education
+Nonprofits
+Affiliate
+Growth
+Blog
+Docs
+System Status
+Capabilities
+Features
+AI cho Messenger
+Inbox đa kênh
+Lên lịch đăng bài
+AI cho Zalo OA
+Chatbot website
+Chăm sóc lại khách
+MCP
+Install Website Chat
+Company
+
+CÔNG TY TNHH TROLYPAGE
+TROLYPAGE COMPANY LIMITED
+
+Enterprise registration number: 0111551901
+First registered: 29/06/2026
+Issuing authority: Phòng Đăng ký kinh doanh và Tài chính doanh nghiệp — Sở Tài chính thành phố Hà Nội
+
+Registered office: Số 72, Ngõ 318 Đê La Thành, Phường Ô Chợ Dừa, Thành phố Hà Nội, Việt Nam
+Legal representative: Nguyễn Duy Hùng, Director
+
+Contact
+support@trolypage.com
++84 964 842 168
+GO TO DASHBOARD
+GO TO DASHBOARD
+ 
+Terms of Service
+Rights and Obligations
+Privacy Policy
+Cancellation and Refunds
+Shipping and Delivery Policy
+Transaction Policy
+Pricing and Payment Methods
+Payment
+Service Provision
+Complaint Resolution
+Data Deletion
+TrolyPage mobile support
+
+© 2026 TrolyPage. All rights reserved.

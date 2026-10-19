@@ -1,0 +1,13 @@
+interface:
+  display_name: "TrolyPage"
+  short_description: "Route work or show complete TrolyPage help."
+  default_prompt: "Use $troly help to show the complete TrolyPage usage guide."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "trolypage"
+      description: "Unified TrolyPage business operations server"
+      transport: "streamable_http"
+      url: "https://trolypage.com/mcp/troly"
+policy:
+  allow_implicit_invocation: true

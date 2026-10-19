@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-19",
+  "publisher_identity_openai": "Business — Trolypage",
+  "listing_brand": "TrolyPage",
+  "company_from_public_site": "TROLYPAGE COMPANY LIMITED",
+  "countries": [],
+  "country_meaning": "All countries permitted by each platform, subject to service/provider restrictions",
+  "commerce": true,
+  "payment_location": "Outside ChatGPT/Claude/Muse",
+  "contact_email_confirmed": "support.mcp@trolypage.com",
+  "public_support_email": "support@trolypage.com",
+  "contact_person_name": "Alex Nguyen",
+  "reviewer_account": null,
+  "demo_recording_url": null,
+  "claude_repository": "https://github.com/trolypage/trolypage-plugins",
+  "claude_license": null,
+  "claude_submission_kinds": [
+    "MCP connector",
+    "plugin bundle"
+  ],
+  "logo_source": "trolypage-mobile/assets/brand/app-icon.png",
+  "logo_sha256": "00dd8c31d07aa9063f8fcfa504b3cc3b41e23048c606d809ef1f2969297fc3d7",
+  "claude_plugin_path": "packages/claude/trolypage-mcp",
+  "claude_branch": "codex/submission-preparation",
+  "github_visibility": "public"
+}
