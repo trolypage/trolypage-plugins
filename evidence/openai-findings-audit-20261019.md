@@ -1,5 +1,7 @@
 # OpenAI MCP findings audit — October 19, 2026
 
+**Historical scan.** See [the deployed remediation and final rescan](openai-schema-remediation-20261019.md) for the current result.
+
 All 29 tool detail panels containing findings were inspected in the live OpenAI portal. They contain **31 findings**:
 
 | Scan finding | Count |

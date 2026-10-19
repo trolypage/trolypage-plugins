@@ -1,0 +1,658 @@
+[
+    {
+        "name": "edit-social-target",
+        "title": "Edit Social Target Tool",
+        "description": "Edit the text and optional title of one existing remote publication target. Requires target_id and content. Checks provider edit capabilities and returns the provider action result; may update public content.",
+        "inputSchema": {
+            "properties": {
+                "target_id": {
+                    "description": "required; integer; min:1",
+                    "minimum": 1,
+                    "type": "integer"
+                },
+                "content": {
+                    "description": "required; string; max:60000",
+                    "maxLength": 60000,
+                    "type": "string"
+                },
+                "title": {
+                    "description": "sometimes; string; max:255",
+                    "maxLength": 255,
+                    "type": "string"
+                },
+                "idempotency_key": {
+                    "description": "nullable; string; max:128",
+                    "maxLength": 128,
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "type": "object",
+            "required": [
+                "target_id",
+                "content"
+            ]
+        },
+        "annotations": {
+            "title": "Edit Social Target Tool",
+            "readOnlyHint": false,
+            "destructiveHint": true,
+            "openWorldHint": true
+        }
+    },
+    {
+        "name": "delete-social-target",
+        "title": "Delete Social Target Tool",
+        "description": "Delete one existing remote publication target from its connected social provider. Requires target_id and provider delete support. Obtain explicit user confirmation; returns the provider action result.",
+        "inputSchema": {
+            "properties": {
+                "target_id": {
+                    "description": "required; integer; min:1",
+                    "minimum": 1,
+                    "type": "integer"
+                },
+                "idempotency_key": {
+                    "description": "nullable; string; max:128",
+                    "maxLength": 128,
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "type": "object",
+            "required": [
+                "target_id"
+            ]
+        },
+        "annotations": {
+            "title": "Delete Social Target Tool",
+            "readOnlyHint": false,
+            "destructiveHint": true,
+            "openWorldHint": true
+        }
+    },
+    {
+        "name": "unpublish-social-target",
+        "title": "Unpublish Social Target Tool",
+        "description": "Unpublish one existing remote publication target using its connected social provider. Requires target_id and provider support. Removes the publication from public visibility and returns the provider action result.",
+        "inputSchema": {
+            "properties": {
+                "target_id": {
+                    "description": "required; integer; min:1",
+                    "minimum": 1,
+                    "type": "integer"
+                },
+                "idempotency_key": {
+                    "description": "nullable; string; max:128",
+                    "maxLength": 128,
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "type": "object",
+            "required": [
+                "target_id"
+            ]
+        },
+        "annotations": {
+            "title": "Unpublish Social Target Tool",
+            "readOnlyHint": false,
+            "destructiveHint": true,
+            "openWorldHint": true
+        }
+    },
+    {
+        "name": "publish-social-target",
+        "title": "Publish Social Target Tool",
+        "description": "Publish one existing remote publication target using its connected social provider. Requires target_id and provider support. Makes the target public and may dispatch its configured first comment; returns the provider action result.",
+        "inputSchema": {
+            "properties": {
+                "target_id": {
+                    "description": "required; integer; min:1",
+                    "minimum": 1,
+                    "type": "integer"
+                },
+                "idempotency_key": {
+                    "description": "nullable; string; max:128",
+                    "maxLength": 128,
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "type": "object",
+            "required": [
+                "target_id"
+            ]
+        },
+        "annotations": {
+            "title": "Publish Social Target Tool",
+            "readOnlyHint": false,
+            "destructiveHint": true,
+            "openWorldHint": true
+        }
+    },
+    {
+        "name": "reschedule-social-target",
+        "title": "Reschedule Social Target Tool",
+        "description": "Change the provider publication schedule of one remote target to scheduled_at, a future date and time. Requires target_id and provider rescheduling support; returns the provider action result.",
+        "inputSchema": {
+            "properties": {
+                "target_id": {
+                    "description": "required; integer; min:1",
+                    "minimum": 1,
+                    "type": "integer"
+                },
+                "scheduled_at": {
+                    "description": "required; date; after:now",
+                    "type": "string"
+                },
+                "idempotency_key": {
+                    "description": "nullable; string; max:128",
+                    "maxLength": 128,
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "type": "object",
+            "required": [
+                "target_id",
+                "scheduled_at"
+            ]
+        },
+        "annotations": {
+            "title": "Reschedule Social Target Tool",
+            "readOnlyHint": false,
+            "destructiveHint": true,
+            "openWorldHint": true
+        }
+    },
+    {
+        "name": "comment-social-target",
+        "title": "Comment Social Target Tool",
+        "description": "Post a comment on one existing remote publication target using its connected social provider. Requires target_id and comment content. Sends content externally and returns the provider action result.",
+        "inputSchema": {
+            "properties": {
+                "target_id": {
+                    "description": "required; integer; min:1",
+                    "minimum": 1,
+                    "type": "integer"
+                },
+                "content": {
+                    "description": "required; string; max:60000",
+                    "maxLength": 60000,
+                    "type": "string"
+                },
+                "idempotency_key": {
+                    "description": "nullable; string; max:128",
+                    "maxLength": 128,
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "type": "object",
+            "required": [
+                "target_id",
+                "content"
+            ]
+        },
+        "annotations": {
+            "title": "Comment Social Target Tool",
+            "readOnlyHint": false,
+            "destructiveHint": true,
+            "openWorldHint": true
+        }
+    },
+    {
+        "name": "approve-social-target-reply",
+        "title": "Approve Social Target Reply Tool",
+        "description": "Approve the specified reply on one remote publication target using the connected provider. Requires target_id and reply_id and provider support; approval may make the reply public. Returns the provider action result.",
+        "inputSchema": {
+            "properties": {
+                "target_id": {
+                    "description": "required; integer; min:1",
+                    "minimum": 1,
+                    "type": "integer"
+                },
+                "reply_id": {
+                    "description": "required; regex:/^[0-9]+$/",
+                    "type": "string"
+                },
+                "idempotency_key": {
+                    "description": "nullable; string; max:128",
+                    "maxLength": 128,
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "type": "object",
+            "required": [
+                "target_id",
+                "reply_id"
+            ]
+        },
+        "annotations": {
+            "title": "Approve Social Target Reply Tool",
+            "readOnlyHint": false,
+            "destructiveHint": true,
+            "openWorldHint": true
+        }
+    },
+    {
+        "name": "reject-social-target-reply",
+        "title": "Reject Social Target Reply Tool",
+        "description": "Reject the specified reply on one remote publication target using the connected provider. Requires target_id and reply_id and provider support. Returns the provider action result.",
+        "inputSchema": {
+            "properties": {
+                "target_id": {
+                    "description": "required; integer; min:1",
+                    "minimum": 1,
+                    "type": "integer"
+                },
+                "reply_id": {
+                    "description": "required; regex:/^[0-9]+$/",
+                    "type": "string"
+                },
+                "idempotency_key": {
+                    "description": "nullable; string; max:128",
+                    "maxLength": 128,
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "type": "object",
+            "required": [
+                "target_id",
+                "reply_id"
+            ]
+        },
+        "annotations": {
+            "title": "Reject Social Target Reply Tool",
+            "readOnlyHint": false,
+            "destructiveHint": true,
+            "openWorldHint": true
+        }
+    },
+    {
+        "name": "acknowledge-social-target",
+        "title": "Acknowledge Social Target Tool",
+        "description": "Record that the operator checked an ambiguous or pending remote publication target on the social platform. Requires target_id and checked_platform=true. Changes local acknowledgement state only; does not publish or retry the provider operation.",
+        "inputSchema": {
+            "properties": {
+                "target_id": {
+                    "description": "required; integer; min:1",
+                    "minimum": 1,
+                    "type": "integer"
+                },
+                "checked_platform": {
+                    "description": "required; accepted",
+                    "type": "string"
+                },
+                "idempotency_key": {
+                    "description": "nullable; string; max:128",
+                    "maxLength": 128,
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "type": "object",
+            "required": [
+                "target_id",
+                "checked_platform"
+            ]
+        },
+        "annotations": {
+            "title": "Acknowledge Social Target Tool",
+            "readOnlyHint": false,
+            "destructiveHint": true,
+            "openWorldHint": false
+        }
+    },
+    {
+        "name": "create-social-comment",
+        "title": "Create Social Comment Tool",
+        "description": "Create a comment through the connected provider for the specified workspace comment context. Requires comment_id, body and a UUID request_id for deduplication. Sends the body externally and returns the provider result.",
+        "inputSchema": {
+            "properties": {
+                "request_id": {
+                    "description": "required; uuid",
+                    "type": "string"
+                },
+                "body": {
+                    "description": "required; string; max:10000",
+                    "maxLength": 10000,
+                    "type": "string"
+                },
+                "comment_id": {
+                    "description": "required; integer; min:1",
+                    "minimum": 1,
+                    "type": "integer"
+                },
+                "idempotency_key": {
+                    "description": "nullable; string; max:128",
+                    "maxLength": 128,
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "type": "object",
+            "required": [
+                "request_id",
+                "body",
+                "comment_id"
+            ]
+        },
+        "annotations": {
+            "title": "Create Social Comment Tool",
+            "readOnlyHint": false,
+            "destructiveHint": true,
+            "openWorldHint": true
+        }
+    },
+    {
+        "name": "reply-social-comment",
+        "title": "Reply Social Comment Tool",
+        "description": "Reply publicly to an existing workspace social comment through its connected provider. Requires comment_id, body and a UUID request_id for deduplication; returns the provider result.",
+        "inputSchema": {
+            "properties": {
+                "request_id": {
+                    "description": "required; uuid",
+                    "type": "string"
+                },
+                "body": {
+                    "description": "required; string; max:10000",
+                    "maxLength": 10000,
+                    "type": "string"
+                },
+                "comment_id": {
+                    "description": "required; integer; min:1",
+                    "minimum": 1,
+                    "type": "integer"
+                },
+                "idempotency_key": {
+                    "description": "nullable; string; max:128",
+                    "maxLength": 128,
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "type": "object",
+            "required": [
+                "request_id",
+                "body",
+                "comment_id"
+            ]
+        },
+        "annotations": {
+            "title": "Reply Social Comment Tool",
+            "readOnlyHint": false,
+            "destructiveHint": true,
+            "openWorldHint": true
+        }
+    },
+    {
+        "name": "update-social-comment",
+        "title": "Update Social Comment Tool",
+        "description": "Edit the body of an existing workspace social comment through its connected provider. Requires comment_id, body and a UUID request_id; provider capabilities determine whether editing is supported. Returns the provider result.",
+        "inputSchema": {
+            "properties": {
+                "request_id": {
+                    "description": "required; uuid",
+                    "type": "string"
+                },
+                "body": {
+                    "description": "required; string; max:10000",
+                    "maxLength": 10000,
+                    "type": "string"
+                },
+                "comment_id": {
+                    "description": "required; integer; min:1",
+                    "minimum": 1,
+                    "type": "integer"
+                },
+                "idempotency_key": {
+                    "description": "nullable; string; max:128",
+                    "maxLength": 128,
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "type": "object",
+            "required": [
+                "request_id",
+                "body",
+                "comment_id"
+            ]
+        },
+        "annotations": {
+            "title": "Update Social Comment Tool",
+            "readOnlyHint": false,
+            "destructiveHint": true,
+            "openWorldHint": true
+        }
+    },
+    {
+        "name": "delete-social-comment",
+        "title": "Delete Social Comment Tool",
+        "description": "Delete an existing workspace social comment through its connected provider. Requires comment_id and a UUID request_id. Obtain explicit user confirmation; returns the provider result.",
+        "inputSchema": {
+            "properties": {
+                "request_id": {
+                    "description": "required; uuid",
+                    "type": "string"
+                },
+                "comment_id": {
+                    "description": "required; integer; min:1",
+                    "minimum": 1,
+                    "type": "integer"
+                },
+                "idempotency_key": {
+                    "description": "nullable; string; max:128",
+                    "maxLength": 128,
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "type": "object",
+            "required": [
+                "request_id",
+                "comment_id"
+            ]
+        },
+        "annotations": {
+            "title": "Delete Social Comment Tool",
+            "readOnlyHint": false,
+            "destructiveHint": true,
+            "openWorldHint": true
+        }
+    },
+    {
+        "name": "moderate-social-comment",
+        "title": "Moderate Social Comment Tool",
+        "description": "Set one existing workspace social comment to the explicit moderation_status: published, heldForReview, rejected or hidden. Requires comment_id, moderation_status and a UUID request_id. Applies the provider-supported moderation state and returns its result.",
+        "inputSchema": {
+            "properties": {
+                "request_id": {
+                    "description": "required; uuid",
+                    "type": "string"
+                },
+                "moderation_status": {
+                    "description": "required; in:published,heldForReview,rejected,hidden",
+                    "enum": [
+                        "published",
+                        "heldForReview",
+                        "rejected",
+                        "hidden"
+                    ],
+                    "type": "string"
+                },
+                "comment_id": {
+                    "description": "required; integer; min:1",
+                    "minimum": 1,
+                    "type": "integer"
+                },
+                "idempotency_key": {
+                    "description": "nullable; string; max:128",
+                    "maxLength": 128,
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "type": "object",
+            "required": [
+                "request_id",
+                "moderation_status",
+                "comment_id"
+            ]
+        },
+        "annotations": {
+            "title": "Moderate Social Comment Tool",
+            "readOnlyHint": false,
+            "destructiveHint": true,
+            "openWorldHint": true
+        }
+    },
+    {
+        "name": "private-reply-social-comment",
+        "title": "Private Reply Social Comment Tool",
+        "description": "Send a private reply to the author of an existing workspace social comment through the connected provider. Requires comment_id, body and a UUID request_id. Sends a private message externally and returns the provider result.",
+        "inputSchema": {
+            "properties": {
+                "request_id": {
+                    "description": "required; uuid",
+                    "type": "string"
+                },
+                "body": {
+                    "description": "required; string; max:10000",
+                    "maxLength": 10000,
+                    "type": "string"
+                },
+                "comment_id": {
+                    "description": "required; integer; min:1",
+                    "minimum": 1,
+                    "type": "integer"
+                },
+                "idempotency_key": {
+                    "description": "nullable; string; max:128",
+                    "maxLength": 128,
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "type": "object",
+            "required": [
+                "request_id",
+                "body",
+                "comment_id"
+            ]
+        },
+        "annotations": {
+            "title": "Private Reply Social Comment Tool",
+            "readOnlyHint": false,
+            "destructiveHint": true,
+            "openWorldHint": true
+        }
+    },
+    {
+        "name": "like-social-comment",
+        "title": "Like Social Comment Tool",
+        "description": "Like one existing workspace social comment through its connected provider. Requires comment_id and a UUID request_id. Returns the provider result; support depends on provider capabilities.",
+        "inputSchema": {
+            "properties": {
+                "request_id": {
+                    "description": "required; uuid",
+                    "type": "string"
+                },
+                "comment_id": {
+                    "description": "required; integer; min:1",
+                    "minimum": 1,
+                    "type": "integer"
+                },
+                "idempotency_key": {
+                    "description": "nullable; string; max:128",
+                    "maxLength": 128,
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "type": "object",
+            "required": [
+                "request_id",
+                "comment_id"
+            ]
+        },
+        "annotations": {
+            "title": "Like Social Comment Tool",
+            "readOnlyHint": false,
+            "destructiveHint": true,
+            "openWorldHint": true
+        }
+    },
+    {
+        "name": "unlike-social-comment",
+        "title": "Unlike Social Comment Tool",
+        "description": "Remove the connected account like from one existing workspace social comment. Requires comment_id and a UUID request_id. Returns the provider result; support depends on provider capabilities.",
+        "inputSchema": {
+            "properties": {
+                "request_id": {
+                    "description": "required; uuid",
+                    "type": "string"
+                },
+                "comment_id": {
+                    "description": "required; integer; min:1",
+                    "minimum": 1,
+                    "type": "integer"
+                },
+                "idempotency_key": {
+                    "description": "nullable; string; max:128",
+                    "maxLength": 128,
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "type": "object",
+            "required": [
+                "request_id",
+                "comment_id"
+            ]
+        },
+        "annotations": {
+            "title": "Unlike Social Comment Tool",
+            "readOnlyHint": false,
+            "destructiveHint": true,
+            "openWorldHint": true
+        }
+    }
+]

@@ -1,0 +1,51 @@
+{
+  "observed_at": "2026-10-19T12:38:35.077Z",
+  "plugin_id": "plugin_asdk_app_6ad5a07c7d2c81918d806242938c0802",
+  "package_version": "1.0.2",
+  "endpoint": "https://trolypage.com/mcp/troly",
+  "tool_count": 288,
+  "description_schema_or_operation_findings": 0,
+  "remaining_findings": [
+    {
+      "tool": "send-message",
+      "findings": [
+        "This new tool definition needs further review before it can be published."
+      ]
+    },
+    {
+      "tool": "inspect-agent",
+      "findings": [
+        "This new tool definition needs further review before it can be published."
+      ]
+    },
+    {
+      "tool": "apply-agent-tool-preset",
+      "findings": [
+        "This new tool definition needs further review before it can be published."
+      ]
+    },
+    {
+      "tool": "clean-asset-image",
+      "findings": [
+        "This new tool definition needs further review before it can be published."
+      ]
+    },
+    {
+      "tool": "get-automation-catalog",
+      "findings": [
+        "This new tool definition needs further review before it can be published."
+      ]
+    },
+    {
+      "tool": "review-automation-phones",
+      "findings": [
+        "This new tool definition needs further review before it can be published."
+      ]
+    }
+  ],
+  "review_state": "In review",
+  "mcp_configuration": "Configured",
+  "authentication": "Authorized",
+  "domain": "Domain verified",
+  "scope": "Metadata scan only; not platform approval or exhaustive execution testing."
+}

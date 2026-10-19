@@ -37,3 +37,8 @@ The exact Muse callback/origin remains unverified; generic DCR/PKCE credentials 
 The recording demonstrates real shared MCP business workflows through a Claude reviewer connection, not an OpenAI-host session. It uses timestamped browser-tab captures at variable cadence without invented cursor or keyboard events. Idle intervals are compressed. Raw frames, timestamps and original recording remain privately outside tracked repository paths. This is a workflow demonstration, not independent execution evidence for every catalog tool.
 
 The rendered 132.034-second VP9/WebM contains 7922 frames at 1912×1064 / 60 fps, no audio, and is publicly hosted at https://trolypage.com/demos/connector-review.html. Cirro validation/render succeeded; source capture cadence remains variable.
+
+
+## Later MCP remediation
+
+The initial scan counts above are historical. After source remediation and deployment, OpenAI discovered 288 tools with zero description/schema/operation-exposure findings and six generic new-tool review notices. The plugin remains In review with its original identity and package. See [the final remediation record](openai-schema-remediation-20261019.md).

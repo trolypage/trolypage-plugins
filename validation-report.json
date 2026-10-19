@@ -344,8 +344,8 @@
     }
   ],
   "local_checks_passed": true,
-  "tools": 271,
-  "official_platform_scan": "Claude bundle 1.0.2 format/policy/security passed. OpenAI nine skills passed; category advisory and 31 MCP findings across 29 tools remain, including 22 description/capability warnings. Detailed audit: evidence/openai-findings-audit-20261019.md.",
+  "tools": 288,
+  "official_platform_scan": "Claude bundle 1.0.2 format/policy/security passed. OpenAI nine skills passed. Final MCP rescan discovered 288 tools: zero description/schema/operation-exposure findings and six generic new-tool review notices. OpenAI 1.0.2 remains In review; no platform approval. See evidence/openai-schema-remediation-20261019.md.",
   "authenticated_tests": "Owner-attested prior all-tool execution for Claude directory; independently observed representative synthetic workflows in Claude. No OpenAI/Muse-host business execution claimed.",
   "demo_recording": "Rendered and publicly played through: https://trolypage.com/demos/connector-review.html",
   "pending": "Platform reviews; any requested fixes, exact Muse callback configuration and reviewer access support. See review/07-readiness.md.",
@@ -370,5 +370,19 @@
     "tools_with_incomplete_explicit_annotation_booleans": 270
   },
   "claude_directory_tools": 180,
-  "annotation_serialization": "Complete boolean hints and titles deployed; live directory/full discovery verified separately from historical extraction"
+  "annotation_serialization": "Complete boolean hints and titles deployed; live directory/full discovery verified separately from historical extraction",
+  "tool_inventory_snapshot_count": 271,
+  "mcp_schema_remediation": {
+    "backend_commits": [
+      "9f1414c72",
+      "f9da60738"
+    ],
+    "isolated_mcp_tests": 268,
+    "assertions": 36337,
+    "follow_up_hub_tests": 15,
+    "follow_up_hub_assertions": 137,
+    "new_fixed_social_tools": 17,
+    "final_scan": "evidence/openai-rescan-20261019-final.json",
+    "execution_limit": "Local regressions and metadata scans; no exhaustive real-provider re-execution or platform approval."
+  }
 }
