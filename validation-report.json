@@ -1,6 +1,6 @@
 {
   "date": "2026-10-19",
-  "status": "REVIEW DRAFT; NOT READY FOR PUBLIC SUBMISSION",
+  "status": "OpenAI 1.0.2 In review; Claude connector submitted and bundle publish requested; Muse 3/3 requirements submitted; no platform approval",
   "local_checks": [
     {
       "check": "openai semantic version",
@@ -344,27 +344,31 @@
     }
   ],
   "local_checks_passed": true,
-  "tools": 270,
-  "serialized_input_schemas": 267,
-  "schema_inspection_errors": [
-    {
-      "tool": "preview-broadcast-audience",
-      "error": "Call to a member function connection() on null"
-    },
-    {
-      "tool": "update-broadcast",
-      "error": "Call to a member function connection() on null"
-    },
-    {
-      "tool": "create-agent-memory",
-      "error": "Target [Illuminate\\Contracts\\Auth\\Factory] is not instantiable."
-    }
-  ],
-  "tools_with_incomplete_explicit_annotation_booleans": 270,
-  "official_platform_scan": "Not run",
-  "authenticated_tests": "Not run",
-  "demo_recording": "Not created",
-  "pending": "See review/07-readiness.md. Local checks are custom structural checks, not full official platform schema validation or approval.",
+  "tools": 271,
+  "official_platform_scan": "Claude bundle 1.0.2 format/policy/security passed. OpenAI nine skills passed; non-blocking category/MCP findings remain.",
+  "authenticated_tests": "Owner-attested prior all-tool execution for Claude directory; independently observed representative synthetic workflows in Claude. No OpenAI/Muse-host business execution claimed.",
+  "demo_recording": "Rendered and publicly played through: https://trolypage.com/demos/connector-review.html",
+  "pending": "Platform reviews; any requested fixes, exact Muse callback configuration and reviewer access support. See review/07-readiness.md.",
   "agent_plugins_1_schema_validation": "Passed",
-  "validation_scope": "Local format, references, asset, ZIP and secret-pattern checks; Agent Plugins core schemas when installed. OpenAI extension rules are partly custom-checked. Platform portal scans, Claude official validation and live behavior tests remain pending."
+  "validation_scope": "Local format, references, asset, ZIP and secret-pattern checks; Agent Plugins core schemas when installed. OpenAI extension rules are partly custom-checked. Platform scan and live behavior evidence are recorded separately; local checks alone do not establish approval or exhaustive execution.",
+  "historical_isolated_source_extraction": {
+    "serialized_input_schemas": 267,
+    "schema_inspection_errors": [
+      {
+        "tool": "preview-broadcast-audience",
+        "error": "Call to a member function connection() on null"
+      },
+      {
+        "tool": "update-broadcast",
+        "error": "Call to a member function connection() on null"
+      },
+      {
+        "tool": "create-agent-memory",
+        "error": "Target [Illuminate\\Contracts\\Auth\\Factory] is not instantiable."
+      }
+    ],
+    "tools_with_incomplete_explicit_annotation_booleans": 270
+  },
+  "claude_directory_tools": 180,
+  "annotation_serialization": "Complete boolean hints and titles deployed; live directory/full discovery verified separately from historical extraction"
 }

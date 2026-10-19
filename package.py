@@ -91,7 +91,7 @@ report=json.loads((ROOT/'validation-report.json').read_text(encoding='utf-8'))
 report['local_checks']=checks
 report['local_checks_passed']=all(c['passed'] for c in checks)
 report['agent_plugins_1_schema_validation']='Passed' if Draft202012Validator and all(c['passed'] for c in checks if c['check'].startswith('Agent Plugins')) else 'Not available or failed'
-report['validation_scope']='Local format, references, asset, ZIP and secret-pattern checks; Agent Plugins core schemas when installed. OpenAI extension rules are partly custom-checked. Platform portal scans, Claude official validation and live behavior tests remain pending.'
+report['validation_scope']='Local format, references, asset, ZIP and secret-pattern checks; Agent Plugins core schemas when installed. OpenAI extension rules are partly custom-checked. Platform scan and live behavior evidence are recorded separately; local checks alone do not establish approval or exhaustive execution.'
 (ROOT/'validation-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 (ROOT/'archives/SHA256SUMS.txt').write_text('\n'.join(hashlib.sha256(p.read_bytes()).hexdigest()+'  '+p.name for p in archives)+'\n',encoding='utf-8')
 # Refresh only the rendered projection; never regenerate or overwrite reviewed notes.

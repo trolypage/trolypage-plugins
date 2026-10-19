@@ -1,49 +1,27 @@
-# Muse submission form draft
+# Muse submission
 
-Portal: https://platform.muse.ai/submission. The intake was submitted on October 19, 2026 after the owner confirmed the three displayed authorization/terms statements. The portal confirmed receipt. OAuth credentials were subsequently submitted securely with DCR, PKCE, scope mcp:use and the dedicated reviewer account. Business verification was completed using the work-email verification flow. The follow-up overview shows two of three requirements complete; the data-processing questionnaire is a saved draft. Submission is not approval.
+**Submitted with 3/3 follow-up requirements complete**, verified October 19, 2026. Intake, business verification, integration credentials and the data-processing questionnaire have been received. The questionnaire shows Under review. Submission is not approval or successful Muse-host OAuth/tool execution.
 
-## Overview: observed form fields
+Portal: https://platform.muse.ai/submissions/af9ca43d-6a0a-4270-97f8-8759ca1374ed
 
-| Field | Draft value |
-| --- | --- |
-| Connector name | TrolyPage |
-| Company or developer | TROLYPAGE COMPANY LIMITED |
-| Product website | https://trolypage.com/mcp |
-| Connector icon | assets/trolypage-muse-icon-512.png — 512x512 PNG, 252947 bytes, lossless compression with identical decoded pixels |
-| Your name | Alex Nguyen |
-| Work email | support.mcp@trolypage.com |
-| Support email or URL | support@trolypage.com |
-| Privacy policy | https://trolypage.com/privacy-policy — company and Hanoi contact corrected and verified October 19, 2026 |
-| Terms of service | https://trolypage.com/terms-of-service |
+## Identity and connection
 
-### Example prompts
+TrolyPage, TROLYPAGE COMPANY LIMITED, Alex Nguyen, support.mcp@trolypage.com. Public support: support@trolypage.com. Website https://trolypage.com/mcp; Privacy Policy and Terms use the published TrolyPage URLs and corrected Hanoi identity. The original mobile icon is supplied.
 
-```text
-Find a customer and summarize their latest conversation without sending a message.
-Find a product by SKU and show its current price and stock.
-Prepare an order for shop review without confirming it, taking payment or creating shipping.
-Compare sales for the last 30 days with the previous period.
-Add an internal CRM note without contacting the customer.
-```
+Production endpoint: https://trolypage.com/mcp/troly, Streamable HTTP, OAuth public DCR, PKCE S256 and scope mcp:use. Reviewer credentials are saved only in secure platform fields. Instructions were updated with Review Customer A, product #4642, pending unpaid order #54, idempotent retry and internal-note examples. No real payment, shipment or recipient is needed for these core scenarios.
 
-### Payments
+## Submitted data answers
 
-The observed choices are `My connector accepts payments` and `My connector does not accept payments`. Because the catalog includes commerce, payment QR and payment-status tools, do not select the latter solely because payment occurs externally. The owner must check the portal definition. If external merchant payment is included, select the former and use the disclosure below. If Muse requires completing payment inside Muse, clarify the external-payment scope before claiming support.
+The owner confirmed BNIX (https://bnix.vn/) in Vietnam and the enabled AI providers OpenAI, Anthropic Claude, Google, OpenRouter and Cloudflare. Optional DeepSeek/Qwen or other Chinese-origin models can be selected, so restricted-origin model capability is disclosed. Known Vietnam/US processing and global AI-provider processing are disclosed; no Vietnam-only guarantee is made.
 
-TrolyPage supports merchant product lookup, order preparation and management, payment QR generation/status checks, shipping and bookings. Customers complete payment outside the assistant using the merchant's supported payment method. This integration does not directly debit bank accounts or transfer financial assets. A generated QR, unpaid order or pending approval is not a completed payment. Merchant/provider/region restrictions apply.
+The form describes ordinary account/contact/content/log/messaging data, financial/order data, youth data (the product permits 16–17 with guardian consent), consequential writes and an aggregator/platform architecture. All portal-listed countries were selected for service availability, subject to platform/provider restrictions.
 
-### Additional information: draft
+The published retention and deletion limits are disclosed: long-term account/conversation records, statutory financial records and logs; deletion does not immediately erase every backup or subprocessor copy. At-rest encryption, mandatory administrator MFA, monitoring and incident response are owner-attested, not independently audited. No SOC 2 claim was made. International transfer controls are described as TLS, minimization and authorized provider selection; **no signed SCC/DPA, adequacy decision or binding corporate rules is claimed**. Provider-specific regions and any additional contractual requirements remain subject to review.
 
-TrolyPage is a first-party business-operations connector for workspace owners and administrators. It provides authenticated customer context, catalog/order operations and reporting rather than a list of public links. We intend availability in all Muse-supported countries; connected merchant/provider services may be region-specific. Payment is completed through the merchant's external payment flow. Reviewers will receive a dedicated populated test workspace through secure review fields. No live charge or customer communication is required for the core review cases. The current candidate still requires the readiness items in the accompanying review pack to be completed.
+## Commerce and remaining technical limits
 
-## Technical specifications
+Intake declares merchant commerce/payment acceptance with payment outside the assistant. The data questionnaire's payment-products/services answer is No for the submitted SaaS orchestration scope: TrolyPage is not presented as a regulated custodial payment provider. Financial data, order/payment-status tools and external merchant payments remain explicitly disclosed. A QR or pending order is not proof of payment received.
 
-The Existing MCP technical step was completed in the portal. Transport: Streamable HTTP. Production endpoint: https://trolypage.com/mcp/troly. OAuth discovery: https://trolypage.com/.well-known/oauth-authorization-server. Public DCR client, PKCE S256, scope `mcp:use`; no client secret in a public archive. See 05-technical-and-data.md, tool-inventory.csv and tool-contracts.json for contracts, proposed classifications and inspection limits.
+Muse classifies sensitive writes and requires its own per-action approval; TrolyPage execution modes do not replace it. Read-only Muse OAuth has not been independently established. The exact Muse callback/origin has not been supplied in inspected official material, so no speculative redirect wildcard or environment change was made. A missing MUSE-prefixed environment variable alone does not establish lack of generic DCR/PKCE support. Complete any narrow configuration change when the actual review-client callback is known.
 
-Muse sensitive writes require the host's per-action approval. TrolyPage Auto/Hybrid modes do not replace it. Read-only OAuth has not been established: the inspected source filters `mcp:read` for PersonalAccessToken, while discovery advertises only `mcp:use`. Resolve this gap before declaring support.
-
-## Review
-
-Use the shared processing, test and reviewer-access materials. Confirm actual processing countries, subprocessors, retention/deletion, security controls and international-transfer arrangements with the operator. Only an authorized person may accept developer terms. Intake, integration credentials and business verification are complete; the data-processing questionnaire and live verification remain incomplete.
-
-Source: https://platform.muse.ai/docs
+Guidelines: https://platform.muse.ai/docs

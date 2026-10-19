@@ -1,7 +1,7 @@
 <!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TrolyPage — submission review materials</title><style>
 body{margin:0;background:#f5f7fb;color:#17223b;font:16px/1.65 system-ui,sans-serif}header{background:#101f3b;color:white;padding:34px max(24px,calc((100vw - 1100px)/2));}header img{width:68px;height:68px;border-radius:16px;float:left;margin-right:20px}h1{font-size:29px;line-height:1.25}header p{color:#c6d7ef}main{max-width:1100px;margin:auto;padding:26px 22px}nav{display:flex;flex-wrap:wrap;gap:9px;margin:20px 0}a{color:#1456b8}nav a,.button{background:white;border:1px solid #cdd7e8;border-radius:8px;padding:8px 12px;text-decoration:none}.notice{background:#fff5d8;border-left:4px solid #cf8500;padding:15px 20px;border-radius:6px}section{background:white;padding:28px;margin:24px 0;border:1px solid #dce3ed;border-radius:12px;scroll-margin:15px;overflow:auto}section h1{font-size:26px}h2{margin-top:30px;font-size:21px}h3{font-size:18px}table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:10px 12px;border:1px solid #dfe5ee;text-align:left;vertical-align:top}th{background:#edf2f9}pre{white-space:pre-wrap;background:#eef3f9;padding:16px;border-radius:7px}code{font-size:13px;overflow-wrap:anywhere}.file{float:right;font-size:13px}.assets{display:flex;gap:18px;align-items:center;flex-wrap:wrap}.assets img{width:320px;max-width:100%}footer{font-size:13px;color:#63718b;margin:30px 0}@media(max-width:650px){section{padding:18px}header{padding:24px}table{min-width:560px}.file{float:none}}
 </style><header><img src="assets/trolypage-mobile-icon-512.png" alt="TrolyPage mobile icon"><h1>TrolyPage — submission materials</h1><p>OpenAI · Claude · Muse | Review draft dated October 19, 2026</p></header><main><div class="notice"><strong>REVIEW DRAFT.</strong> Packages and copy are prepared. OpenAI is in draft; Muse intake and credentials are submitted; Claude preparation continues. No directory approval or publication has been received. Business tests remain Not run. Read the readiness section before submission.</div><nav><a href="#01-listing-and-copy">01-listing-and-copy</a><a href="#02-openai">02-openai</a><a href="#03-claude">03-claude</a><a href="#04-muse">04-muse</a><a href="#05-technical-and-data">05-technical-and-data</a><a href="#06-tests-demo-and-access">06-tests-demo-and-access</a><a href="#07-readiness">07-readiness</a><a href="#08-policy-copy-to-review">08-policy-copy-to-review</a><a href="#09-seo-and-discovery">09-seo-and-discovery</a></nav><p><a class="button" href="archives/openai-trolypage-mcp-1.0.1-DRAFT.zip">OpenAI ZIP — DRAFT</a> <a class="button" href="archives/claude-trolypage-mcp-1.0.1-DRAFT.zip">Claude ZIP — DRAFT</a> <a class="button" href="validation-report.json">Local validation</a></p><div class="assets"><img src="assets/icon-inspection.png" alt="Mobile icon at several sizes on light and dark backgrounds"><p>Original mobile app artwork retained.<br>Submission contact: support.mcp@trolypage.com<br>Countries: all platform-permitted countries.<br>Commerce: payment outside the AI host.</p></div><section id="01-listing-and-copy"><a class="file" href="review/01-listing-and-copy.md">Open Markdown file</a><h1>Listing copy for review</h1>
-<p>Prepared October 19, 2026. All submission copy is in English. This remains a review draft; see <a href="07-readiness.md">readiness</a> before submission.</p>
+<p>Prepared October 19, 2026. All submission copy is in English. The platform submissions have been sent; see <a href="07-readiness.md">current status</a>.</p>
 <h2>Confirmed information</h2>
 <table>
 <thead>
@@ -100,27 +100,13 @@ body{margin:0;background:#f5f7fb;color:#17223b;font:16px/1.65 system-ui,sans-ser
 </tr>
 </tbody>
 </table>
-<p>No placeholder demo URL is included. After recording a real video and verifying reviewer access, add <code>review.demo_recording_url</code> and rebuild the archives. Optional localized listing overrides have been omitted for this English-only candidate.</p></section><section id="02-openai"><a class="file" href="review/02-openai.md">Open Markdown file</a><h1>OpenAI submission preparation</h1>
-<h2>Package</h2>
-<p><code>archives/openai-trolypage-mcp-1.0.2-DRAFT.zip</code> is a review candidate, not a submission-ready release. It contains one plugin at the archive root: <code>plugin.json</code>, <code>mcp.json</code>, <code>skills/</code>, <code>assets/</code> and README.</p>
-<p>Public metadata is in <code>extensions.com.openai.interface</code>; the five positive and three negative cases are in <code>extensions.com.openai.review.test_cases</code>. Commerce is declared as true. <code>countries=[]</code> represents the owner's choice of all platform-permitted countries. Listing and review text are in English; no optional localized overrides are included. The package excludes private app bindings, <code>.app.json</code>, hooks, tokens and passwords.</p>
-<h2>Steps after the review draft is complete</h2>
-<ol>
-<li>Resolve the readiness findings, populate the existing demo account and run the tests. Record and review a real demo, then add its verified URL to the manifest.</li>
-<li>Rebuild and inspect <code>validation-report.json</code> and the ZIP hash. Open https://platform.openai.com/plugins under TroLyPage and select <code>Business — Trolypage</code>.</li>
-<li>Upload the ZIP to create a draft. Uploading is separate from submitting for review and receiving approval.</li>
-<li>Verify imported metadata, countries, commerce disclosure, test cases and release notes. Complete the exact domain challenge supplied by the portal. Select OAuth authentication, use discovery/DCR and scope <code>mcp:use</code>, then scan the tools. Keep standard transport/URL configuration in mcp.json; do not add client secrets or unsupported authentication overrides.</li>
-<li>Enter reviewer credentials only in the dashboard's secure review fields. Exclude them from the ZIP, Git and listing. Repeat the tests against the exact saved draft.</li>
-<li>The authorized owner must read and confirm policy attestations before submitting for review. Publishing is a separate step after approval.</li>
-</ol>
-<h2>Verified and pending</h2>
-<p>On October 19, 2026, the organization showed Verified status and the upload dialog offered Business — Trolypage. Developer identity verification and MCP domain verification are separate. The draft domain challenge is now verified: the exact challenge file was uploaded to the server public/.well-known directory and the portal displays Domain verified. All nine skill checks passed. The scan account completed OAuth and discovered 271 tools; generic new-tool findings are non-blocking for submission. Reviewer credentials and 5+3 cases are saved securely. Real synthetic workflows were demonstrated through the separate Claude reviewer connection; OpenAI-host execution is not claimed. Candidate 1.0.2 adds fixture/report corrections and a demo URL that must be verified before upload. Final legal attestations and submission remain pending. The current draft was reuploaded with the Apache-2.0 distribution files.</p>
-<h2>Sources</h2>
-<ul>
-<li>https://developers.openai.com/plugins/deploy/submission</li>
-<li>https://developers.openai.com/plugins/build/plugins</li>
-<li>https://developers.openai.com/plugins/deploy/submission-errors</li>
-</ul></section><section id="03-claude"><a class="file" href="review/03-claude.md">Open Markdown file</a><h1>Claude MCP connector and plugin bundle</h1>
+<p>No placeholder demo URL is included. After recording a real video and verifying reviewer access, add <code>review.demo_recording_url</code> and rebuild the archives. Optional localized listing overrides have been omitted for this English-only candidate.</p></section><section id="02-openai"><a class="file" href="review/02-openai.md">Open Markdown file</a><h1>OpenAI submission</h1>
+<p><strong>Version 1.0.2 is In review</strong>, verified October 19, 2026, after Alex chose to complete the final legal attestations and submit personally on the portal. MCP configuration is <strong>Configured / Authorized</strong>; domain and business identity are verified. No approval or publication is claimed.</p>
+<p>Portal: https://platform.openai.com/plugins/manage/plugin_asdk_app_6ad5a07c7d2c81918d806242938c0802</p>
+<p>The exact submitted source is <code>packages/openai/trolypage-mcp</code> and archive <code>archives/openai-trolypage-mcp-1.0.2-DRAFT.zip</code>. It retains <code>trolypage-mcp</code>, the full https://trolypage.com/mcp/troly endpoint, nine skills, five positive and three negative cases, English listing/release notes, commerce disclosure and all platform-supported countries. The archive filename retains its preparation suffix; the portal is authoritative for review state.</p>
+<p>All nine skill checks passed. The saved review information was inspected after reupload: countries, preserved secure reviewer credentials, the corrected sales-report setup, all cases, release notes and https://trolypage.com/demos/connector-review.html. The actual 132.034-second recording played to the end publicly in the browser. It demonstrates shared MCP workflows in Claude; OpenAI-host execution is not claimed. Independent reviewer-environment sign-in remains unverified.</p>
+<p>The portal discovered 271 full-endpoint tools. Category confirmation and MCP new-tool review findings remain <strong>non-blocking</strong>, with possible reviewer follow-up. They were not represented as approval or silently removed. Connection and original app identity were preserved.</p>
+<p>Keep the demo account, endpoint, policies and video available during review. Do not reupload, cancel review or change the submitted package without a deliberate update. Publication is a separate action after approval.</p></section><section id="03-claude"><a class="file" href="review/03-claude.md">Open Markdown file</a><h1>Claude MCP connector and plugin bundle</h1>
 <p>The owner requested both listing types under the same organization. The selected public repository is https://github.com/trolypage/trolypage-plugins. The owner selected Apache-2.0 for the original plugin skills and documentation.</p>
 <h2>A. MCP connector</h2>
 <table>
@@ -216,76 +202,23 @@ body{margin:0;background:#f5f7fb;color:#17223b;font:16px/1.65 system-ui,sans-ser
 </ul>
 <h2>Latest verified result</h2>
 <p>Claude accepted bundle 1.0.2 at commit <code>4ac9cfa</code>, detected eight skills and one MCP connection, and passed format, directory policy and security scanning. The remaining manifest warning explains that Claude Code ignores privacyPolicyUrl while the directory reads it; the portal says no action is needed. Publish was requested for 1.0.2 and is waiting for an Anthropic reviewer. Nothing is live yet.</p>
-<p>The separate connector draft now targets <code>/mcp/claude</code>, with English listing, use cases, company, OAuth and data disclosures completed through Compliance. Its self-tested checkbox and seven policy declarations remain unchecked. Five read-only tools succeeded through the actual Claude connector; the remaining tool executions are not proven. See <code>review/claude-directory-tool-test-ledger.csv</code>. The original full-catalog ledger remains a separate historical/full-endpoint artifact.</p></section><section id="04-muse"><a class="file" href="review/04-muse.md">Open Markdown file</a><h1>Muse submission form draft</h1>
-<p>Portal: https://platform.muse.ai/submission. The intake was submitted on October 19, 2026 after the owner confirmed the three displayed authorization/terms statements. The portal confirmed receipt. OAuth credentials were subsequently submitted securely with DCR, PKCE, scope mcp:use and the dedicated reviewer account. Business verification was completed using the work-email verification flow. The follow-up overview shows two of three requirements complete; the data-processing questionnaire is a saved draft. Submission is not approval.</p>
-<h2>Overview: observed form fields</h2>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Draft value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Connector name</td>
-<td>TrolyPage</td>
-</tr>
-<tr>
-<td>Company or developer</td>
-<td>TROLYPAGE COMPANY LIMITED</td>
-</tr>
-<tr>
-<td>Product website</td>
-<td>https://trolypage.com/mcp</td>
-</tr>
-<tr>
-<td>Connector icon</td>
-<td>assets/trolypage-muse-icon-512.png — 512x512 PNG, 252947 bytes, lossless compression with identical decoded pixels</td>
-</tr>
-<tr>
-<td>Your name</td>
-<td>Alex Nguyen</td>
-</tr>
-<tr>
-<td>Work email</td>
-<td>support.mcp@trolypage.com</td>
-</tr>
-<tr>
-<td>Support email or URL</td>
-<td>support@trolypage.com</td>
-</tr>
-<tr>
-<td>Privacy policy</td>
-<td>https://trolypage.com/privacy-policy — company and Hanoi contact corrected and verified October 19, 2026</td>
-</tr>
-<tr>
-<td>Terms of service</td>
-<td>https://trolypage.com/terms-of-service</td>
-</tr>
-</tbody>
-</table>
-<h3>Example prompts</h3>
-<pre><code class="language-text">Find a customer and summarize their latest conversation without sending a message.
-Find a product by SKU and show its current price and stock.
-Prepare an order for shop review without confirming it, taking payment or creating shipping.
-Compare sales for the last 30 days with the previous period.
-Add an internal CRM note without contacting the customer.
-</code></pre>
-<h3>Payments</h3>
-<p>The observed choices are <code>My connector accepts payments</code> and <code>My connector does not accept payments</code>. Because the catalog includes commerce, payment QR and payment-status tools, do not select the latter solely because payment occurs externally. The owner must check the portal definition. If external merchant payment is included, select the former and use the disclosure below. If Muse requires completing payment inside Muse, clarify the external-payment scope before claiming support.</p>
-<p>TrolyPage supports merchant product lookup, order preparation and management, payment QR generation/status checks, shipping and bookings. Customers complete payment outside the assistant using the merchant's supported payment method. This integration does not directly debit bank accounts or transfer financial assets. A generated QR, unpaid order or pending approval is not a completed payment. Merchant/provider/region restrictions apply.</p>
-<h3>Additional information: draft</h3>
-<p>TrolyPage is a first-party business-operations connector for workspace owners and administrators. It provides authenticated customer context, catalog/order operations and reporting rather than a list of public links. We intend availability in all Muse-supported countries; connected merchant/provider services may be region-specific. Payment is completed through the merchant's external payment flow. Reviewers will receive a dedicated populated test workspace through secure review fields. No live charge or customer communication is required for the core review cases. The current candidate still requires the readiness items in the accompanying review pack to be completed.</p>
-<h2>Technical specifications</h2>
-<p>The Existing MCP technical step was completed in the portal. Transport: Streamable HTTP. Production endpoint: https://trolypage.com/mcp/troly. OAuth discovery: https://trolypage.com/.well-known/oauth-authorization-server. Public DCR client, PKCE S256, scope <code>mcp:use</code>; no client secret in a public archive. See 05-technical-and-data.md, tool-inventory.csv and tool-contracts.json for contracts, proposed classifications and inspection limits.</p>
-<p>Muse sensitive writes require the host's per-action approval. TrolyPage Auto/Hybrid modes do not replace it. Read-only OAuth has not been established: the inspected source filters <code>mcp:read</code> for PersonalAccessToken, while discovery advertises only <code>mcp:use</code>. Resolve this gap before declaring support.</p>
-<h2>Review</h2>
-<p>Use the shared processing, test and reviewer-access materials. Confirm actual processing countries, subprocessors, retention/deletion, security controls and international-transfer arrangements with the operator. Only an authorized person may accept developer terms. Intake, integration credentials and business verification are complete; the data-processing questionnaire and live verification remain incomplete.</p>
-<p>Source: https://platform.muse.ai/docs</p></section><section id="05-technical-and-data"><a class="file" href="review/05-technical-and-data.md">Open Markdown file</a><h1>Technical and data-processing dossier — review draft</h1>
+<p>The separate connector was successfully submitted at https://claude.ai/directory/manage/trolypage. Its required declarations were completed, including the owner-confirmed prior all-tool Inspector/Claude execution. Independent representative synthetic workflows are recorded separately in the directory ledger and submission evidence. The original full-catalog ledger remains a historical artifact.</p></section><section id="04-muse"><a class="file" href="review/04-muse.md">Open Markdown file</a><h1>Muse submission</h1>
+<p><strong>Submitted with 3/3 follow-up requirements complete</strong>, verified October 19, 2026. Intake, business verification, integration credentials and the data-processing questionnaire have been received. The questionnaire shows Under review. Submission is not approval or successful Muse-host OAuth/tool execution.</p>
+<p>Portal: https://platform.muse.ai/submissions/af9ca43d-6a0a-4270-97f8-8759ca1374ed</p>
+<h2>Identity and connection</h2>
+<p>TrolyPage, TROLYPAGE COMPANY LIMITED, Alex Nguyen, support.mcp@trolypage.com. Public support: support@trolypage.com. Website https://trolypage.com/mcp; Privacy Policy and Terms use the published TrolyPage URLs and corrected Hanoi identity. The original mobile icon is supplied.</p>
+<p>Production endpoint: https://trolypage.com/mcp/troly, Streamable HTTP, OAuth public DCR, PKCE S256 and scope mcp:use. Reviewer credentials are saved only in secure platform fields. Instructions were updated with Review Customer A, product #4642, pending unpaid order #54, idempotent retry and internal-note examples. No real payment, shipment or recipient is needed for these core scenarios.</p>
+<h2>Submitted data answers</h2>
+<p>The owner confirmed BNIX (https://bnix.vn/) in Vietnam and the enabled AI providers OpenAI, Anthropic Claude, Google, OpenRouter and Cloudflare. Optional DeepSeek/Qwen or other Chinese-origin models can be selected, so restricted-origin model capability is disclosed. Known Vietnam/US processing and global AI-provider processing are disclosed; no Vietnam-only guarantee is made.</p>
+<p>The form describes ordinary account/contact/content/log/messaging data, financial/order data, youth data (the product permits 16–17 with guardian consent), consequential writes and an aggregator/platform architecture. All portal-listed countries were selected for service availability, subject to platform/provider restrictions.</p>
+<p>The published retention and deletion limits are disclosed: long-term account/conversation records, statutory financial records and logs; deletion does not immediately erase every backup or subprocessor copy. At-rest encryption, mandatory administrator MFA, monitoring and incident response are owner-attested, not independently audited. No SOC 2 claim was made. International transfer controls are described as TLS, minimization and authorized provider selection; <strong>no signed SCC/DPA, adequacy decision or binding corporate rules is claimed</strong>. Provider-specific regions and any additional contractual requirements remain subject to review.</p>
+<h2>Commerce and remaining technical limits</h2>
+<p>Intake declares merchant commerce/payment acceptance with payment outside the assistant. The data questionnaire's payment-products/services answer is No for the submitted SaaS orchestration scope: TrolyPage is not presented as a regulated custodial payment provider. Financial data, order/payment-status tools and external merchant payments remain explicitly disclosed. A QR or pending order is not proof of payment received.</p>
+<p>Muse classifies sensitive writes and requires its own per-action approval; TrolyPage execution modes do not replace it. Read-only Muse OAuth has not been independently established. The exact Muse callback/origin has not been supplied in inspected official material, so no speculative redirect wildcard or environment change was made. A missing MUSE-prefixed environment variable alone does not establish lack of generic DCR/PKCE support. Complete any narrow configuration change when the actual review-client callback is known.</p>
+<p>Guidelines: https://platform.muse.ai/docs</p></section><section id="05-technical-and-data"><a class="file" href="review/05-technical-and-data.md">Open Markdown file</a><h1>Technical and data-processing dossier — review draft</h1>
 <h2>Integration facts</h2>
 <p>The package sends tool calls to TrolyPage's first-party MCP service. Production's public status endpoint reports 11 registered MCP routes, 270 tools (117 read and 153 other tools), 14 resources and 12 prompts on 2026-10-19. The catalog is filtered by workspace entitlements and credential permissions. This public report is not an authenticated end-to-end test.</p>
-<p>Endpoint: https://trolypage.com/mcp/troly. Transport: Streamable HTTP. OAuth: authorization code with PKCE S256, public client authentication method <code>none</code>, DCR at https://trolypage.com/oauth/register, requested scope <code>mcp:use</code>. Discovery metadata was opened in the user's Edge browser and saved under evidence. Authorization and token endpoints are https://trolypage.com/oauth/authorize and https://trolypage.com/oauth/token. Directory OAuth setup has started; no successful authenticated MCP tool call has yet been verified.</p>
+<p>Endpoint: https://trolypage.com/mcp/troly. Transport: Streamable HTTP. OAuth: authorization code with PKCE S256, public client authentication method <code>none</code>, DCR at https://trolypage.com/oauth/register, requested scope <code>mcp:use</code>. Discovery metadata was opened in the user's Edge browser and saved under evidence. Authorization and token endpoints are https://trolypage.com/oauth/authorize and https://trolypage.com/oauth/token. Directory OAuth and representative authenticated business calls subsequently succeeded; OpenAI MCP is Configured / Authorized and discovered 271 full-endpoint tools. The directory catalog contains 180 tools; historical counts above describe the initial extraction. See current submission evidence.</p>
 <p>The MCP HTTP middleware currently requires a workspace owner/admin, including read requests. Tenant identity comes from the authenticated account context. This source review has not exercised adversarial cross-tenant calls or verified all provider permissions.</p>
 <h2>Rate limits and failures</h2>
 <p>Observed production limits are 180 requests/workspace/minute, 90 requests/actor/minute and 60 public requests/minute. These differ from local config defaults, so use the live status endpoint at release time. Honor HTTP 429 and Retry-After. 401 requires reconnecting authentication; 402 is an unavailable plan/module; 403 covers role/scope/workspace/origin; 404 covers missing endpoints or tenant-scoped records; 422 covers argument/business-rule failures. Return actionable errors and never blindly repeat a write after an uncertain result.</p>
@@ -321,7 +254,7 @@ Add an internal CRM note without contacting the customer.
 </tr>
 <tr>
 <td>Security supported by source</td>
-<td>Credential-bound tenant context, workspace-admin middleware, plan/module gates, scoped API-key checks and write policy/operation receipts. Production encryption, logging, backup and incident-handling claims require operator confirmation.</td>
+<td>Credential-bound tenant context, workspace-admin middleware, plan/module gates, scoped API-key checks and write policy/operation receipts. The owner subsequently confirmed at-rest encryption, mandatory administrator MFA, monitoring and incident response; these are owner attestations, not an independent infrastructure audit.</td>
 </tr>
 <tr>
 <td>Retention</td>
@@ -337,7 +270,7 @@ Add an internal CRM note without contacting the customer.
 </tr>
 <tr>
 <td>Hosting / international transfers</td>
-<td>Public policy states Vietnam/Asia-Pacific storage and potential external AI processing. Confirm actual infrastructure regions, subprocessors and transfer terms; do not invent data-residency guarantees.</td>
+<td>Public policy states Vietnam/Asia-Pacific storage and potential external AI processing. The owner subsequently confirmed BNIX/Vietnam hosting and the AI providers listed in the Muse dossier; optional Chinese-origin models and global provider processing are disclosed. No signed SCC/DPA is claimed. Do not infer a Vietnam-only residency guarantee.</td>
 </tr>
 <tr>
 <td>Support / security contact</td>
@@ -416,8 +349,8 @@ Add an internal CRM note without contacting the customer.
 </tr>
 <tr>
 <td>OpenAI</td>
-<td>Verified business/domain; OAuth scan account connected; 271 tools; secure reviewer credentials and 5+3 cases saved</td>
-<td>Public video playback verified; upload 1.0.2, final six legal attestations, submit</td>
+<td>1.0.2 In review; MCP Configured / Authorized; business/domain verified; video and 5+3 cases imported</td>
+<td>OpenAI review</td>
 </tr>
 <tr>
 <td>Muse</td>

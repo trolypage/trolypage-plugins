@@ -1,6 +1,6 @@
 # Listing copy for review
 
-Prepared October 19, 2026. All submission copy is in English. This remains a review draft; see [readiness](07-readiness.md) before submission.
+Prepared October 19, 2026. All submission copy is in English. The platform submissions have been sent; see [current status](07-readiness.md).
 
 ## Confirmed information
 

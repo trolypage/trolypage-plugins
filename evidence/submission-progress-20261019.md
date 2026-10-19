@@ -22,7 +22,7 @@ The relevant isolated suite passed **271 tests / 36,190 assertions**. Two broade
 
 ## OpenAI
 
-Business identity and domain verification passed. The scan account completed OAuth, 271 full-endpoint tools were discovered, and reviewer credentials were saved securely in portal fields. Generic new-tool findings are explicitly non-blocking for submission. Five positive and three negative cases are imported. Candidate 1.0.2 updates real fixtures, report setup and the video reference. Verify the public recording before upload. Final OpenAI submission and its six legal attestations remain outstanding.
+Business identity and domain verification passed. The scan account completed OAuth, 271 full-endpoint tools were discovered, and reviewer credentials were saved securely in portal fields. Generic new-tool findings are explicitly non-blocking for submission. Five positive and three negative cases are imported. Candidate 1.0.2 updates real fixtures, report setup and the video reference. Verify the public recording before upload. Alex chose to complete the final portal action personally. The portal subsequently showed **metadata and skills 1.0.2 In review**, with MCP **Configured / Authorized**. All saved review information, including secure credentials, five positive/three negative cases, video URL and release notes, was inspected after reupload. No approval or publication is claimed.
 
 ## Muse
 

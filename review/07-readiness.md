@@ -6,7 +6,7 @@ Updated October 19, 2026. No platform approval or live directory release has bee
 | --- | --- | --- |
 | Claude connector | Successfully submitted; https://claude.ai/directory/manage/trolypage | Anthropic review |
 | Claude bundle | 1.0.2 at 4ac9cfa passed format, policy and security scans; Publish requested | Anthropic review |
-| OpenAI | Verified business/domain; OAuth scan account connected; 271 tools; secure reviewer credentials and 5+3 cases saved | Public video playback verified; upload 1.0.2, final six legal attestations, submit |
+| OpenAI | 1.0.2 In review; MCP Configured / Authorized; business/domain verified; video and 5+3 cases imported | OpenAI review |
 | Muse | All 3/3 requirements submitted: business verification, integration credentials and data questionnaire | Platform review |
 
 Claude enforces 180 tools at discovery/execution, excludes AI media and generic dispatchers, uses English metadata and validates OAuth audience. The full endpoint retains Gen AI and 271 tools. OpenAI's generic new-tool review findings are non-blocking review items.
