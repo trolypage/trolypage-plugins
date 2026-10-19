@@ -44,4 +44,8 @@ Public package candidate 1.0.1. Publication is subject to platform review and su
 
 ## Claude review candidate status
 
-This source is being prepared for directory review. The current unified server includes image generation, which must be excluded from the Claude connector's actual exposed catalog before submission under the current connector criteria. This bundle does not filter a remote server by itself. The public source repository is https://github.com/trolypage/trolypage-plugins. The publisher must select a license before listing this plugin; no license has been selected in this candidate.
+This source is being prepared for directory review. The current unified server includes image generation, which must be excluded from the Claude connector's actual exposed catalog before submission under the current connector criteria. This bundle does not filter a remote server by itself. The public source repository is https://github.com/trolypage/trolypage-plugins. The owner selected Apache-2.0 for this bundle.
+
+## License
+
+Original plugin skills and documentation are licensed under [Apache-2.0](LICENSE). See NOTICE. The separately hosted application backend is outside this distribution.

@@ -41,3 +41,7 @@ Respect the host's confirmations and workspace policy. A queued action is not a 
 - [Data deletion](https://trolypage.com/data-deletion)
 
 Public package candidate 1.0.1. Publication is subject to platform review and supported catalog configuration.
+
+## License
+
+Original plugin skills and documentation are licensed under [Apache-2.0](LICENSE). See NOTICE. The separately hosted application backend is outside this distribution.

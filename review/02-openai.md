@@ -17,7 +17,7 @@ Public metadata is in `extensions.com.openai.interface`; the five positive and t
 
 ## Verified and pending
 
-On October 19, 2026, the organization showed Verified status and the upload dialog offered Business — Trolypage. Developer identity verification and MCP domain verification are separate. The draft domain challenge and scans have not been completed.
+On October 19, 2026, the organization showed Verified status and the upload dialog offered Business — Trolypage. Developer identity verification and MCP domain verification are separate. The draft domain challenge is now verified: the exact challenge file was uploaded to the server public/.well-known directory and the portal displays Domain verified. All nine skill checks passed. MCP OAuth, tool discovery/scans, authenticated cases and a real demo URL remain incomplete. The current draft was reuploaded with the Apache-2.0 distribution files.
 
 ## Sources
 

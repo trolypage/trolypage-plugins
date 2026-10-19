@@ -4,7 +4,7 @@
 
 The package sends tool calls to TrolyPage's first-party MCP service. Production's public status endpoint reports 11 registered MCP routes, 270 tools (117 read and 153 other tools), 14 resources and 12 prompts on 2026-10-19. The catalog is filtered by workspace entitlements and credential permissions. This public report is not an authenticated end-to-end test.
 
-Endpoint: https://trolypage.com/mcp/troly. Transport: Streamable HTTP. OAuth: authorization code with PKCE S256, public client authentication method `none`, DCR at https://trolypage.com/oauth/register, requested scope `mcp:use`. Discovery metadata was opened in the user's Edge browser and saved under evidence. Authorization and token endpoints are https://trolypage.com/oauth/authorize and https://trolypage.com/oauth/token. No actual client was registered or authorized in this preparation.
+Endpoint: https://trolypage.com/mcp/troly. Transport: Streamable HTTP. OAuth: authorization code with PKCE S256, public client authentication method `none`, DCR at https://trolypage.com/oauth/register, requested scope `mcp:use`. Discovery metadata was opened in the user's Edge browser and saved under evidence. Authorization and token endpoints are https://trolypage.com/oauth/authorize and https://trolypage.com/oauth/token. Directory OAuth setup has started; no successful authenticated MCP tool call has yet been verified.
 
 The MCP HTTP middleware currently requires a workspace owner/admin, including read requests. Tenant identity comes from the authenticated account context. This source review has not exercised adversarial cross-tenant calls or verified all provider permissions.
 

@@ -1,2 +1,2 @@
-42ee28e9e3cc2fe687306789257a5cce1792e8a2079db87167bf1c34d651cc27  openai-trolypage-mcp-1.0.1-DRAFT.zip
-3a3ee3e3c1e851622ce2f5c9bbf69f91fa16f6b6ab291a7da22f4fb3b1928322  claude-trolypage-mcp-1.0.1-DRAFT.zip
+17ae0c099b7c5c7010d87b54a3fb71d744139c9641712c0a35b48e4676a04785  openai-trolypage-mcp-1.0.1-DRAFT.zip
+e8aa9adaaa95c00761d4503963a4d1804a152edeee447928fe0ee82e50ffb36f  claude-trolypage-mcp-1.0.1-DRAFT.zip

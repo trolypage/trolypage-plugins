@@ -1,6 +1,6 @@
 # Muse submission form draft
 
-Portal: https://platform.muse.ai/submission. Only the Overview form and payment choices have been inspected. No form data has been entered or saved, and no submission has been sent.
+Portal: https://platform.muse.ai/submission. The intake was submitted on October 19, 2026 after the owner confirmed the three displayed authorization/terms statements. The portal confirmed receipt. OAuth credentials were subsequently submitted securely with DCR, PKCE, scope mcp:use and the dedicated reviewer account. Business verification and the data-processing questionnaire remain pending; submission is not approval.
 
 ## Overview: observed form fields
 
@@ -9,7 +9,7 @@ Portal: https://platform.muse.ai/submission. Only the Overview form and payment 
 | Connector name | TrolyPage |
 | Company or developer | TROLYPAGE COMPANY LIMITED |
 | Product website | https://trolypage.com/mcp |
-| Connector icon | assets/trolypage-mobile-icon-512.png |
+| Connector icon | assets/trolypage-muse-icon-512.png — 512x512 PNG, 252947 bytes, lossless compression with identical decoded pixels |
 | Your name | Alex Nguyen |
 | Work email | support.mcp@trolypage.com |
 | Support email or URL | support@trolypage.com |
@@ -38,12 +38,12 @@ TrolyPage is a first-party business-operations connector for workspace owners an
 
 ## Technical specifications
 
-This material is prepared from documentation; the layout of step 2 has not been verified. Transport: Streamable HTTP. Production endpoint: https://trolypage.com/mcp/troly. OAuth discovery: https://trolypage.com/.well-known/oauth-authorization-server. Public DCR client, PKCE S256, scope `mcp:use`; no client secret in a public archive. See 05-technical-and-data.md, tool-inventory.csv and tool-contracts.json for contracts, proposed classifications and inspection limits.
+The Existing MCP technical step was completed in the portal. Transport: Streamable HTTP. Production endpoint: https://trolypage.com/mcp/troly. OAuth discovery: https://trolypage.com/.well-known/oauth-authorization-server. Public DCR client, PKCE S256, scope `mcp:use`; no client secret in a public archive. See 05-technical-and-data.md, tool-inventory.csv and tool-contracts.json for contracts, proposed classifications and inspection limits.
 
 Muse sensitive writes require the host's per-action approval. TrolyPage Auto/Hybrid modes do not replace it. Read-only OAuth has not been established: the inspected source filters `mcp:read` for PersonalAccessToken, while discovery advertises only `mcp:use`. Resolve this gap before declaring support.
 
 ## Review
 
-Use the shared processing, test and reviewer-access materials. Confirm retention, processors and security contact with the operator. Only an authorized person may accept developer terms. No submission has been sent.
+Use the shared processing, test and reviewer-access materials. Confirm retention, processors and security contact with the operator. Only an authorized person may accept developer terms. The initial intake and integration credentials are submitted; follow-up requirements remain incomplete.
 
 Source: https://platform.muse.ai/docs

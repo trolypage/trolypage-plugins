@@ -4,7 +4,7 @@ TrolyPage provides AI customer support, CRM, social media scheduling and order m
 
 [Product features](https://trolypage.com/features) · [MCP setup](https://trolypage.com/mcp) · [Support](https://trolypage.com/mcp#errors)
 
-**Status: review draft — not submitted or approved by any directory.** Prepared on October 19, 2026. The repository, review materials and plugin packages are written in English.
+**Status: OpenAI draft uploaded; Muse intake and credentials submitted; Claude preparation in progress. No approved directory release.** Prepared on October 19, 2026. The repository, review materials and plugin packages are written in English.
 
 ## Packages
 
@@ -14,7 +14,7 @@ TrolyPage provides AI customer support, CRM, social media scheduling and order m
 | Claude | [Skills and MCP bundle](packages/claude/trolypage-mcp) | [Claude ZIP](archives/claude-trolypage-mcp-1.0.1-DRAFT.zip) |
 | Muse | [Submission form draft](review/04-muse.md) | Uses the shared technical and review materials |
 
-Both plugin candidates retain the `trolypage-mcp` identity and version 1.0.1, with nine skills and the original mobile app icon. OpenAI includes listing metadata, five positive and three negative review cases, commerce disclosure and availability in all platform-permitted countries. Claude Directory uses the public GitHub source; its bundle license remains undecided. This repository contains distribution materials, not the application backend.
+Both plugin candidates retain the `trolypage-mcp` identity and version 1.0.1, with nine skills and the original mobile app icon. OpenAI includes listing metadata, five positive and three negative review cases, commerce disclosure and availability in all platform-permitted countries. Claude Directory uses the public GitHub source; its bundle license is Apache-2.0. This repository contains distribution materials, not the application backend.
 
 ## Review the materials
 
@@ -32,7 +32,7 @@ Submission contact: **Alex Nguyen**, **support.mcp@trolypage.com**. Public suppo
 
 The reviewer can access the dedicated workspace with an Owner role and Scale plan. Fixtures, OAuth connection tests, authenticated tool tests and a real demo video remain pending. The observed write mode is Full / Direct execution. Account credentials are excluded from this repository and all archives.
 
-Local packaging checks pass, including the Agent Plugins core schemas. These checks do not establish live behavior, security compliance, directory approval or submission readiness. Outstanding work includes Claude catalog restrictions and license, complete tool annotations, published policy identity corrections, data-processing confirmations and Muse payment classification.
+Local packaging checks pass, including the Agent Plugins core schemas. These checks do not establish live behavior, security compliance, directory approval or submission readiness. Outstanding work includes Claude catalog restrictions, complete tool annotations, published policy identity corrections, data-processing confirmations and Muse payment classification.
 
 | Location | Contents |
 | --- | --- |
@@ -55,4 +55,4 @@ The command validates and rebuilds both archives and refreshes the HTML preview 
 
 The Agent Plugins schema checks use `jsonschema` from the temporary `trolypage-plugin-schema-validator` directory when available; other build dependencies are Pillow, PyYAML and Markdown. Portal scans and live tests remain separate.
 
-Local directory: `D:/trolypage-plugins`. Public repository: [trolypage/trolypage-plugins](https://github.com/trolypage/trolypage-plugins). No bundle license has been selected; publishing a repository does not assign a license.
+Local directory: `D:/trolypage-plugins`. Public repository: [trolypage/trolypage-plugins](https://github.com/trolypage/trolypage-plugins). The owner selected [Apache-2.0](LICENSE) for original plugin skills and documentation. See NOTICE for scope; the separate application backend is excluded.

@@ -1,14 +1,14 @@
 # Requirements before submission
 
-**REVIEW DRAFT.** Source, archives and copy are prepared. No directory upload or submission has been made. Local validation does not replace a platform scan or review.
+**REVIEW DRAFT.** Source, archives and copy are prepared. An OpenAI draft has been uploaded. Muse intake and integration credentials have been submitted. Claude is still being prepared. No platform approval has been received. Local validation does not replace a platform scan or review.
 
 ## Shared requirements
 
 | Item | Status / next step |
 | --- | --- |
 | Listing, contact, countries, commerce, logo | Owner decisions recorded; contact person Alex Nguyen |
-| OpenAI identity | Verified; Business — Trolypage selectable in the upload dialog |
-| Metadata / 5+3 cases / release notes | Included in the English-only OpenAI candidate |
+| OpenAI identity / domain | Business — Trolypage verified; MCP domain challenge now verified in the saved draft |
+| Metadata / 5+3 cases / release notes | Imported into the English-only OpenAI draft; all nine skill checks passed |
 | Mobile icon | Original and derived sizes supplied; review appearance at 32/64 px |
 | Endpoint/discovery | Public status and OAuth metadata accessible; full OAuth flow not tested |
 | Reviewer account | Received privately; browser access verified for TrolyPage Reviewer, Scale, Owner. Owner completed Cloudflare; independent external-reviewer sign-in remains unverified |
@@ -31,10 +31,14 @@ The application server has not been changed in this distribution repository. The
 
 ## Platform-specific work
 
-- **OpenAI:** domain challenge, OAuth, scans, reviewer access, video and final attestations remain pending. The draft ZIP can be reviewed locally but is not submission-ready.
-- **Claude:** catalog policy, tool tests and reviewer access remain pending. The bundle additionally needs an owner-selected license and portal validation. Public source: https://github.com/trolypage/trolypage-plugins. Do not upload the application backend.
-- **Muse:** verify the payment-category definition for external payment. Later technical/review form steps, processing questionnaire, test access, host approvals and terms remain incomplete.
+- **OpenAI:** domain challenge is verified. OAuth, tool scans, reviewer access, video and final attestations remain pending. The draft ZIP can be reviewed locally but is not submission-ready.
+- **Claude:** catalog policy, tool tests and reviewer access remain pending. The owner selected Apache-2.0; LICENSE, NOTICE and manifest are updated. Portal validation remains pending. Public source: https://github.com/trolypage/trolypage-plugins. Do not upload the application backend.
+- **Muse:** intake submitted with payments accepted and external payment explicitly disclosed; the owner confirmed the displayed terms. DCR/PKCE integration credentials and reviewer access were submitted securely. Business verification, data-processing questionnaire, fixtures, end-to-end tests and any further reviewer requirements remain pending.
 
 ## Next preparation steps
 
-Confirm independent sign-in and OAuth, populate synthetic fixtures and record approval mode for each test round. Full / Direct execution does not mean every write enters a queue. Select the bundle license and demo hosting destination; record real fixture IDs. Resolve findings for the intended catalog, run tests and record a real video. Add its verified URL, rebuild, inspect validation and hashes, and only then finalize an authorized draft upload.
+Confirm independent sign-in and OAuth, populate synthetic fixtures and record approval mode for each test round. Full / Direct execution does not mean every write enters a queue. The bundle license is Apache-2.0. Select the demo hosting destination and record real fixture IDs. Resolve findings for the intended catalog, run tests and record a real video. Add its verified URL, rebuild, inspect validation and hashes, and only then finalize an authorized draft upload.
+
+## Production environment check
+
+On October 19, 2026, the owner authorized server file-manager access for verification setup and an environment check. The OpenAI challenge file was added under public/.well-known and the portal verified the domain. Only non-secret MCP configuration fields were inspected from .env and bootstrap/cache/config.php. MCP is enabled and the OAuth issuer is configured. Both allowed_origins and redirect_domains currently omit Muse hosts. No allowlist was broadened: the exact Muse OAuth callback/origin must be obtained and verified before adding narrowly scoped entries. Absence of a MUSE-prefixed variable alone does not mean generic DCR/PKCE is unsupported. No secret environment values or reviewer credentials are included here.

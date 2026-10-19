@@ -13,7 +13,7 @@
   "reviewer_account": "Received privately; authenticated browser access verified 2026-10-19. Credentials excluded from this repository.",
   "demo_recording_url": null,
   "claude_repository": "https://github.com/trolypage/trolypage-plugins",
-  "claude_license": null,
+  "claude_license": "Apache-2.0",
   "claude_submission_kinds": [
     "MCP connector",
     "plugin bundle"

@@ -1,6 +1,6 @@
 # Claude MCP connector and plugin bundle
 
-The owner requested both listing types under the same organization. The selected public repository is https://github.com/trolypage/trolypage-plugins. The bundle license remains undecided.
+The owner requested both listing types under the same organization. The selected public repository is https://github.com/trolypage/trolypage-plugins. The owner selected Apache-2.0 for the original plugin skills and documentation.
 
 ## A. MCP connector
 
@@ -36,7 +36,7 @@ The bundle retains nine existing TrolyPage skills, refreshed tool references, `.
 
 Repository: https://github.com/trolypage/trolypage-plugins. Plugin path: `packages/claude/trolypage-mcp`. Branch: `codex/submission-preparation`. Select the correct branch/path and verify the commit in the portal.
 
-The owner must choose a license for the skills bundle. No LICENSE or license value has been assigned; this remains a listing blocker. Publishing the application backend is not required by this preparation.
+The bundle includes the Apache-2.0 LICENSE and NOTICE and declares Apache-2.0 in its manifest. This applies to the distributed skills and documentation, not the application backend.
 
 After resolving the blockers, use https://claude.ai/directory/manage to submit the connector and bundle under the same organization, validate the repository and verify how the two listings are paired. Do not attest to tests that have not run.
 

@@ -15,5 +15,6 @@
     "social-media-scheduling",
     "order-management"
   ],
-  "repository": "https://github.com/trolypage/trolypage-plugins"
+  "repository": "https://github.com/trolypage/trolypage-plugins",
+  "license": "Apache-2.0"
 }
