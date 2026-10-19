@@ -1,10 +1,10 @@
-# Proposed policy and MCP guide corrections — unpublished
+# Policy identity correction and remaining draft copy
 
-These are editorial drafts and items for factual confirmation, not approved legal commitments. Source inspection alone does not establish a completed security audit or full policy compliance.
+The identity/contact correction below was owner-approved and published on October 19, 2026. The remaining MCP and guide copy is still an editorial draft requiring factual confirmation. Source inspection alone does not establish a completed security audit or full policy compliance.
 
 ## Publisher identity
 
-Privacy section 13 still names SkyNet Solution and a Boulder, US address, while the footer names TROLYPAGE COMPANY LIMITED in Hanoi. Mobile support also names SkyNet Solution. The owner must confirm the legal/brand/service-provider relationship or replace the stale block. Current public information for comparison:
+The owner confirmed TROLYPAGE COMPANY LIMITED in Hanoi as the responsible legal entity. Both privacy templates were narrowly updated after private backups; the public English introduction and section 13 were then verified. Company, registration number, Hanoi address and support contacts now match the reviewed information below. The legacy Vietnamese privacy URL redirected to the English canonical page during verification. No unrelated retention, processing, security or partner/store-publisher statement was changed. Mobile support references remain a separate review item.
 
 ```text
 TROLYPAGE COMPANY LIMITED

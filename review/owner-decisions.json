@@ -22,5 +22,9 @@
   "logo_sha256": "00dd8c31d07aa9063f8fcfa504b3cc3b41e23048c606d809ef1f2969297fc3d7",
   "claude_plugin_path": "packages/claude/trolypage-mcp",
   "claude_branch": "codex/submission-preparation",
-  "github_visibility": "public"
+  "github_visibility": "public",
+  "data_responsible_entity_confirmed": "TROLYPAGE COMPANY LIMITED, Hanoi, Vietnam",
+  "privacy_identity_update": "Owner-approved; published public English introduction and section 13 verified 2026-10-19",
+  "audience_confirmed": "Adults and users aged 16–17 with guardian consent; not directed at children under 16",
+  "claude_bundle_attestations": "Owner confirmed the current organization and all four displayed attestations before submission on 2026-10-19"
 }

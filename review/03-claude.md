@@ -17,7 +17,7 @@ The owner requested both listing types under the same organization. The selected
 | Contact person | Alex Nguyen |
 | Contact email | support.mcp@trolypage.com |
 | Support | support@trolypage.com; https://trolypage.com/mcp#errors |
-| Website / privacy / terms | See 01-listing-and-copy.md; correct the published privacy identity first |
+| Website / privacy / terms | See 01-listing-and-copy.md; published Privacy Policy identity corrected and verified October 19, 2026 |
 | Countries | All platform-supported countries, subject to provider restrictions |
 | Reviewer access | Credentials received privately and workspace access verified; OAuth, fixtures and independent sign-in remain unverified. Use secure review fields only |
 
@@ -38,7 +38,9 @@ Repository: https://github.com/trolypage/trolypage-plugins. Plugin path: `packag
 
 The bundle includes the Apache-2.0 LICENSE and NOTICE and declares Apache-2.0 in its manifest. This applies to the distributed skills and documentation, not the application backend.
 
-After resolving the blockers, use https://claude.ai/directory/manage to submit the connector and bundle under the same organization, validate the repository and verify how the two listings are paired. Do not attest to tests that have not run.
+The bundle was submitted for review on October 19, 2026 after the owner explicitly confirmed the organization and all four displayed legal/policy attestations. The portal confirmed receipt and showed the security-scan stage. Source validated at commit `5a53823`: seven checks passed, with the documented harmless privacyPolicyUrl warning. Nine skills and one MCP server were detected. Data handling declares reads and stores, no skill transmission outside declared connectors, retention longer than 30 days, and intended users under 18 (16–17 with guardian consent, as confirmed by the owner). Automatic publication is off; repository updates use scheduled checks. Submission is not approval or proof of successful tool tests.
+
+The separate MCP connector submission and correct-reviewer OAuth flow remain incomplete. Resolve the catalog and test findings above; do not treat bundle receipt as connector approval or attest to unrun tests.
 
 ## Sources
 

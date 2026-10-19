@@ -4,7 +4,7 @@ TrolyPage provides AI customer support, CRM, social media scheduling and order m
 
 [Product features](https://trolypage.com/features) · [MCP setup](https://trolypage.com/mcp) · [Support](https://trolypage.com/mcp#errors)
 
-**Status: OpenAI draft uploaded; Muse intake and credentials submitted; Claude preparation in progress. No approved directory release.** Prepared on October 19, 2026. The repository, review materials and plugin packages are written in English.
+**Status: Claude bundle submitted for review; OpenAI draft uploaded; Muse intake, credentials and business verification submitted. No approved directory release.** Updated on October 19, 2026. The repository, review materials and plugin packages are written in English.
 
 ## Packages
 
@@ -32,7 +32,7 @@ Submission contact: **Alex Nguyen**, **support.mcp@trolypage.com**. Public suppo
 
 The reviewer can access the dedicated workspace with an Owner role and Scale plan. Fixtures, OAuth connection tests, authenticated tool tests and a real demo video remain pending. The observed write mode is Full / Direct execution. Account credentials are excluded from this repository and all archives.
 
-Local packaging checks pass, including the Agent Plugins core schemas. These checks do not establish live behavior, security compliance, directory approval or submission readiness. Outstanding work includes Claude catalog restrictions, complete tool annotations, published policy identity corrections, data-processing confirmations and Muse payment classification.
+Local packaging checks pass, including the Agent Plugins core schemas. These checks do not establish live behavior, security compliance or directory approval. The published Privacy Policy now identifies TROLYPAGE COMPANY LIMITED in Hanoi. Outstanding work includes Claude connector catalog restrictions, complete tool annotations, live tests and data-processing confirmations. Muse's data-processing questionnaire remains incomplete.
 
 | Location | Contents |
 | --- | --- |

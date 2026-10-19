@@ -1,6 +1,6 @@
 # Muse submission form draft
 
-Portal: https://platform.muse.ai/submission. The intake was submitted on October 19, 2026 after the owner confirmed the three displayed authorization/terms statements. The portal confirmed receipt. OAuth credentials were subsequently submitted securely with DCR, PKCE, scope mcp:use and the dedicated reviewer account. Business verification and the data-processing questionnaire remain pending; submission is not approval.
+Portal: https://platform.muse.ai/submission. The intake was submitted on October 19, 2026 after the owner confirmed the three displayed authorization/terms statements. The portal confirmed receipt. OAuth credentials were subsequently submitted securely with DCR, PKCE, scope mcp:use and the dedicated reviewer account. Business verification was completed using the work-email verification flow. The follow-up overview shows two of three requirements complete; the data-processing questionnaire is a saved draft. Submission is not approval.
 
 ## Overview: observed form fields
 
@@ -13,7 +13,7 @@ Portal: https://platform.muse.ai/submission. The intake was submitted on October
 | Your name | Alex Nguyen |
 | Work email | support.mcp@trolypage.com |
 | Support email or URL | support@trolypage.com |
-| Privacy policy | https://trolypage.com/privacy-policy — correct stale publisher details first |
+| Privacy policy | https://trolypage.com/privacy-policy — company and Hanoi contact corrected and verified October 19, 2026 |
 | Terms of service | https://trolypage.com/terms-of-service |
 
 ### Example prompts
@@ -44,6 +44,6 @@ Muse sensitive writes require the host's per-action approval. TrolyPage Auto/Hyb
 
 ## Review
 
-Use the shared processing, test and reviewer-access materials. Confirm retention, processors and security contact with the operator. Only an authorized person may accept developer terms. The initial intake and integration credentials are submitted; follow-up requirements remain incomplete.
+Use the shared processing, test and reviewer-access materials. Confirm actual processing countries, subprocessors, retention/deletion, security controls and international-transfer arrangements with the operator. Only an authorized person may accept developer terms. Intake, integration credentials and business verification are complete; the data-processing questionnaire and live verification remain incomplete.
 
 Source: https://platform.muse.ai/docs
