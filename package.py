@@ -35,7 +35,7 @@ for target in ['openai','claude']:
     for path in package.rglob('*.yaml'):
         yaml.safe_load(path.read_text(encoding='utf-8'))
     skill_paths=list((package/'skills').glob('*/SKILL.md'))
-    check(target+' skills present',len(skill_paths)==9,str(len(skill_paths)))
+    check(target+' skills present',len(skill_paths)==(9 if target=='openai' else 8),str(len(skill_paths)))
     for path in skill_paths:
         text=path.read_text(encoding='utf-8')
         front=yaml.safe_load(text.split('---',2)[1])

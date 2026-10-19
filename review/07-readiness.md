@@ -2,6 +2,8 @@
 
 **REVIEW CANDIDATE.** Source, archives and copy are prepared. The Claude bundle was submitted for review. An OpenAI draft has been uploaded. Muse intake, integration credentials and business verification are complete. No platform approval has been received. Local validation does not replace a platform scan or review.
 
+**Directory profile update, October 19:** `/mcp/claude` is deployed with a 180-tool allowlist enforced at discovery and execution, English descriptions and complete annotation serialization. The full endpoint retains Gen AI. Claude candidate 1.0.2 contains eight matching skills. OAuth for the new directory connection succeeded with TrolyPage Reviewer. Backend MCP regressions passed 248 tests, followed by seven targeted tests after the final fix; local packaging passed 68 checks. Historical full-endpoint findings below do not describe a fresh directory scan. All-tool authenticated business testing, a demo and platform-specific outstanding requirements remain pending. See `evidence/claude-directory-release-20261019.md`.
+
 ## Shared requirements
 
 | Item | Status / next step |

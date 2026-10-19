@@ -15,6 +15,6 @@ Use only the `trolypage` MCP server. Read [tool-catalog.md](references/tool-cata
 4. Confirm target accounts, final copy, media, schedule/timezone, and publish mode before publishing.
 5. Report queued or approval state without claiming publication succeeded; verify with `get-social-post`.
 
-For user-requested cleanup of external images, upload/import the file into the media library first. Call `detect-asset-c2pa`, then `clean-asset-image` with the source `asset_id`, an `action` (`strip-c2pa` or `clear-synthid`) and an `idempotency_key`. Use the returned new `asset_id` in the post's `media_ids`; the original stays intact. Reuse the same key/arguments on retry. These tools require the assets module. C2PA scans are heuristic, and SynthID removal is not verified; never promise that an image will avoid AI labeling. Image cleanup does not apply to text captions.
+Use existing or user-supplied media for posts. This directory connection does not generate or clean AI images, video or audio.
 
 Do not retry successful targets, publish to an unconfirmed account, or imply AI timing/caption suggestions are measured facts.

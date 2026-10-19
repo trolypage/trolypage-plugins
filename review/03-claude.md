@@ -8,7 +8,7 @@ The owner requested both listing types under the same organization. The selected
 | --- | --- |
 | Name | TrolyPage |
 | Description | Use 01-listing-and-copy.md, limited to capabilities actually exposed by the Claude catalog |
-| Existing server URL | https://trolypage.com/mcp/troly |
+| Directory server URL | https://trolypage.com/mcp/claude |
 | Transport | Streamable HTTP |
 | Authentication | OAuth authorization code with PKCE S256; public DCR client |
 | Discovery | https://trolypage.com/.well-known/oauth-authorization-server |
@@ -21,7 +21,11 @@ The owner requested both listing types under the same organization. The selected
 | Countries | All platform-supported countries, subject to provider restrictions |
 | Reviewer access | Credentials received privately; workspace access, Claude OAuth and live catalog discovery verified October 19, 2026. Fixtures, tool-execution tests and independent sign-in remain unverified. Use secure review fields only |
 
-### Blockers for the current unified endpoint
+### Directory profile update — October 19, 2026
+
+The owner selected a dedicated directory catalog. The server-side `/mcp/claude` profile has now been deployed, with a 180-tool execution allowlist, English descriptions and complete annotation booleans. OAuth resource validation restricts directory-issued tokens to that endpoint. The full `/mcp/troly` service retains Gen AI. The new directory connection completed OAuth in Claude with the correct reviewer workspace. See `evidence/claude-directory-release-20261019.md` for deployment and automated regression scope. Live catalog scanning and authenticated all-tool business testing must be verified separately.
+
+### Historical findings from the full endpoint (superseded candidate)
 
 - Live discovery now confirms 270 tools, 12 prompts and 12 resources from TrolyPage Reviewer. The portal flags `save-integration-operation`: "Split this catch-all API tool into separate read and write tools." It also reports 275 suggestions, largely missing title/readOnlyHint annotations. Inspect the implementation before choosing a fix; saving an operation configuration and executing an operation are different behaviors. See evidence/claude-live-discovery-2026-10-19.json.
 - The catalog includes `generate-social-image`. The connector criteria reviewed for this candidate exclude AI image/video/audio generation. Enforce restrictions in the server or a real OAuth profile, then verify `tools/list`. Removing a tool name from documentation does not restrict access.
@@ -32,9 +36,9 @@ The owner requested both listing types under the same organization. The selected
 
 ## B. Plugin bundle
 
-Source: `packages/claude/trolypage-mcp`. Local review archive: `archives/claude-trolypage-mcp-1.0.1-DRAFT.zip`. Claude Directory retrieves the bundle from GitHub rather than using this ZIP as an OpenAI-style submission.
+Source: `packages/claude/trolypage-mcp`. Local review archive: `archives/claude-trolypage-mcp-1.0.2-DRAFT.zip`. Claude Directory retrieves the bundle from GitHub rather than using this ZIP as an OpenAI-style submission.
 
-The bundle retains nine existing TrolyPage skills, refreshed tool references, `.claude-plugin/plugin.json` and `.mcp.json`. It still connects to the real unified endpoint, with the blockers above. No Claude-specific server filter has been verified.
+Candidate 1.0.2 contains eight TrolyPage skills, refreshed directory-only tool references, `.claude-plugin/plugin.json` and `.mcp.json` targeting the deployed `/mcp/claude` endpoint. The unsupported Automation skill was removed. The eight skills do not fall back to the full endpoint when a capability is unavailable. The existing submission remains the publication target; do not create a duplicate listing.
 
 Repository: https://github.com/trolypage/trolypage-plugins. Plugin path: `packages/claude/trolypage-mcp`. Branch: `codex/submission-preparation`. Select the correct branch/path and verify the commit in the portal.
 

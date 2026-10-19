@@ -16,11 +16,11 @@ If the invocation mechanism is unknown, show all three lines and recommend the s
 ## 2. First-time setup
 
 1. Install the TrolyPage MCP plugin bundle so the skill and MCP dependency are installed together.
-2. Connect one server: `https://trolypage.com/mcp/troly`.
+2. Connect one server: `https://trolypage.com/mcp/claude`.
 3. Complete OAuth 2.1 login and select the intended TrolyPage workspace.
 4. Ask for help or start with a read-only request such as listing connected channels.
 
-The unified server exposes only modules included in the authenticated workspace plan. Focused server URLs remain optional for compatibility or least-privilege connections.
+The directory profile exposes a limited business catalog, further restricted by workspace permissions and plan. AI image, video and audio generation, agent execution/configuration, Automation Hub and arbitrary Integration Hub execution are unavailable through this connection. Text caption and hashtag generation remain available.
 
 ## 3. Available domains
 
@@ -33,8 +33,6 @@ The unified server exposes only modules included in the authenticated workspace 
 | Marketing | Strategies, campaigns, broadcasts, nurture and follow-up | `$troly draft a campaign for customers who have not completed a purchase` |
 | Knowledge | Agent knowledge, approved facts, documents and governed fact proposals | `$troly find the sales agent's approved returns policy` |
 | Workspace | Channel/agent health, notifications and TrolyPage support tickets | `$troly check channels with errors and unresolved notifications` |
-| Automation | Workflow templates, validation, simulation, publication and runs | `$troly create a customer-care workflow from a template and simulate before publishing` |
-| Integration Hub | HTTP connections, API operations and inbound/outbound webhooks | `$troly prepare an API connection and give me the app link for secure key entry` |
 
 The current connection may show fewer tools because of plan entitlements, module grants, and server configuration. Do not quote a fixed catalog size.
 

@@ -4,17 +4,17 @@
 
 TrolyPage is AI customer support, CRM, social media scheduling and order management software for small businesses. It brings customer conversations, products, orders, scheduled content and follow-up work into one business workspace.
 
-This integration connects your AI assistant to an existing TrolyPage workspace. Find customers and summarize conversations, update internal CRM notes, check product prices and stock, prepare orders for shop review, and compare sales reports. You can also manage social post drafts, marketing campaigns, approved knowledge, connected channels, agents, assets, workflows and configured integrations when those modules are available to your account.
+This integration connects your AI assistant to an existing TrolyPage workspace. Find customers and summarize conversations, update internal CRM notes, check product prices and stock, prepare orders for shop review, and compare sales reports. You can also manage social post drafts, marketing campaigns, approved knowledge, connected channels and existing or user-supplied assets when those modules are available to your account.
 
-Sign in with OAuth and select the workspace you administer. Access requires an owner or administrator role and a plan with the requested MCP modules. Some AI and media actions consume additional quota. Channel features, delivery services and payment methods vary by account, provider and region.
+Sign in with OAuth and select the workspace you administer. Access requires an owner or administrator role and a plan with the requested MCP modules. Some text AI operations consume additional quota. Channel features, delivery services and payment methods vary by account, provider and region.
 
 TrolyPage supplies the authoritative price, stock, total and payment status. Drafts, pending approvals, completed actions and delivery to an external service are distinct. Authorized writes can change records, send messages, publish posts or request services. Customers complete merchant payments outside the AI assistant; a payment QR or pending request does not prove that money was received.
 
-[Explore product features](https://trolypage.com/features) · [MCP setup and troubleshooting](https://trolypage.com/mcp)
+[Explore product features](https://trolypage.com/features) Â· [MCP setup and troubleshooting](https://trolypage.com/mcp)
 
 ## Connection
 
-The remote server is `https://trolypage.com/mcp/troly` and uses Streamable HTTP with OAuth authorization-code flow, PKCE S256 and scope `mcp:use`. Complete sign-in on TrolyPage and choose the workspace you administer. Never paste service credentials into a prompt. Read [MCP documentation](https://trolypage.com/mcp) and [troubleshooting](https://trolypage.com/mcp#errors).
+The remote server is `https://trolypage.com/mcp/claude` and uses Streamable HTTP with OAuth authorization-code flow, PKCE S256 and scope `mcp:use`. Complete sign-in on TrolyPage and choose the workspace you administer. Never paste service credentials into a prompt. Read [MCP documentation](https://trolypage.com/mcp) and [troubleshooting](https://trolypage.com/mcp#errors).
 
 ## Examples
 
@@ -28,7 +28,7 @@ These review examples require sample records in a dedicated test workspace. Prod
 
 ## Data and execution
 
-The package contains instruction files and a remote MCP connection. It has no local executable, install hook or bundled backend. Requested tool arguments go to TrolyPage; results return to the AI host. Authorized actions may involve customer/contact information, conversations, products, orders, reports, social content, agent configuration, files or external integration providers. Third-party delivery and payment occur only in the applicable connected service. The installed server catalog is permission- and plan-dependent.
+The package contains instruction files and a remote MCP connection. It has no local executable, install hook or bundled backend. Requested tool arguments go to TrolyPage; results return to the AI host. Authorized actions may involve customer/contact information, conversations, products, orders, reports, social content, approved knowledge, files or connected delivery providers. Third-party delivery and payment occur only in the applicable connected service. The installed server catalog is permission- and plan-dependent.
 
 Respect the host's confirmations and workspace policy. A queued action is not a completed operation. Re-read affected state; do not duplicate a write after receiving an approval action. Disconnect through host connector settings and revoke the TrolyPage grant when access is no longer wanted.
 
@@ -40,11 +40,15 @@ Respect the host's confirmations and workspace policy. A queued action is not a 
 - [Terms of service](https://trolypage.com/terms-of-service)
 - [Data deletion](https://trolypage.com/data-deletion)
 
-Public package candidate 1.0.1. Publication is subject to platform review and supported catalog configuration.
+Public package candidate 1.0.2. Publication is subject to platform review and supported catalog configuration.
 
-## Claude review candidate status
+## Claude directory profile
 
-This source is being prepared for directory review. The current unified server includes image generation, which must be excluded from the Claude connector's actual exposed catalog before submission under the current connector criteria. This bundle does not filter a remote server by itself. The public source repository is https://github.com/trolypage/trolypage-plugins. The owner selected Apache-2.0 for this bundle.
+Version 1.0.2 uses the dedicated `/mcp/claude` catalog with eight skills. The server enforces a 180-tool allowlist before workspace entitlement filtering; hidden tools cannot be called directly. It excludes AI image/video/audio generation, agent runtimes/configuration, Automation Hub and arbitrary Integration Hub operations. Text caption, hashtag and business-draft generation remain available. This profile exposes no MCP prompts or resources.
+
+The full `/mcp/troly` endpoint remains available separately with Gen AI capabilities. This package does not silently switch to it when a directory tool is unavailable.
+
+Backend regression validation passed 248 tests, with a further seven catalog and authorization tests after the final prose-copy fix. These checks do not replace authenticated business tests of every exposed tool or guarantee directory approval. The existing bundle submission is awaiting Anthropic review; this revision must be scanned by that submission before publication.
 
 ## License
 

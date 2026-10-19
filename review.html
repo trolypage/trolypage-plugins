@@ -140,8 +140,8 @@ body{margin:0;background:#f5f7fb;color:#17223b;font:16px/1.65 system-ui,sans-ser
 <td>Use 01-listing-and-copy.md, limited to capabilities actually exposed by the Claude catalog</td>
 </tr>
 <tr>
-<td>Existing server URL</td>
-<td>https://trolypage.com/mcp/troly</td>
+<td>Directory server URL</td>
+<td>https://trolypage.com/mcp/claude</td>
 </tr>
 <tr>
 <td>Transport</td>
@@ -189,7 +189,9 @@ body{margin:0;background:#f5f7fb;color:#17223b;font:16px/1.65 system-ui,sans-ser
 </tr>
 </tbody>
 </table>
-<h3>Blockers for the current unified endpoint</h3>
+<h3>Directory profile update — October 19, 2026</h3>
+<p>The owner selected a dedicated directory catalog. The server-side <code>/mcp/claude</code> profile has now been deployed, with a 180-tool execution allowlist, English descriptions and complete annotation booleans. OAuth resource validation restricts directory-issued tokens to that endpoint. The full <code>/mcp/troly</code> service retains Gen AI. The new directory connection completed OAuth in Claude with the correct reviewer workspace. See <code>evidence/claude-directory-release-20261019.md</code> for deployment and automated regression scope. Live catalog scanning and authenticated all-tool business testing must be verified separately.</p>
+<h3>Historical findings from the full endpoint (superseded candidate)</h3>
 <ul>
 <li>Live discovery now confirms 270 tools, 12 prompts and 12 resources from TrolyPage Reviewer. The portal flags <code>save-integration-operation</code>: "Split this catch-all API tool into separate read and write tools." It also reports 275 suggestions, largely missing title/readOnlyHint annotations. Inspect the implementation before choosing a fix; saving an operation configuration and executing an operation are different behaviors. See evidence/claude-live-discovery-2026-10-19.json.</li>
 <li>The catalog includes <code>generate-social-image</code>. The connector criteria reviewed for this candidate exclude AI image/video/audio generation. Enforce restrictions in the server or a real OAuth profile, then verify <code>tools/list</code>. Removing a tool name from documentation does not restrict access.</li>
@@ -199,8 +201,8 @@ body{margin:0;background:#f5f7fb;color:#17223b;font:16px/1.65 system-ui,sans-ser
 <li>Test every exposed tool through MCP Inspector and a Claude custom connector. All 270 ledger entries remain Not run; the five positive and three negative cases are representative and do not replace catalog-wide verification.</li>
 </ul>
 <h2>B. Plugin bundle</h2>
-<p>Source: <code>packages/claude/trolypage-mcp</code>. Local review archive: <code>archives/claude-trolypage-mcp-1.0.1-DRAFT.zip</code>. Claude Directory retrieves the bundle from GitHub rather than using this ZIP as an OpenAI-style submission.</p>
-<p>The bundle retains nine existing TrolyPage skills, refreshed tool references, <code>.claude-plugin/plugin.json</code> and <code>.mcp.json</code>. It still connects to the real unified endpoint, with the blockers above. No Claude-specific server filter has been verified.</p>
+<p>Source: <code>packages/claude/trolypage-mcp</code>. Local review archive: <code>archives/claude-trolypage-mcp-1.0.2-DRAFT.zip</code>. Claude Directory retrieves the bundle from GitHub rather than using this ZIP as an OpenAI-style submission.</p>
+<p>Candidate 1.0.2 contains eight TrolyPage skills, refreshed directory-only tool references, <code>.claude-plugin/plugin.json</code> and <code>.mcp.json</code> targeting the deployed <code>/mcp/claude</code> endpoint. The unsupported Automation skill was removed. The eight skills do not fall back to the full endpoint when a capability is unavailable. The existing submission remains the publication target; do not create a duplicate listing.</p>
 <p>Repository: https://github.com/trolypage/trolypage-plugins. Plugin path: <code>packages/claude/trolypage-mcp</code>. Branch: <code>codex/submission-preparation</code>. Select the correct branch/path and verify the commit in the portal.</p>
 <p>The bundle includes the Apache-2.0 LICENSE and NOTICE and declares Apache-2.0 in its manifest. This applies to the distributed skills and documentation, not the application backend.</p>
 <p>The bundle was submitted for review on October 19, 2026 after the owner explicitly confirmed the organization and all four displayed legal/policy attestations. The portal confirmed receipt and showed the security-scan stage. Source validated at commit <code>5a53823</code>: seven checks passed, with the documented harmless privacyPolicyUrl warning. Nine skills and one MCP server were detected. Data handling declares reads and stores, no skill transmission outside declared connectors, retention longer than 30 days, and intended users under 18 (16–17 with guardian consent, as confirmed by the owner). Automatic publication is off; repository updates use scheduled checks. Submission is not approval or proof of successful tool tests.</p>
@@ -451,6 +453,7 @@ Add an internal CRM note without contacting the customer.
 <h2>Secure reviewer-access fields</h2>
 <p>Supply login URL, demo workspace name, username, password/sign-in method, permissions, plan, fixtures, expected approval steps and no-charge testing instructions only through secure dashboard fields. This is a checklist, not a place to store credentials. Keep the test account available during review and re-review.</p></section><section id="07-readiness"><a class="file" href="review/07-readiness.md">Open Markdown file</a><h1>Requirements before submission</h1>
 <p><strong>REVIEW CANDIDATE.</strong> Source, archives and copy are prepared. The Claude bundle was submitted for review. An OpenAI draft has been uploaded. Muse intake, integration credentials and business verification are complete. No platform approval has been received. Local validation does not replace a platform scan or review.</p>
+<p><strong>Directory profile update, October 19:</strong> <code>/mcp/claude</code> is deployed with a 180-tool allowlist enforced at discovery and execution, English descriptions and complete annotation serialization. The full endpoint retains Gen AI. Claude candidate 1.0.2 contains eight matching skills. OAuth for the new directory connection succeeded with TrolyPage Reviewer. Backend MCP regressions passed 248 tests, followed by seven targeted tests after the final fix; local packaging passed 68 checks. Historical full-endpoint findings below do not describe a fresh directory scan. All-tool authenticated business testing, a demo and platform-specific outstanding requirements remain pending. See <code>evidence/claude-directory-release-20261019.md</code>.</p>
 <h2>Shared requirements</h2>
 <table>
 <thead>

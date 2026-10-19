@@ -2,7 +2,7 @@
   "mcpServers": {
     "trolypage": {
       "type": "http",
-      "url": "https://trolypage.com/mcp/troly"
+      "url": "https://trolypage.com/mcp/claude"
     }
   }
 }

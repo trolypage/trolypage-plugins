@@ -235,7 +235,7 @@
     {
       "check": "claude skills present",
       "passed": true,
-      "detail": "9"
+      "detail": "8"
     },
     {
       "check": "claude skill troly",
@@ -259,16 +259,6 @@
     },
     {
       "check": "claude contained reference troly-analytics/references/tool-catalog.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "claude skill troly-automation",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "claude contained reference troly-automation/references/tool-catalog.md",
       "passed": true,
       "detail": ""
     },

@@ -1,6 +1,6 @@
 ---
 name: troly
-description: Route and execute end-to-end work across every TrolyPage MCP module, or present the complete TrolyPage usage guide. Use when a request mentions TrolyPage, spans domains, is ambiguous about which tool to call, explicitly invokes $troly, or asks for help, getting started, usage, a menu, commands, or what TrolyPage can do, in any language.
+description: Route and execute end-to-end work across the TrolyPage business directory catalog, or present the complete TrolyPage usage guide. Use when a request mentions TrolyPage, spans domains, is ambiguous about which tool to call, explicitly invokes $troly, or asks for help, getting started, usage, a menu, commands, or what TrolyPage can do, in any language.
 ---
 
 # TrolyPage Router
@@ -21,7 +21,7 @@ For non-help requests, read [routing.md](references/routing.md) and choose the s
 
 ## Operating contract
 
-1. Read `trolypage://mcp/guide` when connection, approval, rate-limit, or workflow behavior is unclear.
+1. Consult the packaged help and https://trolypage.com/mcp for connection and approval behavior; this profile does not expose MCP resources or prompts.
 2. Resolve real IDs with list, search, or get tools. Never invent an ID, status, price, inventory count, payment state, or delivery quote.
 3. Summarize the intended target and effect before a high-impact write when the user's instruction did not already make them explicit.
 4. Call the matching tool. If it returns an approval request, report its ID and state; do not retry the write or claim it already executed.
@@ -31,4 +31,4 @@ Treat HTTP 402 as a plan/module limitation, 403 as a permission or workspace-bou
 
 ## Focused skills
 
-Use these focused skills when the request stays in one domain: `$troly-support`, `$troly-commerce`, `$troly-analytics`, `$troly-social`, `$troly-marketing`, `$troly-knowledge`, `$troly-workspace`, or `$troly-automation`.
+Use these focused skills when the request stays in one domain: `$troly-support`, `$troly-commerce`, `$troly-analytics`, `$troly-social`, `$troly-marketing`, `$troly-knowledge`, `$troly-workspace`.
