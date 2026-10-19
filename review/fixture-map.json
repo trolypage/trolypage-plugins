@@ -1,5 +1,5 @@
 {
-  "status": "Reviewer workspace browser access verified 2026-10-19; fixtures and authenticated MCP tests pending",
+  "status": "Reviewer browser access, Claude OAuth and live catalog discovery verified 2026-10-19; fixtures and tool-execution tests pending",
   "login_url": "https://trolypage.com/login",
   "workspace_name": "TrolyPage Reviewer",
   "workspace_id": null,

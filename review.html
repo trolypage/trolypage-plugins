@@ -91,7 +91,7 @@ body{margin:0;background:#f5f7fb;color:#17223b;font:16px/1.65 system-ui,sans-ser
 <tr>
 <td>Privacy</td>
 <td>https://trolypage.com/privacy-policy</td>
-<td>Publicly accessible; stale publisher details need correction before submission</td>
+<td>Company and Hanoi contact corrected with owner approval; public introduction and section 13 verified October 19, 2026</td>
 </tr>
 <tr>
 <td>Terms</td>
@@ -185,13 +185,15 @@ body{margin:0;background:#f5f7fb;color:#17223b;font:16px/1.65 system-ui,sans-ser
 </tr>
 <tr>
 <td>Reviewer access</td>
-<td>Credentials received privately and workspace access verified; OAuth, fixtures and independent sign-in remain unverified. Use secure review fields only</td>
+<td>Credentials received privately; workspace access, Claude OAuth and live catalog discovery verified October 19, 2026. Fixtures, tool-execution tests and independent sign-in remain unverified. Use secure review fields only</td>
 </tr>
 </tbody>
 </table>
 <h3>Blockers for the current unified endpoint</h3>
 <ul>
+<li>Live discovery now confirms 270 tools, 12 prompts and 12 resources from TrolyPage Reviewer. The portal flags <code>save-integration-operation</code>: "Split this catch-all API tool into separate read and write tools." It also reports 275 suggestions, largely missing title/readOnlyHint annotations. Inspect the implementation before choosing a fix; saving an operation configuration and executing an operation are different behaviors. See evidence/claude-live-discovery-2026-10-19.json.</li>
 <li>The catalog includes <code>generate-social-image</code>. The connector criteria reviewed for this candidate exclude AI image/video/audio generation. Enforce restrictions in the server or a real OAuth profile, then verify <code>tools/list</code>. Removing a tool name from documentation does not restrict access.</li>
+<li>The connector's mandatory policy declarations also prohibit tool descriptions that instruct model behavior or refer to other tools or external instruction sources. Review the live descriptions against that requirement. No connector policy checkbox or all-tools-self-tested declaration has been accepted.</li>
 <li><code>execute-integration-operation</code> declares openWorldHint without a clear read/write split. Inspect the HTTP methods configured operations can execute; separate read/write tools or exclude the dispatcher from the Claude catalog as needed. Do not use it to bypass excluded capabilities.</li>
 <li>If a different endpoint/profile is selected, use its verified deployment URL. Do not invent a path in the manifest.</li>
 <li>Test every exposed tool through MCP Inspector and a Claude custom connector. All 270 ledger entries remain Not run; the five positive and three negative cases are representative and do not replace catalog-wide verification.</li>
@@ -202,7 +204,7 @@ body{margin:0;background:#f5f7fb;color:#17223b;font:16px/1.65 system-ui,sans-ser
 <p>Repository: https://github.com/trolypage/trolypage-plugins. Plugin path: <code>packages/claude/trolypage-mcp</code>. Branch: <code>codex/submission-preparation</code>. Select the correct branch/path and verify the commit in the portal.</p>
 <p>The bundle includes the Apache-2.0 LICENSE and NOTICE and declares Apache-2.0 in its manifest. This applies to the distributed skills and documentation, not the application backend.</p>
 <p>The bundle was submitted for review on October 19, 2026 after the owner explicitly confirmed the organization and all four displayed legal/policy attestations. The portal confirmed receipt and showed the security-scan stage. Source validated at commit <code>5a53823</code>: seven checks passed, with the documented harmless privacyPolicyUrl warning. Nine skills and one MCP server were detected. Data handling declares reads and stores, no skill transmission outside declared connectors, retention longer than 30 days, and intended users under 18 (16–17 with guardian consent, as confirmed by the owner). Automatic publication is off; repository updates use scheduled checks. Submission is not approval or proof of successful tool tests.</p>
-<p>The separate MCP connector submission and correct-reviewer OAuth flow remain incomplete. Resolve the catalog and test findings above; do not treat bundle receipt as connector approval or attest to unrun tests.</p>
+<p>The separate MCP connector has a browser draft populated through the compliance step: English listing, five relevant categories, three use cases, company/contact details, OAuth DCR, data-handling explanations and honest reviewer setup instructions. OAuth and live discovery succeeded for the correct reviewer workspace. Final connector submission remains blocked by unmet policy declarations and incomplete tool tests. The browser draft must be preserved; it is not a submitted directory record. Do not treat bundle receipt as connector approval or attest to unrun tests.</p>
 <h2>Sources</h2>
 <ul>
 <li>https://claude.com/docs/directory/publish</li>
@@ -344,7 +346,7 @@ Add an internal CRM note without contacting the customer.
 <p>Read tools retrieve account state. Write tools change internal drafts/configuration. Sensitive-write candidates include external sends/publication, payments/order commitment, shipping/booking, destructive operations and consequential integration execution. tool-inventory.csv contains an initial classification for manual review, explicitly separate from current MCP annotations and Muse's final classification.</p></section><section id="06-tests-demo-and-access"><a class="file" href="review/06-tests-demo-and-access.md">Open Markdown file</a><h1>Reviewer access, tests and demo video</h1>
 <h2>Current status</h2>
 <p>The owner supplied reviewer credentials privately. Browser access was verified on October 19, 2026: workspace <strong>TrolyPage Reviewer</strong>, <strong>Scale</strong> plan, current member <strong>Owner</strong>. The owner completed Cloudflare verification during this sign-in; independent access by an external reviewer has not been established. No username or password is stored in the repository or archives.</p>
-<p>The authenticated MCP page lists 11 included servers, 270 tools and 117 read tools. It shows no API keys, authorized OAuth applications or successful read-only tool call. The applied write mode is <strong>Full / Direct execution</strong>; it was observed without changing configuration. Browser access is not proof of successful OAuth or MCP tool calls.</p>
+<p>The initial authenticated MCP page listed 11 included servers, 270 tools and 117 read tools, with no API keys or authorized OAuth applications at that preflight. The applied write mode was <strong>Full / Direct execution</strong>, observed without changing configuration. Claude OAuth was subsequently completed for the correct TrolyPage Reviewer workspace on October 19, 2026. The directory read 270 tools, 12 prompts and 12 resources live. This verifies authorization and catalog discovery, not successful execution of individual tools. No successful business-tool call has been recorded.</p>
 <p>The workspace has no products or orders and only the default support contact. <code>Review Customer A</code>, SKU <code>TLP-REVIEW-MUG</code> and comparison-period demo orders are absent. Business tests have not run; no real video or demo URL exists. <code>test-cases.json</code> is a specification and all results in <code>test-results.csv</code> remain Not run. Do not use the real support contact as a fixture or message it to create test data.</p>
 <h2>Populate the dedicated workspace</h2>
 <ol>
@@ -476,7 +478,7 @@ Add an internal CRM note without contacting the customer.
 </tr>
 <tr>
 <td>Endpoint/discovery</td>
-<td>Public status and OAuth metadata accessible; full OAuth flow not tested</td>
+<td>Public status and OAuth metadata accessible; Claude OAuth and live catalog discovery verified for TrolyPage Reviewer (270 tools, 12 prompts, 12 resources). OpenAI OAuth remains unverified</td>
 </tr>
 <tr>
 <td>Reviewer account</td>
@@ -484,7 +486,7 @@ Add an internal CRM note without contacting the customer.
 </tr>
 <tr>
 <td>Demo workspace</td>
-<td>No products/orders or test fixtures; only the default support contact. MCP UI shows Full / Direct execution applied, no OAuth apps/API keys and no successful read-only call. Configuration unchanged</td>
+<td>No products/orders or test fixtures; only the default support contact. Initial MCP UI preflight showed Full / Direct execution and no OAuth apps/API keys. Claude OAuth was subsequently authorized; no successful business-tool call has been recorded. Write-policy configuration unchanged</td>
 </tr>
 <tr>
 <td>Authenticated tool tests</td>
@@ -520,7 +522,7 @@ Add an internal CRM note without contacting the customer.
 <h2>Platform-specific work</h2>
 <ul>
 <li><strong>OpenAI:</strong> domain challenge is verified. OAuth, tool scans, reviewer access, video and final attestations remain pending. The draft ZIP can be reviewed locally but is not submission-ready.</li>
-<li><strong>Claude bundle:</strong> submitted for review after successful repository validation and explicit owner confirmation of organization and all four attestations. Portal receipt shows the security-scan stage. No version is live. Separate MCP connector catalog policy, tool tests and reviewer OAuth remain pending. Public source: https://github.com/trolypage/trolypage-plugins. Do not upload the application backend.</li>
+<li><strong>Claude bundle:</strong> submitted for review after successful repository validation and explicit owner confirmation of organization and all four attestations. Portal receipt shows the security-scan stage. No version is live. Separate connector OAuth and discovery now work; its draft is populated through compliance. Mandatory no-AI-media and description-policy declarations and all-tool tests remain unmet. The portal also flags save-integration-operation and 275 suggestions. Public source: https://github.com/trolypage/trolypage-plugins. Do not upload the application backend.</li>
 <li><strong>Muse:</strong> intake submitted with payments accepted and external payment explicitly disclosed; the owner confirmed the displayed terms. DCR/PKCE integration credentials and reviewer access were submitted securely. Business verification is complete. The overview shows 2/3 follow-up requirements complete; data-processing questionnaire, fixtures, end-to-end tests and any further reviewer requirements remain pending.</li>
 </ul>
 <h2>Next preparation steps</h2>

@@ -19,11 +19,13 @@ The owner requested both listing types under the same organization. The selected
 | Support | support@trolypage.com; https://trolypage.com/mcp#errors |
 | Website / privacy / terms | See 01-listing-and-copy.md; published Privacy Policy identity corrected and verified October 19, 2026 |
 | Countries | All platform-supported countries, subject to provider restrictions |
-| Reviewer access | Credentials received privately and workspace access verified; OAuth, fixtures and independent sign-in remain unverified. Use secure review fields only |
+| Reviewer access | Credentials received privately; workspace access, Claude OAuth and live catalog discovery verified October 19, 2026. Fixtures, tool-execution tests and independent sign-in remain unverified. Use secure review fields only |
 
 ### Blockers for the current unified endpoint
 
+- Live discovery now confirms 270 tools, 12 prompts and 12 resources from TrolyPage Reviewer. The portal flags `save-integration-operation`: "Split this catch-all API tool into separate read and write tools." It also reports 275 suggestions, largely missing title/readOnlyHint annotations. Inspect the implementation before choosing a fix; saving an operation configuration and executing an operation are different behaviors. See evidence/claude-live-discovery-2026-10-19.json.
 - The catalog includes `generate-social-image`. The connector criteria reviewed for this candidate exclude AI image/video/audio generation. Enforce restrictions in the server or a real OAuth profile, then verify `tools/list`. Removing a tool name from documentation does not restrict access.
+- The connector's mandatory policy declarations also prohibit tool descriptions that instruct model behavior or refer to other tools or external instruction sources. Review the live descriptions against that requirement. No connector policy checkbox or all-tools-self-tested declaration has been accepted.
 - `execute-integration-operation` declares openWorldHint without a clear read/write split. Inspect the HTTP methods configured operations can execute; separate read/write tools or exclude the dispatcher from the Claude catalog as needed. Do not use it to bypass excluded capabilities.
 - If a different endpoint/profile is selected, use its verified deployment URL. Do not invent a path in the manifest.
 - Test every exposed tool through MCP Inspector and a Claude custom connector. All 270 ledger entries remain Not run; the five positive and three negative cases are representative and do not replace catalog-wide verification.
@@ -40,7 +42,7 @@ The bundle includes the Apache-2.0 LICENSE and NOTICE and declares Apache-2.0 in
 
 The bundle was submitted for review on October 19, 2026 after the owner explicitly confirmed the organization and all four displayed legal/policy attestations. The portal confirmed receipt and showed the security-scan stage. Source validated at commit `5a53823`: seven checks passed, with the documented harmless privacyPolicyUrl warning. Nine skills and one MCP server were detected. Data handling declares reads and stores, no skill transmission outside declared connectors, retention longer than 30 days, and intended users under 18 (16–17 with guardian consent, as confirmed by the owner). Automatic publication is off; repository updates use scheduled checks. Submission is not approval or proof of successful tool tests.
 
-The separate MCP connector submission and correct-reviewer OAuth flow remain incomplete. Resolve the catalog and test findings above; do not treat bundle receipt as connector approval or attest to unrun tests.
+The separate MCP connector has a browser draft populated through the compliance step: English listing, five relevant categories, three use cases, company/contact details, OAuth DCR, data-handling explanations and honest reviewer setup instructions. OAuth and live discovery succeeded for the correct reviewer workspace. Final connector submission remains blocked by unmet policy declarations and incomplete tool tests. The browser draft must be preserved; it is not a submitted directory record. Do not treat bundle receipt as connector approval or attest to unrun tests.
 
 ## Sources
 

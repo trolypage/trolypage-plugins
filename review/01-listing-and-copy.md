@@ -47,7 +47,7 @@ TrolyPage supports merchant product lookup, order preparation and management, pa
 | --- | --- | --- |
 | Website | https://trolypage.com/mcp | Opened in Edge; contains MCP guidance and company information |
 | Support | https://trolypage.com/mcp#errors | Error guidance and support email are present; a dedicated support page could improve this later |
-| Privacy | https://trolypage.com/privacy-policy | Publicly accessible; stale publisher details need correction before submission |
+| Privacy | https://trolypage.com/privacy-policy | Company and Hanoi contact corrected with owner approval; public introduction and section 13 verified October 19, 2026 |
 | Terms | https://trolypage.com/terms-of-service | Opened successfully and names TROLYPAGE COMPANY LIMITED; the owner must review the full legal text |
 
 No placeholder demo URL is included. After recording a real video and verifying reviewer access, add `review.demo_recording_url` and rebuild the archives. Optional localized listing overrides have been omitted for this English-only candidate.

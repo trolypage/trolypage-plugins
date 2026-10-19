@@ -4,7 +4,7 @@
 
 The owner supplied reviewer credentials privately. Browser access was verified on October 19, 2026: workspace **TrolyPage Reviewer**, **Scale** plan, current member **Owner**. The owner completed Cloudflare verification during this sign-in; independent access by an external reviewer has not been established. No username or password is stored in the repository or archives.
 
-The authenticated MCP page lists 11 included servers, 270 tools and 117 read tools. It shows no API keys, authorized OAuth applications or successful read-only tool call. The applied write mode is **Full / Direct execution**; it was observed without changing configuration. Browser access is not proof of successful OAuth or MCP tool calls.
+The initial authenticated MCP page listed 11 included servers, 270 tools and 117 read tools, with no API keys or authorized OAuth applications at that preflight. The applied write mode was **Full / Direct execution**, observed without changing configuration. Claude OAuth was subsequently completed for the correct TrolyPage Reviewer workspace on October 19, 2026. The directory read 270 tools, 12 prompts and 12 resources live. This verifies authorization and catalog discovery, not successful execution of individual tools. No successful business-tool call has been recorded.
 
 The workspace has no products or orders and only the default support contact. `Review Customer A`, SKU `TLP-REVIEW-MUG` and comparison-period demo orders are absent. Business tests have not run; no real video or demo URL exists. `test-cases.json` is a specification and all results in `test-results.csv` remain Not run. Do not use the real support contact as a fixture or message it to create test data.
 

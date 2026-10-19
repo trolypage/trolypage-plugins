@@ -10,9 +10,9 @@
 | OpenAI identity / domain | Business — Trolypage verified; MCP domain challenge now verified in the saved draft |
 | Metadata / 5+3 cases / release notes | Imported into the English-only OpenAI draft; all nine skill checks passed |
 | Mobile icon | Original and derived sizes supplied; review appearance at 32/64 px |
-| Endpoint/discovery | Public status and OAuth metadata accessible; full OAuth flow not tested |
+| Endpoint/discovery | Public status and OAuth metadata accessible; Claude OAuth and live catalog discovery verified for TrolyPage Reviewer (270 tools, 12 prompts, 12 resources). OpenAI OAuth remains unverified |
 | Reviewer account | Received privately; browser access verified for TrolyPage Reviewer, Scale, Owner. Owner completed Cloudflare; independent external-reviewer sign-in remains unverified |
-| Demo workspace | No products/orders or test fixtures; only the default support contact. MCP UI shows Full / Direct execution applied, no OAuth apps/API keys and no successful read-only call. Configuration unchanged |
+| Demo workspace | No products/orders or test fixtures; only the default support contact. Initial MCP UI preflight showed Full / Direct execution and no OAuth apps/API keys. Claude OAuth was subsequently authorized; no successful business-tool call has been recorded. Write-policy configuration unchanged |
 | Authenticated tool tests | All 270 tools and all five positive/three negative cases remain Not run |
 | Video | Script prepared; real recording and accessible URL missing |
 | Published policy identity | Owner confirmed TROLYPAGE COMPANY LIMITED, Hanoi. Privacy introduction and section 13 corrected on production and the public English page verified October 19, 2026; both privacy source templates updated with private backups. Legacy Vietnamese privacy URL redirected to the English canonical page during this check. Mobile support and unrelated partner/store-publisher references were not changed |
@@ -32,7 +32,7 @@ No MCP server behavior was changed during this distribution work. Production cha
 ## Platform-specific work
 
 - **OpenAI:** domain challenge is verified. OAuth, tool scans, reviewer access, video and final attestations remain pending. The draft ZIP can be reviewed locally but is not submission-ready.
-- **Claude bundle:** submitted for review after successful repository validation and explicit owner confirmation of organization and all four attestations. Portal receipt shows the security-scan stage. No version is live. Separate MCP connector catalog policy, tool tests and reviewer OAuth remain pending. Public source: https://github.com/trolypage/trolypage-plugins. Do not upload the application backend.
+- **Claude bundle:** submitted for review after successful repository validation and explicit owner confirmation of organization and all four attestations. Portal receipt shows the security-scan stage. No version is live. Separate connector OAuth and discovery now work; its draft is populated through compliance. Mandatory no-AI-media and description-policy declarations and all-tool tests remain unmet. The portal also flags save-integration-operation and 275 suggestions. Public source: https://github.com/trolypage/trolypage-plugins. Do not upload the application backend.
 - **Muse:** intake submitted with payments accepted and external payment explicitly disclosed; the owner confirmed the displayed terms. DCR/PKCE integration credentials and reviewer access were submitted securely. Business verification is complete. The overview shows 2/3 follow-up requirements complete; data-processing questionnaire, fixtures, end-to-end tests and any further reviewer requirements remain pending.
 
 ## Next preparation steps

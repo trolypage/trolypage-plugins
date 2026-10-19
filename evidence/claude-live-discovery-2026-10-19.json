@@ -1,0 +1,26 @@
+{
+  "observed_on": "2026-10-19",
+  "source": "Claude Software Directory connector-submission UI after OAuth",
+  "workspace": "TrolyPage Reviewer",
+  "server_url": "https://trolypage.com/mcp/troly",
+  "oauth": "Connected; correct dedicated reviewer workspace confirmed",
+  "tool_count": 270,
+  "prompt_count": 12,
+  "resource_count": 12,
+  "required_fix_count": 1,
+  "required_fix": {
+    "tool": "save-integration-operation",
+    "portal_message": "Split this catch-all API tool into separate read and write tools.",
+    "interpretation_limit": "A portal flag is not a completed source-level analysis; distinguish saving configuration from executing an operation before changing behavior."
+  },
+  "suggestion_count": 275,
+  "suggestion_examples": [
+    "Missing title annotation. Add annotations.title, a human-readable name for the directory listing.",
+    "Add title and readOnlyHint to annotations. The directory's review criteria ask for these."
+  ],
+  "generate_social_image_exposed": true,
+  "live_descriptions": "Mixed English and Vietnamese; some descriptions refer to other tools or direct model behavior",
+  "connector_draft": "Populated through compliance; browser draft only, not submitted",
+  "policy_attestations": "Not accepted for this connector; current exposed capabilities and descriptions require correction",
+  "tool_execution_tests": "Not run; OAuth and tools/list discovery do not establish business-tool execution success"
+}
