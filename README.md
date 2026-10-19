@@ -8,12 +8,12 @@ TrolyPage provides AI customer support, CRM, social media scheduling and order m
 
 **Bản chuẩn bị ngày 19/10/2026. Trạng thái: REVIEW DRAFT.**
 
-Mở `review.html` để xem toàn bộ nội dung. Bộ này phục vụ chủ tài khoản review trước khi upload. Chưa gửi hồ sơ, tạo draft portal, publish repository hoặc chấp nhận điều khoản ở bất kỳ nền tảng nào.
+Mở `review.html` để xem toàn bộ nội dung. Bộ này phục vụ chủ tài khoản review trước khi upload. Repository đã public trên GitHub; chưa gửi hồ sơ, tạo draft submission hay chấp nhận điều khoản của các directory.
 
 ## Đã chuẩn bị
 
 - Gói OpenAI portable `trolypage-mcp` 1.0.1, OAuth DCR, 9 skills cập nhật catalog, metadata EN/VI, 5 positive/3 negative cases, commerce disclosure, countries và logo mobile.
-- Gói Claude skills + MCP connection, hồ sơ riêng cho MCP connector và bundle GitHub. Còn chờ repo/license do bạn chọn và catalog phù hợp chính sách Claude.
+- Gói Claude skills + MCP connection, hồ sơ riêng cho MCP connector và bundle GitHub. Repository đã public; còn chờ license do bạn chọn và catalog phù hợp chính sách Claude.
 - Nội dung form Muse, technical/data-processing dossier, inventory 270 tools, proposed classifications, test ledgers và hướng dẫn reviewer/demo.
 - Bằng chứng public status/OAuth/policy được đọc từ trình duyệt Edge của bạn, cùng catalog schemas từ mã nguồn cô lập (không nạp .env, không gọi nghiệp vụ).
 
@@ -42,7 +42,7 @@ Người phụ trách: **Alex Nguyen**, email **support.mcp@trolypage.com**. B�
 
 ## Chờ hoàn tất
 
-Workspace demo và video thật; GitHub repo/license Claude; sửa identity/copy trên trang policy; annotation completeness; giới hạn generate-social-image và integration execution cho Claude; xác nhận data processing/Muse payment classification. Chi tiết và mức độ nằm ở readiness report. Không gọi các ZIP DRAFT là sẵn sàng submit.
+Workspace demo và video thật; license Claude; sửa identity/copy trên trang policy; annotation completeness; giới hạn generate-social-image và integration execution cho Claude; xác nhận data processing/Muse payment classification. Chi tiết và mức độ nằm ở readiness report. Không gọi các ZIP DRAFT là sẵn sàng submit.
 
 ## Build lại
 

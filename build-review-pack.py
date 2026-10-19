@@ -230,7 +230,7 @@ write(openai / 'README.md', package_readme)
 write(claude / 'README.md', package_readme + '''
 ## Claude review candidate status
 
-This source is being prepared for directory review. The current unified server includes image generation, which must be excluded from the Claude connector's actual exposed catalog before submission under the current connector criteria. This bundle does not filter a remote server by itself. The publisher must select a license and public GitHub repository before listing this plugin. No license or repository has been selected in this candidate.
+This source is being prepared for directory review. The current unified server includes image generation, which must be excluded from the Claude connector's actual exposed catalog before submission under the current connector criteria. This bundle does not filter a remote server by itself. The public source repository is https://github.com/trolypage/trolypage-plugins. The publisher must select a license before listing this plugin; no license has been selected in this candidate.
 ''')
 
 write(DOCS / '01-listing-and-copy.md', f'''# Nội dung listing để review
@@ -314,7 +314,7 @@ Tổ chức có trạng thái Verified và hộp upload chọn được Business
 
 write(DOCS / '03-claude.md', '''# Claude — MCP connector và plugin bundle
 
-Theo lựa chọn của chủ tài khoản: chuẩn bị cả hai listing, dùng cùng tổ chức sở hữu. Repository và giấy phép sẽ do chủ tài khoản chọn sau.
+Theo lựa chọn của chủ tài khoản: chuẩn bị cả hai listing, dùng cùng tổ chức sở hữu. Repository public: https://github.com/trolypage/trolypage-plugins. Giấy phép bundle còn chờ chủ tài khoản chọn.
 
 ## A. MCP connector
 
@@ -629,12 +629,12 @@ write(ROOT / 'README.md', '''# TrolyPage — bộ hồ sơ review OpenAI, Claude
 
 **Bản chuẩn bị ngày 19/10/2026. Trạng thái: REVIEW DRAFT.**
 
-Mở `review.html` để xem toàn bộ nội dung. Bộ này phục vụ chủ tài khoản review trước khi upload. Chưa gửi hồ sơ, tạo draft portal, publish repository hoặc chấp nhận điều khoản ở bất kỳ nền tảng nào.
+Mở `review.html` để xem toàn bộ nội dung. Bộ này phục vụ chủ tài khoản review trước khi upload. Repository đã public trên GitHub; chưa gửi hồ sơ, tạo draft submission hay chấp nhận điều khoản của các directory.
 
 ## Đã chuẩn bị
 
 - Gói OpenAI portable `trolypage-mcp` 1.0.1, OAuth DCR, 9 skills cập nhật catalog, metadata EN/VI, 5 positive/3 negative cases, commerce disclosure, countries và logo mobile.
-- Gói Claude skills + MCP connection, hồ sơ riêng cho MCP connector và bundle GitHub. Còn chờ repo/license do bạn chọn và catalog phù hợp chính sách Claude.
+- Gói Claude skills + MCP connection, hồ sơ riêng cho MCP connector và bundle GitHub. Repository đã public; còn chờ license do bạn chọn và catalog phù hợp chính sách Claude.
 - Nội dung form Muse, technical/data-processing dossier, inventory 270 tools, proposed classifications, test ledgers và hướng dẫn reviewer/demo.
 - Bằng chứng public status/OAuth/policy được đọc từ trình duyệt Edge của bạn, cùng catalog schemas từ mã nguồn cô lập (không nạp .env, không gọi nghiệp vụ).
 
@@ -661,7 +661,7 @@ Mở `review.html` để xem toàn bộ nội dung. Bộ này phục vụ chủ 
 
 ## Chờ hoàn tất
 
-Workspace demo và video thật; GitHub repo/license Claude; sửa identity/copy trên trang policy; annotation completeness; giới hạn generate-social-image và integration execution cho Claude; xác nhận data processing/Muse payment classification. Chi tiết và mức độ nằm ở readiness report. Không gọi các ZIP DRAFT là sẵn sàng submit.
+Workspace demo và video thật; license Claude; sửa identity/copy trên trang policy; annotation completeness; giới hạn generate-social-image và integration execution cho Claude; xác nhận data processing/Muse payment classification. Chi tiết và mức độ nằm ở readiness report. Không gọi các ZIP DRAFT là sẵn sàng submit.
 
 ## Build lại
 
@@ -669,7 +669,7 @@ Sửa source trong `packages/` và tài liệu trong `review/`. Sau khi thêm UR
 
 `build-review-pack.py` chỉ dùng để dựng lại snapshot ban đầu từ `D:/facebook-support-agent`: chạy lại sẽ ghi đè các draft, package source và test ledger. Lưu các chỉnh sửa và kết quả kiểm thử thực trước khi chủ ý tạo lại snapshot. Phần kiểm tra Agent Plugins schema dùng thư viện jsonschema ở thư mục tạm của máy; các kiểm tra local còn lại không thay thế portal scan.
 
-Repo local do bạn cho phép tạo tại D:/trolypage-plugins. Chưa có GitHub remote. Chưa chọn giấy phép phát hành; không tự suy ra MIT/Apache hay quyền công khai backend.
+Repo local: D:/trolypage-plugins. GitHub public: https://github.com/trolypage/trolypage-plugins. Claude bundle license remains pending.
 ''')
 write(ROOT / '.gitignore', '''.env
 .env.*
@@ -778,6 +778,6 @@ for p in sorted(DOCS.glob('0*.md')):
 nav=''.join(f'<a href="#{p.stem}">{html.escape(p.stem)}</a>' for p in sorted(DOCS.glob('0*.md')))
 page='''<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TrolyPage — hồ sơ submission để review</title><style>
 body{margin:0;background:#f5f7fb;color:#17223b;font:16px/1.65 system-ui,sans-serif}header{background:#101f3b;color:white;padding:34px max(24px,calc((100vw - 1100px)/2));}header img{width:68px;height:68px;border-radius:16px;float:left;margin-right:20px}h1{font-size:29px;line-height:1.25}header p{color:#c6d7ef}main{max-width:1100px;margin:auto;padding:26px 22px}nav{display:flex;flex-wrap:wrap;gap:9px;margin:20px 0}a{color:#1456b8}nav a,.button{background:white;border:1px solid #cdd7e8;border-radius:8px;padding:8px 12px;text-decoration:none}.notice{background:#fff5d8;border-left:4px solid #cf8500;padding:15px 20px;border-radius:6px}section{background:white;padding:28px;margin:24px 0;border:1px solid #dce3ed;border-radius:12px;scroll-margin:15px;overflow:auto}section h1{font-size:26px}h2{margin-top:30px;font-size:21px}h3{font-size:18px}table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:10px 12px;border:1px solid #dfe5ee;text-align:left;vertical-align:top}th{background:#edf2f9}pre{white-space:pre-wrap;background:#eef3f9;padding:16px;border-radius:7px}code{font-size:13px;overflow-wrap:anywhere}.file{float:right;font-size:13px}.assets{display:flex;gap:18px;align-items:center;flex-wrap:wrap}.assets img{width:320px;max-width:100%}footer{font-size:13px;color:#63718b;margin:30px 0}@media(max-width:650px){section{padding:18px}header{padding:24px}table{min-width:560px}.file{float:none}}
-</style><header><img src="assets/trolypage-mobile-icon-512.png" alt="Logo mobile TrolyPage"><h1>TrolyPage — hồ sơ submission</h1><p>OpenAI · Claude · Muse | Bản review ngày 19/10/2026</p></header><main><div class="notice"><strong>REVIEW DRAFT.</strong> Đã chuẩn bị gói và nội dung. Chưa upload, submit, publish hoặc chạy test bằng tài khoản demo. Đọc mục readiness trước khi nộp.</div><nav>'''+nav+'''</nav><p><a class="button" href="archives/openai-trolypage-mcp-1.0.1-DRAFT.zip">OpenAI ZIP — DRAFT</a> <a class="button" href="archives/claude-trolypage-mcp-1.0.1-DRAFT.zip">Claude ZIP — DRAFT</a> <a class="button" href="validation-report.json">Kiểm tra local</a></p><div class="assets"><img src="assets/icon-inspection.png" alt="Logo mobile app ở nhiều kích thước trên nền sáng và tối"><p>Logo từ mobile app, giữ artwork gốc.<br>Email hồ sơ: support.mcp@trolypage.com<br>Quốc gia: tất cả quốc gia nền tảng cho phép.<br>Commerce: thanh toán bên ngoài AI host.</p></div>'''+''.join(sections)+'''<footer>Prepared from public browser evidence and local source schemas. All business test results remain Not run. Repo chưa có GitHub remote và chưa chọn giấy phép cho Claude bundle.</footer></main></html>'''
+</style><header><img src="assets/trolypage-mobile-icon-512.png" alt="Logo mobile TrolyPage"><h1>TrolyPage — hồ sơ submission</h1><p>OpenAI · Claude · Muse | Bản review ngày 19/10/2026</p></header><main><div class="notice"><strong>REVIEW DRAFT.</strong> Đã chuẩn bị gói và nội dung. Chưa upload, submit, publish hoặc chạy test bằng tài khoản demo. Đọc mục readiness trước khi nộp.</div><nav>'''+nav+'''</nav><p><a class="button" href="archives/openai-trolypage-mcp-1.0.1-DRAFT.zip">OpenAI ZIP — DRAFT</a> <a class="button" href="archives/claude-trolypage-mcp-1.0.1-DRAFT.zip">Claude ZIP — DRAFT</a> <a class="button" href="validation-report.json">Kiểm tra local</a></p><div class="assets"><img src="assets/icon-inspection.png" alt="Logo mobile app ở nhiều kích thước trên nền sáng và tối"><p>Logo từ mobile app, giữ artwork gốc.<br>Email hồ sơ: support.mcp@trolypage.com<br>Quốc gia: tất cả quốc gia nền tảng cho phép.<br>Commerce: thanh toán bên ngoài AI host.</p></div>'''+''.join(sections)+'''<footer>Prepared from public browser evidence and local source schemas. All business test results remain Not run. GitHub: https://github.com/trolypage/trolypage-plugins. Claude bundle license remains pending.</footer></main></html>'''
 write(ROOT/'review.html',page)
 print(json.dumps({'root':str(ROOT),'local_checks_passed':report['local_checks_passed'],'failed_checks':[c for c in checks if not c['passed']],'tools':len(tools),'schemas':report['serialized_input_schemas'],'archives':[p.name for p in archives]},ensure_ascii=False,indent=2))
