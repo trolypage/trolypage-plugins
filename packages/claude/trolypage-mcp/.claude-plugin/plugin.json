@@ -16,5 +16,6 @@
     "order-management"
   ],
   "repository": "https://github.com/trolypage/trolypage-plugins",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "privacyPolicyUrl": "https://trolypage.com/privacy-policy"
 }
