@@ -1,24 +1,26 @@
 # Current source tool reference
 
+Human-readable source descriptions have been translated into English. Tool identifiers and contracts are unchanged; live server wording may differ.
+
 Source snapshot: 2026-10-19. Tools are filtered by the connected workspace. A listed capability is not proof of entitlement or successful execution.
 
 | Tool | Module | Declared annotation(s) | Description |
 | --- | --- | --- | --- |
-| `list-orders` | commerce | readOnlyHint=true | Danh sách đơn hàng của workspace. Lọc theo trạng thái (status: pending, confirmed, completed, cancelled), approval_status (pending_review, approved, rejected) và khoảng ngày. |
-| `get-order` | commerce | readOnlyHint=true | Chi tiết một đơn hàng: thông tin khách, sản phẩm (items), trạng thái, thanh toán và vận đơn. |
-| `create-order` | commerce | destructiveHint=true, openWorldHint=true | Tạo đơn hàng mới cho khách. Đơn được tạo ở trạng thái chờ duyệt (pending_review) — chủ shop duyệt trong TrolyPage trước khi xác nhận. Giá sản phẩm và tồn kho luôn lấy từ catalog, không tin số tiền do AI gửi. |
-| `cancel-order` | commerce | destructiveHint=true | Hủy/xóa một đơn hàng. Từ chối khi đơn đang có vận đơn hoạt động; tồn kho đã trừ sẽ được hoàn lại tự động. |
-| `order-payment-qr` | commerce | destructiveHint=true | Tạo mã VietQR hoặc link thanh toán qua cổng đã kết nối cho một đơn hàng. Số tiền, tiền tệ và mã đối soát do hệ thống lấy từ đơn — AI không được tự đặt số tiền. |
-| `check-payment` | commerce | readOnlyHint=true | Kiểm tra trạng thái thanh toán của đơn hàng theo dữ liệu backend đã xác nhận (webhook ngân hàng). Chỉ báo "đã nhận thanh toán" khi hệ thống đã chuyển trạng thái — không tự đánh dấu. |
-| `search-products` | commerce | readOnlyHint=true | Tìm sản phẩm trong catalog theo tên/SKU/mô tả. Trả về giá, tồn kho, biến thể và trạng thái bán được. |
-| `get-product` | commerce | readOnlyHint=true | Chi tiết một sản phẩm: giá, tồn kho, biến thể, trạng thái bán. |
-| `quote-shipping` | commerce | readOnlyHint=true | Tính phí vận chuyển cho một đơn hàng. Hệ thống tự lấy địa chỉ người nhận, COD và cân nặng từ đơn — chỉ cần order_id. |
-| `quote-ondemand-shipping` | commerce | readOnlyHint=true | Tính phí giao hỏa tốc (AhaMove, GrabExpress...) cho một đơn hàng. |
-| `create-shipment` | commerce | destructiveHint=true | Tạo vận đơn thật cho đơn hàng sau khi khách chọn nhà xe (rate lấy từ quote-shipping). Đơn phải ở trạng thái confirmed và đã duyệt. |
-| `create-ondemand-shipment` | commerce | destructiveHint=true | Tạo đơn giao hỏa tốc (AhaMove, GrabExpress...) cho một đơn hàng sau khi khách chọn dịch vụ. |
-| `track-shipment` | commerce | readOnlyHint=true | Tra cứu trạng thái vận chuyển bằng mã vận đơn hoặc mã đơn. |
-| `list-bookings` | commerce | readOnlyHint=true | Danh sách lịch hẹn của workspace, mới nhất trước. |
-| `create-booking` | commerce | destructiveHint=true, openWorldHint=true | Tạo lịch hẹn cho khách. Hệ thống tự kiểm tra giờ làm việc, timezone và sức chứa của resource/nhân viên. |
+| `list-orders` | commerce | readOnlyHint=true | List workspace orders, filtered by status (pending, confirmed, completed, cancelled), approval_status (pending_review, approved, rejected) and date range. |
+| `get-order` | commerce | readOnlyHint=true | Order details: customer, items, status, payment and shipment. |
+| `create-order` | commerce | destructiveHint=true, openWorldHint=true | Create a customer order with pending_review approval status. The shop owner reviews it in TrolyPage before confirmation. Product prices and stock come from the catalog, not AI-supplied amounts. |
+| `cancel-order` | commerce | destructiveHint=true | Cancel/delete an order. Refused when an active shipment exists; deducted stock is restored automatically. |
+| `order-payment-qr` | commerce | destructiveHint=true | Create a VietQR code or payment link through a connected gateway. Amount, currency and reconciliation reference come from the order; the AI must not set the amount. |
+| `check-payment` | commerce | readOnlyHint=true | Check payment status using backend-confirmed data (bank webhooks). Report payment received only after the system changes state; do not mark it manually. |
+| `search-products` | commerce | readOnlyHint=true | Search products by name, SKU or description. Returns price, stock, variants and sellability. |
+| `get-product` | commerce | readOnlyHint=true | Product details: price, stock, variants and sales status. |
+| `quote-shipping` | commerce | readOnlyHint=true | Quote shipping for an order. Recipient address, COD and weight come from the order; only order_id is required. |
+| `quote-ondemand-shipping` | commerce | readOnlyHint=true | Quote on-demand delivery (AhaMove, GrabExpress, etc.) for an order. |
+| `create-shipment` | commerce | destructiveHint=true | Create a real shipment after the customer selects a carrier rate from quote-shipping. The order must be confirmed and approved. |
+| `create-ondemand-shipment` | commerce | destructiveHint=true | Create an on-demand delivery order (AhaMove, GrabExpress, etc.) after the customer selects a service. |
+| `track-shipment` | commerce | readOnlyHint=true | Look up shipment status by tracking number or internal order ID. |
+| `list-bookings` | commerce | readOnlyHint=true | List workspace bookings, newest first. |
+| `create-booking` | commerce | destructiveHint=true, openWorldHint=true | Create a customer booking. Checks working hours, timezone and resource/staff capacity. |
 | `booking-resources` | commerce | readOnlyHint=true | Discover booking resources, real working hours, timezone, capacity and workspace staff IDs. Read before creating a booking; do not invent availability. |
 | `cancel-booking` | commerce | destructiveHint=true | Mark a booking cancelled while retaining its history. |
 | `create-product` | commerce | destructiveHint=true | Create product with prices, stock, images and variants. Use reusable media URLs from assets; prices and business facts must come from the user. |

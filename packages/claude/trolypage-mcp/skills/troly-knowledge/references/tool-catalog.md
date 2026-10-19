@@ -1,15 +1,17 @@
 # Current source tool reference
 
+Human-readable source descriptions have been translated into English. Tool identifiers and contracts are unchanged; live server wording may differ.
+
 Source snapshot: 2026-10-19. Tools are filtered by the connected workspace. A listed capability is not proof of entitlement or successful execution.
 
 | Tool | Module | Declared annotation(s) | Description |
 | --- | --- | --- | --- |
-| `search-knowledge` | knowledge | readOnlyHint=true | Tra cứu knowledge base của một AI Agent (hybrid recall + rerank + facts đã duyệt). Trả về block tri thức để agent dùng trả lời khách. |
-| `list-knowledge-nodes` | knowledge | readOnlyHint=true | Danh sách node tri thức (cây knowledge base) của một AI Agent kèm trạng thái và số lần sử dụng. |
-| `list-facts` | knowledge | readOnlyHint=true | Danh sách facts (thông tin có cấu trúc) của một AI Agent kèm trạng thái duyệt. Facts chưa duyệt KHÔNG được dùng để trả lời khách. |
-| `search-facts` | knowledge | readOnlyHint=true | Tìm facts ĐÃ DUYỆT của một AI Agent theo thuộc tính/từ khóa — chỉ trả về thông tin an toàn để dùng. |
-| `propose-fact` | knowledge | destructiveHint=true | Đề xuất một fact mới cho knowledge base của agent (attribute = value). Fact vào trạng thái chờ duyệt — chủ shop duyệt trong TrolyPage trước khi được dùng trả lời khách. |
-| `search-documents` | knowledge | readOnlyHint=true | Tìm tài liệu trong knowledge base của agent theo từ khóa (nội dung node đã sẵn sàng). |
+| `search-knowledge` | knowledge | readOnlyHint=true | Query an AI Agent's knowledge base using hybrid recall, reranking and approved facts. Returns knowledge blocks for customer replies. |
+| `list-knowledge-nodes` | knowledge | readOnlyHint=true | List an AI Agent's knowledge nodes with status and usage counts. |
+| `list-facts` | knowledge | readOnlyHint=true | List an AI Agent's structured facts and approval states. Unapproved facts must not be used in customer replies. |
+| `search-facts` | knowledge | readOnlyHint=true | Search approved agent facts by attribute/keyword, returning only information approved for use. |
+| `propose-fact` | knowledge | destructiveHint=true | Propose an agent knowledge fact (attribute = value). It remains pending until shop-owner approval in TrolyPage, before use in customer replies. |
+| `search-documents` | knowledge | readOnlyHint=true | Search ready knowledge-base document nodes by keyword. |
 | `get-knowledge` | knowledge | readOnlyHint=true | Read full knowledge content and ingestion status for an agent-owned node. Use after text/URL imports; processing does not mean ready. |
 | `create-knowledge-text` | knowledge | destructiveHint=true | Manage agent knowledge through the ingestion/review pipeline. After imports inspect status before using it in agent setup. |
 | `delete-knowledge` | knowledge | destructiveHint=true | Manage agent knowledge through the ingestion/review pipeline. After imports inspect status before using it in agent setup. |

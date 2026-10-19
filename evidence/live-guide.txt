@@ -1,3 +1,5 @@
+English-normalized reference: non-English captured text translated on 2026-10-19; proper names transliterated. Not a verbatim capture. Historical claims are not verification of implementation.
+
 TrolyPage
 
 An autonomous Marketing & Sales operating system for businesses that want AI-powered omni-channel growth.
@@ -109,7 +111,7 @@ https://trolypage.com/mcp/support
 19 tools
 4 resources
 
-MCP Server cho hệ thống chăm sóc khách hàng Facebook/ManyChat. Cung cấp tools để tìm kiếm khách hàng, xem lịch sử hội thoại, gửi thông báo Telegram, cập nhật trạng thái, chat qua AI agent, và tạo báo cáo. Resources: cấu hình agent, knowledge base, danh sách subscribers. Prompts: hỗ trợ khách hàng, phân tích subscriber. Before the first action, read `trolypage://mcp/guide`. Use list/get tools before write tools, never invent IDs, and explain any approval-queue result to the user. For a pending write, keep its action_id and poll get-mcp-action for its result instead of resubmitting the write. HTTP writes require a workspace admin/owner; rate-limit responses use HTTP 429 with Retry-After.
+MCP server for Facebook/ManyChat customer support. Tools cover customer search, conversation history, Telegram notifications, status updates, AI agent chat and reports. Resources include agent configuration, knowledge base and subscriber lists. Prompts cover customer support and subscriber analysis. Before the first action, read `trolypage://mcp/guide`. Use list/get tools before write tools, never invent IDs, and explain any approval-queue result to the user. For a pending write, keep its action_id and poll get-mcp-action for its result instead of resubmitting the write. HTTP writes require a workspace admin/owner; rate-limit responses use HTTP 429 with Retry-After.
 
 3 prompts
 manifest.json
@@ -118,7 +120,7 @@ https://trolypage.com/mcp/commerce
 40 tools
 3 resources
 
-MCP Server bán hàng & vận chuyển: đơn hàng, thanh toán QR VietQR, kiểm tra thanh toán, vận đơn (thường + hỏa tốc), sản phẩm/catalog và lịch hẹn. Tool tạo đơn chạy vào luồng chờ duyệt của shop; tool tạo vận đơn yêu cầu đơn đã xác nhận. Số tiền, tồn kho và mã đối soát luôn do hệ thống quyết định. Before the first action, read `trolypage://mcp/guide`. Use list/get tools before write tools, never invent IDs, and explain any approval-queue result to the user. For a pending write, keep its action_id and poll get-mcp-action for its result instead of resubmitting the write. HTTP writes require a workspace admin/owner; rate-limit responses use HTTP 429 with Retry-After.
+Sales and shipping MCP server: orders, VietQR payments, payment checks, standard/on-demand shipments, catalog and bookings. Order creation enters shop review; shipment creation requires a confirmed order. Amounts, stock and reconciliation references are server-authoritative. Before the first action, read `trolypage://mcp/guide`. Use list/get tools before write tools, never invent IDs, and explain any approval-queue result to the user. For a pending write, keep its action_id and poll get-mcp-action for its result instead of resubmitting the write. HTTP writes require a workspace admin/owner; rate-limit responses use HTTP 429 with Retry-After.
 
 3 prompts
 manifest.json
@@ -127,7 +129,7 @@ https://trolypage.com/mcp/analytics
 16 tools
 1 resources
 
-MCP Server báo cáo & thống kê — 100% read-only, không có tool ghi. Cung cấp doanh thu, kênh, hội thoại, nhân viên, follow-up, MXH và dự báo với bộ lọc chung (range, channels, ai_agents...). Dữ liệu trùng khớp màn Reports trong TrolyPage. Before the first action, read `trolypage://mcp/guide`. Use list/get tools before write tools, never invent IDs, and explain any approval-queue result to the user. For a pending write, keep its action_id and poll get-mcp-action for its result instead of resubmitting the write. HTTP writes require a workspace admin/owner; rate-limit responses use HTTP 429 with Retry-After.
+Reporting and analytics MCP server — described by the captured page as 100% read-only with no write tools. Provides revenue, channel, conversation, staff, follow-up, social and forecast reports with shared filters (range, channels, ai_agents, etc.). Data matches the TrolyPage Reports screen. [Review note: the read-only claim conflicts with export-report; see review/07-readiness.md.] Before the first action, read `trolypage://mcp/guide`. Use list/get tools before write tools, never invent IDs, and explain any approval-queue result to the user. For a pending write, keep its action_id and poll get-mcp-action for its result instead of resubmitting the write. HTTP writes require a workspace admin/owner; rate-limit responses use HTTP 429 with Retry-After.
 
 2 prompts
 manifest.json
@@ -145,7 +147,7 @@ https://trolypage.com/mcp/marketing
 37 tools
 3 resources
 
-MCP Server marketing & chiến dịch: chiến lược → chiến dịch → broadcast/nurture/follow-up. Soạn thảo (strategy/campaign/broadcast/nurture/follow-up) chạy ngay dưới dạng draft; submit-broadcast gửi vào hàng đợi duyệt của chủ shop. AI KHÔNG bao giờ tự gửi tin hàng loạt khi chưa được duyệt. Before the first action, read `trolypage://mcp/guide`. Use list/get tools before write tools, never invent IDs, and explain any approval-queue result to the user. For a pending write, keep its action_id and poll get-mcp-action for its result instead of resubmitting the write. HTTP writes require a workspace admin/owner; rate-limit responses use HTTP 429 with Retry-After.
+Marketing and campaigns MCP server: strategy -> campaign -> broadcast/nurture/follow-up. Draft creation runs immediately; submit-broadcast enters shop-owner review. AI does not autonomously send bulk messages without approval. Before the first action, read `trolypage://mcp/guide`. Use list/get tools before write tools, never invent IDs, and explain any approval-queue result to the user. For a pending write, keep its action_id and poll get-mcp-action for its result instead of resubmitting the write. HTTP writes require a workspace admin/owner; rate-limit responses use HTTP 429 with Retry-After.
 
 3 prompts
 manifest.json
@@ -154,7 +156,7 @@ https://trolypage.com/mcp/knowledge
 14 tools
 2 resources
 
-MCP Server tri thức: tra cứu knowledge base theo agent (hybrid recall + rerank), xem cây node, tìm facts ĐÃ DUYỆT, tìm tài liệu. propose-fact chỉ tạo đề xuất chờ duyệt — facts chưa duyệt không bao giờ được dùng trả lời khách. Before the first action, read `trolypage://mcp/guide`. Use list/get tools before write tools, never invent IDs, and explain any approval-queue result to the user. For a pending write, keep its action_id and poll get-mcp-action for its result instead of resubmitting the write. HTTP writes require a workspace admin/owner; rate-limit responses use HTTP 429 with Retry-After.
+Knowledge MCP server: agent knowledge search (hybrid recall and reranking), node trees, approved facts and documents. propose-fact creates a pending proposal; unapproved facts must not be used in customer replies. Before the first action, read `trolypage://mcp/guide`. Use list/get tools before write tools, never invent IDs, and explain any approval-queue result to the user. For a pending write, keep its action_id and poll get-mcp-action for its result instead of resubmitting the write. HTTP writes require a workspace admin/owner; rate-limit responses use HTTP 429 with Retry-After.
 
 2 prompts
 manifest.json
@@ -234,15 +236,15 @@ Open MCP control panel
 Tro Ly Page
 AI Agent for Fanpage.
 
-CÔNG TY TNHH TROLYPAGE
+TROLYPAGE COMPANY LIMITED
 TROLYPAGE COMPANY LIMITED
 
 Enterprise registration number: 0111551901
 First registered: 29/06/2026
-Issuing authority: Phòng Đăng ký kinh doanh và Tài chính doanh nghiệp — Sở Tài chính thành phố Hà Nội
+Issuing authority: Business Registration and Corporate Finance Division — Hanoi Department of Finance
 
-Registered office: Số 72, Ngõ 318 Đê La Thành, Phường Ô Chợ Dừa, Thành phố Hà Nội, Việt Nam
-Legal representative: Nguyễn Duy Hùng, Director
+Registered office: No. 72, Alley 318 De La Thanh, O Cho Dua Ward, Hanoi, Vietnam
+Legal representative: Nguyen Duy Hung, Director
 
 Links
 HOME FEATURES PRICING BLOG LOGIN TERMS OF SERVICE PRIVACY POLICY

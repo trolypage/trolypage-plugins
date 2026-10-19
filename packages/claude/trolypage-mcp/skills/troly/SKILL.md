@@ -1,6 +1,6 @@
 ---
 name: troly
-description: Route and execute end-to-end work across every TrolyPage MCP module, or present the complete TrolyPage usage guide. Use when a request mentions TrolyPage, spans domains, is ambiguous about which tool to call, explicitly invokes $troly, or asks help, hướng dẫn, trợ giúp, bắt đầu, cách dùng, menu, commands, or what TrolyPage can do.
+description: Route and execute end-to-end work across every TrolyPage MCP module, or present the complete TrolyPage usage guide. Use when a request mentions TrolyPage, spans domains, is ambiguous about which tool to call, explicitly invokes $troly, or asks for help, getting started, usage, a menu, commands, or what TrolyPage can do, in any language.
 ---
 
 # TrolyPage Router
@@ -9,9 +9,9 @@ Use the `trolypage` MCP server for all operations. It is one authenticated conne
 
 ## Help mode
 
-Before routing an operation, detect whether the text after the invocation is empty or primarily asks for help. Treat these as help intent in Vietnamese or English: `help`, `hướng dẫn`, `huong dan`, `trợ giúp`, `tro giup`, `bắt đầu`, `bat dau`, `cách dùng`, `menu`, `commands`, `lệnh`, `làm được gì`, `how to`, or equivalent wording.
+Before routing an operation, detect whether the text after the invocation is empty or primarily asks for help. Recognize help intent in any language, including requests for help, getting started, usage instructions, a menu, commands, available capabilities, or how to perform a task.
 
-For general help, read [help.md](references/help.md) and render its complete guide in the user's language. Do not call a business tool. For scoped help such as `help commerce` or `hướng dẫn đăng bài`, show the invocation syntax, the matching domain, safe workflow, available operations, and several copy-ready examples; read the focused skill's tool catalog when necessary.
+For general help, read [help.md](references/help.md) and render its complete guide in the user's language. Do not call a business tool. For scoped help such as `help commerce` or `help with social posting`, show the invocation syntax, the matching domain, safe workflow, available operations, and several copy-ready examples; read the focused skill's tool catalog when necessary.
 
 Do not claim that `/troly` is universally registered. Explain the actual invocation supported by the current client: `$troly` in Codex, `@troly` on ChatGPT skill surfaces, and `/troly` only in hosts that provide a custom slash-command alias.
 

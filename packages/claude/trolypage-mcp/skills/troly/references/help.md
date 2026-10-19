@@ -26,15 +26,15 @@ The unified server exposes only modules included in the authenticated workspace 
 
 | Domain | What it handles | Example request |
 | --- | --- | --- |
-| Customer support | Subscribers, conversations, messages, CRM notes, tags, lead stages | `$troly tìm khách hàng Nguyễn An và tóm tắt hội thoại gần nhất` |
-| Commerce | Products, orders, VietQR payment, shipping, tracking, bookings | `$troly tìm sản phẩm áo xanh còn hàng và chuẩn bị đơn cho khách` |
-| Analytics | Read-only business, sales, channel, response, AI, employee and forecast reports | `$troly báo cáo doanh thu 30 ngày và so sánh kỳ trước` |
-| Social | Connected accounts, drafts, schedules, publishing, retries and post analytics | `$troly soạn bài Facebook về ưu đãi cuối tuần, lưu nháp thôi` |
-| Marketing | Strategies, campaigns, broadcasts, nurture and follow-up | `$troly tạo bản nháp chiến dịch chăm sóc khách chưa chốt` |
-| Knowledge | Agent knowledge, approved facts, documents and governed fact proposals | `$troly tìm chính sách đổi trả đã được duyệt của agent bán hàng` |
-| Workspace | Channel/agent health, notifications and TrolyPage support tickets | `$troly kiểm tra kênh nào đang lỗi và các thông báo chưa xử lý` |
-| Automation | Workflow templates, validation, simulation, publication and runs | `$troly tạo workflow chăm sóc khách từ mẫu, mô phỏng trước khi xuất bản` |
-| Integration Hub | HTTP connections, API operations and inbound/outbound webhooks | `$troly tạo kết nối API, cho tôi link để nhập key trong app` |
+| Customer support | Subscribers, conversations, messages, CRM notes, tags, lead stages | `$troly find Review Customer A and summarize the latest conversation` |
+| Commerce | Products, orders, VietQR payment, shipping, tracking, bookings | `$troly find an in-stock blue shirt and prepare an order for the customer` |
+| Analytics | Read-only business, sales, channel, response, AI, employee and forecast reports | `$troly report sales for 30 days and compare with the previous period` |
+| Social | Connected accounts, drafts, schedules, publishing, retries and post analytics | `$troly compose a Facebook post about the weekend offer; save a draft only` |
+| Marketing | Strategies, campaigns, broadcasts, nurture and follow-up | `$troly draft a campaign for customers who have not completed a purchase` |
+| Knowledge | Agent knowledge, approved facts, documents and governed fact proposals | `$troly find the sales agent's approved returns policy` |
+| Workspace | Channel/agent health, notifications and TrolyPage support tickets | `$troly check channels with errors and unresolved notifications` |
+| Automation | Workflow templates, validation, simulation, publication and runs | `$troly create a customer-care workflow from a template and simulate before publishing` |
+| Integration Hub | HTTP connections, API operations and inbound/outbound webhooks | `$troly prepare an API connection and give me the app link for secure key entry` |
 
 The current connection may show fewer tools because of plan entitlements, module grants, and server configuration. Do not quote a fixed catalog size.
 
@@ -43,20 +43,20 @@ The current connection may show fewer tools because of plan entitlements, module
 Use this copy-ready structure when the user needs help writing a request:
 
 ```text
-$troly [mục tiêu]
-Phạm vi: [khách hàng/đơn hàng/kênh/agent/campaign]
-Điều kiện: [khoảng ngày, trạng thái, nền tảng]
-Hành động được phép: [chỉ đọc/lưu nháp/gửi duyệt/thực thi]
-Kết quả mong muốn: [bảng/tóm tắt/báo cáo/hành động]
+$troly [goal]
+Scope: [customer/order/channel/agent/campaign]
+Conditions: [date range, status, platform]
+Allowed action: [read only/save draft/submit for review/execute]
+Expected result: [table/summary/report/action]
 ```
 
 Examples:
 
-- `$troly chỉ đọc: tìm đơn chưa thanh toán trong 7 ngày và tóm tắt theo khách hàng.`
-- `$troly tạo bài Instagram cho sản phẩm X, lưu nháp, chưa đăng.`
-- `$troly kiểm tra hội thoại của subscriber 123; chưa gửi tin nhắn cho tới khi tôi xác nhận nội dung.`
+- `$troly read only: find unpaid orders from the last 7 days and summarize by customer.`
+- `$troly create an Instagram post for product X; save a draft without publishing.`
+- `$troly inspect subscriber 123's conversation; do not send until I confirm the content.`
 - `$troly help commerce` for commerce-only guidance.
-- `$troly hướng dẫn đăng bài` for the social workflow and safe examples.
+- `$troly help with social posting` for the social workflow and safe examples.
 
 ## 5. Read, draft, approval, and execution
 

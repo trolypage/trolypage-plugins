@@ -1,53 +1,58 @@
-# TrolyPage — bộ hồ sơ review OpenAI, Claude và Muse
+# TrolyPage plugins for OpenAI, Claude and Muse
 
-TrolyPage provides AI customer support, CRM, social media scheduling and order management for small businesses. This repository contains plugin source and review candidates for connecting an AI assistant to an authorized TrolyPage workspace.
+TrolyPage provides AI customer support, CRM, social media scheduling and order management for small businesses. These plugins connect an AI assistant to an existing, authorized TrolyPage workspace.
 
-**Repository:** [trolypage/trolypage-plugins](https://github.com/trolypage/trolypage-plugins) · **Status:** review candidates, not yet submitted or approved by the directories.
+[Product features](https://trolypage.com/features) · [MCP setup](https://trolypage.com/mcp) · [Support](https://trolypage.com/mcp#errors)
 
-[OpenAI package](packages/openai/trolypage-mcp) · [Claude package](packages/claude/trolypage-mcp) · [Muse form](review/04-muse.md) · [Readiness](review/07-readiness.md) · [SEO review](review/09-seo-and-discovery.md)
+**Status: review draft — not submitted or approved by any directory.** Prepared on October 19, 2026. The repository, review materials and plugin packages are written in English.
 
-**Bản chuẩn bị ngày 19/10/2026. Trạng thái: REVIEW DRAFT.**
+## Packages
 
-Mở `review.html` để xem toàn bộ nội dung. Bộ này phục vụ chủ tài khoản review trước khi upload. Repository đã public trên GitHub; chưa gửi hồ sơ, tạo draft submission hay chấp nhận điều khoản của các directory.
+| Platform | Source | Review archive |
+| --- | --- | --- |
+| OpenAI | [Portable plugin](packages/openai/trolypage-mcp) | [OpenAI ZIP](archives/openai-trolypage-mcp-1.0.1-DRAFT.zip) |
+| Claude | [Skills and MCP bundle](packages/claude/trolypage-mcp) | [Claude ZIP](archives/claude-trolypage-mcp-1.0.1-DRAFT.zip) |
+| Muse | [Submission form draft](review/04-muse.md) | Uses the shared technical and review materials |
 
-## Đã chuẩn bị
+Both plugin candidates retain the `trolypage-mcp` identity and version 1.0.1, with nine skills and the original mobile app icon. OpenAI includes listing metadata, five positive and three negative review cases, commerce disclosure and availability in all platform-permitted countries. Claude Directory uses the public GitHub source; its bundle license remains undecided. This repository contains distribution materials, not the application backend.
 
-- Gói OpenAI portable `trolypage-mcp` 1.0.1, OAuth DCR, 9 skills cập nhật catalog, metadata EN/VI, 5 positive/3 negative cases, commerce disclosure, countries và logo mobile.
-- Gói Claude skills + MCP connection, hồ sơ riêng cho MCP connector và bundle GitHub. Repository đã public; còn chờ license do bạn chọn và catalog phù hợp chính sách Claude.
-- Nội dung form Muse, technical/data-processing dossier, inventory 270 tools, proposed classifications, test ledgers và hướng dẫn reviewer/demo.
-- Bằng chứng public status/OAuth/policy được đọc từ trình duyệt Edge của bạn, cùng catalog schemas từ mã nguồn cô lập (không nạp .env, không gọi nghiệp vụ).
+## Review the materials
 
-Người phụ trách: **Alex Nguyen**, email **support.mcp@trolypage.com**. Bản review bổ sung phần SEO/khả năng được tìm thấy ở `review/09-seo-and-discovery.md`.
+Open [review.html](review.html) for the complete preview, or read these documents:
 
-## Review theo thứ tự
+1. [Listing and copy](review/01-listing-and-copy.md): product definition, publisher, contact, URLs and commerce.
+2. [Readiness](review/07-readiness.md): unresolved requirements before submission.
+3. Platform guides: [OpenAI](review/02-openai.md), [Claude](review/03-claude.md), [Muse](review/04-muse.md).
+4. [Reviewer access, tests and demo](review/06-tests-demo-and-access.md): verified account access, missing fixtures and recording plan.
+5. [Technical and data processing](review/05-technical-and-data.md), [proposed policy corrections](review/08-policy-copy-to-review.md) and [SEO and discovery](review/09-seo-and-discovery.md).
 
-1. `review/01-listing-and-copy.md`: mô tả sản phẩm, tên, email, commerce, quốc gia.
-2. `review/07-readiness.md`: các mục phải xử lý trước khi nộp; đây là phần quan trọng nhất để chốt.
-3. `review/02-openai.md`, `03-claude.md`, `04-muse.md`: hồ sơ từng nền tảng.
-4. `review/06-tests-demo-and-access.md`: kết quả kiểm tra tài khoản reviewer, fixtures và kịch bản quay.
-5. `review/08-policy-copy-to-review.md`: lỗi thông tin cũ và draft chỉnh trang public.
+Submission contact: **Alex Nguyen**, **support.mcp@trolypage.com**. Public support: **support@trolypage.com**. Verified OpenAI business publisher: **Trolypage**.
 
-## Tệp để dùng
+## Current verification
 
-| Tệp / thư mục | Mục đích |
+The reviewer can access the dedicated workspace with an Owner role and Scale plan. Fixtures, OAuth connection tests, authenticated tool tests and a real demo video remain pending. The observed write mode is Full / Direct execution. Account credentials are excluded from this repository and all archives.
+
+Local packaging checks pass, including the Agent Plugins core schemas. These checks do not establish live behavior, security compliance, directory approval or submission readiness. Outstanding work includes Claude catalog restrictions and license, complete tool annotations, published policy identity corrections, data-processing confirmations and Muse payment classification.
+
+| Location | Contents |
 | --- | --- |
-| archives/openai-trolypage-mcp-1.0.1-DRAFT.zip | Review gói sẽ upload OpenAI sau khi hoàn thiện |
-| archives/claude-trolypage-mcp-1.0.1-DRAFT.zip | Review bundle; Claude Directory lấy source qua GitHub |
-| packages/ | Source sạch cho các gói; không có backend TrolyPage |
-| review/ | Nội dung form, checklist, kỹ thuật, test và gap report |
-| assets/ | Logo mobile gốc 1024, bản 512, composer 64 và preview |
-| evidence/ | Snapshot công khai và source schemas; chưa phải kết quả test nghiệp vụ |
-| validation-report.json | Kết quả kiểm tra cấu trúc local và giới hạn của việc kiểm tra |
-| archives/SHA256SUMS.txt | Hash archive để đối chiếu đúng bản |
+| `packages/` | Reviewed distribution source |
+| `review/` | Form drafts, tests, inventory, contracts and readiness findings |
+| `evidence/` | Public observations and isolated source-schema extraction; translated descriptions are labeled |
+| `assets/` | Original 1024 px mobile icon, 512 px listing icon, 64 px composer icon and inspection sheet |
+| `validation-report.json` | Local checks and their limits |
+| `archives/SHA256SUMS.txt` | Archive hashes |
 
-## Chờ hoàn tất
+## Rebuild
 
-Tài khoản reviewer đã vào được workspace riêng; còn thiếu fixtures, OAuth/tool tests và video thật. Còn chờ license Claude; sửa identity/copy trên trang policy; annotation completeness; giới hạn generate-social-image và integration execution cho Claude; xác nhận data processing/Muse payment classification. Chi tiết và mức độ nằm ở readiness report. Không gọi các ZIP DRAFT là sẵn sàng submit.
+Edit the source in `packages/` and documents in `review/`, then run:
 
-## Build lại
+```powershell
+python -X utf8 package.py
+```
 
-Sửa source trong `packages/` và tài liệu trong `review/`. Sau khi thêm URL demo hoặc đổi metadata, chạy `python -X utf8 package.py` để đóng gói và kiểm tra lại mà không ghi đè các chỉnh sửa. Không sửa trực tiếp ZIP.
+The command validates and rebuilds both archives and refreshes the HTML preview without overwriting reviewed documents or test results. Do not edit ZIP files directly. The two historical generator commands now delegate to this safe rebuild path so they cannot restore obsolete or non-English drafts.
 
-`build-review-pack.py` chỉ dùng để dựng lại snapshot ban đầu từ `D:/facebook-support-agent`: chạy lại sẽ ghi đè các draft, package source và test ledger. Lưu các chỉnh sửa và kết quả kiểm thử thực trước khi chủ ý tạo lại snapshot. Phần kiểm tra Agent Plugins schema dùng thư viện jsonschema ở thư mục tạm của máy; các kiểm tra local còn lại không thay thế portal scan.
+The Agent Plugins schema checks use `jsonschema` from the temporary `trolypage-plugin-schema-validator` directory when available; other build dependencies are Pillow, PyYAML and Markdown. Portal scans and live tests remain separate.
 
-Repo local: D:/trolypage-plugins. GitHub public: https://github.com/trolypage/trolypage-plugins. Chưa chọn giấy phép phát hành cho Claude bundle; việc public repository không tự đặt giấy phép cho nội dung.
+Local directory: `D:/trolypage-plugins`. Public repository: [trolypage/trolypage-plugins](https://github.com/trolypage/trolypage-plugins). No bundle license has been selected; publishing a repository does not assign a license.

@@ -19,15 +19,15 @@
     {
       "name": "search-subscribers",
       "title": "Search Subscribers Tool",
-      "description": "Tìm kiếm khách hàng (subscribers) theo tên, số điện thoại, email, trạng thái hoặc subscriber_id. Trả về danh sách kết quả phù hợp.",
+      "description": "Search customers (subscribers) by name, phone, email, status or subscriber_id. Returns matching records.",
       "inputSchema": {
         "properties": {
           "query": {
-            "description": "Từ khóa tìm kiếm: tên, SĐT, email hoặc subscriber_id",
+            "description": "Search query: name, phone, email or subscriber_id",
             "type": "string"
           },
           "status": {
-            "description": "Lọc theo trạng thái: Active, Pause, Done, hoặc để trống cho tất cả",
+            "description": "Status filter: Active, Pause, Done, or omit for all",
             "enum": [
               "Active",
               "Pause",
@@ -37,7 +37,7 @@
             "type": "string"
           },
           "limit": {
-            "description": "Số kết quả tối đa (mặc định 20)",
+            "description": "Maximum results (default 20)",
             "default": 20,
             "type": "integer"
           }
@@ -56,7 +56,7 @@
     {
       "name": "get-subscriber",
       "title": "Get Subscriber Tool",
-      "description": "Hồ sơ chi tiết một subscriber: thông tin, tags, ghi chú CRM, trạng thái AI, lead stage.",
+      "description": "Detailed subscriber profile: information, tags, CRM notes, AI status and lead stage.",
       "inputSchema": {
         "properties": {
           "subscriber_id": {
@@ -78,19 +78,19 @@
     {
       "name": "get-conversation",
       "title": "Get Conversation Tool",
-      "description": "Lấy lịch sử hội thoại của một subscriber. Hiển thị tin nhắn khách hàng và phản hồi AI theo thứ tự thời gian.",
+      "description": "Retrieve a subscriber's conversation history, showing customer messages and AI replies in chronological order.",
       "inputSchema": {
         "properties": {
           "subscriber_id": {
-            "description": "ID của subscriber cần xem hội thoại",
+            "description": "Subscriber ID for the conversation",
             "type": "string"
           },
           "before_id": {
-            "description": "ID cuối của trang trước để lấy tin cũ hơn",
+            "description": "Last ID from the previous page to retrieve older messages",
             "type": "integer"
           },
           "limit": {
-            "description": "Số tin nhắn tối đa (mặc định 30)",
+            "description": "Maximum messages (default 30)",
             "default": 30,
             "type": "integer"
           }
@@ -109,15 +109,15 @@
     {
       "name": "list-conversations",
       "title": "List Conversations Tool",
-      "description": "Hội thoại gần đây: theo subscriber cụ thể hoặc toàn workspace.",
+      "description": "Recent conversations for a subscriber or the entire workspace.",
       "inputSchema": {
         "properties": {
           "subscriber_id": {
-            "description": "ID subscriber (bỏ trống để xem toàn workspace)",
+            "description": "Subscriber ID (omit for the entire workspace)",
             "type": "string"
           },
           "limit": {
-            "description": "Số tin tối đa (mặc định 20)",
+            "description": "Maximum messages (default 20)",
             "default": 20,
             "type": "integer"
           }
@@ -133,20 +133,20 @@
     {
       "name": "send-message",
       "title": "Send Message Tool",
-      "description": "Gửi tin nhắn cho một subscriber qua kênh của họ (Messenger, Zalo, Telegram...). Tuân thủ cửa sổ nhắn tin (messaging window) — bị chặn thì cần force_override.",
+      "description": "Send a message through the subscriber's channel (Messenger, Zalo, Telegram, etc.). Respects the messaging window; force_override is required when blocked.",
       "inputSchema": {
         "properties": {
           "subscriber_id": {
-            "description": "ID subscriber nhận tin",
+            "description": "Recipient subscriber ID",
             "type": "string"
           },
           "message": {
-            "description": "Nội dung tin nhắn; bắt buộc nếu không có image_url",
+            "description": "Message content; required if image_url is absent",
             "maxLength": 2000,
             "type": "string"
           },
           "image_url": {
-            "description": "URL ảnh từ import-asset hoặc thư viện media",
+            "description": "Image URL from import-asset or the media library",
             "type": "string"
           },
           "type": {
@@ -177,7 +177,7 @@
             "type": "array"
           },
           "force_override": {
-            "description": "Gửi kể cả ngoài cửa sổ nhắn tin (chỉ khi thật sự cần)",
+            "description": "Send outside the messaging window (only when actually necessary)",
             "type": "boolean"
           }
         },
@@ -196,19 +196,19 @@
     {
       "name": "forward-message",
       "title": "Forward Message Tool",
-      "description": "Chuyển tiếp một tin nhắn trong hội thoại tới người nhận khác (chỉ kênh hỗ trợ forward).",
+      "description": "Forward a conversation message to another recipient on channels that support forwarding.",
       "inputSchema": {
         "properties": {
           "subscriber_id": {
-            "description": "ID subscriber sở hữu hội thoại",
+            "description": "Subscriber ID owning the conversation",
             "type": "string"
           },
           "msg_id": {
-            "description": "ID tin nhắn cần chuyển tiếp",
+            "description": "Message ID to forward",
             "type": "string"
           },
           "recipient_id": {
-            "description": "ID người nhận",
+            "description": "Recipient ID",
             "type": "string"
           }
         },
@@ -229,7 +229,7 @@
     {
       "name": "close-conversation",
       "title": "Close Conversation Tool",
-      "description": "Đóng hội thoại của một subscriber (đánh dấu đã xử lý xong).",
+      "description": "Close a subscriber's conversation and mark it resolved.",
       "inputSchema": {
         "properties": {
           "subscriber_id": {
@@ -252,7 +252,7 @@
     {
       "name": "reopen-conversation",
       "title": "Reopen Conversation Tool",
-      "description": "Mở lại hội thoại đã đóng của một subscriber.",
+      "description": "Reopen a closed subscriber conversation.",
       "inputSchema": {
         "properties": {
           "subscriber_id": {
@@ -274,7 +274,7 @@
     {
       "name": "archive-conversation",
       "title": "Archive Conversation Tool",
-      "description": "Lưu trữ hội thoại của một subscriber (ẩn khỏi inbox).",
+      "description": "Archive a subscriber conversation, hiding it from the inbox.",
       "inputSchema": {
         "properties": {
           "subscriber_id": {
@@ -296,7 +296,7 @@
     {
       "name": "add-subscriber-tag",
       "title": "Add Subscriber Tag Tool",
-      "description": "Gắn một/nhiều tag cho subscriber (kích hoạt tag rules tự động nếu có).",
+      "description": "Add one or more subscriber tags; may trigger configured automatic tag rules.",
       "inputSchema": {
         "properties": {
           "subscriber_id": {
@@ -304,7 +304,7 @@
             "type": "string"
           },
           "tag_ids": {
-            "description": "Danh sách ID tags cần gắn",
+            "description": "List of tag IDs to add",
             "type": "array"
           }
         },
@@ -324,7 +324,7 @@
     {
       "name": "remove-subscriber-tag",
       "title": "Remove Subscriber Tag Tool",
-      "description": "Gỡ một tag khỏi subscriber.",
+      "description": "Remove a subscriber tag.",
       "inputSchema": {
         "properties": {
           "subscriber_id": {
@@ -332,7 +332,7 @@
             "type": "string"
           },
           "tag_id": {
-            "description": "ID tag cần gỡ",
+            "description": "Tag ID to remove",
             "type": "integer"
           }
         },
@@ -351,7 +351,7 @@
     {
       "name": "add-customer-note",
       "title": "Add Customer Note Tool",
-      "description": "Thêm ghi chú CRM (nội bộ, chỉ nhân viên thấy) cho một subscriber.",
+      "description": "Add an internal, staff-only CRM note to a subscriber.",
       "inputSchema": {
         "properties": {
           "subscriber_id": {
@@ -359,11 +359,11 @@
             "type": "string"
           },
           "content": {
-            "description": "Nội dung ghi chú",
+            "description": "Note content",
             "type": "string"
           },
           "type": {
-            "description": "Loại ghi chú (mặc định: note)",
+            "description": "Note type (default: note)",
             "type": "string"
           }
         },
@@ -382,15 +382,15 @@
     {
       "name": "set-lead-stage",
       "title": "Set Lead Stage Tool",
-      "description": "Gán giai đoạn khách hàng tiềm năng (lead stage) cho một subscriber — dùng bảng stage đã cấu hình của workspace.",
+      "description": "Set a subscriber's lead stage using the workspace's configured stages.",
       "inputSchema": {
         "properties": {
           "subscriber_id": {
-            "description": "ID subscriber cần gán giai đoạn",
+            "description": "Subscriber ID whose stage will change",
             "type": "string"
           },
           "stage_id": {
-            "description": "ID của lead stage (xem cấu hình CRM trong TrolyPage)",
+            "description": "Lead stage ID (see CRM settings in TrolyPage)",
             "type": "integer"
           }
         },
@@ -410,15 +410,15 @@
     {
       "name": "send-telegram-notification",
       "title": "Send Telegram Notification Tool",
-      "description": "Gửi thông báo đến nhóm Telegram của đội hỗ trợ. Dùng để báo cáo khách hàng mới, yêu cầu hỗ trợ kỹ thuật, hoặc thông báo hoàn tất flow.",
+      "description": "Send a notification to the support team's Telegram group for new customers, technical requests or completed flows.",
       "inputSchema": {
         "properties": {
           "message": {
-            "description": "Nội dung thông báo gửi đến Telegram",
+            "description": "Notification content for Telegram",
             "type": "string"
           },
           "type": {
-            "description": "Loại thông báo: info, warning, success",
+            "description": "Notification type: info, warning, success",
             "default": "info",
             "enum": [
               "info",
@@ -443,15 +443,15 @@
     {
       "name": "update-subscriber-status",
       "title": "Update Subscriber Status Tool",
-      "description": "Cập nhật trạng thái (status) và bật/tắt AI cho một subscriber. Status: Active (AI đang hỗ trợ), Pause (chờ kỹ thuật), Done (hoàn tất).",
+      "description": "Update subscriber status and enable/disable AI. Status: Active (AI support), Pause (awaiting technical support), Done (completed).",
       "inputSchema": {
         "properties": {
           "subscriber_id": {
-            "description": "ID của subscriber cần cập nhật",
+            "description": "Subscriber ID to update",
             "type": "string"
           },
           "status": {
-            "description": "Trạng thái mới: Active, Pause, Spam, Done",
+            "description": "New status: Active, Pause, Spam, Done",
             "enum": [
               "Active",
               "Pause",
@@ -461,7 +461,7 @@
             "type": "string"
           },
           "ai_enabled": {
-            "description": "Bật/tắt AI tự động trả lời (true/false)",
+            "description": "Enable/disable automatic AI replies (true/false)",
             "type": "boolean"
           }
         },
@@ -480,19 +480,19 @@
     {
       "name": "chat-with-ai",
       "title": "Chat With A I Tool",
-      "description": "Gửi tin nhắn qua AI Agent và nhận phản hồi. Chạy runtime thật, có tính phí AI, ghi hội thoại và có thể thực thi công cụ nghiệp vụ; không phải sandbox, không xác nhận giao tin trên kênh. AI sẽ sử dụng system prompt và knowledge base của agent được chỉ định.",
+      "description": "Send a message through an AI Agent and receive a reply. Uses the real runtime, consumes AI quota, records the conversation and may execute business tools. Not a sandbox or proof of channel delivery. Uses the selected agent's system prompt and knowledge base.",
       "inputSchema": {
         "properties": {
           "message": {
-            "description": "Tin nhắn cần gửi cho AI Agent",
+            "description": "Message for the AI Agent",
             "type": "string"
           },
           "agent_id": {
-            "description": "ID của AI Agent cần chạy",
+            "description": "AI Agent ID to run",
             "type": "integer"
           },
           "subscriber_id": {
-            "description": "ID subscriber để lưu context hội thoại (mặc định: mcp_test)",
+            "description": "Subscriber ID for conversation context (default: mcp_test)",
             "type": "string"
           }
         },
@@ -512,27 +512,27 @@
     {
       "name": "create-customer-report",
       "title": "Create Customer Report Tool",
-      "description": "Tạo báo cáo khách hàng mới và gửi đến Telegram. Dùng khi thu thập đủ thông tin (tên, SĐT, nhu cầu) từ khách hàng.",
+      "description": "Create a new customer report and send it to Telegram after collecting the customer's name, phone number and needs.",
       "inputSchema": {
         "properties": {
           "subscriber_id": {
-            "description": "ID subscriber của khách hàng",
+            "description": "Customer subscriber ID",
             "type": "string"
           },
           "name": {
-            "description": "Tên khách hàng",
+            "description": "Customer name",
             "type": "string"
           },
           "phone": {
-            "description": "Số điện thoại khách hàng",
+            "description": "Customer phone number",
             "type": "string"
           },
           "needs": {
-            "description": "Nhu cầu/yêu cầu của khách hàng",
+            "description": "Customer needs/request",
             "type": "string"
           },
           "notes": {
-            "description": "Ghi chú thêm (tùy chọn)",
+            "description": "Additional notes (optional)",
             "type": "string"
           }
         },
@@ -588,11 +588,11 @@
     {
       "name": "list-orders",
       "title": "List Orders Tool",
-      "description": "Danh sách đơn hàng của workspace. Lọc theo trạng thái (status: pending, confirmed, completed, cancelled), approval_status (pending_review, approved, rejected) và khoảng ngày.",
+      "description": "List workspace orders, filtered by status (pending, confirmed, completed, cancelled), approval_status (pending_review, approved, rejected) and date range.",
       "inputSchema": {
         "properties": {
           "status": {
-            "description": "Lọc theo trạng thái đơn: pending, confirmed, completed, cancelled",
+            "description": "Order status filter: pending, confirmed, completed, cancelled",
             "enum": [
               "pending",
               "confirmed",
@@ -602,19 +602,19 @@
             "type": "string"
           },
           "approval_status": {
-            "description": "Lọc theo trạng thái duyệt: pending_review, approved, rejected",
+            "description": "Approval status filter: pending_review, approved, rejected",
             "type": "string"
           },
           "date_from": {
-            "description": "Từ ngày (Y-m-d)",
+            "description": "Start date (Y-m-d)",
             "type": "string"
           },
           "date_to": {
-            "description": "Đến ngày (Y-m-d)",
+            "description": "End date (Y-m-d)",
             "type": "string"
           },
           "limit": {
-            "description": "Số đơn tối đa trả về (mặc định 20, tối đa 100)",
+            "description": "Maximum orders (default 20, maximum 100)",
             "default": 20,
             "type": "integer"
           }
@@ -630,11 +630,11 @@
     {
       "name": "get-order",
       "title": "Get Order Tool",
-      "description": "Chi tiết một đơn hàng: thông tin khách, sản phẩm (items), trạng thái, thanh toán và vận đơn.",
+      "description": "Order details: customer, items, status, payment and shipment.",
       "inputSchema": {
         "properties": {
           "order_id": {
-            "description": "ID của đơn hàng",
+            "description": "Order ID",
             "type": "integer"
           }
         },
@@ -652,7 +652,7 @@
     {
       "name": "create-order",
       "title": "Create Order Tool",
-      "description": "Tạo đơn hàng mới cho khách. Đơn được tạo ở trạng thái chờ duyệt (pending_review) — chủ shop duyệt trong TrolyPage trước khi xác nhận. Giá sản phẩm và tồn kho luôn lấy từ catalog, không tin số tiền do AI gửi.",
+      "description": "Create a customer order with pending_review approval status. The shop owner reviews it in TrolyPage before confirmation. Product prices and stock come from the catalog, not AI-supplied amounts.",
       "inputSchema": {
         "properties": {
           "customer_name": {
@@ -714,24 +714,24 @@
             "type": "array"
           },
           "subscriber_id": {
-            "description": "ID subscriber của khách hàng",
+            "description": "Customer subscriber ID",
             "type": "string"
           },
           "items": {
-            "description": "Danh sách sản phẩm: [{product_id, quantity, variant_id?, note?}]",
+            "description": "Items: [{product_id, quantity, variant_id?, note?}]",
             "type": "array"
           },
           "currency": {
-            "description": "Tiền tệ (mặc định VND)",
+            "description": "Currency (default VND)",
             "default": "VND",
             "type": "string"
           },
           "idempotency_key": {
-            "description": "Mã duy nhất cho một lần mua; giữ nguyên khi retry, đổi mã khi mua lần mới",
+            "description": "Unique key for a purchase intent; reuse on retry and change for a new purchase",
             "type": "string"
           },
           "note": {
-            "description": "Ghi chú đơn hàng",
+            "description": "Order notes",
             "type": "string"
           }
         },
@@ -752,11 +752,11 @@
     {
       "name": "cancel-order",
       "title": "Cancel Order Tool",
-      "description": "Hủy/xóa một đơn hàng. Từ chối khi đơn đang có vận đơn hoạt động; tồn kho đã trừ sẽ được hoàn lại tự động.",
+      "description": "Cancel/delete an order. Refused when an active shipment exists; deducted stock is restored automatically.",
       "inputSchema": {
         "properties": {
           "order_id": {
-            "description": "ID của đơn hàng cần hủy",
+            "description": "Order ID to cancel",
             "type": "integer"
           }
         },
@@ -774,11 +774,11 @@
     {
       "name": "order-payment-qr",
       "title": "Order Payment Qr Tool",
-      "description": "Tạo mã VietQR hoặc link thanh toán qua cổng đã kết nối cho một đơn hàng. Số tiền, tiền tệ và mã đối soát do hệ thống lấy từ đơn — AI không được tự đặt số tiền.",
+      "description": "Create a VietQR code or payment link through a connected gateway. Amount, currency and reconciliation reference come from the order; the AI must not set the amount.",
       "inputSchema": {
         "properties": {
           "provider": {
-            "description": "Cổng thanh toán; tự động ưu tiên SePay, payOS, MoMo, VNPay, sau đó các cổng thanh toán đã kết nối khác.",
+            "description": "Payment gateway; automatically prioritizes SePay, payOS, MoMo, VNPay, then other connected gateways.",
             "enum": [
               "auto",
               "sepay",
@@ -813,7 +813,7 @@
             "type": "string"
           },
           "order_id": {
-            "description": "ID của đơn hàng cần tạo QR hoặc link thanh toán",
+            "description": "Order ID for the payment QR or link",
             "type": "integer"
           }
         },
@@ -831,11 +831,11 @@
     {
       "name": "check-payment",
       "title": "Check Payment Tool",
-      "description": "Kiểm tra trạng thái thanh toán của đơn hàng theo dữ liệu backend đã xác nhận (webhook ngân hàng). Chỉ báo \"đã nhận thanh toán\" khi hệ thống đã chuyển trạng thái — không tự đánh dấu.",
+      "description": "Check payment status using backend-confirmed data (bank webhooks). Report payment received only after the system changes state; do not mark it manually.",
       "inputSchema": {
         "properties": {
           "order_id": {
-            "description": "ID của đơn hàng",
+            "description": "Order ID",
             "type": "integer"
           }
         },
@@ -853,15 +853,15 @@
     {
       "name": "search-products",
       "title": "Search Products Tool",
-      "description": "Tìm sản phẩm trong catalog theo tên/SKU/mô tả. Trả về giá, tồn kho, biến thể và trạng thái bán được.",
+      "description": "Search products by name, SKU or description. Returns price, stock, variants and sellability.",
       "inputSchema": {
         "properties": {
           "query": {
-            "description": "Từ khóa tìm kiếm (tên, SKU, mô tả)",
+            "description": "Search query (name, SKU, description)",
             "type": "string"
           },
           "limit": {
-            "description": "Số kết quả tối đa (mặc định 8, tối đa 15)",
+            "description": "Maximum results (default 8, maximum 15)",
             "default": 8,
             "type": "integer"
           }
@@ -880,11 +880,11 @@
     {
       "name": "get-product",
       "title": "Get Product Tool",
-      "description": "Chi tiết một sản phẩm: giá, tồn kho, biến thể, trạng thái bán.",
+      "description": "Product details: price, stock, variants and sales status.",
       "inputSchema": {
         "properties": {
           "product_id": {
-            "description": "ID của sản phẩm",
+            "description": "Product ID",
             "type": "integer"
           }
         },
@@ -902,15 +902,15 @@
     {
       "name": "quote-shipping",
       "title": "Quote Shipping Tool",
-      "description": "Tính phí vận chuyển cho một đơn hàng. Hệ thống tự lấy địa chỉ người nhận, COD và cân nặng từ đơn — chỉ cần order_id.",
+      "description": "Quote shipping for an order. Recipient address, COD and weight come from the order; only order_id is required.",
       "inputSchema": {
         "properties": {
           "order_id": {
-            "description": "ID của đơn hàng cần tính phí ship",
+            "description": "Order ID for the shipping quote",
             "type": "integer"
           },
           "weight_override": {
-            "description": "Ghi đè cân nặng (gram) — thường để trống để hệ thống tự tính",
+            "description": "Weight override in grams; usually omit for automatic calculation",
             "type": "integer"
           }
         },
@@ -928,11 +928,11 @@
     {
       "name": "quote-ondemand-shipping",
       "title": "Quote Ondemand Shipping Tool",
-      "description": "Tính phí giao hỏa tốc (AhaMove, GrabExpress...) cho một đơn hàng.",
+      "description": "Quote on-demand delivery (AhaMove, GrabExpress, etc.) for an order.",
       "inputSchema": {
         "properties": {
           "order_id": {
-            "description": "ID của đơn hàng cần tính phí hỏa tốc",
+            "description": "Order ID for the on-demand quote",
             "type": "integer"
           }
         },
@@ -950,15 +950,15 @@
     {
       "name": "create-shipment",
       "title": "Create Shipment Tool",
-      "description": "Tạo vận đơn thật cho đơn hàng sau khi khách chọn nhà xe (rate lấy từ quote-shipping). Đơn phải ở trạng thái confirmed và đã duyệt.",
+      "description": "Create a real shipment after the customer selects a carrier rate from quote-shipping. The order must be confirmed and approved.",
       "inputSchema": {
         "properties": {
           "rate": {
-            "description": "Mã nhà xe khách đã chọn (từ quote-shipping)",
+            "description": "Selected carrier code from quote-shipping",
             "type": "string"
           },
           "order_id": {
-            "description": "ID của đơn hàng",
+            "description": "Order ID",
             "type": "integer"
           },
           "note": {
@@ -966,7 +966,7 @@
             "type": "string"
           },
           "weight_override": {
-            "description": "Ghi đè cân nặng (gram)",
+            "description": "Weight override in grams",
             "type": "integer"
           }
         },
@@ -985,19 +985,19 @@
     {
       "name": "create-ondemand-shipment",
       "title": "Create Ondemand Shipment Tool",
-      "description": "Tạo đơn giao hỏa tốc (AhaMove, GrabExpress...) cho một đơn hàng sau khi khách chọn dịch vụ.",
+      "description": "Create an on-demand delivery order (AhaMove, GrabExpress, etc.) after the customer selects a service.",
       "inputSchema": {
         "properties": {
           "service": {
-            "description": "Dịch vụ hỏa tốc khách chọn (từ quote-ondemand-shipping)",
+            "description": "Selected on-demand service from quote-ondemand-shipping",
             "type": "string"
           },
           "carrier": {
-            "description": "Mã hãng vận chuyển (từ quote-ondemand-shipping)",
+            "description": "Carrier code from quote-ondemand-shipping",
             "type": "integer"
           },
           "order_id": {
-            "description": "ID của đơn hàng",
+            "description": "Order ID",
             "type": "integer"
           }
         },
@@ -1016,15 +1016,15 @@
     {
       "name": "track-shipment",
       "title": "Track Shipment Tool",
-      "description": "Tra cứu trạng thái vận chuyển bằng mã vận đơn hoặc mã đơn.",
+      "description": "Look up shipment status by tracking number or internal order ID.",
       "inputSchema": {
         "properties": {
           "tracking_code": {
-            "description": "Mã vận đơn cần tra cứu",
+            "description": "Tracking number to look up",
             "type": "string"
           },
           "order_code": {
-            "description": "Hoặc mã đơn hàng nội bộ",
+            "description": "Or an internal order ID",
             "type": "string"
           }
         },
@@ -1039,7 +1039,7 @@
     {
       "name": "list-bookings",
       "title": "List Bookings Tool",
-      "description": "Danh sách lịch hẹn của workspace, mới nhất trước.",
+      "description": "List workspace bookings, newest first.",
       "inputSchema": {
         "properties": {
           "page": {
@@ -1061,11 +1061,11 @@
             "type": "string"
           },
           "status": {
-            "description": "Lọc theo trạng thái (pending, confirmed, completed, cancelled)",
+            "description": "Status filter: pending, confirmed, completed, cancelled",
             "type": "string"
           },
           "limit": {
-            "description": "Số lịch hẹn tối đa (mặc định 20, tối đa 100)",
+            "description": "Maximum bookings (default 20, maximum 100)",
             "default": 20,
             "type": "integer"
           }
@@ -1081,7 +1081,7 @@
     {
       "name": "create-booking",
       "title": "Create Booking Tool",
-      "description": "Tạo lịch hẹn cho khách. Hệ thống tự kiểm tra giờ làm việc, timezone và sức chứa của resource/nhân viên.",
+      "description": "Create a customer booking. Checks working hours, timezone and resource/staff capacity.",
       "inputSchema": {
         "properties": {
           "idempotency_key": {
@@ -1090,34 +1090,34 @@
             "type": "string"
           },
           "subscriber_id": {
-            "description": "ID subscriber của khách",
+            "description": "Customer subscriber ID",
             "type": "string"
           },
           "scheduled_at": {
-            "description": "Thời gian hẹn, ví dụ 2026-08-20 14:00",
+            "description": "Appointment time, for example 2026-08-20 14:00",
             "type": "string"
           },
           "product_id": {
-            "description": "ID dịch vụ/sản phẩm được đặt (tùy chọn)",
+            "description": "Booked service/product ID (optional)",
             "type": "integer"
           },
           "duration_minutes": {
-            "description": "Thời lượng (phút, mặc định 60)",
+            "description": "Duration in minutes (default 60)",
             "default": 60,
             "minimum": 15,
             "maximum": 600,
             "type": "integer"
           },
           "customer_note": {
-            "description": "Ghi chú của khách",
+            "description": "Customer notes",
             "type": "string"
           },
           "timezone": {
-            "description": "IANA timezone khi không chọn resource",
+            "description": "IANA timezone when no resource is selected",
             "type": "string"
           },
           "working_hours": {
-            "description": "Giờ làm việc khi không chọn resource, HH:mm-HH:mm",
+            "description": "Working hours when no resource is selected, HH:mm-HH:mm",
             "type": "string"
           },
           "staff_id": {
@@ -1130,7 +1130,7 @@
             "type": "integer"
           },
           "resource_id": {
-            "description": "ID resource (phòng/máy) — hệ thống tự kiểm tra lịch trống",
+            "description": "Resource ID (room/equipment); availability is checked automatically",
             "type": "integer"
           }
         },
@@ -3319,34 +3319,34 @@
             "type": "string"
           },
           "subscriber_id": {
-            "description": "ID subscriber của khách",
+            "description": "Customer subscriber ID",
             "type": "string"
           },
           "scheduled_at": {
-            "description": "Thời gian hẹn, ví dụ 2026-08-20 14:00",
+            "description": "Appointment time, for example 2026-08-20 14:00",
             "type": "string"
           },
           "product_id": {
-            "description": "ID dịch vụ/sản phẩm được đặt (tùy chọn)",
+            "description": "Booked service/product ID (optional)",
             "type": "integer"
           },
           "duration_minutes": {
-            "description": "Thời lượng (phút, mặc định 60)",
+            "description": "Duration in minutes (default 60)",
             "default": 60,
             "minimum": 15,
             "maximum": 600,
             "type": "integer"
           },
           "customer_note": {
-            "description": "Ghi chú của khách",
+            "description": "Customer notes",
             "type": "string"
           },
           "timezone": {
-            "description": "IANA timezone khi không chọn resource",
+            "description": "IANA timezone when no resource is selected",
             "type": "string"
           },
           "working_hours": {
-            "description": "Giờ làm việc khi không chọn resource, HH:mm-HH:mm",
+            "description": "Working hours when no resource is selected, HH:mm-HH:mm",
             "type": "string"
           },
           "staff_id": {
@@ -3359,7 +3359,7 @@
             "type": "integer"
           },
           "resource_id": {
-            "description": "ID resource (phòng/máy) — hệ thống tự kiểm tra lịch trống",
+            "description": "Resource ID (room/equipment); availability is checked automatically",
             "type": "integer"
           }
         },
@@ -3538,7 +3538,7 @@
     {
       "name": "report-options",
       "title": "Report Options Tool",
-      "description": "Danh sách các báo cáo khả dụng trên server Analytics và cách dùng bộ lọc chung.",
+      "description": "List available Analytics reports and explain shared filters.",
       "inputSchema": {
         "type": "object",
         "properties": {}
@@ -3552,7 +3552,7 @@
     {
       "name": "overview-report",
       "title": "Overview Report Tool",
-      "description": "Báo cáo tổng quan: hội thoại, khách mới, doanh thu, hiệu quả AI trong một kỳ.",
+      "description": "Overview report: conversations, new customers, revenue and AI effectiveness for a period.",
       "inputSchema": {
         "properties": {
           "timezone": {
@@ -3603,7 +3603,7 @@
             "type": "string"
           },
           "range": {
-            "description": "Khoảng thời gian: today, yesterday, last_7, last_30, this_week, last_week, this_month, last_month, custom",
+            "description": "Date range: today, yesterday, last_7, last_30, this_week, last_week, this_month, last_month, custom",
             "default": "last_30",
             "enum": [
               "today",
@@ -3619,47 +3619,47 @@
             "type": "string"
           },
           "from": {
-            "description": "Từ ngày (Y-m-d) — chỉ dùng khi range=custom",
+            "description": "Start date (Y-m-d), only when range=custom",
             "type": "string"
           },
           "to": {
-            "description": "Đến ngày (Y-m-d) — chỉ dùng khi range=custom",
+            "description": "End date (Y-m-d), only when range=custom",
             "type": "string"
           },
           "channels": {
-            "description": "Lọc theo kênh (messenger, zalo_personal, telegram...)",
+            "description": "Channel filter (messenger, zalo_personal, telegram, etc.)",
             "type": "array"
           },
           "pages": {
-            "description": "Lọc theo page ids",
+            "description": "Filter by page IDs",
             "type": "array"
           },
           "ai_agents": {
-            "description": "Lọc theo AI agent ids",
+            "description": "Filter by AI agent IDs",
             "type": "array"
           },
           "employees": {
-            "description": "Lọc theo nhân viên ids",
+            "description": "Filter by staff IDs",
             "type": "array"
           },
           "teams": {
-            "description": "Lọc theo team ids",
+            "description": "Filter by team IDs",
             "type": "array"
           },
           "tags": {
-            "description": "Lọc theo customer tag ids",
+            "description": "Filter by customer tag IDs",
             "type": "array"
           },
           "products": {
-            "description": "Lọc theo product ids",
+            "description": "Filter by product IDs",
             "type": "array"
           },
           "sources": {
-            "description": "Lọc theo nguồn khách hàng",
+            "description": "Filter by customer source",
             "type": "array"
           },
           "compare": {
-            "description": "So sánh với kỳ trước",
+            "description": "Compare with the previous period",
             "default": false,
             "type": "boolean"
           }
@@ -3675,7 +3675,7 @@
     {
       "name": "sales-report",
       "title": "Sales Report Tool",
-      "description": "Báo cáo doanh thu: tổng, đơn AI, giá trị trung bình, tỷ lệ chuyển đổi, trend theo ngày, top sản phẩm.",
+      "description": "Sales report: revenue, AI orders, average value, conversion, daily trends and top products.",
       "inputSchema": {
         "properties": {
           "timezone": {
@@ -3726,7 +3726,7 @@
             "type": "string"
           },
           "range": {
-            "description": "Khoảng thời gian: today, yesterday, last_7, last_30, this_week, last_week, this_month, last_month, custom",
+            "description": "Date range: today, yesterday, last_7, last_30, this_week, last_week, this_month, last_month, custom",
             "default": "last_30",
             "enum": [
               "today",
@@ -3742,47 +3742,47 @@
             "type": "string"
           },
           "from": {
-            "description": "Từ ngày (Y-m-d) — chỉ dùng khi range=custom",
+            "description": "Start date (Y-m-d), only when range=custom",
             "type": "string"
           },
           "to": {
-            "description": "Đến ngày (Y-m-d) — chỉ dùng khi range=custom",
+            "description": "End date (Y-m-d), only when range=custom",
             "type": "string"
           },
           "channels": {
-            "description": "Lọc theo kênh (messenger, zalo_personal, telegram...)",
+            "description": "Channel filter (messenger, zalo_personal, telegram, etc.)",
             "type": "array"
           },
           "pages": {
-            "description": "Lọc theo page ids",
+            "description": "Filter by page IDs",
             "type": "array"
           },
           "ai_agents": {
-            "description": "Lọc theo AI agent ids",
+            "description": "Filter by AI agent IDs",
             "type": "array"
           },
           "employees": {
-            "description": "Lọc theo nhân viên ids",
+            "description": "Filter by staff IDs",
             "type": "array"
           },
           "teams": {
-            "description": "Lọc theo team ids",
+            "description": "Filter by team IDs",
             "type": "array"
           },
           "tags": {
-            "description": "Lọc theo customer tag ids",
+            "description": "Filter by customer tag IDs",
             "type": "array"
           },
           "products": {
-            "description": "Lọc theo product ids",
+            "description": "Filter by product IDs",
             "type": "array"
           },
           "sources": {
-            "description": "Lọc theo nguồn khách hàng",
+            "description": "Filter by customer source",
             "type": "array"
           },
           "compare": {
-            "description": "So sánh với kỳ trước",
+            "description": "Compare with the previous period",
             "default": false,
             "type": "boolean"
           }
@@ -3798,7 +3798,7 @@
     {
       "name": "channel-report",
       "title": "Channel Report Tool",
-      "description": "Sức khỏe từng kênh: hội thoại, khách mới, doanh thu theo kênh (Messenger, Zalo, Telegram...).",
+      "description": "Channel health: conversations, new customers and revenue by channel (Messenger, Zalo, Telegram, etc.).",
       "inputSchema": {
         "properties": {
           "timezone": {
@@ -3849,7 +3849,7 @@
             "type": "string"
           },
           "range": {
-            "description": "Khoảng thời gian: today, yesterday, last_7, last_30, this_week, last_week, this_month, last_month, custom",
+            "description": "Date range: today, yesterday, last_7, last_30, this_week, last_week, this_month, last_month, custom",
             "default": "last_30",
             "enum": [
               "today",
@@ -3865,47 +3865,47 @@
             "type": "string"
           },
           "from": {
-            "description": "Từ ngày (Y-m-d) — chỉ dùng khi range=custom",
+            "description": "Start date (Y-m-d), only when range=custom",
             "type": "string"
           },
           "to": {
-            "description": "Đến ngày (Y-m-d) — chỉ dùng khi range=custom",
+            "description": "End date (Y-m-d), only when range=custom",
             "type": "string"
           },
           "channels": {
-            "description": "Lọc theo kênh (messenger, zalo_personal, telegram...)",
+            "description": "Channel filter (messenger, zalo_personal, telegram, etc.)",
             "type": "array"
           },
           "pages": {
-            "description": "Lọc theo page ids",
+            "description": "Filter by page IDs",
             "type": "array"
           },
           "ai_agents": {
-            "description": "Lọc theo AI agent ids",
+            "description": "Filter by AI agent IDs",
             "type": "array"
           },
           "employees": {
-            "description": "Lọc theo nhân viên ids",
+            "description": "Filter by staff IDs",
             "type": "array"
           },
           "teams": {
-            "description": "Lọc theo team ids",
+            "description": "Filter by team IDs",
             "type": "array"
           },
           "tags": {
-            "description": "Lọc theo customer tag ids",
+            "description": "Filter by customer tag IDs",
             "type": "array"
           },
           "products": {
-            "description": "Lọc theo product ids",
+            "description": "Filter by product IDs",
             "type": "array"
           },
           "sources": {
-            "description": "Lọc theo nguồn khách hàng",
+            "description": "Filter by customer source",
             "type": "array"
           },
           "compare": {
-            "description": "So sánh với kỳ trước",
+            "description": "Compare with the previous period",
             "default": false,
             "type": "boolean"
           }
@@ -3921,7 +3921,7 @@
     {
       "name": "activity-report",
       "title": "Activity Report Tool",
-      "description": "Hoạt động hội thoại: số tin nhắn, heatmap theo giờ/ngày.",
+      "description": "Conversation activity: message counts and hourly/daily heatmaps.",
       "inputSchema": {
         "properties": {
           "timezone": {
@@ -3972,7 +3972,7 @@
             "type": "string"
           },
           "range": {
-            "description": "Khoảng thời gian: today, yesterday, last_7, last_30, this_week, last_week, this_month, last_month, custom",
+            "description": "Date range: today, yesterday, last_7, last_30, this_week, last_week, this_month, last_month, custom",
             "default": "last_30",
             "enum": [
               "today",
@@ -3988,47 +3988,47 @@
             "type": "string"
           },
           "from": {
-            "description": "Từ ngày (Y-m-d) — chỉ dùng khi range=custom",
+            "description": "Start date (Y-m-d), only when range=custom",
             "type": "string"
           },
           "to": {
-            "description": "Đến ngày (Y-m-d) — chỉ dùng khi range=custom",
+            "description": "End date (Y-m-d), only when range=custom",
             "type": "string"
           },
           "channels": {
-            "description": "Lọc theo kênh (messenger, zalo_personal, telegram...)",
+            "description": "Channel filter (messenger, zalo_personal, telegram, etc.)",
             "type": "array"
           },
           "pages": {
-            "description": "Lọc theo page ids",
+            "description": "Filter by page IDs",
             "type": "array"
           },
           "ai_agents": {
-            "description": "Lọc theo AI agent ids",
+            "description": "Filter by AI agent IDs",
             "type": "array"
           },
           "employees": {
-            "description": "Lọc theo nhân viên ids",
+            "description": "Filter by staff IDs",
             "type": "array"
           },
           "teams": {
-            "description": "Lọc theo team ids",
+            "description": "Filter by team IDs",
             "type": "array"
           },
           "tags": {
-            "description": "Lọc theo customer tag ids",
+            "description": "Filter by customer tag IDs",
             "type": "array"
           },
           "products": {
-            "description": "Lọc theo product ids",
+            "description": "Filter by product IDs",
             "type": "array"
           },
           "sources": {
-            "description": "Lọc theo nguồn khách hàng",
+            "description": "Filter by customer source",
             "type": "array"
           },
           "compare": {
-            "description": "So sánh với kỳ trước",
+            "description": "Compare with the previous period",
             "default": false,
             "type": "boolean"
           }
@@ -4044,7 +4044,7 @@
     {
       "name": "response-report",
       "title": "Response Report Tool",
-      "description": "Chất lượng phản hồi: thời gian phản hồi, tỷ lệ AI/human.",
+      "description": "Response quality: response times and AI/human proportions.",
       "inputSchema": {
         "properties": {
           "timezone": {
@@ -4095,7 +4095,7 @@
             "type": "string"
           },
           "range": {
-            "description": "Khoảng thời gian: today, yesterday, last_7, last_30, this_week, last_week, this_month, last_month, custom",
+            "description": "Date range: today, yesterday, last_7, last_30, this_week, last_week, this_month, last_month, custom",
             "default": "last_30",
             "enum": [
               "today",
@@ -4111,47 +4111,47 @@
             "type": "string"
           },
           "from": {
-            "description": "Từ ngày (Y-m-d) — chỉ dùng khi range=custom",
+            "description": "Start date (Y-m-d), only when range=custom",
             "type": "string"
           },
           "to": {
-            "description": "Đến ngày (Y-m-d) — chỉ dùng khi range=custom",
+            "description": "End date (Y-m-d), only when range=custom",
             "type": "string"
           },
           "channels": {
-            "description": "Lọc theo kênh (messenger, zalo_personal, telegram...)",
+            "description": "Channel filter (messenger, zalo_personal, telegram, etc.)",
             "type": "array"
           },
           "pages": {
-            "description": "Lọc theo page ids",
+            "description": "Filter by page IDs",
             "type": "array"
           },
           "ai_agents": {
-            "description": "Lọc theo AI agent ids",
+            "description": "Filter by AI agent IDs",
             "type": "array"
           },
           "employees": {
-            "description": "Lọc theo nhân viên ids",
+            "description": "Filter by staff IDs",
             "type": "array"
           },
           "teams": {
-            "description": "Lọc theo team ids",
+            "description": "Filter by team IDs",
             "type": "array"
           },
           "tags": {
-            "description": "Lọc theo customer tag ids",
+            "description": "Filter by customer tag IDs",
             "type": "array"
           },
           "products": {
-            "description": "Lọc theo product ids",
+            "description": "Filter by product IDs",
             "type": "array"
           },
           "sources": {
-            "description": "Lọc theo nguồn khách hàng",
+            "description": "Filter by customer source",
             "type": "array"
           },
           "compare": {
-            "description": "So sánh với kỳ trước",
+            "description": "Compare with the previous period",
             "default": false,
             "type": "boolean"
           }
@@ -4167,7 +4167,7 @@
     {
       "name": "ai-report",
       "title": "Ai Report Tool",
-      "description": "Hiệu quả AI: số hội thoại AI xử lý, chi phí, chuyển giao human.",
+      "description": "AI effectiveness: conversations handled, cost and human handovers.",
       "inputSchema": {
         "properties": {
           "timezone": {
@@ -4218,7 +4218,7 @@
             "type": "string"
           },
           "range": {
-            "description": "Khoảng thời gian: today, yesterday, last_7, last_30, this_week, last_week, this_month, last_month, custom",
+            "description": "Date range: today, yesterday, last_7, last_30, this_week, last_week, this_month, last_month, custom",
             "default": "last_30",
             "enum": [
               "today",
@@ -4234,47 +4234,47 @@
             "type": "string"
           },
           "from": {
-            "description": "Từ ngày (Y-m-d) — chỉ dùng khi range=custom",
+            "description": "Start date (Y-m-d), only when range=custom",
             "type": "string"
           },
           "to": {
-            "description": "Đến ngày (Y-m-d) — chỉ dùng khi range=custom",
+            "description": "End date (Y-m-d), only when range=custom",
             "type": "string"
           },
           "channels": {
-            "description": "Lọc theo kênh (messenger, zalo_personal, telegram...)",
+            "description": "Channel filter (messenger, zalo_personal, telegram, etc.)",
             "type": "array"
           },
           "pages": {
-            "description": "Lọc theo page ids",
+            "description": "Filter by page IDs",
             "type": "array"
           },
           "ai_agents": {
-            "description": "Lọc theo AI agent ids",
+            "description": "Filter by AI agent IDs",
             "type": "array"
           },
           "employees": {
-            "description": "Lọc theo nhân viên ids",
+            "description": "Filter by staff IDs",
             "type": "array"
           },
           "teams": {
-            "description": "Lọc theo team ids",
+            "description": "Filter by team IDs",
             "type": "array"
           },
           "tags": {
-            "description": "Lọc theo customer tag ids",
+            "description": "Filter by customer tag IDs",
             "type": "array"
           },
           "products": {
-            "description": "Lọc theo product ids",
+            "description": "Filter by product IDs",
             "type": "array"
           },
           "sources": {
-            "description": "Lọc theo nguồn khách hàng",
+            "description": "Filter by customer source",
             "type": "array"
           },
           "compare": {
-            "description": "So sánh với kỳ trước",
+            "description": "Compare with the previous period",
             "default": false,
             "type": "boolean"
           }
@@ -4290,7 +4290,7 @@
     {
       "name": "employee-report",
       "title": "Employee Report Tool",
-      "description": "Hiệu suất nhân viên: số hội thoại, thời gian phản hồi, đơn hàng theo nhân viên.",
+      "description": "Staff performance: conversations, response times and orders by employee.",
       "inputSchema": {
         "properties": {
           "timezone": {
@@ -4341,7 +4341,7 @@
             "type": "string"
           },
           "range": {
-            "description": "Khoảng thời gian: today, yesterday, last_7, last_30, this_week, last_week, this_month, last_month, custom",
+            "description": "Date range: today, yesterday, last_7, last_30, this_week, last_week, this_month, last_month, custom",
             "default": "last_30",
             "enum": [
               "today",
@@ -4357,47 +4357,47 @@
             "type": "string"
           },
           "from": {
-            "description": "Từ ngày (Y-m-d) — chỉ dùng khi range=custom",
+            "description": "Start date (Y-m-d), only when range=custom",
             "type": "string"
           },
           "to": {
-            "description": "Đến ngày (Y-m-d) — chỉ dùng khi range=custom",
+            "description": "End date (Y-m-d), only when range=custom",
             "type": "string"
           },
           "channels": {
-            "description": "Lọc theo kênh (messenger, zalo_personal, telegram...)",
+            "description": "Channel filter (messenger, zalo_personal, telegram, etc.)",
             "type": "array"
           },
           "pages": {
-            "description": "Lọc theo page ids",
+            "description": "Filter by page IDs",
             "type": "array"
           },
           "ai_agents": {
-            "description": "Lọc theo AI agent ids",
+            "description": "Filter by AI agent IDs",
             "type": "array"
           },
           "employees": {
-            "description": "Lọc theo nhân viên ids",
+            "description": "Filter by staff IDs",
             "type": "array"
           },
           "teams": {
-            "description": "Lọc theo team ids",
+            "description": "Filter by team IDs",
             "type": "array"
           },
           "tags": {
-            "description": "Lọc theo customer tag ids",
+            "description": "Filter by customer tag IDs",
             "type": "array"
           },
           "products": {
-            "description": "Lọc theo product ids",
+            "description": "Filter by product IDs",
             "type": "array"
           },
           "sources": {
-            "description": "Lọc theo nguồn khách hàng",
+            "description": "Filter by customer source",
             "type": "array"
           },
           "compare": {
-            "description": "So sánh với kỳ trước",
+            "description": "Compare with the previous period",
             "default": false,
             "type": "boolean"
           }
@@ -4413,7 +4413,7 @@
     {
       "name": "followup-report",
       "title": "Followup Report Tool",
-      "description": "Hiệu quả follow-up: số follow-up gửi, tỷ lệ khách phản hồi, chuyển đổi thành đơn.",
+      "description": "Follow-up effectiveness: sends, customer response rate and order conversions.",
       "inputSchema": {
         "properties": {
           "timezone": {
@@ -4464,7 +4464,7 @@
             "type": "string"
           },
           "range": {
-            "description": "Khoảng thời gian: today, yesterday, last_7, last_30, this_week, last_week, this_month, last_month, custom",
+            "description": "Date range: today, yesterday, last_7, last_30, this_week, last_week, this_month, last_month, custom",
             "default": "last_30",
             "enum": [
               "today",
@@ -4480,47 +4480,47 @@
             "type": "string"
           },
           "from": {
-            "description": "Từ ngày (Y-m-d) — chỉ dùng khi range=custom",
+            "description": "Start date (Y-m-d), only when range=custom",
             "type": "string"
           },
           "to": {
-            "description": "Đến ngày (Y-m-d) — chỉ dùng khi range=custom",
+            "description": "End date (Y-m-d), only when range=custom",
             "type": "string"
           },
           "channels": {
-            "description": "Lọc theo kênh (messenger, zalo_personal, telegram...)",
+            "description": "Channel filter (messenger, zalo_personal, telegram, etc.)",
             "type": "array"
           },
           "pages": {
-            "description": "Lọc theo page ids",
+            "description": "Filter by page IDs",
             "type": "array"
           },
           "ai_agents": {
-            "description": "Lọc theo AI agent ids",
+            "description": "Filter by AI agent IDs",
             "type": "array"
           },
           "employees": {
-            "description": "Lọc theo nhân viên ids",
+            "description": "Filter by staff IDs",
             "type": "array"
           },
           "teams": {
-            "description": "Lọc theo team ids",
+            "description": "Filter by team IDs",
             "type": "array"
           },
           "tags": {
-            "description": "Lọc theo customer tag ids",
+            "description": "Filter by customer tag IDs",
             "type": "array"
           },
           "products": {
-            "description": "Lọc theo product ids",
+            "description": "Filter by product IDs",
             "type": "array"
           },
           "sources": {
-            "description": "Lọc theo nguồn khách hàng",
+            "description": "Filter by customer source",
             "type": "array"
           },
           "compare": {
-            "description": "So sánh với kỳ trước",
+            "description": "Compare with the previous period",
             "default": false,
             "type": "boolean"
           }
@@ -4536,7 +4536,7 @@
     {
       "name": "social-report",
       "title": "Social Report Tool",
-      "description": "Hiệu quả bài đăng MXH: lượt tiếp cận, tương tác theo nền tảng, bài đăng gần đây.",
+      "description": "Social post effectiveness: reach, engagement by platform and recent posts.",
       "inputSchema": {
         "properties": {
           "timezone": {
@@ -4587,7 +4587,7 @@
             "type": "string"
           },
           "range": {
-            "description": "Khoảng thời gian: today, yesterday, last_7, last_30, this_week, last_week, this_month, last_month, custom",
+            "description": "Date range: today, yesterday, last_7, last_30, this_week, last_week, this_month, last_month, custom",
             "default": "last_30",
             "enum": [
               "today",
@@ -4603,47 +4603,47 @@
             "type": "string"
           },
           "from": {
-            "description": "Từ ngày (Y-m-d) — chỉ dùng khi range=custom",
+            "description": "Start date (Y-m-d), only when range=custom",
             "type": "string"
           },
           "to": {
-            "description": "Đến ngày (Y-m-d) — chỉ dùng khi range=custom",
+            "description": "End date (Y-m-d), only when range=custom",
             "type": "string"
           },
           "channels": {
-            "description": "Lọc theo kênh (messenger, zalo_personal, telegram...)",
+            "description": "Channel filter (messenger, zalo_personal, telegram, etc.)",
             "type": "array"
           },
           "pages": {
-            "description": "Lọc theo page ids",
+            "description": "Filter by page IDs",
             "type": "array"
           },
           "ai_agents": {
-            "description": "Lọc theo AI agent ids",
+            "description": "Filter by AI agent IDs",
             "type": "array"
           },
           "employees": {
-            "description": "Lọc theo nhân viên ids",
+            "description": "Filter by staff IDs",
             "type": "array"
           },
           "teams": {
-            "description": "Lọc theo team ids",
+            "description": "Filter by team IDs",
             "type": "array"
           },
           "tags": {
-            "description": "Lọc theo customer tag ids",
+            "description": "Filter by customer tag IDs",
             "type": "array"
           },
           "products": {
-            "description": "Lọc theo product ids",
+            "description": "Filter by product IDs",
             "type": "array"
           },
           "sources": {
-            "description": "Lọc theo nguồn khách hàng",
+            "description": "Filter by customer source",
             "type": "array"
           },
           "compare": {
-            "description": "So sánh với kỳ trước",
+            "description": "Compare with the previous period",
             "default": false,
             "type": "boolean"
           }
@@ -4659,7 +4659,7 @@
     {
       "name": "sources-report",
       "title": "Sources Report Tool",
-      "description": "Nguồn khách hàng: khách mới và doanh thu theo nguồn (ads, group, webchat...).",
+      "description": "Customer sources: new customers and revenue by source (ads, groups, webchat, etc.).",
       "inputSchema": {
         "properties": {
           "timezone": {
@@ -4710,7 +4710,7 @@
             "type": "string"
           },
           "range": {
-            "description": "Khoảng thời gian: today, yesterday, last_7, last_30, this_week, last_week, this_month, last_month, custom",
+            "description": "Date range: today, yesterday, last_7, last_30, this_week, last_week, this_month, last_month, custom",
             "default": "last_30",
             "enum": [
               "today",
@@ -4726,47 +4726,47 @@
             "type": "string"
           },
           "from": {
-            "description": "Từ ngày (Y-m-d) — chỉ dùng khi range=custom",
+            "description": "Start date (Y-m-d), only when range=custom",
             "type": "string"
           },
           "to": {
-            "description": "Đến ngày (Y-m-d) — chỉ dùng khi range=custom",
+            "description": "End date (Y-m-d), only when range=custom",
             "type": "string"
           },
           "channels": {
-            "description": "Lọc theo kênh (messenger, zalo_personal, telegram...)",
+            "description": "Channel filter (messenger, zalo_personal, telegram, etc.)",
             "type": "array"
           },
           "pages": {
-            "description": "Lọc theo page ids",
+            "description": "Filter by page IDs",
             "type": "array"
           },
           "ai_agents": {
-            "description": "Lọc theo AI agent ids",
+            "description": "Filter by AI agent IDs",
             "type": "array"
           },
           "employees": {
-            "description": "Lọc theo nhân viên ids",
+            "description": "Filter by staff IDs",
             "type": "array"
           },
           "teams": {
-            "description": "Lọc theo team ids",
+            "description": "Filter by team IDs",
             "type": "array"
           },
           "tags": {
-            "description": "Lọc theo customer tag ids",
+            "description": "Filter by customer tag IDs",
             "type": "array"
           },
           "products": {
-            "description": "Lọc theo product ids",
+            "description": "Filter by product IDs",
             "type": "array"
           },
           "sources": {
-            "description": "Lọc theo nguồn khách hàng",
+            "description": "Filter by customer source",
             "type": "array"
           },
           "compare": {
-            "description": "So sánh với kỳ trước",
+            "description": "Compare with the previous period",
             "default": false,
             "type": "boolean"
           }
@@ -4782,7 +4782,7 @@
     {
       "name": "forecast-report",
       "title": "Forecast Report Tool",
-      "description": "Dự báo: hội thoại và doanh thu dự kiến dựa trên xu hướng kỳ gần nhất.",
+      "description": "Forecast conversations and revenue from recent trends.",
       "inputSchema": {
         "properties": {
           "timezone": {
@@ -4833,7 +4833,7 @@
             "type": "string"
           },
           "range": {
-            "description": "Khoảng thời gian: today, yesterday, last_7, last_30, this_week, last_week, this_month, last_month, custom",
+            "description": "Date range: today, yesterday, last_7, last_30, this_week, last_week, this_month, last_month, custom",
             "default": "last_30",
             "enum": [
               "today",
@@ -4849,47 +4849,47 @@
             "type": "string"
           },
           "from": {
-            "description": "Từ ngày (Y-m-d) — chỉ dùng khi range=custom",
+            "description": "Start date (Y-m-d), only when range=custom",
             "type": "string"
           },
           "to": {
-            "description": "Đến ngày (Y-m-d) — chỉ dùng khi range=custom",
+            "description": "End date (Y-m-d), only when range=custom",
             "type": "string"
           },
           "channels": {
-            "description": "Lọc theo kênh (messenger, zalo_personal, telegram...)",
+            "description": "Channel filter (messenger, zalo_personal, telegram, etc.)",
             "type": "array"
           },
           "pages": {
-            "description": "Lọc theo page ids",
+            "description": "Filter by page IDs",
             "type": "array"
           },
           "ai_agents": {
-            "description": "Lọc theo AI agent ids",
+            "description": "Filter by AI agent IDs",
             "type": "array"
           },
           "employees": {
-            "description": "Lọc theo nhân viên ids",
+            "description": "Filter by staff IDs",
             "type": "array"
           },
           "teams": {
-            "description": "Lọc theo team ids",
+            "description": "Filter by team IDs",
             "type": "array"
           },
           "tags": {
-            "description": "Lọc theo customer tag ids",
+            "description": "Filter by customer tag IDs",
             "type": "array"
           },
           "products": {
-            "description": "Lọc theo product ids",
+            "description": "Filter by product IDs",
             "type": "array"
           },
           "sources": {
-            "description": "Lọc theo nguồn khách hàng",
+            "description": "Filter by customer source",
             "type": "array"
           },
           "compare": {
-            "description": "So sánh với kỳ trước",
+            "description": "Compare with the previous period",
             "default": false,
             "type": "boolean"
           }
@@ -5226,7 +5226,7 @@
     {
       "name": "list-social-accounts",
       "title": "List Social Accounts Tool",
-      "description": "Danh sách tài khoản MXH đã kết nối của workspace (Facebook, TikTok, YouTube, LinkedIn...).",
+      "description": "List connected workspace social accounts (Facebook, TikTok, YouTube, LinkedIn, etc.).",
       "inputSchema": {
         "type": "object",
         "properties": {}
@@ -5240,23 +5240,23 @@
     {
       "name": "list-social-posts",
       "title": "List Social Posts Tool",
-      "description": "Danh sách bài đăng MXH: lọc theo trạng thái (draft, scheduled, published, failed), tìm theo tiêu đề/nội dung, lịch đăng.",
+      "description": "List social posts with status (draft, scheduled, published, failed), title/content search and schedule filters.",
       "inputSchema": {
         "properties": {
           "status": {
-            "description": "Lọc theo trạng thái: draft, scheduled, published, failed",
+            "description": "Status filter: draft, scheduled, published, failed",
             "type": "string"
           },
           "search": {
-            "description": "Tìm theo tiêu đề hoặc nội dung",
+            "description": "Search by title or content",
             "type": "string"
           },
           "scheduled": {
-            "description": "Chỉ lấy bài đã lên lịch",
+            "description": "Include scheduled posts only",
             "type": "boolean"
           },
           "limit": {
-            "description": "Số bài tối đa (mặc định 20, tối đa 100)",
+            "description": "Maximum posts (default 20, maximum 100)",
             "default": 20,
             "type": "integer"
           }
@@ -5272,11 +5272,11 @@
     {
       "name": "get-social-post",
       "title": "Get Social Post Tool",
-      "description": "Chi tiết một bài đăng MXH: nội dung, nền tảng đích, trạng thái từng target, log lỗi gần nhất.",
+      "description": "Social post details: content, target platforms, per-target status and latest errors.",
       "inputSchema": {
         "properties": {
           "post_id": {
-            "description": "ID của bài đăng",
+            "description": "Post ID",
             "type": "integer"
           }
         },
@@ -5294,7 +5294,7 @@
     {
       "name": "create-social-post",
       "title": "Create Social Post Tool",
-      "description": "Soạn bài đăng MXH cho tài khoản đã kết nối. Bỏ scheduled_at để lưu nháp; có scheduled_at là yêu cầu xuất bản tự động và cần duyệt ở chế độ Hybrid/Strict. Đăng ngay dùng publish-social-post.",
+      "description": "Compose a post for connected accounts. Omit scheduled_at to save a draft; setting it requests automatic publication and requires approval in Hybrid/Strict mode. Use publish-social-post to publish now.",
       "inputSchema": {
         "properties": {
           "idempotency_key": {
@@ -5303,27 +5303,27 @@
             "type": "string"
           },
           "content": {
-            "description": "Nội dung dùng chung cho bài đăng",
+            "description": "Shared post content",
             "type": "string"
           },
           "title": {
-            "description": "Tiêu đề, tùy chọn",
+            "description": "Title (optional)",
             "type": "string"
           },
           "hashtags": {
-            "description": "Hashtags dùng chung, tùy chọn",
+            "description": "Shared hashtags (optional)",
             "type": "string"
           },
           "scheduled_at": {
-            "description": "Lịch nội bộ theo ISO-8601; bỏ trống để lưu nháp",
+            "description": "Internal ISO-8601 schedule; omit to save a draft",
             "type": "string"
           },
           "timezone": {
-            "description": "IANA timezone, mặc định Asia/Ho_Chi_Minh",
+            "description": "IANA timezone (default Asia/Ho_Chi_Minh)",
             "type": "string"
           },
           "media_ids": {
-            "description": "Media dùng chung. Tất cả ID phải thuộc workspace hiện tại.",
+            "description": "Shared media. Every ID must belong to the current workspace.",
             "maxItems": 20,
             "items": {
               "description": "ID media trong TrolyPage Media Library",
@@ -5333,29 +5333,29 @@
             "type": "array"
           },
           "targets": {
-            "description": "Tài khoản đích và các override theo nền tảng",
+            "description": "Target accounts and platform-specific overrides",
             "minItems": 1,
             "maxItems": 20,
             "items": {
               "properties": {
                 "social_account_id": {
-                  "description": "ID từ list-social-accounts",
+                  "description": "ID from list-social-accounts",
                   "type": "integer"
                 },
                 "custom_content": {
-                  "description": "Nội dung riêng cho target",
+                  "description": "Target-specific content",
                   "type": "string"
                 },
                 "custom_hashtags": {
-                  "description": "Hashtags riêng cho target",
+                  "description": "Target-specific hashtags",
                   "type": "string"
                 },
                 "custom_link_url": {
-                  "description": "URL http/https riêng cho target",
+                  "description": "Target-specific http/https URL",
                   "type": "string"
                 },
                 "publish_mode": {
-                  "description": "Khả năng hỗ trợ phụ thuộc nền tảng",
+                  "description": "Support depends on the platform",
                   "enum": [
                     "publish",
                     "draft",
@@ -5365,16 +5365,16 @@
                   "type": "string"
                 },
                 "custom_media": {
-                  "description": "Media override cho target. Mỗi item phải có ít nhất một trong id, url hoặc file_path.",
+                  "description": "Target media overrides. Each item requires at least one of id, url or file_path.",
                   "maxItems": 20,
                   "items": {
-                    "description": "Mỗi media item phải có ít nhất một locator: id, url hoặc file_path.",
+                    "description": "Each media item requires at least one locator: id, url or file_path.",
                     "anyOf": [
                       {
                         "additionalProperties": false,
                         "properties": {
                           "id": {
-                            "description": "ID media thuộc workspace",
+                            "description": "Workspace media ID",
                             "type": "integer"
                           },
                           "type": {
@@ -5390,7 +5390,7 @@
                             "type": "string"
                           },
                           "file_path": {
-                            "description": "Path đã có trong Media Library",
+                            "description": "Existing Media Library path",
                             "type": "string"
                           },
                           "mime_type": {
@@ -5412,7 +5412,7 @@
                         "additionalProperties": false,
                         "properties": {
                           "id": {
-                            "description": "ID media thuộc workspace",
+                            "description": "Workspace media ID",
                             "type": "integer"
                           },
                           "type": {
@@ -5428,7 +5428,7 @@
                             "type": "string"
                           },
                           "file_path": {
-                            "description": "Path đã có trong Media Library",
+                            "description": "Existing Media Library path",
                             "type": "string"
                           },
                           "mime_type": {
@@ -5450,7 +5450,7 @@
                         "additionalProperties": false,
                         "properties": {
                           "id": {
-                            "description": "ID media thuộc workspace",
+                            "description": "Workspace media ID",
                             "type": "integer"
                           },
                           "type": {
@@ -5466,7 +5466,7 @@
                             "type": "string"
                           },
                           "file_path": {
-                            "description": "Path đã có trong Media Library",
+                            "description": "Existing Media Library path",
                             "type": "string"
                           },
                           "mime_type": {
@@ -5489,7 +5489,7 @@
                   "type": "array"
                 },
                 "platform_options": {
-                  "description": "Tùy chọn theo nền tảng; chỉ gửi key phù hợp với target.",
+                  "description": "Platform-specific options; send only keys supported by the target.",
                   "properties": {
                     "privacy": {
                       "description": "YouTube/Mastodon privacy",
@@ -5500,7 +5500,7 @@
                       "type": "string"
                     },
                     "native_scheduled_at": {
-                      "description": "Lịch native nếu nền tảng hỗ trợ",
+                      "description": "Native schedule if supported by the platform",
                       "type": "string"
                     },
                     "facebook_post_type": {
@@ -5572,7 +5572,7 @@
     {
       "name": "update-social-post",
       "title": "Update Social Post Tool",
-      "description": "Sửa bài đăng MXH đang ở trạng thái nháp hoặc đã lên lịch.",
+      "description": "Edit a draft or scheduled social post.",
       "inputSchema": {
         "properties": {
           "_expected_edit_revision": {
@@ -5961,11 +5961,11 @@
     {
       "name": "cancel-social-post",
       "title": "Cancel Social Post Tool",
-      "description": "Xóa bài đăng MXH chưa đăng (nháp/lịch). Bài đã publish không xóa được.",
+      "description": "Delete an unpublished draft/scheduled post. Published posts cannot be deleted with this tool.",
       "inputSchema": {
         "properties": {
           "post_id": {
-            "description": "ID bài đăng cần hủy",
+            "description": "Post ID to cancel",
             "type": "integer"
           }
         },
@@ -5983,11 +5983,11 @@
     {
       "name": "publish-social-post",
       "title": "Publish Social Post Tool",
-      "description": "Đăng thật bài đăng lên các nền tảng đã chọn (chạy bất đồng bộ qua queue). Bài cũ liên kết CampaignTask cần duyệt nội dung qua approve-social-post trước; bài nháp tạo trực tiếp qua MCP không cần bước này.",
+      "description": "Publish to selected platforms asynchronously through the queue. Existing posts linked to CampaignTask require content approval through approve-social-post; drafts created directly through MCP do not require that step.",
       "inputSchema": {
         "properties": {
           "post_id": {
-            "description": "ID bài đăng cần đăng",
+            "description": "Post ID to publish",
             "type": "integer"
           }
         },
@@ -6033,11 +6033,11 @@
     {
       "name": "retry-failed-post",
       "title": "Retry Failed Post Tool",
-      "description": "Đăng lại các target bị lỗi của một bài đăng (reset về pending rồi đưa vào queue).",
+      "description": "Retry failed post targets, resetting them to pending and enqueueing them again.",
       "inputSchema": {
         "properties": {
           "post_id": {
-            "description": "ID bài đăng có target lỗi",
+            "description": "Post ID with failed targets",
             "type": "integer"
           }
         },
@@ -6055,11 +6055,11 @@
     {
       "name": "social-post-analytics",
       "title": "Social Post Analytics Tool",
-      "description": "Tổng hợp hiệu quả bài đăng MXH: số bài, lượt like/comment/share/click, series theo ngày, top bài.",
+      "description": "Social post metrics: counts, likes, comments, shares, clicks, daily series and top posts.",
       "inputSchema": {
         "properties": {
           "range": {
-            "description": "Khoảng ngày: 7d (mặc định), 14d, 30d, 90d, today",
+            "description": "Date range: 7d (default), 14d, 30d, 90d, today",
             "default": "7d",
             "enum": [
               "today",
@@ -6083,23 +6083,23 @@
     {
       "name": "generate-caption",
       "title": "Generate Caption Tool",
-      "description": "AI viết caption cho bài đăng MXH theo chủ đề, nền tảng và giọng điệu (dùng brand context của workspace).",
+      "description": "Generate an AI caption for a topic, platform and tone using workspace brand context.",
       "inputSchema": {
         "properties": {
           "topic": {
-            "description": "Chủ đề/sản phẩm cần viết caption",
+            "description": "Caption topic/product",
             "type": "string"
           },
           "platform": {
-            "description": "Nền tảng: facebook, instagram, tiktok, youtube, linkedin...",
+            "description": "Platform: facebook, instagram, tiktok, youtube, linkedin, etc.",
             "type": "string"
           },
           "tone": {
-            "description": "Giọng điệu: professional, friendly, casual, urgent...",
+            "description": "Tone: professional, friendly, casual, urgent, etc.",
             "type": "string"
           },
           "language": {
-            "description": "Ngôn ngữ (mặc định tiếng Việt)",
+            "description": "Language (default Vietnamese)",
             "type": "string"
           }
         },
@@ -6117,19 +6117,19 @@
     {
       "name": "generate-hashtags",
       "title": "Generate Hashtags Tool",
-      "description": "AI đề xuất hashtags cho nội dung bài đăng theo nền tảng.",
+      "description": "Suggest hashtags for post content and platform using AI.",
       "inputSchema": {
         "properties": {
           "content": {
-            "description": "Nội dung bài đăng cần sinh hashtags",
+            "description": "Post content for hashtag generation",
             "type": "string"
           },
           "platform": {
-            "description": "Nền tảng: facebook, instagram, tiktok...",
+            "description": "Platform: facebook, instagram, tiktok, etc.",
             "type": "string"
           },
           "count": {
-            "description": "Số hashtags (mặc định 10)",
+            "description": "Number of hashtags (default 10)",
             "default": 10,
             "type": "integer"
           }
@@ -6148,15 +6148,15 @@
     {
       "name": "suggest-best-time",
       "title": "Suggest Best Time Tool",
-      "description": "AI gợi ý khung giờ đăng bài tốt nhất cho một nền tảng theo ngành nghề.",
+      "description": "Suggest posting times for a platform and industry using AI.",
       "inputSchema": {
         "properties": {
           "platform": {
-            "description": "Nền tảng: facebook, instagram, tiktok, youtube, linkedin...",
+            "description": "Platform: facebook, instagram, tiktok, youtube, linkedin, etc.",
             "type": "string"
           },
           "industry": {
-            "description": "Ngành nghề (thời trang, F&B, mỹ phẩm...)",
+            "description": "Industry (fashion, food and beverage, cosmetics, etc.)",
             "type": "string"
           }
         },
@@ -7768,15 +7768,15 @@
     {
       "name": "list-strategies",
       "title": "List Strategies Tool",
-      "description": "Danh sách chiến lược marketing của workspace.",
+      "description": "List workspace marketing strategies.",
       "inputSchema": {
         "properties": {
           "status": {
-            "description": "Lọc theo trạng thái: draft, active",
+            "description": "Status filter: draft, active",
             "type": "string"
           },
           "limit": {
-            "description": "Số chiến lược tối đa (mặc định 20)",
+            "description": "Maximum strategies (default 20)",
             "default": 20,
             "type": "integer"
           }
@@ -7792,11 +7792,11 @@
     {
       "name": "get-strategy",
       "title": "Get Strategy Tool",
-      "description": "Chi tiết một chiến lược marketing: mục tiêu, channel mix, giá trị đề xuất, campaign con.",
+      "description": "Marketing strategy details: objectives, channel mix, value proposition and child campaigns.",
       "inputSchema": {
         "properties": {
           "strategy_id": {
-            "description": "ID chiến lược",
+            "description": "Strategy ID",
             "type": "integer"
           }
         },
@@ -7814,23 +7814,23 @@
     {
       "name": "create-strategy",
       "title": "Create Strategy Tool",
-      "description": "Tạo chiến lược marketing mới (draft). Từ strategy có thể sinh campaign, broadcast qua các tool khác.",
+      "description": "Create a draft marketing strategy. Other tools can create its campaigns and broadcasts.",
       "inputSchema": {
         "properties": {
           "name": {
-            "description": "Tên chiến lược",
+            "description": "Strategy name",
             "type": "string"
           },
           "description": {
-            "description": "Mô tả mục tiêu chiến lược",
+            "description": "Strategic objective description",
             "type": "string"
           },
           "start_date": {
-            "description": "Ngày bắt đầu (Y-m-d)",
+            "description": "Start date (Y-m-d)",
             "type": "string"
           },
           "end_date": {
-            "description": "Ngày kết thúc (Y-m-d)",
+            "description": "End date (Y-m-d)",
             "type": "string"
           }
         },
@@ -7850,19 +7850,19 @@
     {
       "name": "list-campaigns",
       "title": "List Campaigns Tool",
-      "description": "Danh sách chiến dịch của workspace (có thể lọc theo strategy).",
+      "description": "List workspace campaigns, optionally filtered by strategy.",
       "inputSchema": {
         "properties": {
           "strategy_id": {
-            "description": "Lọc theo chiến lược",
+            "description": "Filter by strategy",
             "type": "integer"
           },
           "status": {
-            "description": "Lọc theo trạng thái: draft, planned, active, completed",
+            "description": "Status filter: draft, planned, active, completed",
             "type": "string"
           },
           "limit": {
-            "description": "Số chiến dịch tối đa (mặc định 20)",
+            "description": "Maximum campaigns (default 20)",
             "default": 20,
             "type": "integer"
           }
@@ -7878,19 +7878,19 @@
     {
       "name": "create-campaign",
       "title": "Create Campaign Tool",
-      "description": "Tạo chiến dịch mới trong một chiến lược (draft/planned).",
+      "description": "Create a draft/planned campaign within a strategy.",
       "inputSchema": {
         "properties": {
           "strategy_id": {
-            "description": "ID chiến lược chứa chiến dịch",
+            "description": "Parent strategy ID",
             "type": "integer"
           },
           "name": {
-            "description": "Tên chiến dịch",
+            "description": "Campaign name",
             "type": "string"
           },
           "type": {
-            "description": "Loại: social_content, messaging, lead_gen, nurture, promo, retention, brand_awareness, ad_hoc",
+            "description": "Type: social_content, messaging, lead_gen, nurture, promo, retention, brand_awareness, ad_hoc",
             "enum": [
               "social_content",
               "messaging",
@@ -7904,15 +7904,15 @@
             "type": "string"
           },
           "description": {
-            "description": "Mô tả chiến dịch",
+            "description": "Campaign description",
             "type": "string"
           },
           "start_date": {
-            "description": "Ngày bắt đầu (Y-m-d)",
+            "description": "Start date (Y-m-d)",
             "type": "string"
           },
           "end_date": {
-            "description": "Ngày kết thúc (Y-m-d)",
+            "description": "End date (Y-m-d)",
             "type": "string"
           }
         },
@@ -7933,15 +7933,15 @@
     {
       "name": "list-broadcasts",
       "title": "List Broadcasts Tool",
-      "description": "Danh sách broadcast (tin nhắn hàng loạt) của workspace kèm trạng thái duyệt.",
+      "description": "List workspace broadcasts and approval states.",
       "inputSchema": {
         "properties": {
           "status": {
-            "description": "Lọc theo trạng thái: draft, pending_review, approved, rejected, sending, sent",
+            "description": "Status filter: draft, pending_review, approved, rejected, sending, sent",
             "type": "string"
           },
           "limit": {
-            "description": "Số broadcast tối đa (mặc định 20)",
+            "description": "Maximum broadcasts (default 20)",
             "default": 20,
             "type": "integer"
           }
@@ -7957,23 +7957,23 @@
     {
       "name": "create-broadcast",
       "title": "Create Broadcast Tool",
-      "description": "Soạn broadcast mới (draft kèm ước tính số người nhận). Gửi thật là bước submit-broadcast → chủ shop duyệt trong app.",
+      "description": "Compose a draft broadcast with an estimated audience size. Actual sending requires submit-broadcast and shop-owner approval in the app.",
       "inputSchema": {
         "properties": {
           "name": {
-            "description": "Tên broadcast",
+            "description": "Broadcast name",
             "type": "string"
           },
           "message_content": {
-            "description": "Nội dung tin nhắn gửi hàng loạt",
+            "description": "Bulk message content",
             "type": "string"
           },
           "campaign_id": {
-            "description": "ID chiến dịch (tùy chọn)",
+            "description": "Campaign ID (optional)",
             "type": "integer"
           },
           "message_type": {
-            "description": "Loại tin: text, image, template",
+            "description": "Message type: text, image, template",
             "enum": [
               "text",
               "image",
@@ -7982,7 +7982,7 @@
             "type": "string"
           },
           "audience_type": {
-            "description": "Đối tượng: all, tag, platform, custom",
+            "description": "Audience: all, tag, platform, custom",
             "enum": [
               "all",
               "tag",
@@ -7992,15 +7992,15 @@
             "type": "string"
           },
           "message_data": {
-            "description": "Dữ liệu ảnh hoặc template theo loại tin",
+            "description": "Image/template data appropriate to the message type",
             "type": "object"
           },
           "audience_filters": {
-            "description": "Bộ lọc đối tượng (theo audience_type)",
+            "description": "Audience filters based on audience_type",
             "type": "object"
           },
           "scheduled_at": {
-            "description": "Lịch gửi (tùy chọn)",
+            "description": "Send schedule (optional)",
             "type": "string"
           }
         },
@@ -8021,11 +8021,11 @@
     {
       "name": "submit-broadcast",
       "title": "Submit Broadcast Tool",
-      "description": "Gửi broadcast đã soạn vào hàng đợi chuẩn bị và duyệt (draft → preparing → pending_review). Chủ shop duyệt trong TrolyPage rồi broadcast mới được gửi thật — AI không bao giờ tự gửi hàng loạt.",
+      "description": "Submit a composed broadcast for preparation and review (draft -> preparing -> pending_review). Actual sending requires shop-owner approval in TrolyPage; the AI does not autonomously send bulk messages.",
       "inputSchema": {
         "properties": {
           "broadcast_id": {
-            "description": "ID broadcast cần gửi duyệt",
+            "description": "Broadcast ID to submit for review",
             "type": "integer"
           },
           "revision": {
@@ -8054,7 +8054,7 @@
     {
       "name": "broadcast-stats",
       "title": "Broadcast Stats Tool",
-      "description": "Thống kê một broadcast: số đã gửi, giao thành công, thất bại.",
+      "description": "Broadcast statistics: sent, delivered and failed counts.",
       "inputSchema": {
         "properties": {
           "broadcast_id": {
@@ -8076,11 +8076,11 @@
     {
       "name": "list-nurture-sequences",
       "title": "List Nurture Sequences Tool",
-      "description": "Danh sách chuỗi nurture (chăm sóc khách tự động nhiều bước) của workspace.",
+      "description": "List workspace nurture sequences for automated multistep customer care.",
       "inputSchema": {
         "properties": {
           "limit": {
-            "description": "Số chuỗi tối đa (mặc định 20)",
+            "description": "Maximum sequences (default 20)",
             "default": 20,
             "type": "integer"
           }
@@ -8096,11 +8096,11 @@
     {
       "name": "create-nurture-sequence",
       "title": "Create Nurture Sequence Tool",
-      "description": "Tạo chuỗi nurture mới (draft). Chuỗi tự động chăm sóc khách theo trigger (tag mới, khách mới, sinh nhật...).",
+      "description": "Create a draft nurture sequence triggered by events such as new tags, new customers or birthdays.",
       "inputSchema": {
         "properties": {
           "name": {
-            "description": "Tên chuỗi nurture",
+            "description": "Nurture sequence name",
             "type": "string"
           },
           "trigger_type": {
@@ -8116,7 +8116,7 @@
             "type": "string"
           },
           "audience_type": {
-            "description": "Đối tượng: all, tag, platform, custom",
+            "description": "Audience: all, tag, platform, custom",
             "enum": [
               "all",
               "tag",
@@ -8156,15 +8156,15 @@
             "type": "array"
           },
           "description": {
-            "description": "Mô tả chuỗi",
+            "description": "Sequence description",
             "type": "string"
           },
           "trigger_config": {
-            "description": "Cấu hình trigger (vd tag id, số ngày inactive)",
+            "description": "Trigger configuration (for example tag ID or inactive days)",
             "type": "object"
           },
           "audience_filters": {
-            "description": "Bộ lọc đối tượng",
+            "description": "Audience filters",
             "type": "object"
           }
         },
@@ -8186,15 +8186,15 @@
     {
       "name": "list-followups",
       "title": "List Followups Tool",
-      "description": "Danh sách follow-up (nhắc lại khách chưa chốt) của workspace.",
+      "description": "List workspace follow-ups for customers who have not completed a purchase.",
       "inputSchema": {
         "properties": {
           "status": {
-            "description": "Lọc theo trạng thái: active, pending_approval, completed, paused",
+            "description": "Status filter: active, pending_approval, completed, paused",
             "type": "string"
           },
           "limit": {
-            "description": "Số follow-up tối đa (mặc định 20)",
+            "description": "Maximum follow-ups (default 20)",
             "default": 20,
             "type": "integer"
           }
@@ -8210,19 +8210,19 @@
     {
       "name": "create-followup-suggestion",
       "title": "Create Followup Suggestion Tool",
-      "description": "Tạo đề xuất follow-up cho khách chưa chốt (chờ duyệt trước khi kích hoạt).",
+      "description": "Propose a customer follow-up; requires approval before activation.",
       "inputSchema": {
         "properties": {
           "subscriber_id": {
-            "description": "ID subscriber cần follow-up",
+            "description": "Subscriber ID for the follow-up",
             "type": "string"
           },
           "suggested_message": {
-            "description": "Tin nhắn đề xuất gửi lại khách",
+            "description": "Proposed follow-up message",
             "type": "string"
           },
           "purpose": {
-            "description": "Mục đích: sales_follow_up, keep_alive, nurture",
+            "description": "Purpose: sales_follow_up, keep_alive, nurture",
             "enum": [
               "sales_follow_up",
               "keep_alive",
@@ -8231,7 +8231,7 @@
             "type": "string"
           },
           "ai_agent_id": {
-            "description": "Agent phụ trách (tùy chọn)",
+            "description": "Assigned agent (optional)",
             "type": "integer"
           }
         },
@@ -9654,15 +9654,15 @@
     {
       "name": "search-knowledge",
       "title": "Search Knowledge Tool",
-      "description": "Tra cứu knowledge base của một AI Agent (hybrid recall + rerank + facts đã duyệt). Trả về block tri thức để agent dùng trả lời khách.",
+      "description": "Query an AI Agent's knowledge base using hybrid recall, reranking and approved facts. Returns knowledge blocks for customer replies.",
       "inputSchema": {
         "properties": {
           "agent_id": {
-            "description": "ID của AI Agent sở hữu knowledge base",
+            "description": "AI Agent ID owning the knowledge base",
             "type": "integer"
           },
           "query": {
-            "description": "Câu hỏi/nội dung cần tra cứu",
+            "description": "Question/content to look up",
             "type": "string"
           }
         },
@@ -9681,15 +9681,15 @@
     {
       "name": "list-knowledge-nodes",
       "title": "List Knowledge Nodes Tool",
-      "description": "Danh sách node tri thức (cây knowledge base) của một AI Agent kèm trạng thái và số lần sử dụng.",
+      "description": "List an AI Agent's knowledge nodes with status and usage counts.",
       "inputSchema": {
         "properties": {
           "agent_id": {
-            "description": "ID của AI Agent",
+            "description": "AI Agent ID",
             "type": "integer"
           },
           "limit": {
-            "description": "Số node tối đa (mặc định 50)",
+            "description": "Maximum nodes (default 50)",
             "default": 50,
             "type": "integer"
           }
@@ -9708,7 +9708,7 @@
     {
       "name": "list-facts",
       "title": "List Facts Tool",
-      "description": "Danh sách facts (thông tin có cấu trúc) của một AI Agent kèm trạng thái duyệt. Facts chưa duyệt KHÔNG được dùng để trả lời khách.",
+      "description": "List an AI Agent's structured facts and approval states. Unapproved facts must not be used in customer replies.",
       "inputSchema": {
         "properties": {
           "page": {
@@ -9716,11 +9716,11 @@
             "type": "integer"
           },
           "agent_id": {
-            "description": "ID của AI Agent",
+            "description": "AI Agent ID",
             "type": "integer"
           },
           "limit": {
-            "description": "Số facts tối đa (mặc định 50)",
+            "description": "Maximum facts (default 50)",
             "default": 50,
             "type": "integer"
           }
@@ -9739,19 +9739,19 @@
     {
       "name": "search-facts",
       "title": "Search Facts Tool",
-      "description": "Tìm facts ĐÃ DUYỆT của một AI Agent theo thuộc tính/từ khóa — chỉ trả về thông tin an toàn để dùng.",
+      "description": "Search approved agent facts by attribute/keyword, returning only information approved for use.",
       "inputSchema": {
         "properties": {
           "agent_id": {
-            "description": "ID của AI Agent",
+            "description": "AI Agent ID",
             "type": "integer"
           },
           "query": {
-            "description": "Từ khóa thuộc tính (vd: price, size, stock) hoặc giá trị",
+            "description": "Attribute keyword (for example price, size, stock) or value",
             "type": "string"
           },
           "limit": {
-            "description": "Số kết quả tối đa (mặc định 20)",
+            "description": "Maximum results (default 20)",
             "default": 20,
             "type": "integer"
           }
@@ -9770,7 +9770,7 @@
     {
       "name": "propose-fact",
       "title": "Propose Fact Tool",
-      "description": "Đề xuất một fact mới cho knowledge base của agent (attribute = value). Fact vào trạng thái chờ duyệt — chủ shop duyệt trong TrolyPage trước khi được dùng trả lời khách.",
+      "description": "Propose an agent knowledge fact (attribute = value). It remains pending until shop-owner approval in TrolyPage, before use in customer replies.",
       "inputSchema": {
         "properties": {
           "knowledge_id": {
@@ -9782,23 +9782,23 @@
             "type": "string"
           },
           "agent_id": {
-            "description": "ID của AI Agent",
+            "description": "AI Agent ID",
             "type": "integer"
           },
           "attribute": {
-            "description": "Thuộc tính (vd: price, size, stock, chính_sách_đổi_trả)",
+            "description": "Attribute (for example price, size, stock, return_policy)",
             "type": "string"
           },
           "value": {
-            "description": "Giá trị fact",
+            "description": "Fact value",
             "type": "string"
           },
           "unit": {
-            "description": "Đơn vị (vd: VND, cm, ngày)",
+            "description": "Unit (for example VND, cm, days)",
             "type": "string"
           },
           "source_span": {
-            "description": "Nguồn trích dẫn (đoạn văn bản gốc)",
+            "description": "Source citation (original passage)",
             "type": "string"
           }
         },
@@ -9818,19 +9818,19 @@
     {
       "name": "search-documents",
       "title": "Search Documents Tool",
-      "description": "Tìm tài liệu trong knowledge base của agent theo từ khóa (nội dung node đã sẵn sàng).",
+      "description": "Search ready knowledge-base document nodes by keyword.",
       "inputSchema": {
         "properties": {
           "agent_id": {
-            "description": "ID của AI Agent",
+            "description": "AI Agent ID",
             "type": "integer"
           },
           "query": {
-            "description": "Từ khóa tìm kiếm",
+            "description": "Search query",
             "type": "string"
           },
           "limit": {
-            "description": "Số kết quả tối đa (mặc định 10)",
+            "description": "Maximum results (default 10)",
             "default": 10,
             "type": "integer"
           }
@@ -11192,7 +11192,7 @@
     {
       "name": "list-channels",
       "title": "List Channels Tool",
-      "description": "Tổng quan các kênh nhắn tin đã kết nối của workspace (Messenger, Zalo OA, Zalo cá nhân, Telegram, WhatsApp, Email, WebChat...) kèm số lượng và trạng thái.",
+      "description": "Overview of connected messaging channels (Messenger, Zalo OA, Zalo personal, Telegram, WhatsApp, Email, WebChat, etc.), with counts and states.",
       "inputSchema": {
         "type": "object",
         "properties": {}
@@ -11206,11 +11206,11 @@
     {
       "name": "channel-status",
       "title": "Channel Status Tool",
-      "description": "Trạng thái chi tiết của một loại kênh: danh sách kết nối, active hay lỗi.",
+      "description": "Detailed connection state for one channel type, including active/error status.",
       "inputSchema": {
         "properties": {
           "type": {
-            "description": "Loại kênh: messenger, zalo_oa, zalo_personal, telegram, whatsapp",
+            "description": "Channel type: messenger, zalo_oa, zalo_personal, telegram, whatsapp",
             "enum": [
               "messenger",
               "zalo_oa",
@@ -11235,7 +11235,7 @@
     {
       "name": "list-agents",
       "title": "List Agents Tool",
-      "description": "Danh sách AI Agents của workspace: id, tên, provider/model, trạng thái.",
+      "description": "List workspace AI Agents: ID, name, provider/model and status.",
       "inputSchema": {
         "properties": {
           "page": {
@@ -11243,7 +11243,7 @@
             "type": "integer"
           },
           "limit": {
-            "description": "Số agent tối đa (mặc định 50)",
+            "description": "Maximum agents (default 50)",
             "default": 50,
             "type": "integer"
           }
@@ -11259,11 +11259,11 @@
     {
       "name": "agent-status",
       "title": "Agent Status Tool",
-      "description": "Trạng thái chi tiết một AI Agent: cấu hình model, số tools, số node tri thức, trạng thái hoạt động.",
+      "description": "Detailed AI Agent status: model configuration, tool count, knowledge-node count and active state.",
       "inputSchema": {
         "properties": {
           "agent_id": {
-            "description": "ID của AI Agent",
+            "description": "AI Agent ID",
             "type": "integer"
           }
         },
@@ -11281,7 +11281,7 @@
     {
       "name": "list-notifications",
       "title": "List Notifications Tool",
-      "description": "Danh sách thông báo nội bộ của workspace (chưa đọc trước, mới nhất trước).",
+      "description": "List internal workspace notifications, unread first and newest first.",
       "inputSchema": {
         "properties": {
           "page": {
@@ -11289,12 +11289,12 @@
             "type": "integer"
           },
           "unread_only": {
-            "description": "Chỉ lấy thông báo chưa đọc",
+            "description": "Unread notifications only",
             "default": true,
             "type": "boolean"
           },
           "limit": {
-            "description": "Số thông báo tối đa (mặc định 20)",
+            "description": "Maximum notifications (default 20)",
             "default": 20,
             "type": "integer"
           }
@@ -11310,11 +11310,11 @@
     {
       "name": "ack-notification",
       "title": "Ack Notification Tool",
-      "description": "Đánh dấu một thông báo nội bộ là đã đọc.",
+      "description": "Mark an internal notification as read.",
       "inputSchema": {
         "properties": {
           "notification_id": {
-            "description": "ID thông báo",
+            "description": "Notification ID",
             "type": "integer"
           }
         },
@@ -11333,11 +11333,11 @@
     {
       "name": "resolve-notification",
       "title": "Resolve Notification Tool",
-      "description": "Xử lý xong một thông báo cần hành động (acknowledge).",
+      "description": "Acknowledge an internal notification that requires action.",
       "inputSchema": {
         "properties": {
           "notification_id": {
-            "description": "ID thông báo",
+            "description": "Notification ID",
             "type": "integer"
           }
         },
@@ -11355,15 +11355,15 @@
     {
       "name": "list-support-tickets",
       "title": "List Support Tickets Tool",
-      "description": "Danh sách support ticket workspace gửi cho đội TrolyPage.",
+      "description": "List support tickets the workspace sent to TrolyPage.",
       "inputSchema": {
         "properties": {
           "status": {
-            "description": "Lọc theo trạng thái: open, pending, resolved, closed",
+            "description": "Status filter: open, pending, resolved, closed",
             "type": "string"
           },
           "limit": {
-            "description": "Số ticket tối đa (mặc định 20)",
+            "description": "Maximum tickets (default 20)",
             "default": 20,
             "type": "integer"
           }
@@ -11379,7 +11379,7 @@
     {
       "name": "create-support-ticket",
       "title": "Create Support Ticket Tool",
-      "description": "Tạo support ticket mới gửi đội hỗ trợ TrolyPage.",
+      "description": "Create a support ticket for the TrolyPage support team.",
       "inputSchema": {
         "properties": {
           "media_ids": {
@@ -11391,19 +11391,19 @@
             "type": "array"
           },
           "subject": {
-            "description": "Tiêu đề ticket",
+            "description": "Ticket title",
             "type": "string"
           },
           "description": {
-            "description": "Mô tả vấn đề chi tiết",
+            "description": "Detailed issue description",
             "type": "string"
           },
           "category": {
-            "description": "Danh mục (bug, billing, hỏi đáp...)",
+            "description": "Category (bug, billing, questions, etc.)",
             "type": "string"
           },
           "priority": {
-            "description": "Mức ưu tiên: low, medium, high, urgent",
+            "description": "Priority: low, medium, high, urgent",
             "enum": [
               "low",
               "medium",
@@ -11429,7 +11429,7 @@
     {
       "name": "reply-support-ticket",
       "title": "Reply Support Ticket Tool",
-      "description": "Trả lời một support ticket đang mở.",
+      "description": "Reply to an open support ticket.",
       "inputSchema": {
         "properties": {
           "media_ids": {
@@ -11441,11 +11441,11 @@
             "type": "array"
           },
           "ticket_id": {
-            "description": "ID ticket cần trả lời",
+            "description": "Ticket ID to reply to",
             "type": "integer"
           },
           "message": {
-            "description": "Nội dung trả lời",
+            "description": "Reply content",
             "type": "string"
           }
         },
@@ -11523,15 +11523,15 @@
       "inputSchema": {
         "properties": {
           "message": {
-            "description": "Tin nhắn cần gửi cho AI Agent",
+            "description": "Message for the AI Agent",
             "type": "string"
           },
           "agent_id": {
-            "description": "ID của AI Agent cần chạy",
+            "description": "AI Agent ID to run",
             "type": "integer"
           },
           "subscriber_id": {
-            "description": "ID subscriber để lưu context hội thoại (mặc định: mcp_test)",
+            "description": "Subscriber ID for conversation context (default: mcp_test)",
             "type": "string"
           }
         },
@@ -15434,5 +15434,6 @@
       "module": "shared",
       "source": "app/Mcp/Tools/GetMcpActionTool.php"
     }
-  ]
+  ],
+  "language_note": "Human-readable Vietnamese descriptions were translated to English on 2026-10-19. Tool names, schema keys, enum values and types are unchanged. This normalized source reference is not a byte-for-byte production response or a live test."
 }

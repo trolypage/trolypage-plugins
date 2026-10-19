@@ -36,3 +36,7 @@ Public pages were read in the user's logged-in Edge browser without transmitting
 - trolypage-mobile/app.json selects assets/brand/app-icon.png; copied to assets with SHA-256 recorded in owner-decisions.json
 
 Production public readiness is a self-report; isolated local schema extraction is not a security audit or an authenticated production test. No review test has been marked passed in this preparation.
+
+## English normalization — 2026-10-19
+
+Non-English human-readable descriptions and captured labels were translated into English for this repository. Evidence files carry normalization notes; they are not verbatim responses. Original URLs, route/locale identifiers, tool names, schema keys, enum values and types remain unchanged. The language update does not change live server descriptions, website copy, observed historical findings or test status. Proper names in captured text are transliterated where needed.

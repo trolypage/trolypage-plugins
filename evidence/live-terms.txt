@@ -1,3 +1,5 @@
+English-normalized reference: non-English captured text translated on 2026-10-19; proper names transliterated. Not a verbatim capture. Historical claims are not verification of implementation.
+
 Skip to document content
 TrolyPage
 
@@ -42,15 +44,15 @@ Terms of Service for TrolyPage - AI Agent Platform for Facebook Fanpages
 
 Service plans purchased directly at trolypage.com are supplied by TROLYPAGE COMPANY LIMITED. The company is responsible for the transaction, plan provision, support and resolving customer entitlements.
 
-CÔNG TY TNHH TROLYPAGE
+TROLYPAGE COMPANY LIMITED
 TROLYPAGE COMPANY LIMITED
 
 Enterprise registration number: 0111551901
 First registered: 29/06/2026
-Issuing authority: Phòng Đăng ký kinh doanh và Tài chính doanh nghiệp — Sở Tài chính thành phố Hà Nội
+Issuing authority: Business Registration and Corporate Finance Division — Hanoi Department of Finance
 
-Registered office: Số 72, Ngõ 318 Đê La Thành, Phường Ô Chợ Dừa, Thành phố Hà Nội, Việt Nam
-Legal representative: Nguyễn Duy Hùng, Director
+Registered office: No. 72, Alley 318 De La Thanh, O Cho Dua Ward, Hanoi, Vietnam
+Legal representative: Nguyen Duy Hung, Director
 
 0964 842 168 · support@trolypage.com
 
@@ -212,15 +214,15 @@ Entire agreement: These Terms, together with the Privacy Policy and Refund Polic
 No waiver: Failure to enforce any right shall not constitute a waiver of that right.
 15. Contact
 
-CÔNG TY TNHH TROLYPAGE
+TROLYPAGE COMPANY LIMITED
 TROLYPAGE COMPANY LIMITED
 
 Enterprise registration number: 0111551901
 First registered: 29/06/2026
-Issuing authority: Phòng Đăng ký kinh doanh và Tài chính doanh nghiệp — Sở Tài chính thành phố Hà Nội
+Issuing authority: Business Registration and Corporate Finance Division — Hanoi Department of Finance
 
-Registered office: Số 72, Ngõ 318 Đê La Thành, Phường Ô Chợ Dừa, Thành phố Hà Nội, Việt Nam
-Legal representative: Nguyễn Duy Hùng, Director
+Registered office: No. 72, Alley 318 De La Thanh, O Cho Dua Ward, Hanoi, Vietnam
+Legal representative: Nguyen Duy Hung, Director
 
 0964 842 168 · support@trolypage.com
 
@@ -244,24 +246,24 @@ System Status
 Capabilities
 Features
 AI cho Messenger
-Inbox đa kênh
-Lên lịch đăng bài
+Multichannel inbox
+Post scheduling
 AI cho Zalo OA
 Chatbot website
-Chăm sóc lại khách
+Customer follow-up
 MCP
 Install Website Chat
 Company
 
-CÔNG TY TNHH TROLYPAGE
+TROLYPAGE COMPANY LIMITED
 TROLYPAGE COMPANY LIMITED
 
 Enterprise registration number: 0111551901
 First registered: 29/06/2026
-Issuing authority: Phòng Đăng ký kinh doanh và Tài chính doanh nghiệp — Sở Tài chính thành phố Hà Nội
+Issuing authority: Business Registration and Corporate Finance Division — Hanoi Department of Finance
 
-Registered office: Số 72, Ngõ 318 Đê La Thành, Phường Ô Chợ Dừa, Thành phố Hà Nội, Việt Nam
-Legal representative: Nguyễn Duy Hùng, Director
+Registered office: No. 72, Alley 318 De La Thanh, O Cho Dua Ward, Hanoi, Vietnam
+Legal representative: Nguyen Duy Hung, Director
 
 Contact
 support@trolypage.com

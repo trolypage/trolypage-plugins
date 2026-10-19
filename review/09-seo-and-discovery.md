@@ -1,102 +1,97 @@
-# Review SEO, khả năng được tìm thấy và độ dễ hiểu
+# SEO, discovery and product clarity review
 
-Ngày 19/10/2026. Người phụ trách: **Alex Nguyen** — support.mcp@trolypage.com.
+Reviewed October 19, 2026. Contact: **Alex Nguyen**, support.mcp@trolypage.com. This document records the earlier public-page observations; changing repository language does not change the live website.
 
-## Kết luận
+## Assessment
 
-**Hồ sơ bản trước chưa giới thiệu đủ rõ cho người chưa biết TrolyPage.** Subtitle quá rộng và câu mở đầu giả định người đọc đã biết workspace của sản phẩm. Đã sửa bản nháp trong repo để nói rõ nhóm công việc: AI chăm sóc khách hàng, CRM, lên lịch nội dung và quản lý đơn hàng. Tên thương hiệu và verified publisher vẫn giữ nguyên.
+The earlier listing assumed readers already understood TrolyPage. Its broad subtitle and opening did not define the product clearly enough. The revised candidate names the actual jobs: AI customer support, CRM, social media scheduling and order management. The brand and verified publisher are unchanged. This candidate now uses English throughout, including example prompts and tool-reference descriptions.
 
-**Trang Features có nền tảng on-page tốt hơn phần listing cũ.** Đây là trang tổng quan tác vụ có nội dung HTML đọc được. Cần tăng độ rõ ràng và tính nhất quán; hiện chưa có bằng chứng để kết luận thứ hạng hay lượng tìm kiếm tốt. Review này không dùng Search Console, dữ liệu keyword volume hoặc báo cáo Core Web Vitals.
+The Features page has a useful on-page foundation: readable HTML describing concrete tasks. Clarity and consistency still need work. This inspection does not establish good rankings or demand; it used no Search Console data, keyword-volume research or Core Web Vitals report.
 
-## Ba nơi cần tối ưu khác nhau
+## Three separate discovery surfaces
 
-| Nơi | Việc cần làm |
+| Surface | What matters |
 | --- | --- |
-| Google / Bing | Trang công khai mô tả đúng nhu cầu, có thể crawl, liên kết nội bộ và nội dung hữu ích cho người tìm kiếm |
-| Directory của OpenAI / Claude / Muse | Tên, subtitle, mô tả, README và ví dụ giúp người chưa biết thương hiệu hiểu lợi ích và điều kiện dùng |
-| AI chọn công cụ sau khi kết nối | Metadata từng tool, input schema, phạm vi dữ liệu và prompt kiểm thử giúp gọi đúng công cụ |
+| Google / Bing | Crawlable public pages addressing real needs, useful content and internal links |
+| OpenAI / Claude / Muse directories | Name, subtitle, description, README and examples explaining benefits and prerequisites to unfamiliar readers |
+| Tool selection after connection | Tool descriptions, input schemas, data scope and test prompts that help the host choose appropriate tools |
 
-Không có căn cứ để coi việc thêm từ khóa vào ZIP sẽ tự tăng thứ hạng Google hoặc đảm bảo directory đề xuất TrolyPage. OpenAI hướng dẫn kiểm thử metadata bằng cả prompt nêu thương hiệu, prompt chỉ nêu nhu cầu và prompt không nên dùng tool. [Hướng dẫn metadata](https://developers.openai.com/plugins/guides/optimize-metadata).
+Keywords in a ZIP do not establish improved Google ranking or guaranteed directory recommendations. OpenAI recommends testing branded, unbranded and negative prompts. [Metadata guidance](https://developers.openai.com/plugins/guides/optimize-metadata).
 
-## Đã chỉnh trong hồ sơ nháp
+## Revised candidate copy
 
-| Trường | Bản review hiện tại |
+| Field | Current draft |
 | --- | --- |
-| Contact person | Alex Nguyen |
-| Display name | TrolyPage — giữ tên thương hiệu |
-| English subtitle | AI support, CRM & social posts — 30 ký tự |
-| Vietnamese subtitle | AI chăm khách, CRM & đăng bài — 29 ký tự |
-| Câu đầu | TrolyPage is AI customer support, CRM, social media scheduling and order management software for small businesses. |
-| Câu tiếp theo | Giải thích sản phẩm tập hợp công việc kinh doanh và bản tích hợp kết nối vào workspace sẵn có |
-| Starter prompts | Tóm tắt hội thoại/soạn câu trả lời để review; tìm SKU/tạo đơn chờ duyệt; so sánh doanh thu |
-| README | Thêm link Features để hiểu sản phẩm, giữ link MCP để cài/kết nối; dùng cùng định nghĩa sản phẩm |
-| Claude keywords | customer-support, crm, social-media-scheduling, order-management cùng brand; không coi đây là cơ chế xếp hạng đã được công bố |
+| Contact | Alex Nguyen |
+| Display name | TrolyPage |
+| Subtitle | AI support, CRM & social posts — 30 characters |
+| Opening | TrolyPage is AI customer support, CRM, social media scheduling and order management software for small businesses. |
+| Next paragraph | Explains the business workspace and the integration with an existing account |
+| Starter prompts | Summarize a conversation/draft a reply; find a SKU/prepare a reviewable order; compare sales |
+| README | Product definition and Features link, with separate MCP setup guidance |
+| Claude keywords | customer-support, crm, social-media-scheduling, order-management and brand; no ranking mechanism is assumed |
 
-Các giới hạn quyền, gói, thanh toán ngoài host và các trạng thái duyệt vẫn được giữ. Không mở rộng phạm vi tool hoặc khai thêm kênh chưa được chứng minh. WebsiteURL của plugin vẫn trỏ trang MCP có hướng dẫn kết nối; Features là trang giải thích sản phẩm được liên kết thêm trong README.
+Role, plan, external-payment and approval-state limitations remain. No extra channels or tool capabilities have been claimed. WebsiteURL still points to MCP setup; the README links to Features for product context. Optional localized listing overrides are omitted from the English-only candidate.
 
-## Kiểm tra kỹ thuật trang Features
+## Features page observations
 
-Nguồn trực tiếp: `evidence/features-seo.json`. Đọc HTTP công khai vào ngày review; điều hướng trình duyệt gặp timeout, nên không chấm điểm visual hoặc tốc độ từ sự cố đó.
+Source: `evidence/features-seo.json`. Public HTTP was inspected on the review date after browser navigation timed out. That timeout provides no visual or performance score. Non-English captured labels have been translated and labeled in the repository; original route and locale identifiers remain unchanged.
 
-| Kiểm tra | Quan sát | Đánh giá |
+| Check | Observation | Assessment |
 | --- | --- | --- |
-| HTTP / nội dung | /features và /vi/tinh-nang trả 200, có heading và nội dung trong HTML | Nền tảng crawl tốt |
-| Title | Title hiện nêu scheduled posting và multichannel inbox trước brand | Cụ thể hơn slogan; chưa cần đổi chỉ để nhét thêm keyword |
-| Description | Có mô tả tác vụ và kênh | Đủ rõ để bắt đầu; Google có thể chọn snippet khác |
-| H1 | Có một H1 mô tả chuỗi công việc | Tốt hơn chỉ ghi tên thương hiệu |
-| Canonical / locale | EN tự canonical; có alternate EN, VI và x-default; VI có metadata riêng | Cấu trúc đa ngôn ngữ đã có; vẫn cần theo dõi URL thực được Google chọn |
-| Robots / sitemap | Không thấy noindex ở meta/X-Robots-Tag đã đọc; robots không chặn Features; sitemap-pages có hai URL EN/VI | Không thấy blocker crawl trong phạm vi kiểm tra; không đồng nghĩa Google đã index |
-| Sharing | Có OG/Twitter metadata | Hữu ích cho preview liên kết |
-| Structured data | Không thấy application/ld+json ở HTML Features đã đọc | Có thể bổ sung WebPage/BreadcrumbList đúng nội dung; ưu tiên sau copy và thông tin phạm vi |
-| Image alt | Tất cả img có thuộc tính alt; một số để rỗng | alt rỗng có thể đúng với ảnh trang trí; cần visual review trước khi coi là lỗi |
+| HTTP / content | /features and /vi/tinh-nang returned 200 with headings and content in HTML | Useful crawl foundation |
+| Title | Scheduled posting and multichannel inbox appear before the brand | More specific than a slogan; avoid adding keywords without a reason |
+| Description | Describes tasks and channels | Clear starting point; Google may choose another snippet |
+| H1 | One H1 describes the workflow | More informative than the brand alone |
+| Canonical / locales | English self-canonical; English, Vietnamese and x-default alternates; separate localized metadata | Multilingual structure exists; monitor Google's selected canonical |
+| Robots / sitemap | No noindex found in inspected meta/X-Robots-Tag; Features not blocked; both locale URLs in sitemap-pages | No crawl blocker observed within scope; indexing is unverified |
+| Sharing | OG/Twitter metadata present | Supports link previews |
+| Structured data | No application/ld+json found in inspected Features HTML | Consider accurate WebPage/BreadcrumbList after copy and scope corrections |
+| Image alt | All images had alt attributes; some empty | Empty alt may be valid for decoration; inspect visually before calling it an error |
 
-Google khuyến nghị title rõ, mô tả đúng trang; meta description có thể được dùng làm snippet, không phải đoạn hiển thị được đảm bảo. [Title links](https://developers.google.com/search/docs/appearance/title-link), [snippets](https://developers.google.com/search/docs/appearance/snippet).
+Google recommends clear titles describing the page. Meta descriptions can be used for snippets but are not guaranteed to appear. [Title links](https://developers.google.com/search/docs/appearance/title-link), [snippets](https://developers.google.com/search/docs/appearance/snippet).
 
-## Ưu tiên sửa trên website — mới là đề xuất
+## Proposed website improvements: not deployed
 
-### 1. Thêm định nghĩa sản phẩm ngay dưới thông điệp chính
+### 1. Define the product immediately below the main message
 
-Giải thích rõ đây là phần mềm cho ai và nhóm công việc nào, rồi mới đi sâu vào automation/AI. Draft English:
+Explain the audience and jobs before introducing automation terms:
 
 > TrolyPage is customer support and social media management software for small business teams. Organize customer conversations, keep CRM records, schedule posts and turn conversations into orders—with AI assistance and human review where needed.
 
-Draft Vietnamese:
+This is proposed copy only. Avoid unmeasured claims about revenue, time savings or automatically closing every order.
 
-> TrolyPage là phần mềm chăm sóc khách hàng và quản lý nội dung mạng xã hội cho doanh nghiệp nhỏ. Tập trung hội thoại, lưu thông tin khách, lên lịch bài đăng và tạo đơn ngay từ cuộc trò chuyện, với AI hỗ trợ và nhân viên duyệt khi cần.
+### 2. Align promises with actual capabilities
 
-Đây là copy mới đề xuất để chủ sản phẩm review, chưa sửa trang live. Không dùng các claim tăng doanh thu, tiết kiệm một tỷ lệ thời gian hay tự động chốt mọi đơn khi chưa có dữ liệu đo.
+The reviewed Features text limits comment management to YouTube, while the broad heading may imply all channels. Use a heading that matches current coverage and expand it when support is verified.
 
-### 2. Đồng bộ lời hứa với khả năng đang có
+Describe follow-up through configured rules/schedules rather than implying the system knows when a customer is free. Align broad footer automation claims with actual channel support and approval behavior. [Reviewed page](https://trolypage.com/features).
 
-Trang Features giới hạn quản lý comment ở YouTube, trong khi heading khái quát có thể khiến người mới hiểu là mọi kênh đều hỗ trợ. Đề xuất heading sát phạm vi hiện tại, có nhãn mở rộng khi hỗ trợ thêm.
+### 3. Explain first steps for new and existing users
 
-Phần follow-up nên mô tả gửi theo lịch/quy tắc đã cấu hình, tránh gợi ý sản phẩm biết lúc khách rảnh. Footer dùng lời hứa tự động hóa rộng hơn nội dung chính; nên viết thống nhất với quyền duyệt và khả năng từng kênh. [Trang đã review](https://trolypage.com/features).
+- Solution seekers need examples, supported channels, plan requirements and a concrete first trial.
+- Plugin users need to know whether an existing workspace is required, which role/plan is eligible and what they can try after connecting.
 
-### 3. Làm rõ luồng khách mới so với người đã có tài khoản
+Use specific calls to action such as trying an inbox or watching a workflow demo. Reserve MCP, OAuth and entitlement detail for setup guidance.
 
-- Người tìm giải pháp: xem ví dụ, kênh hỗ trợ, điều kiện gói và bước thử đầu tiên.
-- Người muốn plugin: cần biết có phải tạo TrolyPage workspace trước không, role/gói nào dùng được và có thể thử tác vụ gì sau khi kết nối.
+### 4. Organize useful content around real needs
 
-CTA nên nói hành động cụ thể như thử inbox hoặc xem demo một quy trình. Không biến toàn bộ trang thành danh sách thuật ngữ MCP, OAuth, entitlements.
+These are intent hypotheses, without measured volume or difficulty:
 
-### 4. Phát triển nội dung theo nhu cầu cụ thể
-
-Các nhóm từ khóa bên dưới là **giả thuyết intent**, chưa có số volume/độ khó:
-
-| Nhu cầu | Cụm từ/ý tưởng nội dung |
+| Need | Query / content ideas |
 | --- | --- |
-| Chăm sóc khách | AI customer support; AI chatbot for Messenger; chatbot chăm sóc khách hàng |
-| Inbox / CRM | shared inbox; Messenger and Zalo OA inbox; quản lý tin nhắn đa kênh; CRM khách hàng |
-| Nội dung | social media scheduling; lên lịch đăng bài Facebook; quản lý nội dung mạng xã hội |
-| Đơn hàng | order management from chat; tạo đơn từ hội thoại; quản lý đơn hàng |
-| Tích hợp AI | customer support tools for an AI assistant; CRM MCP connector; TrolyPage MCP |
+| Customer support | AI customer support; AI chatbot for Messenger; customer service chatbot |
+| Inbox / CRM | shared inbox; Messenger and Zalo OA inbox; multichannel inbox; customer CRM |
+| Content | social media scheduling; Facebook post scheduling; social content management |
+| Orders | order management from chat; create orders from conversations |
+| AI integration | customer support tools for an AI assistant; CRM MCP connector; TrolyPage MCP |
 
-Dùng các trang use case đã có trong navigation, bổ sung ví dụ và liên kết từ phần tính năng tương ứng. Với bản EN, review các anchor/navigation còn chữ Việt và chỉ tạo trang EN riêng khi có nội dung hữu ích, đúng phạm vi. Không nhân bản hàng loạt trang keyword gần giống nhau. Cũng không dùng tên đối thủ vào title để câu tìm kiếm.
+Expand existing use-case pages with examples and links from relevant feature sections. Review untranslated anchors/navigation on the English website. Create separate English pages only with useful, accurate content; avoid repetitive keyword pages or competitor names used merely to attract searches.
 
-## Việc nên đo sau khi phát hành
+## Measure after release
 
-1. Trong Search Console: xem truy vấn không chứa brand, impressions/clicks/CTR theo URL EN/VI, quốc gia và thiết bị; kiểm tra index/canonical được chọn. So sánh cùng nhóm điều kiện trước/sau, không suy ra tác động SEO chỉ từ một ngày dữ liệu.
-2. Trong directory nếu có analytics: theo dõi lượt xem → cài/kết nối → tác vụ hữu ích đầu tiên. Không xem số cài là bằng chứng dùng thành công.
-3. Với AI routing: chạy `discovery-prompts.json` trên host thực sau khi kết nối demo; ghi tool có được chọn đúng và tránh kích hoạt sai. Bộ này bổ sung cho 5+3 ca nghiệp vụ, không thay thế chúng.
+1. Search Console: non-brand queries, impressions, clicks and CTR by locale URL, country and device; indexing and selected canonical. Compare matched conditions before/after rather than attributing changes from one day of data.
+2. Directory analytics where available: views, installs/connections and the first useful action. Installs alone do not prove successful use.
+3. AI routing: run discovery-prompts.json on an actual host connected to the demo workspace; record correct selection and unnecessary activation. These supplement the five positive/three negative business cases.
 
-Trước mắt nên chốt copy định nghĩa sản phẩm và listing như bản nháp mới, xử lý các claim phạm vi, rồi đo các truy vấn thực. Các chỉnh sửa server/policy và reviewer account còn ở `07-readiness.md`.
+Finalize the product definition, resolve scope claims and measure real queries. Server, policy and reviewer-access requirements remain in 07-readiness.md.

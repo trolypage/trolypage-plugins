@@ -1,40 +1,40 @@
-# Những mục cần hoàn tất trước khi nộp
+# Requirements before submission
 
-Trạng thái bộ hồ sơ: **REVIEW DRAFT**. Đã chuẩn bị source/ZIP/nội dung; chưa upload hay submit ở bất kỳ portal nào. Kiểm tra cấu trúc local không thay thế scan hoặc review của nền tảng.
+**REVIEW DRAFT.** Source, archives and copy are prepared. No directory upload or submission has been made. Local validation does not replace a platform scan or review.
 
-## Chung
+## Shared requirements
 
-| Mục | Tình trạng / bước tiếp theo |
+| Item | Status / next step |
 | --- | --- |
-| Tên listing, email, quốc gia, commerce, logo | Đã có lựa chọn của chủ tài khoản; người phụ trách: Alex Nguyen |
-| Danh tính OpenAI | Verified; Business — Trolypage chọn được trong hộp upload |
-| Metadata / 5+3 cases / release / VI translation | Đã đưa vào OpenAI ZIP candidate |
-| Logo mobile | Đã copy bản gốc và tạo bản kích thước phù hợp; cần review hình và ảnh hưởng ở 32/64 px |
-| Endpoint/discovery | Public status và OAuth metadata mở được; chưa kiểm thử đăng nhập OAuth đầy đủ |
-| Reviewer account | Đã nhận riêng; đã vào được workspace TrolyPage Reviewer, Scale, Owner. Cloudflare cần thao tác người dùng trong lần đăng nhập kiểm tra; chưa xác minh đăng nhập độc lập từ reviewer bên ngoài |
-| Workspace demo preflight | 0 products, 0 orders; contact duy nhất là hỗ trợ mặc định, chưa có fixtures. MCP UI hiển thị Full · Direct execution đang áp dụng, chưa có OAuth app/API key hay successful read-only call; chưa đổi cấu hình |
-| Authenticated tool tests | 270 tools chưa chạy; 5+3 ca đại diện chưa chạy |
-| Video | Mới có kịch bản và hướng dẫn quay; chưa có bản ghi/URL thực |
-| Live policy identity | Privacy section 13 và mobile support còn SkyNet Solution; Privacy còn địa chỉ 9243 Quail Creek Ln, Boulder, US, khác footer TROLYPAGE COMPANY LIMITED/Hà Nội. Xác nhận quan hệ pháp nhân hoặc sửa bản đã xuất bản. Không tự coi đây là đã sửa |
-| MCP guide | Còn mô tả "seven focused servers" dù status có 11 routes; nói analytics 100% read-only nhưng có export-report là write; mô tả Hybrid quá rộng. Cần đồng bộ production copy |
-| Data processing | Owner xác nhận subprocessors, retention thực, secondary-use restrictions và security escalation contact |
+| Listing, contact, countries, commerce, logo | Owner decisions recorded; contact person Alex Nguyen |
+| OpenAI identity | Verified; Business — Trolypage selectable in the upload dialog |
+| Metadata / 5+3 cases / release notes | Included in the English-only OpenAI candidate |
+| Mobile icon | Original and derived sizes supplied; review appearance at 32/64 px |
+| Endpoint/discovery | Public status and OAuth metadata accessible; full OAuth flow not tested |
+| Reviewer account | Received privately; browser access verified for TrolyPage Reviewer, Scale, Owner. Owner completed Cloudflare; independent external-reviewer sign-in remains unverified |
+| Demo workspace | No products/orders or test fixtures; only the default support contact. MCP UI shows Full / Direct execution applied, no OAuth apps/API keys and no successful read-only call. Configuration unchanged |
+| Authenticated tool tests | All 270 tools and all five positive/three negative cases remain Not run |
+| Video | Script prepared; real recording and accessible URL missing |
+| Published policy identity | Privacy section 13 and mobile support still name SkyNet Solution; privacy lists 9243 Quail Creek Ln, Boulder, US, while the footer names TROLYPAGE COMPANY LIMITED in Hanoi. Confirm the legal relationship or correct the published text |
+| MCP guide | Refers to seven focused servers despite 11 routes; calls analytics fully read-only despite export-report; overstates Hybrid approval coverage. Synchronize production copy |
+| Data processing | Owner confirmation needed for processors, actual retention, secondary-use restrictions and security escalation contact |
 
-## Engineering findings cần giải quyết theo catalog định gửi
+## Engineering findings for the submitted catalog
 
-1. **Annotations OpenAI:** snapshot `toArray()` của cả 270 tools thiếu ít nhất một trong ba boolean readOnlyHint, destructiveHint, openWorldHint. Không tự điền giá trị false vào tài liệu rồi coi server đã sửa. Cần sửa annotation serialization/attributes dựa trên hành vi từng tool, review semantics và kiểm tra tools/list production sau deploy. File annotation-gaps.csv nêu từng trường thiếu.
-2. **Claude image generation:** endpoint chung có generate-social-image. Không submit nguyên catalog như đã đạt policy; cần filter enforce thật và re-test. Bundled skills không tự giới hạn remote tools.
-3. **Claude operation dispatcher:** execute-integration-operation chỉ có openWorldHint, có thể thực thi configured HTTP operation. Cần đánh giá split read/write và annotation phù hợp, hoặc loại khỏi profile Claude. Không gọi tool này để vòng qua media/financial restrictions.
-4. **Muse Read Only:** source OAuth hiện chỉ công bố mcp:use; read-only catalog filtering chỉ thấy với API token mcp:read. Xem xét cung cấp lựa chọn read-only OAuth nơi khả thi. Không khai đã hỗ trợ rồi dùng API key để thay OAuth trong form OpenAI.
-5. **Schema extraction:** 267/270 tools serialize input schema trong container cô lập không nạp .env/DB. Ba schema còn thiếu cần runtime inspection; đây là hạn chế kiểm tra, không phải chứng minh lỗi server. Chưa có authenticated tools/list snapshot để xác nhận wire annotations.
+1. **OpenAI annotations:** every one of the 270 locally serialized tools lacks at least one explicit boolean among readOnlyHint, destructiveHint and openWorldHint. Fix serialization/attributes using the actual behavior of each tool, then verify production `tools/list`. Adding false values to a document does not fix the server. See annotation-gaps.csv.
+2. **Claude image generation:** the unified endpoint exposes `generate-social-image`. Enforce a compatible catalog/profile and retest before submission. Bundled skills do not restrict remote tools.
+3. **Claude operation dispatcher:** `execute-integration-operation` declares only openWorldHint and may execute configured HTTP operations. Assess a read/write split and correct annotations, or exclude it. Do not bypass media or financial restrictions through this tool.
+4. **Muse read-only access:** discovery advertises `mcp:use`; the inspected read-only filter applies to API-token `mcp:read`. Resolve OAuth read-only behavior before claiming support. Do not replace required OpenAI OAuth with an API key in the submission form.
+5. **Schema extraction:** 267/270 input schemas serialized in an isolated container without .env/DB. Inspect the remaining three at runtime. This extraction limit is not proof of a production failure; authenticated wire annotations remain unverified.
 
-Không sửa server ứng dụng trong repo chuẩn bị hồ sơ này. Các finding được giữ thành backlog review để chủ sản phẩm quyết định và triển khai trước khi chốt public submission.
+The application server has not been changed in this distribution repository. These findings remain a product/engineering backlog to resolve before final submission.
 
-## Riêng từng nơi
+## Platform-specific work
 
-- OpenAI: domain challenge, OAuth connection, scans, reviewer access, video, final attestations còn pending. ZIP DRAFT có thể đọc review; chưa được gắn nhãn ready for review submission.
-- Claude connector: policy catalog, tool tests và reviewer access còn pending. Bundle còn cần license do owner chọn và portal validation; repo public đã tạo tại https://github.com/trolypage/trolypage-plugins. Không upload backend monorepo.
-- Muse: Payments category cần đối chiếu định nghĩa external payment; tech/review form bước sau chưa được thao tác; questionnaire, test account, host approvals và terms do owner hoàn tất.
+- **OpenAI:** domain challenge, OAuth, scans, reviewer access, video and final attestations remain pending. The draft ZIP can be reviewed locally but is not submission-ready.
+- **Claude:** catalog policy, tool tests and reviewer access remain pending. The bundle additionally needs an owner-selected license and portal validation. Public source: https://github.com/trolypage/trolypage-plugins. Do not upload the application backend.
+- **Muse:** verify the payment-category definition for external payment. Later technical/review form steps, processing questionnaire, test access, host approvals and terms remain incomplete.
 
-## Bước tiếp theo với tài khoản demo
+## Next preparation steps
 
-Người phụ trách đã xác nhận là Alex Nguyen. Tài khoản đã vào được workspace reviewer; cần kiểm tra việc đăng nhập độc lập và OAuth, chuẩn bị fixtures tổng hợp và ghi nhận approval mode phù hợp từng vòng test. Không coi Full · Direct execution là đã bật queue cho mọi write. Xác nhận license và nơi host demo; điền fixture IDs thực. Hoàn tất các engineering/policy finding theo phạm vi gửi duyệt. Chạy test, quay video thật, thêm URL, build lại và đọc validation report cùng SHA-256. Khi đó mới chốt upload draft và review thông tin đã import.
+Confirm independent sign-in and OAuth, populate synthetic fixtures and record approval mode for each test round. Full / Direct execution does not mean every write enters a queue. Select the bundle license and demo hosting destination; record real fixture IDs. Resolve findings for the intended catalog, run tests and record a real video. Add its verified URL, rebuild, inspect validation and hashes, and only then finalize an authorized draft upload.

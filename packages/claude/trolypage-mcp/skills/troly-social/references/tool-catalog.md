@@ -1,22 +1,24 @@
 # Current source tool reference
 
+Human-readable source descriptions have been translated into English. Tool identifiers and contracts are unchanged; live server wording may differ.
+
 Source snapshot: 2026-10-19. Tools are filtered by the connected workspace. A listed capability is not proof of entitlement or successful execution.
 
 | Tool | Module | Declared annotation(s) | Description |
 | --- | --- | --- | --- |
-| `list-social-accounts` | social | readOnlyHint=true | Danh sách tài khoản MXH đã kết nối của workspace (Facebook, TikTok, YouTube, LinkedIn...). |
-| `list-social-posts` | social | readOnlyHint=true | Danh sách bài đăng MXH: lọc theo trạng thái (draft, scheduled, published, failed), tìm theo tiêu đề/nội dung, lịch đăng. |
-| `get-social-post` | social | readOnlyHint=true | Chi tiết một bài đăng MXH: nội dung, nền tảng đích, trạng thái từng target, log lỗi gần nhất. |
-| `create-social-post` | social | destructiveHint=true, openWorldHint=true | Soạn bài đăng MXH cho tài khoản đã kết nối. Bỏ scheduled_at để lưu nháp; có scheduled_at là yêu cầu xuất bản tự động và cần duyệt ở chế độ Hybrid/Strict. Đăng ngay dùng publish-social-post. |
-| `update-social-post` | social | destructiveHint=true | Sửa bài đăng MXH đang ở trạng thái nháp hoặc đã lên lịch. |
-| `cancel-social-post` | social | destructiveHint=true | Xóa bài đăng MXH chưa đăng (nháp/lịch). Bài đã publish không xóa được. |
-| `publish-social-post` | social | destructiveHint=true, openWorldHint=true | Đăng thật bài đăng lên các nền tảng đã chọn (chạy bất đồng bộ qua queue). Bài cũ liên kết CampaignTask cần duyệt nội dung qua approve-social-post trước; bài nháp tạo trực tiếp qua MCP không cần bước này. |
+| `list-social-accounts` | social | readOnlyHint=true | List connected workspace social accounts (Facebook, TikTok, YouTube, LinkedIn, etc.). |
+| `list-social-posts` | social | readOnlyHint=true | List social posts with status (draft, scheduled, published, failed), title/content search and schedule filters. |
+| `get-social-post` | social | readOnlyHint=true | Social post details: content, target platforms, per-target status and latest errors. |
+| `create-social-post` | social | destructiveHint=true, openWorldHint=true | Compose a post for connected accounts. Omit scheduled_at to save a draft; setting it requests automatic publication and requires approval in Hybrid/Strict mode. Use publish-social-post to publish now. |
+| `update-social-post` | social | destructiveHint=true | Edit a draft or scheduled social post. |
+| `cancel-social-post` | social | destructiveHint=true | Delete an unpublished draft/scheduled post. Published posts cannot be deleted with this tool. |
+| `publish-social-post` | social | destructiveHint=true, openWorldHint=true | Publish to selected platforms asynchronously through the queue. Existing posts linked to CampaignTask require content approval through approve-social-post; drafts created directly through MCP do not require that step. |
 | `approve-social-post` | social | destructiveHint=true | Approve reviewed content of a legacy post linked to a campaign task, without publishing it. Read get-social-post first and pass its edit_revision as expected_edit_revision. Use only after the user approves the content in chat. Drafts created directly through MCP do not need this step. |
-| `retry-failed-post` | social | destructiveHint=true | Đăng lại các target bị lỗi của một bài đăng (reset về pending rồi đưa vào queue). |
-| `social-post-analytics` | social | readOnlyHint=true | Tổng hợp hiệu quả bài đăng MXH: số bài, lượt like/comment/share/click, series theo ngày, top bài. |
-| `generate-caption` | social | readOnlyHint=true | AI viết caption cho bài đăng MXH theo chủ đề, nền tảng và giọng điệu (dùng brand context của workspace). |
-| `generate-hashtags` | social | readOnlyHint=true | AI đề xuất hashtags cho nội dung bài đăng theo nền tảng. |
-| `suggest-best-time` | social | readOnlyHint=true | AI gợi ý khung giờ đăng bài tốt nhất cho một nền tảng theo ngành nghề. |
+| `retry-failed-post` | social | destructiveHint=true | Retry failed post targets, resetting them to pending and enqueueing them again. |
+| `social-post-analytics` | social | readOnlyHint=true | Social post metrics: counts, likes, comments, shares, clicks, daily series and top posts. |
+| `generate-caption` | social | readOnlyHint=true | Generate an AI caption for a topic, platform and tone using workspace brand context. |
+| `generate-hashtags` | social | readOnlyHint=true | Suggest hashtags for post content and platform using AI. |
+| `suggest-best-time` | social | readOnlyHint=true | Suggest posting times for a platform and industry using AI. |
 | `duplicate-social-post` | social | destructiveHint=true | duplicate social post |
 | `list-social-post-logs` | social | readOnlyHint=true | list social post logs |
 | `social-capabilities` | social | readOnlyHint=true | social capabilities |

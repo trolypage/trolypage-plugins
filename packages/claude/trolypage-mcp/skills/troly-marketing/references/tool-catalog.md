@@ -1,22 +1,24 @@
 # Current source tool reference
 
+Human-readable source descriptions have been translated into English. Tool identifiers and contracts are unchanged; live server wording may differ.
+
 Source snapshot: 2026-10-19. Tools are filtered by the connected workspace. A listed capability is not proof of entitlement or successful execution.
 
 | Tool | Module | Declared annotation(s) | Description |
 | --- | --- | --- | --- |
-| `list-strategies` | marketing | readOnlyHint=true | Danh sách chiến lược marketing của workspace. |
-| `get-strategy` | marketing | readOnlyHint=true | Chi tiết một chiến lược marketing: mục tiêu, channel mix, giá trị đề xuất, campaign con. |
-| `create-strategy` | marketing | destructiveHint=true, openWorldHint=true | Tạo chiến lược marketing mới (draft). Từ strategy có thể sinh campaign, broadcast qua các tool khác. |
-| `list-campaigns` | marketing | readOnlyHint=true | Danh sách chiến dịch của workspace (có thể lọc theo strategy). |
-| `create-campaign` | marketing | destructiveHint=true, openWorldHint=true | Tạo chiến dịch mới trong một chiến lược (draft/planned). |
-| `list-broadcasts` | marketing | readOnlyHint=true | Danh sách broadcast (tin nhắn hàng loạt) của workspace kèm trạng thái duyệt. |
-| `create-broadcast` | marketing | destructiveHint=true, openWorldHint=true | Soạn broadcast mới (draft kèm ước tính số người nhận). Gửi thật là bước submit-broadcast → chủ shop duyệt trong app. |
-| `submit-broadcast` | marketing | destructiveHint=true, openWorldHint=true | Gửi broadcast đã soạn vào hàng đợi chuẩn bị và duyệt (draft → preparing → pending_review). Chủ shop duyệt trong TrolyPage rồi broadcast mới được gửi thật — AI không bao giờ tự gửi hàng loạt. |
-| `broadcast-stats` | marketing | readOnlyHint=true | Thống kê một broadcast: số đã gửi, giao thành công, thất bại. |
-| `list-nurture-sequences` | marketing | readOnlyHint=true | Danh sách chuỗi nurture (chăm sóc khách tự động nhiều bước) của workspace. |
-| `create-nurture-sequence` | marketing | destructiveHint=true, openWorldHint=true | Tạo chuỗi nurture mới (draft). Chuỗi tự động chăm sóc khách theo trigger (tag mới, khách mới, sinh nhật...). |
-| `list-followups` | marketing | readOnlyHint=true | Danh sách follow-up (nhắc lại khách chưa chốt) của workspace. |
-| `create-followup-suggestion` | marketing | destructiveHint=true, openWorldHint=true | Tạo đề xuất follow-up cho khách chưa chốt (chờ duyệt trước khi kích hoạt). |
+| `list-strategies` | marketing | readOnlyHint=true | List workspace marketing strategies. |
+| `get-strategy` | marketing | readOnlyHint=true | Marketing strategy details: objectives, channel mix, value proposition and child campaigns. |
+| `create-strategy` | marketing | destructiveHint=true, openWorldHint=true | Create a draft marketing strategy. Other tools can create its campaigns and broadcasts. |
+| `list-campaigns` | marketing | readOnlyHint=true | List workspace campaigns, optionally filtered by strategy. |
+| `create-campaign` | marketing | destructiveHint=true, openWorldHint=true | Create a draft/planned campaign within a strategy. |
+| `list-broadcasts` | marketing | readOnlyHint=true | List workspace broadcasts and approval states. |
+| `create-broadcast` | marketing | destructiveHint=true, openWorldHint=true | Compose a draft broadcast with an estimated audience size. Actual sending requires submit-broadcast and shop-owner approval in the app. |
+| `submit-broadcast` | marketing | destructiveHint=true, openWorldHint=true | Submit a composed broadcast for preparation and review (draft -> preparing -> pending_review). Actual sending requires shop-owner approval in TrolyPage; the AI does not autonomously send bulk messages. |
+| `broadcast-stats` | marketing | readOnlyHint=true | Broadcast statistics: sent, delivered and failed counts. |
+| `list-nurture-sequences` | marketing | readOnlyHint=true | List workspace nurture sequences for automated multistep customer care. |
+| `create-nurture-sequence` | marketing | destructiveHint=true, openWorldHint=true | Create a draft nurture sequence triggered by events such as new tags, new customers or birthdays. |
+| `list-followups` | marketing | readOnlyHint=true | List workspace follow-ups for customers who have not completed a purchase. |
+| `create-followup-suggestion` | marketing | destructiveHint=true, openWorldHint=true | Propose a customer follow-up; requires approval before activation. |
 | `cancel-broadcast` | marketing | destructiveHint=true | cancel broadcast |
 | `delete-broadcast` | marketing | destructiveHint=true | delete broadcast |
 | `delete-campaign` | marketing | destructiveHint=true | delete campaign |

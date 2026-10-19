@@ -1,5 +1,7 @@
 # Current source tool reference
 
+Human-readable source descriptions have been translated into English. Tool identifiers and contracts are unchanged; live server wording may differ.
+
 Source snapshot: 2026-10-19. Tools are filtered by the connected workspace. A listed capability is not proof of entitlement or successful execution.
 
 | Tool | Module | Declared annotation(s) | Description |
@@ -21,16 +23,16 @@ Source snapshot: 2026-10-19. Tools are filtered by the connected workspace. A li
 | `list-integration-action-executions` | workspace | readOnlyHint=true | Manage Integration Hub actions in the current workspace without revealing credentials. |
 | `get-integration-action-execution` | workspace | readOnlyHint=true | Manage Integration Hub action in the current workspace without revealing credentials. |
 | `replay-integration-delivery` | workspace | destructiveHint=true | Manage Integration Hub replay in the current workspace without revealing credentials. |
-| `list-channels` | workspace | readOnlyHint=true | Tổng quan các kênh nhắn tin đã kết nối của workspace (Messenger, Zalo OA, Zalo cá nhân, Telegram, WhatsApp, Email, WebChat...) kèm số lượng và trạng thái. |
-| `channel-status` | workspace | readOnlyHint=true | Trạng thái chi tiết của một loại kênh: danh sách kết nối, active hay lỗi. |
-| `list-agents` | agents | readOnlyHint=true | Danh sách AI Agents của workspace: id, tên, provider/model, trạng thái. |
-| `agent-status` | workspace | readOnlyHint=true | Trạng thái chi tiết một AI Agent: cấu hình model, số tools, số node tri thức, trạng thái hoạt động. |
-| `list-notifications` | workspace | readOnlyHint=true | Danh sách thông báo nội bộ của workspace (chưa đọc trước, mới nhất trước). |
-| `ack-notification` | workspace | destructiveHint=true, idempotentHint=true | Đánh dấu một thông báo nội bộ là đã đọc. |
-| `resolve-notification` | workspace | destructiveHint=true | Xử lý xong một thông báo cần hành động (acknowledge). |
-| `list-support-tickets` | workspace | readOnlyHint=true | Danh sách support ticket workspace gửi cho đội TrolyPage. |
-| `create-support-ticket` | workspace | destructiveHint=true, openWorldHint=true | Tạo support ticket mới gửi đội hỗ trợ TrolyPage. |
-| `reply-support-ticket` | workspace | destructiveHint=true, openWorldHint=true | Trả lời một support ticket đang mở. |
+| `list-channels` | workspace | readOnlyHint=true | Overview of connected messaging channels (Messenger, Zalo OA, Zalo personal, Telegram, WhatsApp, Email, WebChat, etc.), with counts and states. |
+| `channel-status` | workspace | readOnlyHint=true | Detailed connection state for one channel type, including active/error status. |
+| `list-agents` | agents | readOnlyHint=true | List workspace AI Agents: ID, name, provider/model and status. |
+| `agent-status` | workspace | readOnlyHint=true | Detailed AI Agent status: model configuration, tool count, knowledge-node count and active state. |
+| `list-notifications` | workspace | readOnlyHint=true | List internal workspace notifications, unread first and newest first. |
+| `ack-notification` | workspace | destructiveHint=true, idempotentHint=true | Mark an internal notification as read. |
+| `resolve-notification` | workspace | destructiveHint=true | Acknowledge an internal notification that requires action. |
+| `list-support-tickets` | workspace | readOnlyHint=true | List support tickets the workspace sent to TrolyPage. |
+| `create-support-ticket` | workspace | destructiveHint=true, openWorldHint=true | Create a support ticket for the TrolyPage support team. |
+| `reply-support-ticket` | workspace | destructiveHint=true, openWorldHint=true | Reply to an open support ticket. |
 | `get-support-ticket` | workspace | readOnlyHint=true | Read a workspace support ticket and customer-visible replies/attachments. Internal support notes are excluded. Does not mark it read. |
 | `list-mcp-actions` | workspace | readOnlyHint=true | Find pending/executed/failed MCP operations in permitted workspace modules. Recover action IDs instead of resubmitting a write. Executed means tool completion; inspect business result for actual delivery status. |
 | `run-agent-conversation` | agents | destructiveHint=true, openWorldHint=true | Run a conversation through the actual agent runtime. This consumes AI quota, records conversation data and may execute enabled business tools. It is NOT a sandbox. Returns text, image/actions and errors; delivery_verified=false because no channel delivery is tested. Use a dedicated test subscriber and avoid real orders/messages unless explicitly intended. |

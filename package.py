@@ -104,7 +104,7 @@ if page_path.exists():
         sections=[]
         for path in sorted((ROOT/'review').glob('0*.md')):
             content=markdown.markdown(path.read_text(encoding='utf-8'),extensions=['tables','fenced_code'])
-            sections.append(f'<section id="{path.stem}"><a class="file" href="review/{path.name}">Mở file Markdown</a>{content}</section>')
+            sections.append(f'<section id="{path.stem}"><a class="file" href="review/{path.name}">Open Markdown file</a>{content}</section>')
         page_path.write_text(page[:start]+''.join(sections)+page[end:],encoding='utf-8')
         page=page_path.read_text(encoding='utf-8')
         navigation=''.join(f'<a href="#{path.stem}">{html.escape(path.stem)}</a>' for path in sorted((ROOT/'review').glob('0*.md')))

@@ -1,3 +1,5 @@
+English-normalized reference: captured non-English labels translated on 2026-10-19. Not a verbatim capture.
+
 {
   "requested_url": "https://trolypage.com/features",
   "final_url": "https://trolypage.com/features",
@@ -293,7 +295,7 @@
   "status": 200,
   "content_type": "text/html; charset=utf-8",
   "x_robots_tag": null,
-  "title": "Đăng bài tự động, quản lý tin nhắn đa kênh | TrolyPage",
+  "title": "Scheduled posting and multichannel inbox | TrolyPage",
   "language": "vi",
   "meta": [
     {
@@ -305,7 +307,7 @@
     },
     {
       "name": "description",
-      "content": "Hẹn giờ đăng bài trên nhiều kênh, quản lý tin nhắn Messenger và Zalo OA trong một hộp thư. Xem AI chatbot, Website Chat, tạo đơn và giao vận của TrolyPage."
+      "content": "Schedule posts across channels and manage Messenger and Zalo OA messages in one inbox. Explore TrolyPage AI chatbot, Website Chat, orders and shipping."
     },
     {
       "name": "theme-color",
@@ -325,11 +327,11 @@
     },
     {
       "property": "og:title",
-      "content": "Đăng bài tự động, quản lý tin nhắn đa kênh | TrolyPage"
+      "content": "Scheduled posting and multichannel inbox | TrolyPage"
     },
     {
       "property": "og:description",
-      "content": "Hẹn giờ đăng bài trên nhiều kênh, quản lý tin nhắn Messenger và Zalo OA trong một hộp thư. Xem AI chatbot, Website Chat, tạo đơn và giao vận của TrolyPage."
+      "content": "Schedule posts across channels and manage Messenger and Zalo OA messages in one inbox. Explore TrolyPage AI chatbot, Website Chat, orders and shipping."
     },
     {
       "property": "og:url",
@@ -345,7 +347,7 @@
     },
     {
       "property": "og:image:alt",
-      "content": "TrolyPage: Từ tin nhắn đến đơn hàng"
+      "content": "TrolyPage: From messages to orders"
     },
     {
       "property": "og:locale",
@@ -361,11 +363,11 @@
     },
     {
       "name": "twitter:title",
-      "content": "Đăng bài tự động, quản lý tin nhắn đa kênh | TrolyPage"
+      "content": "Scheduled posting and multichannel inbox | TrolyPage"
     },
     {
       "name": "twitter:description",
-      "content": "Hẹn giờ đăng bài trên nhiều kênh, quản lý tin nhắn Messenger và Zalo OA trong một hộp thư. Xem AI chatbot, Website Chat, tạo đơn và giao vận của TrolyPage."
+      "content": "Schedule posts across channels and manage Messenger and Zalo OA messages in one inbox. Explore TrolyPage AI chatbot, Website Chat, orders and shipping."
     },
     {
       "name": "twitter:image",
@@ -373,7 +375,7 @@
     },
     {
       "name": "twitter:image:alt",
-      "content": "TrolyPage: Từ tin nhắn đến đơn hàng"
+      "content": "TrolyPage: From messages to orders"
     }
   ],
   "links": [
@@ -404,23 +406,23 @@
     },
     {
       "tag": "h3",
-      "text": "Thông tin liên hệ"
+      "text": "Contact information"
     },
     {
       "tag": "h3",
-      "text": "Theo dõi chúng tôi"
+      "text": "Follow us"
     },
     {
       "tag": "h3",
-      "text": "Hệ sinh thái Troly"
+      "text": "Troly ecosystem"
     },
     {
       "tag": "h2",
-      "text": "Từ tín hiệu đến tăng trưởng"
+      "text": "From signals to growth"
     },
     {
       "tag": "h2",
-      "text": "Kết nối TrolyPage"
+      "text": "Connect TrolyPage"
     },
     {
       "tag": "h2",
@@ -428,147 +430,147 @@
     },
     {
       "tag": "h3",
-      "text": "Chương trình"
+      "text": "Programs"
     },
     {
       "tag": "h3",
-      "text": "Tài nguyên"
+      "text": "Resources"
     },
     {
       "tag": "h2",
-      "text": "Chọn ngôn ngữ"
+      "text": "Choose a language"
     },
     {
       "tag": "h1",
-      "text": "Đăng bài tự động, quản lý tin nhắn và chốt đơn trong một luồng."
+      "text": "Schedule posts, manage messages and create orders in one workflow."
     },
     {
       "tag": "h2",
-      "text": "Các tính năng nổi bật"
+      "text": "Featured capabilities"
     },
     {
       "tag": "h2",
-      "text": "Đăng bài tự động theo lịch trên nhiều kênh"
+      "text": "Schedule posts automatically across multiple channels"
     },
     {
       "tag": "h3",
-      "text": "Điểm nổi bật"
+      "text": "Highlights"
     },
     {
       "tag": "h2",
-      "text": "Quản lý bình luận mọi bài đăng"
+      "text": "Manage comments across posts"
     },
     {
       "tag": "h3",
-      "text": "Điểm nổi bật"
+      "text": "Highlights"
     },
     {
       "tag": "h2",
-      "text": "Quản lý tin nhắn Messenger và Zalo OA trong một hộp thư"
+      "text": "Manage Messenger and Zalo OA messages in one inbox"
     },
     {
       "tag": "h3",
-      "text": "Điểm nổi bật"
+      "text": "Highlights"
     },
     {
       "tag": "h2",
-      "text": "Trả lời tin nhắn tự động bằng AI Chatbot"
+      "text": "Reply automatically with an AI chatbot"
     },
     {
       "tag": "h3",
-      "text": "Điểm nổi bật"
+      "text": "Highlights"
     },
     {
       "tag": "h2",
-      "text": "Gắn chat trực tuyến lên website"
+      "text": "Add live chat to your website"
     },
     {
       "tag": "h3",
-      "text": "Điểm nổi bật"
+      "text": "Highlights"
     },
     {
       "tag": "h2",
-      "text": "Tạo đơn ngay trong cuộc trò chuyện"
+      "text": "Create orders directly in the conversation"
     },
     {
       "tag": "h3",
-      "text": "Điểm nổi bật"
+      "text": "Highlights"
     },
     {
       "tag": "h2",
-      "text": "Xem phí, tạo vận đơn và theo dõi giao hàng"
+      "text": "Get rates, create shipments and track delivery"
     },
     {
       "tag": "h3",
-      "text": "Điểm nổi bật"
+      "text": "Highlights"
     },
     {
       "tag": "h2",
-      "text": "Nhắn lại khi khách rảnh"
+      "text": "Follow up when customers are available"
     },
     {
       "tag": "h3",
-      "text": "Điểm nổi bật"
+      "text": "Highlights"
     },
     {
       "tag": "h2",
-      "text": "Xem báo cáo tin nhắn, đơn hàng và bài đăng"
+      "text": "View reports for messages, orders and posts"
     },
     {
       "tag": "h3",
-      "text": "Điểm nổi bật"
+      "text": "Highlights"
     },
     {
       "tag": "h2",
-      "text": "Kênh và đơn vị giao hàng"
+      "text": "Channels and delivery providers"
     },
     {
       "tag": "h3",
-      "text": "Đăng bài tự động"
+      "text": "Scheduled posting"
     },
     {
       "tag": "h3",
-      "text": "Quản lý bình luận"
+      "text": "Comment management"
     },
     {
       "tag": "h3",
-      "text": "Quản lý tin nhắn"
+      "text": "Message management"
     },
     {
       "tag": "h3",
-      "text": "LiveChat trên website"
+      "text": "Website live chat"
     },
     {
       "tag": "h3",
-      "text": "Giao hàng trên toàn quốc"
+      "text": "Nationwide delivery"
     },
     {
       "tag": "h2",
-      "text": "Câu hỏi thường gặp"
+      "text": "Frequently asked questions"
     },
     {
       "tag": "h2",
-      "text": "Dùng thử TrolyPage"
+      "text": "Try TrolyPage"
     },
     {
       "tag": "h3",
-      "text": "Liên kết"
+      "text": "Links"
     },
     {
       "tag": "h3",
-      "text": "Năng lực"
+      "text": "Capabilities"
     },
     {
       "tag": "h3",
-      "text": "Doanh nghiệp"
+      "text": "Business"
     },
     {
       "tag": "h3",
-      "text": "Liên hệ"
+      "text": "Contact"
     },
     {
       "tag": "h2",
-      "text": "Bạn muốn TrolyPage giúp gì?"
+      "text": "What would you like TrolyPage to help with?"
     }
   ],
   "image_count": 43,
@@ -582,7 +584,7 @@
   "status": 200,
   "content_type": "text/plain",
   "x_robots_tag": null,
-  "text_preview": "# Trợ Lý Page - robots.txt\nUser-agent: *\nAllow: /\nAllow: /blog\nAllow: /blog/*\nAllow: /terms-of-service\nAllow: /privacy-policy\nAllow: /refund-policy\nAllow: /data-deletion\nAllow: /vi/dieu-khoan-dich-vu\nAllow: /vi/chinh-sach-bao-mat\nAllow: /vi/chinh-sach-hoan-tien\nAllow: /vi/xoa-du-lieu\n\n# Block admin/app areas\nDisallow: /app/\nDisallow: /api/\nDisallow: /webhook/\nDisallow: /webchat/\n\n# Sitemap\nSitemap: https://trolypage.com/sitemap.xml\n\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\n"
+  "text_preview": "# TrolyPage - robots.txt\nUser-agent: *\nAllow: /\nAllow: /blog\nAllow: /blog/*\nAllow: /terms-of-service\nAllow: /privacy-policy\nAllow: /refund-policy\nAllow: /data-deletion\nAllow: /vi/dieu-khoan-dich-vu\nAllow: /vi/chinh-sach-bao-mat\nAllow: /vi/chinh-sach-hoan-tien\nAllow: /vi/xoa-du-lieu\n\n# Block admin/app areas\nDisallow: /app/\nDisallow: /api/\nDisallow: /webhook/\nDisallow: /webchat/\n\n# Sitemap\nSitemap: https://trolypage.com/sitemap.xml\n\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\n"
 }
 {
   "requested_url": "https://trolypage.com/sitemap.xml",

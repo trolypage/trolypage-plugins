@@ -87,13 +87,7 @@
       },
       "publication": {
         "countries": [],
-        "release_notes": "Review candidate 1.0.1: retain the existing trolypage-mcp identity; use portable OpenAI packaging, OAuth discovery, the mobile app icon, updated tool references, English/Vietnamese listing text, commerce disclosure and review cases. Clarify customer support, CRM, social scheduling and order-management use cases for people unfamiliar with TrolyPage. Authenticated testing and demo recording are pending.",
-        "translations": {
-          "vi-VN": {
-            "subtitle": "AI chăm khách, CRM & đăng bài",
-            "description": "TrolyPage là phần mềm AI chăm sóc khách hàng, quản lý CRM, lên lịch bài đăng mạng xã hội và xử lý đơn hàng cho doanh nghiệp nhỏ. Hội thoại, sản phẩm, đơn hàng, nội dung và công việc chăm sóc lại khách được quản lý trong một workspace.\n\nBản tích hợp kết nối trợ lý AI với workspace TrolyPage sẵn có: tìm khách và tóm tắt hội thoại, cập nhật ghi chú CRM nội bộ, kiểm tra giá và tồn kho, tạo đơn chờ shop duyệt, so sánh báo cáo bán hàng. Các module được cấp quyền còn hỗ trợ bài nháp, chiến dịch, tri thức, kênh, AI Agent, tài nguyên, workflow và tích hợp.\n\nĐăng nhập OAuth, chọn workspace bạn quản trị và dùng gói có quyền MCP tương ứng. Một số tác vụ AI/media tiêu hao quota; khả năng kênh, vận chuyển và thanh toán tùy tài khoản, nhà cung cấp và khu vực. Giá, tồn kho, tổng tiền và trạng thái thanh toán do TrolyPage xác nhận. Phân biệt bản nháp, chờ duyệt, đã thực thi và giao ra kênh. Thanh toán diễn ra bên ngoài trợ lý AI; có QR hoặc yêu cầu chờ xử lý chưa có nghĩa đã nhận tiền."
-          }
-        }
+        "release_notes": "Review candidate 1.0.1: retain the existing trolypage-mcp identity; use portable OpenAI packaging, OAuth discovery, the mobile app icon, updated tool references, English listing text, commerce disclosure and review cases. Clarify customer support, CRM, social scheduling and order-management use cases for people unfamiliar with TrolyPage. Authenticated testing and demo recording are pending. Use English throughout the distribution and review materials; omit optional localized listing overrides. No runtime capabilities changed."
       }
     }
   },
