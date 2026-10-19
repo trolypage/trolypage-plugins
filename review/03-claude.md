@@ -54,3 +54,9 @@ The separate MCP connector has a browser draft populated through the compliance 
 - https://claude.com/docs/plugins/pre-submission-checklist
 - https://claude.com/docs/connectors/building/review-criteria
 - https://claude.com/docs/connectors/building/submission
+
+## Latest verified result
+
+Claude accepted bundle 1.0.2 at commit `4ac9cfa`, detected eight skills and one MCP connection, and passed format, directory policy and security scanning. The remaining manifest warning explains that Claude Code ignores privacyPolicyUrl while the directory reads it; the portal says no action is needed. Publish was requested for 1.0.2 and is waiting for an Anthropic reviewer. Nothing is live yet.
+
+The separate connector draft now targets `/mcp/claude`, with English listing, use cases, company, OAuth and data disclosures completed through Compliance. Its self-tested checkbox and seven policy declarations remain unchecked. Five read-only tools succeeded through the actual Claude connector; the remaining tool executions are not proven. See `review/claude-directory-tool-test-ledger.csv`. The original full-catalog ledger remains a separate historical/full-endpoint artifact.

@@ -30,7 +30,7 @@ Submission contact: **Alex Nguyen**, **support.mcp@trolypage.com**. Public suppo
 
 ## Current verification
 
-The reviewer can access the dedicated workspace with an Owner role and Scale plan. Claude OAuth and live catalog discovery are now verified for TrolyPage Reviewer: 270 tools, 12 prompts and 12 resources. Fixtures, authenticated tool-execution tests and a real demo video remain pending; OpenAI OAuth is not yet verified. The observed write mode is Full / Direct execution. Account credentials are excluded from this repository and all archives.
+The reviewer workspace has an Owner role and Scale plan. The dedicated Claude directory connection completed OAuth and live discovery of 180 tools (90 read, 90 write). Five read-only calls succeeded through Claude: channels, products, customer search, agents and broadcast senders. The workspace has three agents but no connected channels/senders, products or matching review customer. Populated business workflows, remaining tool tests, a real demo and OpenAI OAuth remain pending. The observed write mode is Full / Direct execution. Credentials are excluded from this repository and all archives.
 
 Local packaging checks pass, including the Agent Plugins core schemas. These checks do not establish live behavior, security compliance or directory approval. The published Privacy Policy now identifies TROLYPAGE COMPANY LIMITED in Hanoi. A dedicated Claude directory profile and complete tool annotation serialization were deployed on October 19; see [release evidence](evidence/claude-directory-release-20261019.md). Authenticated all-tool tests and platform scan results remain separate requirements. Muse's data-processing questionnaire remains incomplete.
 

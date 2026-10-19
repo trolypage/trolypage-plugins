@@ -213,7 +213,10 @@ body{margin:0;background:#f5f7fb;color:#17223b;font:16px/1.65 system-ui,sans-ser
 <li>https://claude.com/docs/plugins/pre-submission-checklist</li>
 <li>https://claude.com/docs/connectors/building/review-criteria</li>
 <li>https://claude.com/docs/connectors/building/submission</li>
-</ul></section><section id="04-muse"><a class="file" href="review/04-muse.md">Open Markdown file</a><h1>Muse submission form draft</h1>
+</ul>
+<h2>Latest verified result</h2>
+<p>Claude accepted bundle 1.0.2 at commit <code>4ac9cfa</code>, detected eight skills and one MCP connection, and passed format, directory policy and security scanning. The remaining manifest warning explains that Claude Code ignores privacyPolicyUrl while the directory reads it; the portal says no action is needed. Publish was requested for 1.0.2 and is waiting for an Anthropic reviewer. Nothing is live yet.</p>
+<p>The separate connector draft now targets <code>/mcp/claude</code>, with English listing, use cases, company, OAuth and data disclosures completed through Compliance. Its self-tested checkbox and seven policy declarations remain unchecked. Five read-only tools succeeded through the actual Claude connector; the remaining tool executions are not proven. See <code>review/claude-directory-tool-test-ledger.csv</code>. The original full-catalog ledger remains a separate historical/full-endpoint artifact.</p></section><section id="04-muse"><a class="file" href="review/04-muse.md">Open Markdown file</a><h1>Muse submission form draft</h1>
 <p>Portal: https://platform.muse.ai/submission. The intake was submitted on October 19, 2026 after the owner confirmed the three displayed authorization/terms statements. The portal confirmed receipt. OAuth credentials were subsequently submitted securely with DCR, PKCE, scope mcp:use and the dedicated reviewer account. Business verification was completed using the work-email verification flow. The follow-up overview shows two of three requirements complete; the data-processing questionnaire is a saved draft. Submission is not approval.</p>
 <h2>Overview: observed form fields</h2>
 <table>
@@ -481,7 +484,7 @@ Add an internal CRM note without contacting the customer.
 </tr>
 <tr>
 <td>Endpoint/discovery</td>
-<td>Public status and OAuth metadata accessible; Claude OAuth and live catalog discovery verified for TrolyPage Reviewer (270 tools, 12 prompts, 12 resources). OpenAI OAuth remains unverified</td>
+<td>Claude directory OAuth and 180-tool live discovery verified; four advisory documentation suggestions remain. OpenAI OAuth remains unverified</td>
 </tr>
 <tr>
 <td>Reviewer account</td>
@@ -489,11 +492,11 @@ Add an internal CRM note without contacting the customer.
 </tr>
 <tr>
 <td>Demo workspace</td>
-<td>No products/orders or test fixtures; only the default support contact. Initial MCP UI preflight showed Full / Direct execution and no OAuth apps/API keys. Claude OAuth was subsequently authorized; no successful business-tool call has been recorded. Write-policy configuration unchanged</td>
+<td>Three agents, no connected channels/senders, no products and no matching Review Customer A. Five read-only calls succeeded through Claude. Full / Direct execution policy unchanged; populated review workflows remain pending</td>
 </tr>
 <tr>
 <td>Authenticated tool tests</td>
-<td>All 270 tools and all five positive/three negative cases remain Not run</td>
+<td>Five directory read-only smoke calls passed; 175 directory tools and populated positive/negative business cases remain unrun. Separate directory ledger provided</td>
 </tr>
 <tr>
 <td>Video</td>
@@ -513,19 +516,19 @@ Add an internal CRM note without contacting the customer.
 </tr>
 </tbody>
 </table>
-<h2>Engineering findings for the submitted catalog</h2>
+<h2>Engineering validation and remaining gaps</h2>
 <ol>
-<li><strong>OpenAI annotations:</strong> every one of the 270 locally serialized tools lacks at least one explicit boolean among readOnlyHint, destructiveHint and openWorldHint. Fix serialization/attributes using the actual behavior of each tool, then verify production <code>tools/list</code>. Adding false values to a document does not fix the server. See annotation-gaps.csv.</li>
-<li><strong>Claude image generation:</strong> the unified endpoint exposes <code>generate-social-image</code>. Enforce a compatible catalog/profile and retest before submission. Bundled skills do not restrict remote tools.</li>
-<li><strong>Claude operation dispatcher:</strong> <code>execute-integration-operation</code> declares only openWorldHint and may execute configured HTTP operations. Assess a read/write split and correct annotations, or exclude it. Do not bypass media or financial restrictions through this tool.</li>
-<li><strong>Muse read-only access:</strong> discovery advertises <code>mcp:use</code>; the inspected read-only filter applies to API-token <code>mcp:read</code>. Resolve OAuth read-only behavior before claiming support. Do not replace required OpenAI OAuth with an API key in the submission form.</li>
-<li><strong>Schema extraction:</strong> 267/270 input schemas serialized in an isolated container without .env/DB. Inspect the remaining three at runtime. This extraction limit is not proof of a production failure; authenticated wire annotations remain unverified.</li>
+<li>Tool serialization now supplies explicit readOnlyHint, destructiveHint and openWorldHint booleans and a title. Conservative defaults apply when a tool has not declared a more specific hint. Directory live discovery confirmed the annotation fixes; OpenAI's own scan remains pending.</li>
+<li>The dedicated Claude catalog enforces its allowlist at discovery and execution, excludes AI media and arbitrary dispatchers, and provides English metadata. The full endpoint retains Gen AI. The previous Claude catch-all flag no longer appears; four advisory documentation suggestions remain.</li>
+<li>Final local MCP feature/unit regressions passed <strong>249 tests / 36,085 assertions</strong>. A live smoke test found internal product pagination URLs; the controller-dispatch request now preserves the public MCP request URL, with eight commerce tests passing and a real Claude retest confirming public URLs. These tests do not replace all-tool authenticated business execution.</li>
+<li>Muse OAuth read-only behavior and its exact callback/origin still require verification before claiming support. No permissive redirect wildcard or environment change was introduced.</li>
+<li>The published MCP guide still needs synchronization with actual module routes, export writes and approval behavior.</li>
 </ol>
-<p>No MCP server behavior was changed during this distribution work. Production changes were limited to the public OpenAI domain-challenge file and the owner-approved Privacy Policy identity/contact correction. The engineering findings remain unresolved and are not proven fixed by a submission receipt.</p>
+<p>Production changes now include the dedicated directory server, annotation/schema corrections, a read-only broadcast sender lookup and the pagination fix, with private rollback copies. No Gen AI handlers or environment variables were changed. Earlier identity/contact and domain-verification changes remain in place.</p>
 <h2>Platform-specific work</h2>
 <ul>
 <li><strong>OpenAI:</strong> domain challenge is verified. OAuth, tool scans, reviewer access, video and final attestations remain pending. The draft ZIP can be reviewed locally but is not submission-ready.</li>
-<li><strong>Claude bundle:</strong> submitted for review after successful repository validation and explicit owner confirmation of organization and all four attestations. Portal receipt shows the security-scan stage. No version is live. Separate connector OAuth and discovery now work; its draft is populated through compliance. Mandatory no-AI-media and description-policy declarations and all-tool tests remain unmet. The portal also flags save-integration-operation and 275 suggestions. Public source: https://github.com/trolypage/trolypage-plugins. Do not upload the application backend.</li>
+<li><strong>Claude bundle:</strong> 1.0.2 at <code>4ac9cfa</code> passed format, directory-policy and security scans. Publish requested; waiting for an Anthropic reviewer, not live. The separate connector draft uses the new profile and remains incomplete because all-tool testing and its own policy declarations have not been completed. Public source: https://github.com/trolypage/trolypage-plugins.</li>
 <li><strong>Muse:</strong> intake submitted with payments accepted and external payment explicitly disclosed; the owner confirmed the displayed terms. DCR/PKCE integration credentials and reviewer access were submitted securely. Business verification is complete. The overview shows 2/3 follow-up requirements complete; data-processing questionnaire, fixtures, end-to-end tests and any further reviewer requirements remain pending.</li>
 </ul>
 <h2>Next preparation steps</h2>
