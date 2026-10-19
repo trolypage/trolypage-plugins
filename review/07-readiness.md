@@ -11,7 +11,8 @@ Trạng thái bộ hồ sơ: **REVIEW DRAFT**. Đã chuẩn bị source/ZIP/nộ
 | Metadata / 5+3 cases / release / VI translation | Đã đưa vào OpenAI ZIP candidate |
 | Logo mobile | Đã copy bản gốc và tạo bản kích thước phù hợp; cần review hình và ảnh hưởng ở 32/64 px |
 | Endpoint/discovery | Public status và OAuth metadata mở được; chưa kiểm thử đăng nhập OAuth đầy đủ |
-| Reviewer account | Chủ tài khoản sẽ tạo sau |
+| Reviewer account | Đã nhận riêng; đã vào được workspace TrolyPage Reviewer, Scale, Owner. Cloudflare cần thao tác người dùng trong lần đăng nhập kiểm tra; chưa xác minh đăng nhập độc lập từ reviewer bên ngoài |
+| Workspace demo preflight | 0 products, 0 orders; contact duy nhất là hỗ trợ mặc định, chưa có fixtures. MCP UI hiển thị Full · Direct execution đang áp dụng, chưa có OAuth app/API key hay successful read-only call; chưa đổi cấu hình |
 | Authenticated tool tests | 270 tools chưa chạy; 5+3 ca đại diện chưa chạy |
 | Video | Mới có kịch bản và hướng dẫn quay; chưa có bản ghi/URL thực |
 | Live policy identity | Privacy section 13 và mobile support còn SkyNet Solution; Privacy còn địa chỉ 9243 Quail Creek Ln, Boulder, US, khác footer TROLYPAGE COMPANY LIMITED/Hà Nội. Xác nhận quan hệ pháp nhân hoặc sửa bản đã xuất bản. Không tự coi đây là đã sửa |
@@ -34,6 +35,6 @@ Không sửa server ứng dụng trong repo chuẩn bị hồ sơ này. Các fin
 - Claude connector: policy catalog, tool tests và reviewer access còn pending. Bundle còn cần license do owner chọn và portal validation; repo public đã tạo tại https://github.com/trolypage/trolypage-plugins. Không upload backend monorepo.
 - Muse: Payments category cần đối chiếu định nghĩa external payment; tech/review form bước sau chưa được thao tác; questionnaire, test account, host approvals và terms do owner hoàn tất.
 
-## Khi bạn gửi tài khoản demo
+## Bước tiếp theo với tài khoản demo
 
-Người phụ trách đã xác nhận là Alex Nguyen. Xác nhận tên/URL workspace, license và nơi host demo; điền fixture IDs thực. Hoàn tất các engineering/policy finding theo phạm vi gửi duyệt. Chạy test, quay video thật, thêm URL, build lại và đọc validation report cùng SHA-256. Khi đó mới chốt upload draft và review thông tin đã import.
+Người phụ trách đã xác nhận là Alex Nguyen. Tài khoản đã vào được workspace reviewer; cần kiểm tra việc đăng nhập độc lập và OAuth, chuẩn bị fixtures tổng hợp và ghi nhận approval mode phù hợp từng vòng test. Không coi Full · Direct execution là đã bật queue cho mọi write. Xác nhận license và nơi host demo; điền fixture IDs thực. Hoàn tất các engineering/policy finding theo phạm vi gửi duyệt. Chạy test, quay video thật, thêm URL, build lại và đọc validation report cùng SHA-256. Khi đó mới chốt upload draft và review thông tin đã import.

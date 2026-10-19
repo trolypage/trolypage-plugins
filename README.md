@@ -24,7 +24,7 @@ Người phụ trách: **Alex Nguyen**, email **support.mcp@trolypage.com**. B�
 1. `review/01-listing-and-copy.md`: mô tả sản phẩm, tên, email, commerce, quốc gia.
 2. `review/07-readiness.md`: các mục phải xử lý trước khi nộp; đây là phần quan trọng nhất để chốt.
 3. `review/02-openai.md`, `03-claude.md`, `04-muse.md`: hồ sơ từng nền tảng.
-4. `review/06-tests-demo-and-access.md`: tài khoản demo bạn sẽ tạo, fixtures và kịch bản quay.
+4. `review/06-tests-demo-and-access.md`: kết quả kiểm tra tài khoản reviewer, fixtures và kịch bản quay.
 5. `review/08-policy-copy-to-review.md`: lỗi thông tin cũ và draft chỉnh trang public.
 
 ## Tệp để dùng
@@ -42,7 +42,7 @@ Người phụ trách: **Alex Nguyen**, email **support.mcp@trolypage.com**. B�
 
 ## Chờ hoàn tất
 
-Workspace demo và video thật; license Claude; sửa identity/copy trên trang policy; annotation completeness; giới hạn generate-social-image và integration execution cho Claude; xác nhận data processing/Muse payment classification. Chi tiết và mức độ nằm ở readiness report. Không gọi các ZIP DRAFT là sẵn sàng submit.
+Tài khoản reviewer đã vào được workspace riêng; còn thiếu fixtures, OAuth/tool tests và video thật. Còn chờ license Claude; sửa identity/copy trên trang policy; annotation completeness; giới hạn generate-social-image và integration execution cho Claude; xác nhận data processing/Muse payment classification. Chi tiết và mức độ nằm ở readiness report. Không gọi các ZIP DRAFT là sẵn sàng submit.
 
 ## Build lại
 

@@ -2,7 +2,11 @@
 
 ## Trạng thái
 
-Chủ tài khoản sẽ tạo workspace demo và gửi thông tin sau. Hiện chưa có tài khoản reviewer, chưa chạy ca kiểm thử nghiệp vụ, chưa quay video và chưa có demo URL. Tệp test-cases.json là đặc tả; tất cả kết quả ở test-results.csv đang Not run. Không dùng tài khoản hoặc dữ liệu khách thật.
+Chủ tài khoản đã cung cấp thông tin reviewer riêng. Ngày 19/10/2026 đã kiểm tra qua trình duyệt: đăng nhập vào được workspace **TrolyPage Reviewer**, gói **Scale**, thành viên hiện tại có quyền **Owner**. Lần đăng nhập này cần chủ tài khoản hoàn tất bước Cloudflare; chưa chứng minh reviewer bên ngoài có thể đăng nhập độc lập hoàn toàn. Username và mật khẩu không được lưu vào repository hoặc ZIP.
+
+Trang MCP của workspace hiển thị 11 servers trong gói, 270 tools, 117 read tools; chưa có API key hay OAuth application được cấp quyền, chưa có successful read-only tool call. Chế độ write đang áp dụng là **Full · Direct execution**; chỉ quan sát, chưa thay đổi. Đây là kiểm tra giao diện đã đăng nhập, không phải bằng chứng OAuth hoặc tools/call đã thành công.
+
+Workspace hiện có 0 sản phẩm, 0 đơn hàng và một contact hỗ trợ mặc định; chưa có `Review Customer A`, sản phẩm `TLP-REVIEW-MUG` hoặc dữ liệu đơn cho báo cáo so sánh. Chưa chạy ca kiểm thử nghiệp vụ, chưa quay video và chưa có demo URL. Tệp test-cases.json là đặc tả; tất cả kết quả ở test-results.csv vẫn Not run. Không dùng contact hỗ trợ thật làm fixture và không gửi tin để tạo dữ liệu thử.
 
 ## Chuẩn bị workspace riêng
 

@@ -1,11 +1,11 @@
 {
-  "status": "Not created; owner will provide demo workspace",
+  "status": "Reviewer workspace browser access verified 2026-10-19; fixtures and authenticated MCP tests pending",
   "login_url": "https://trolypage.com/login",
-  "workspace_name": null,
+  "workspace_name": "TrolyPage Reviewer",
   "workspace_id": null,
   "reviewer_username": null,
   "timezone": "Asia/Ho_Chi_Minh",
-  "approval_mode": null,
+  "approval_mode": "Full / Direct execution (observed in authenticated MCP UI; unchanged)",
   "customer": {
     "name": "Review Customer A",
     "subscriber_id": null

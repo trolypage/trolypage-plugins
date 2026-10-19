@@ -8,7 +8,7 @@ Metadata public nằm trong `extensions.com.openai.interface`; 5 positive/3 nega
 
 ## Chỉ thực hiện sau khi đã review
 
-1. Sửa các mục readiness cần thiết, tạo tài khoản demo và chạy bộ test. Quay và kiểm tra video; thêm URL thực vào manifest.
+1. Sửa các mục readiness cần thiết, hoàn thiện fixtures trong tài khoản demo đã có và chạy bộ test. Quay và kiểm tra video; thêm URL thực vào manifest.
 2. Build lại gói, kiểm tra `validation-report.json` và đúng hash ZIP. Vào https://platform.openai.com/plugins dưới tổ chức TroLyPage và chọn `Business — Trolypage`.
 3. Upload ZIP để tạo draft. Upload không đồng nghĩa đã gửi duyệt hay đã được chấp thuận.
 4. Kiểm tra metadata import, countries/translations, mô tả commerce, test cases và release notes. Hoàn tất domain challenge đúng token portal cấp. Chọn Authentication=OAuth trong portal, dùng DCR từ discovery và scope mcp:use, rồi scan tools. mcp.json dùng transport/URL chuẩn; không đặt override auth nâng cao hay client secret trong gói.

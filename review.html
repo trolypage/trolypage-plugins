@@ -110,7 +110,7 @@ body{margin:0;background:#f5f7fb;color:#17223b;font:16px/1.65 system-ui,sans-ser
 <p>Metadata public nằm trong <code>extensions.com.openai.interface</code>; 5 positive/3 negative cases nằm ở <code>extensions.com.openai.review.test_cases</code>; khai báo commerce=true; countries=[] theo lựa chọn phát hành toàn bộ quốc gia nền tảng cho phép. English ở listing gốc, Vietnamese ở <code>publication.translations.vi-VN</code>. Không có <code>.app.json</code>, app binding, hook, token hoặc mật khẩu.</p>
 <h2>Chỉ thực hiện sau khi đã review</h2>
 <ol>
-<li>Sửa các mục readiness cần thiết, tạo tài khoản demo và chạy bộ test. Quay và kiểm tra video; thêm URL thực vào manifest.</li>
+<li>Sửa các mục readiness cần thiết, hoàn thiện fixtures trong tài khoản demo đã có và chạy bộ test. Quay và kiểm tra video; thêm URL thực vào manifest.</li>
 <li>Build lại gói, kiểm tra <code>validation-report.json</code> và đúng hash ZIP. Vào https://platform.openai.com/plugins dưới tổ chức TroLyPage và chọn <code>Business — Trolypage</code>.</li>
 <li>Upload ZIP để tạo draft. Upload không đồng nghĩa đã gửi duyệt hay đã được chấp thuận.</li>
 <li>Kiểm tra metadata import, countries/translations, mô tả commerce, test cases và release notes. Hoàn tất domain challenge đúng token portal cấp. Chọn Authentication=OAuth trong portal, dùng DCR từ discovery và scope mcp:use, rồi scan tools. mcp.json dùng transport/URL chuẩn; không đặt override auth nâng cao hay client secret trong gói.</li>
@@ -189,7 +189,7 @@ body{margin:0;background:#f5f7fb;color:#17223b;font:16px/1.65 system-ui,sans-ser
 </tr>
 <tr>
 <td>Reviewer access</td>
-<td>Chờ chủ tài khoản tạo workspace demo; nhập qua trường bảo mật</td>
+<td>Đã nhận credentials riêng và vào được workspace demo; OAuth, fixtures và đăng nhập độc lập còn chờ xác minh. Chỉ nhập credentials qua trường bảo mật</td>
 </tr>
 </tbody>
 </table>
@@ -346,7 +346,9 @@ Add an internal CRM note without contacting the customer.
 <h2>Proposed Muse tool classes</h2>
 <p>Read tools retrieve account state. Write tools change internal drafts/configuration. Sensitive-write candidates include external sends/publication, payments/order commitment, shipping/booking, destructive operations and consequential integration execution. tool-inventory.csv contains an initial classification for manual review, explicitly separate from current MCP annotations and Muse's final classification.</p></section><section id="06-tests-demo-and-access"><a class="file" href="review/06-tests-demo-and-access.md">Mở file Markdown</a><h1>Tài khoản demo, kiểm thử và video</h1>
 <h2>Trạng thái</h2>
-<p>Chủ tài khoản sẽ tạo workspace demo và gửi thông tin sau. Hiện chưa có tài khoản reviewer, chưa chạy ca kiểm thử nghiệp vụ, chưa quay video và chưa có demo URL. Tệp test-cases.json là đặc tả; tất cả kết quả ở test-results.csv đang Not run. Không dùng tài khoản hoặc dữ liệu khách thật.</p>
+<p>Chủ tài khoản đã cung cấp thông tin reviewer riêng. Ngày 19/10/2026 đã kiểm tra qua trình duyệt: đăng nhập vào được workspace <strong>TrolyPage Reviewer</strong>, gói <strong>Scale</strong>, thành viên hiện tại có quyền <strong>Owner</strong>. Lần đăng nhập này cần chủ tài khoản hoàn tất bước Cloudflare; chưa chứng minh reviewer bên ngoài có thể đăng nhập độc lập hoàn toàn. Username và mật khẩu không được lưu vào repository hoặc ZIP.</p>
+<p>Trang MCP của workspace hiển thị 11 servers trong gói, 270 tools, 117 read tools; chưa có API key hay OAuth application được cấp quyền, chưa có successful read-only tool call. Chế độ write đang áp dụng là <strong>Full · Direct execution</strong>; chỉ quan sát, chưa thay đổi. Đây là kiểm tra giao diện đã đăng nhập, không phải bằng chứng OAuth hoặc tools/call đã thành công.</p>
+<p>Workspace hiện có 0 sản phẩm, 0 đơn hàng và một contact hỗ trợ mặc định; chưa có <code>Review Customer A</code>, sản phẩm <code>TLP-REVIEW-MUG</code> hoặc dữ liệu đơn cho báo cáo so sánh. Chưa chạy ca kiểm thử nghiệp vụ, chưa quay video và chưa có demo URL. Tệp test-cases.json là đặc tả; tất cả kết quả ở test-results.csv vẫn Not run. Không dùng contact hỗ trợ thật làm fixture và không gửi tin để tạo dữ liệu thử.</p>
 <h2>Chuẩn bị workspace riêng</h2>
 <ol>
 <li>Tạo workspace demo tách biệt, user owner/admin riêng, gói có đủ module cho các ca đã khai. Ghi tên, URL đăng nhập và timezone vào fixture-map.json; không ghi mật khẩu ở đó.</li>
@@ -481,7 +483,11 @@ Add an internal CRM note without contacting the customer.
 </tr>
 <tr>
 <td>Reviewer account</td>
-<td>Chủ tài khoản sẽ tạo sau</td>
+<td>Đã nhận riêng; đã vào được workspace TrolyPage Reviewer, Scale, Owner. Cloudflare cần thao tác người dùng trong lần đăng nhập kiểm tra; chưa xác minh đăng nhập độc lập từ reviewer bên ngoài</td>
+</tr>
+<tr>
+<td>Workspace demo preflight</td>
+<td>0 products, 0 orders; contact duy nhất là hỗ trợ mặc định, chưa có fixtures. MCP UI hiển thị Full · Direct execution đang áp dụng, chưa có OAuth app/API key hay successful read-only call; chưa đổi cấu hình</td>
 </tr>
 <tr>
 <td>Authenticated tool tests</td>
@@ -520,8 +526,8 @@ Add an internal CRM note without contacting the customer.
 <li>Claude connector: policy catalog, tool tests và reviewer access còn pending. Bundle còn cần license do owner chọn và portal validation; repo public đã tạo tại https://github.com/trolypage/trolypage-plugins. Không upload backend monorepo.</li>
 <li>Muse: Payments category cần đối chiếu định nghĩa external payment; tech/review form bước sau chưa được thao tác; questionnaire, test account, host approvals và terms do owner hoàn tất.</li>
 </ul>
-<h2>Khi bạn gửi tài khoản demo</h2>
-<p>Người phụ trách đã xác nhận là Alex Nguyen. Xác nhận tên/URL workspace, license và nơi host demo; điền fixture IDs thực. Hoàn tất các engineering/policy finding theo phạm vi gửi duyệt. Chạy test, quay video thật, thêm URL, build lại và đọc validation report cùng SHA-256. Khi đó mới chốt upload draft và review thông tin đã import.</p></section><section id="08-policy-copy-to-review"><a class="file" href="review/08-policy-copy-to-review.md">Mở file Markdown</a><h1>Nội dung đề xuất chỉnh policy / MCP guide — CHƯA XUẤT BẢN</h1>
+<h2>Bước tiếp theo với tài khoản demo</h2>
+<p>Người phụ trách đã xác nhận là Alex Nguyen. Tài khoản đã vào được workspace reviewer; cần kiểm tra việc đăng nhập độc lập và OAuth, chuẩn bị fixtures tổng hợp và ghi nhận approval mode phù hợp từng vòng test. Không coi Full · Direct execution là đã bật queue cho mọi write. Xác nhận license và nơi host demo; điền fixture IDs thực. Hoàn tất các engineering/policy finding theo phạm vi gửi duyệt. Chạy test, quay video thật, thêm URL, build lại và đọc validation report cùng SHA-256. Khi đó mới chốt upload draft và review thông tin đã import.</p></section><section id="08-policy-copy-to-review"><a class="file" href="review/08-policy-copy-to-review.md">Mở file Markdown</a><h1>Nội dung đề xuất chỉnh policy / MCP guide — CHƯA XUẤT BẢN</h1>
 <p>Các đoạn dưới đây là draft biên tập và xác nhận dữ liệu, không phải cam kết pháp lý đã được chủ tài khoản duyệt. Không ghi đã tuân thủ mọi chính sách hoặc đã audit hệ thống chỉ từ source review.</p>
 <h2>Publisher identity</h2>
 <p>Privacy section 13 hiện còn SkyNet Solution và địa chỉ Boulder, US; footer là TROLYPAGE COMPANY LIMITED ở Hà Nội. Mobile support cũng còn SkyNet Solution. Owner cần xác nhận SkyNet là pháp nhân/brand/service provider nào, hoặc thay block cũ bằng đúng publisher. Thông tin công khai hiện có để đối chiếu:</p>

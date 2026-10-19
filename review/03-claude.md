@@ -19,7 +19,7 @@ Theo lựa chọn của chủ tài khoản: chuẩn bị cả hai listing, dùng
 | Support | support@trolypage.com; https://trolypage.com/mcp#errors |
 | Website / privacy / terms | Theo 01-listing-and-copy.md; phải xử lý lỗi identity trong Privacy trước |
 | Available countries | All platform-supported countries, subject to provider restrictions |
-| Reviewer access | Chờ chủ tài khoản tạo workspace demo; nhập qua trường bảo mật |
+| Reviewer access | Đã nhận credentials riêng và vào được workspace demo; OAuth, fixtures và đăng nhập độc lập còn chờ xác minh. Chỉ nhập credentials qua trường bảo mật |
 
 ### Chặn trước khi nộp endpoint chung
 
