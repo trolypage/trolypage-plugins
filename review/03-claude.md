@@ -23,7 +23,7 @@ The owner requested both listing types under the same organization. The selected
 
 ### Directory profile update — October 19, 2026
 
-The owner selected a dedicated directory catalog. The server-side `/mcp/claude` profile has now been deployed, with a 180-tool execution allowlist, English descriptions and complete annotation booleans. OAuth resource validation restricts directory-issued tokens to that endpoint. The full `/mcp/troly` service retains Gen AI. The new directory connection completed OAuth in Claude with the correct reviewer workspace. See `evidence/claude-directory-release-20261019.md` for deployment and automated regression scope. Live catalog scanning and authenticated all-tool business testing must be verified separately.
+The owner selected a dedicated directory catalog. The server-side `/mcp/claude` profile has now been deployed, with a 180-tool execution allowlist, English descriptions and complete annotation booleans. OAuth resource validation restricts directory-issued tokens to that endpoint. The full `/mcp/troly` service retains Gen AI. The new directory connection completed OAuth in Claude with the correct reviewer workspace. The portal read 180 tools live (90 read-only, 90 write), with four advisory documentation suggestions and no previous catch-all operation flag. See `evidence/claude-directory-release-20261019.md` for deployment and automated regression scope. Authenticated all-tool business testing remains incomplete.
 
 ### Historical findings from the full endpoint (superseded candidate)
 
