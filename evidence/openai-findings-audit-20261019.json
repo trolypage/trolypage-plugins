@@ -1,0 +1,186 @@
+{
+  "date": "2026-10-19",
+  "source": "Live OpenAI portal; each tool detail panel inspected",
+  "url": "https://platform.openai.com/plugins/manage/plugin_asdk_app_6ad5a07c7d2c81918d806242938c0802?tab=mcp&mcp=server%3Atrolypage",
+  "review_status": "In review",
+  "authentication": "Authorized",
+  "domain": "Domain verified",
+  "results": [
+    {
+      "tool": "send-message",
+      "findings": [
+        "This new tool definition needs further review before it can be published."
+      ]
+    },
+    {
+      "tool": "import-knowledge-url",
+      "findings": [
+        "This tool's description appears missing, blank, or unclear.",
+        "This new tool definition needs further review before it can be published."
+      ]
+    },
+    {
+      "tool": "save-integration-operation",
+      "findings": [
+        "This tool's description appears missing, blank, or unclear.",
+        "This tool appears to execute operations that are not individually exposed. Please expose each model-callable operation upfront as a separate tool with a clear description, input schema, and annotations."
+      ]
+    },
+    {
+      "tool": "social-capabilities",
+      "findings": [
+        "This tool's description appears missing, blank, or unclear."
+      ]
+    },
+    {
+      "tool": "chat-with-ai",
+      "findings": [
+        "This tool appears to execute operations that are not individually exposed. Please expose each model-callable operation upfront as a separate tool with a clear description, input schema, and annotations."
+      ]
+    },
+    {
+      "tool": "get-social-target-editor",
+      "findings": [
+        "This tool's description appears missing, blank, or unclear."
+      ]
+    },
+    {
+      "tool": "social-target-action",
+      "findings": [
+        "This tool appears to execute operations that are not individually exposed. Please expose each model-callable operation upfront as a separate tool with a clear description, input schema, and annotations."
+      ]
+    },
+    {
+      "tool": "social-comment-action",
+      "findings": [
+        "This tool appears to execute operations that are not individually exposed. Please expose each model-callable operation upfront as a separate tool with a clear description, input schema, and annotations."
+      ]
+    },
+    {
+      "tool": "create-knowledge-text",
+      "findings": [
+        "This tool's description appears missing, blank, or unclear."
+      ]
+    },
+    {
+      "tool": "delete-knowledge",
+      "findings": [
+        "This tool's description appears missing, blank, or unclear."
+      ]
+    },
+    {
+      "tool": "update-knowledge",
+      "findings": [
+        "This tool's description appears missing, blank, or unclear."
+      ]
+    },
+    {
+      "tool": "list-integration-operations",
+      "findings": [
+        "This tool appears to execute operations that are not individually exposed. Please expose each model-callable operation upfront as a separate tool with a clear description, input schema, and annotations."
+      ]
+    },
+    {
+      "tool": "execute-integration-operation",
+      "findings": [
+        "This tool appears to execute operations that are not individually exposed. Please expose each model-callable operation upfront as a separate tool with a clear description, input schema, and annotations."
+      ]
+    },
+    {
+      "tool": "save-integration-connection",
+      "findings": [
+        "This tool's description appears missing, blank, or unclear."
+      ]
+    },
+    {
+      "tool": "save-integration-endpoint",
+      "findings": [
+        "This tool's description appears missing, blank, or unclear."
+      ]
+    },
+    {
+      "tool": "save-integration-subscription",
+      "findings": [
+        "This tool's description appears missing, blank, or unclear."
+      ]
+    },
+    {
+      "tool": "run-agent-conversation",
+      "findings": [
+        "This tool appears to execute operations that are not individually exposed. Please expose each model-callable operation upfront as a separate tool with a clear description, input schema, and annotations."
+      ]
+    },
+    {
+      "tool": "reset-agent-tool",
+      "findings": [
+        "This tool's description appears missing, blank, or unclear."
+      ]
+    },
+    {
+      "tool": "update-agent-metadata",
+      "findings": [
+        "This tool's description appears to claim capabilities that do not match its behavior."
+      ]
+    },
+    {
+      "tool": "update-agent-tool",
+      "findings": [
+        "This tool appears to execute operations that are not individually exposed. Please expose each model-callable operation upfront as a separate tool with a clear description, input schema, and annotations."
+      ]
+    },
+    {
+      "tool": "list-agent-mcp-clients",
+      "findings": [
+        "This tool appears to execute operations that are not individually exposed. Please expose each model-callable operation upfront as a separate tool with a clear description, input schema, and annotations."
+      ]
+    },
+    {
+      "tool": "discover-agent-mcp-tools",
+      "findings": [
+        "This tool appears to execute operations that are not individually exposed. Please expose each model-callable operation upfront as a separate tool with a clear description, input schema, and annotations."
+      ]
+    },
+    {
+      "tool": "clean-asset-image",
+      "findings": [
+        "This new tool definition needs further review before it can be published."
+      ]
+    },
+    {
+      "tool": "get-automation-catalog",
+      "findings": [
+        "This new tool definition needs further review before it can be published."
+      ]
+    },
+    {
+      "tool": "save-automation-workflow",
+      "findings": [
+        "This new tool definition needs further review before it can be published."
+      ]
+    },
+    {
+      "tool": "publish-automation-workflow",
+      "findings": [
+        "This new tool definition needs further review before it can be published."
+      ]
+    },
+    {
+      "tool": "resume-automation-workflow",
+      "findings": [
+        "This new tool definition needs further review before it can be published."
+      ]
+    },
+    {
+      "tool": "review-automation-phones",
+      "findings": [
+        "This new tool definition needs further review before it can be published."
+      ]
+    },
+    {
+      "tool": "retry-automation-run",
+      "findings": [
+        "This new tool definition needs further review before it can be published."
+      ]
+    }
+  ]
+}

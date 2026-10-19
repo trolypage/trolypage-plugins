@@ -9,7 +9,7 @@ Updated October 19, 2026. No platform approval or live directory release has bee
 | OpenAI | 1.0.2 In review; MCP Configured / Authorized; business/domain verified; video and 5+3 cases imported | OpenAI review |
 | Muse | All 3/3 requirements submitted: business verification, integration credentials and data questionnaire | Platform review |
 
-Claude enforces 180 tools at discovery/execution, excludes AI media and generic dispatchers, uses English metadata and validates OAuth audience. The full endpoint retains Gen AI and 271 tools. OpenAI's generic new-tool review findings are non-blocking review items.
+Claude enforces 180 tools at discovery/execution, excludes AI media and generic dispatchers, uses English metadata and validates OAuth audience. The full endpoint retains Gen AI and 271 tools. OpenAI's 31 findings across 29 tools include 22 description/capability warnings and nine generic new-tool review notices. They did not block submission, but require review and correction or explanation; see the detailed findings audit.
 
 Real fixtures include Review Customer A, widget #44, product #4642 and pending unpaid order #54. Same-intent retries reuse the order. No payment, shipment, customer reply or social publication was executed. Reported revenue includes pending order value and is not money received.
 

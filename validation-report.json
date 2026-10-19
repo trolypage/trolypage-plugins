@@ -345,7 +345,7 @@
   ],
   "local_checks_passed": true,
   "tools": 271,
-  "official_platform_scan": "Claude bundle 1.0.2 format/policy/security passed. OpenAI nine skills passed; non-blocking category/MCP findings remain.",
+  "official_platform_scan": "Claude bundle 1.0.2 format/policy/security passed. OpenAI nine skills passed; category advisory and 31 MCP findings across 29 tools remain, including 22 description/capability warnings. Detailed audit: evidence/openai-findings-audit-20261019.md.",
   "authenticated_tests": "Owner-attested prior all-tool execution for Claude directory; independently observed representative synthetic workflows in Claude. No OpenAI/Muse-host business execution claimed.",
   "demo_recording": "Rendered and publicly played through: https://trolypage.com/demos/connector-review.html",
   "pending": "Platform reviews; any requested fixes, exact Muse callback configuration and reviewer access support. See review/07-readiness.md.",

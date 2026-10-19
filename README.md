@@ -32,7 +32,7 @@ Submission contact: **Alex Nguyen**, **support.mcp@trolypage.com**. Public suppo
 
 The reviewer workspace has an Owner role and Scale plan. Claude directory OAuth and 180-tool discovery succeeded. The owner attested prior execution of all tools through Inspector/Claude; this is recorded separately from independent representative calls. Real customer/product/order fixtures and an unpaid idempotent order retry were verified. OpenAI is In review with MCP Configured / Authorized and 271 full-endpoint tools; secure reviewer credentials, the video and 5+3 cases are saved. See [current evidence](evidence/submission-progress-20261019.md).
 
-Claude connector submission succeeded and bundle 1.0.2 is awaiting review. Local package validation, portal scans and business execution remain distinct. Muse's data questionnaire and secure integration requirements are submitted; the portal shows 3/3 complete. No platform approval or live release is claimed. Credentials and backend source are excluded from this distribution.
+Claude connector submission succeeded and bundle 1.0.2 is awaiting review. Local package validation, portal scans and business execution remain distinct. OpenAI has 31 findings across 29 tools, including 22 description/capability warnings; see the [detailed audit](evidence/openai-findings-audit-20261019.md). Muse's data questionnaire and secure integration requirements are submitted; the portal shows 3/3 complete. No platform approval or live release is claimed. Credentials and backend source are excluded from this distribution.
 
 | Location | Contents |
 | --- | --- |
